@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE36E01A-0751-4A20-8842-BD1356E80126}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KineTechAnimation</RootNamespace>
+    <AssemblyName>KineTechAnimation</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Plugins\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\KSP_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\KSP_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\KSP_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Attributes\KPartModuleConfigurationDocumentationAttribute.cs" />
+    <Compile Include="Modules\AnimateValue\KModuleAnimateMass.cs" />
+    <Compile Include="Modules\AnimateValue\KModuleAnimateSolarCharge.cs" />
+    <Compile Include="Modules\AnimateValue\KModuleAnimateSurfaceHeight.cs" />
+    <Compile Include="Modules\AnimateValue\KModuleAnimateTargetDistance.cs" />
+    <Compile Include="Modules\AnimateValue\KModuleAnimateTargettedDistance.cs" />
+    <Compile Include="Modules\AnimateValue\KModuleAnimateTargettedSpeed.cs" />
+    <Compile Include="Modules\AnimateValue\ModuleEngine\KModuleAnimateThrust.cs" />
+    <Compile Include="Modules\AnimateValue\ModuleResourceIntake\KModuleAnimateIntakeAir.cs" />
+    <Compile Include="Modules\AnimateValue\ModuleResourceIntake\KModuleAnimateAirSpeed.cs" />
+    <Compile Include="Modules\AnimateValue\KModuleAnimateAltitude.cs" />
+    <Compile Include="Modules\AnimateValue\KModuleAnimateAtmosphericDensity.cs" />
+    <Compile Include="Modules\AnimateValue\KModuleAnimateGeeForce.cs" />
+    <Compile Include="Modules\AnimateValue\KModuleAnimateLatitude.cs" />
+    <Compile Include="Modules\AnimateValue\KModuleAnimateLongitude.cs" />
+    <Compile Include="Modules\AnimateValue\KModuleAnimateOrbitalSpeed.cs" />
+    <Compile Include="Modules\AnimateValue\KModuleAnimateStaticPressure.cs" />
+    <Compile Include="Modules\AnimateValue\KModuleAnimateSurfaceSpeed.cs" />
+    <Compile Include="Modules\AnimateValue\KModuleAnimateTargetSpeed.cs" />
+    <Compile Include="Core\Attributes\KPartModuleFieldConfigurationDocumentationAttribute.cs" />
+    <Compile Include="Core\KConfigDocumentationGenerator.cs" />
+    <Compile Include="Core\Attributes\KSPFieldDebug.cs" />
+    <Compile Include="Core\KineTechAnimationModuleLoader.cs" />
+    <Compile Include="KModuleAnimate.cs" />
+    <Compile Include="Modules\KModuleAnimateValue.cs" />
+    <Compile Include="Modules\AnimateValue\KModuleAnimateVerticalSpeed.cs" />
+    <Compile Include="Core\KRequiresModuleAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
