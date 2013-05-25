@@ -126,7 +126,6 @@ namespace ExsurgentEngineering
 			foreach(var gimbalTransform in part.FindModelTransforms(gimbalTransformName))
 			{
 				transformsAndRotations.Add (gimbalTransform, gimbalTransform.localRotation);
-				Debug.Log ("gimbalTransform.localRotation: " + gimbalTransform.localRotation);
 			}
 
 
@@ -150,7 +149,6 @@ namespace ExsurgentEngineering
 
 			var yawDot = YawAxis ();
 			var yawDotSign = Mathf.Sign(yawDot);
-			Debug.Log ("yawDot: " + yawDot + " yawDotSign: " + yawDotSign);
 
 			var pitch = vessel.ctrlState.pitch;
 			var roll = vessel.ctrlState.roll;
@@ -165,11 +163,11 @@ namespace ExsurgentEngineering
 			var gimbalAngle = pitchAngle + rollAngle;
 			gimbalAngle = Mathf.Clamp (gimbalAngle, -pitchRange, pitchRange);
 
-			if (useGimbalResponseSpeed)
-			{
-				gimbalAngle = Mathf.Lerp (currentPitchAngle, gimbalAngle, gimbalResponseSpeed * TimeWarp.fixedDeltaTime);
-				yawAngle = Mathf.Lerp (currentYawAngle, yawAngle, gimbalResponseSpeed * TimeWarp.fixedDeltaTime);
-			}
+//			if (useGimbalResponseSpeed)
+//			{
+//				gimbalAngle = Mathf.Lerp (currentPitchAngle, gimbalAngle, gimbalResponseSpeed * TimeWarp.fixedDeltaTime);
+//				yawAngle = Mathf.Lerp (currentYawAngle, yawAngle, gimbalResponseSpeed * TimeWarp.fixedDeltaTime);
+//			}
 
 
 
@@ -187,7 +185,18 @@ namespace ExsurgentEngineering
 				var pitchRotation = Quaternion.AngleAxis (gimbalAngle, localUp);
 				var yawRotation = Quaternion.AngleAxis (yawAngle, localRight);
 
-				gimbalTransform.localRotation = initialRotation * pitchRotation * yawRotation;
+				var targetRotation = initialRotation * pitchRotation * yawRotation;
+
+				if (useGimbalResponseSpeed)
+				{
+					var angle = gimbalResponseSpeed * TimeWarp.fixedDeltaTime;
+					gimbalTransform.localRotation = Quaternion.RotateTowards (gimbalTransform.localRotation, targetRotation, angle);
+				} else {
+					gimbalTransform.localRotation = targetRotation;
+
+				}
+
+
 			}
 
 		}

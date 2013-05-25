@@ -1,162 +1,175 @@
 using System;
 using UnityEngine;
-
 using System.Linq;
 
 namespace ExsurgentEngineering
 {
-    public class GravityEngineModule : PartModule
-    {
-        [KSPField(guiActive=false, isPersistant=true)]
+	public class GravityEngineModule : PartModule
+	{
+		[KSPField(guiActive=false, isPersistant=true)]
         public bool
-            gravityEnabled = true;
-		
-        [KSPField(guiActive=true, guiName="Gravity power", guiFormat="F2", guiUnits="m/s",isPersistant=true)]
+			gravityEnabled = true;
+
+		[KSPField(guiActive=true, guiName="Gravity power", guiFormat="F2", guiUnits="m/s",isPersistant=true)]
         public float
-            gee = 0f;
-        [KSPField(guiActive=true, guiName="Curr. Thrust", guiFormat="F2", guiUnits="N",isPersistant=true)]
+			gee = 0f;
+
+		[KSPField(guiActive=true, guiName="Curr. Thrust", guiFormat="F2", guiUnits="N",isPersistant=true)]
         public float
-            thrust = 0;
-        [KSPField(guiActive=true, guiName="Avail. Thrust", guiFormat="F2", guiUnits="N",isPersistant=true)]
+			thrust = 0;
+
+		[KSPField(guiActive=true, guiName="Avail. Thrust", guiFormat="F2", guiUnits="N",isPersistant=true)]
         public float
-            maxThrust = 0;
-		
-        [KSPField]
+			maxThrust = 0;
+
+		[KSPField]
         public string
-            coreMeshPath = "model/antigravcore/Sphere001";
-		
-        [KSPField(isPersistant = true)]
+			coreMeshPath = "model/antigravcore/Sphere001";
+
+		[KSPField(isPersistant = true)]
         public bool
-            staged;
+			staged;
 
-        public Vector3 geeVector = Vector3.up;
-        public Transform coreMesh;
-		
-        public Vector3 thrustVector = Vector3.zero;
-        public Vector3 translationVector = Vector3.zero;
-        public Vector3 rotationVector = Vector3.zero;
+		public Vector3 geeVector = Vector3.up;
 
-        public override void OnActive()
-        {
-            var agCore = base.transform.FindChild("model").FindChild("antigravcore").FindChild("Sphere001");
-            Debug.Log("agCore: " + agCore);
-            coreMesh = coreMeshPath.Split('/').
-				Aggregate(transform, (mesh, child) => mesh.FindChild(child));
-            Debug.Log("coreMesh: " + coreMesh);
+		public Transform coreMesh;
+
+		public Vector3 thrustVector = Vector3.zero;
+
+		public Vector3 translationVector = Vector3.zero;
+
+		public Vector3 rotationVector = Vector3.zero;
+
+		public override void OnActive ()
+		{
+//            var agCore = base.transform.FindChild("model").FindChild("antigravcore").FindChild("Sphere001");
+//            Debug.Log("agCore: " + agCore);
+//            coreMesh = coreMeshPath.Split('/').
+//				Aggregate(transform, (mesh, child) => mesh.FindChild(child));
+//            Debug.Log("coreMesh: " + coreMesh);
+//			
+//            coreMesh = agCore;
+
+			staged = true;
+		}
+
+		public override void OnStart (StartState state)
+		{
+			if (state == StartState.Editor)
+				gravityEnabled = false;
+			else
+				gravityEnabled = true;
+		}
+
+		[KSPEvent(guiName="Activate Engine", guiActive=true)]
+        public void Activate ()
+		{
+			part.force_activate ();
+			gravityEnabled = true;
+			Events ["Activate"].active = !gravityEnabled;
+			Events ["Deactivate"].active = gravityEnabled;
+
+		}
+
+		[KSPEvent(guiName="Deactivate Engine", guiActive=true)]
+        public void Deactivate ()
+		{
+			gravityEnabled = false;
+			Events ["Activate"].active = !gravityEnabled;
+			Events ["Deactivate"].active = gravityEnabled;
+		}
+
+		[KSPAction("Activate Engine")]
+        public void ActivateAction (KSPActionParam param)
+		{
+			Activate ();
+		}
+
+		[KSPAction("Deactivate Engine")]
+        public void DeactivateAction (KSPActionParam param)
+		{
+			Deactivate ();
+		}
+
+		[KSPAction("Toggle Engine")]
+        public void ToggleAction (KSPActionParam param)
+		{
+			if (gravityEnabled)
+				Deactivate ();
+			else
+				Activate ();
+		}
+
+		public void Update ()
+		{
+			if (HighLogic.LoadedSceneIsEditor)
+				return;
+
+//            if (coreMesh != null && gravityEnabled)
+//            {
+//                coreMesh.Rotate(Vector3.forward * 8f * Time.time);
+//            }			
+		}
+
+		public void FixedUpdate ()
+		{
+			if (HighLogic.LoadedSceneIsEditor)
+				return;
+
+			if (!gravityEnabled)
+				return;
 			
-            coreMesh = agCore;
+			if (vessel.rigidbody == null)
+				return;
 
-            staged = true;
-        }
-	
-        public override void OnStart(StartState state)
-        {
-            if (state == StartState.Editor)
-                gravityEnabled = false;
-            else
-                gravityEnabled = true;
-        }
-	
-        [KSPEvent(guiName="Activate Engine", guiActive=true)]
-        public void Activate()
-        {
-            part.force_activate();
-            gravityEnabled = true;
-            Events ["Activate"].active = !gravityEnabled;
-            Events ["Deactivate"].active = gravityEnabled;
-
-        }
-
-        [KSPEvent(guiName="Deactivate Engine", guiActive=true)]
-        public void Deactivate()
-        {
-            gravityEnabled = false;
-            Events ["Activate"].active = !gravityEnabled;
-            Events ["Deactivate"].active = gravityEnabled;
-        }
-		
-        [KSPAction("Activate Engine")]
-        public void ActivateAction(KSPActionParam param)
-        {
-            Activate();
-        }
-
-        [KSPAction("Deactivate Engine")]
-        public void DeactivateAction(KSPActionParam param)
-        {
-            Deactivate();
-        }
-
-        [KSPAction("Toggle Engine")]
-        public void ToggleAction(KSPActionParam param)
-        {
-            if (gravityEnabled)
-                Deactivate();
-            else
-                Activate();
-        }
-
-        public void Update()
-        {
-            if (HighLogic.LoadedSceneIsEditor)
-                return;
-
-            if (coreMesh != null && gravityEnabled)
-            {
-                coreMesh.Rotate(Vector3.forward * 8f * Time.time);
-            }			
-        }
-	
-        public void FixedUpdate()
-        {
-            if (HighLogic.LoadedSceneIsEditor)
-                return;
-
-            if (!gravityEnabled)
-                return;
+			geeVector = FlightGlobals.getGeeForceAtPosition (vessel.findWorldCenterOfMass());  
 			
-            if (vessel.rigidbody == null)
-                return;
+			translationVector = Vector3.zero;
+			thrustVector = Vector3.zero;
+			rotationVector = Vector3.zero;
 
-            geeVector = FlightGlobals.getGeeForceAtPosition(vessel.findWorldCenterOfMass());  
-			
-            translationVector = Vector3.zero;
-            thrustVector = Vector3.zero;
-            rotationVector = Vector3.zero;
-
-            CalculateG();
-            CalculateTranslation();
-            CalculateThrust();
+			CalculateG ();
+			CalculateTranslation ();
+			CalculateThrust ();
+			CancelG ();
 //            CalculateRotation();
             
-            ApplyThrust();
+			ApplyThrust ();
 //            ApplyRotation();
-        }
+		}
 
-        public void CalculateG()
-        {
-            gee = (float)FlightGlobals.getGeeForceAtPosition(vessel.findWorldCenterOfMass()).magnitude;
-            maxThrust = gee + 9.81f;
-        }
+		public void CancelG ()
+		{
+			var antiGeeVector = geeVector * -1;
+			foreach (var vesselPart in FlightGlobals.ActiveVessel.parts.Where(p => p.rigidbody != null))
+				vesselPart.rigidbody.AddForce (antiGeeVector, ForceMode.Acceleration);
 
-        public Vector3 CalculateTranslation()
-        {
-            var fltCtrlState = FlightInputHandler.state;
-            translationVector = (new Vector3(fltCtrlState.X, fltCtrlState.Y, fltCtrlState.Z)).normalized;
+		}
+
+		public void CalculateG ()
+		{
+			gee = (float)FlightGlobals.getGeeForceAtPosition (vessel.findWorldCenterOfMass()).magnitude;
+			maxThrust = gee + 9.81f;
+		}
+
+		public Vector3 CalculateTranslation ()
+		{
+			var fltCtrlState = FlightInputHandler.state;
+			translationVector = (new Vector3 (fltCtrlState.X, fltCtrlState.Y, fltCtrlState.Z)).normalized;
             
-            translationVector *= maxThrust * 0.1f;
-            return translationVector;
-        }
-        public Vector3 CalculateThrust()
-        {
-            var remainingThrust = maxThrust - translationVector.magnitude;
+			translationVector *= maxThrust * 0.1f;
+			return translationVector;
+		}
 
-            thrust = FlightInputHandler.state.mainThrottle * maxThrust;
-            thrustVector = Vector3.ClampMagnitude(vessel.transform.up * thrust, remainingThrust);
+		public Vector3 CalculateThrust ()
+		{
+			var remainingThrust = maxThrust - translationVector.magnitude;
 
-            return thrustVector;
-        }
+			thrust = FlightInputHandler.state.mainThrottle * maxThrust;
+			thrustVector = Vector3.ClampMagnitude (vessel.transform.up * thrust, remainingThrust);
 
+			return thrustVector;
+		}
 //        public virtual Vector3 CalculateRotation()
 //        {
 //            var ctrlState = FlightInputHandler.state;
@@ -173,14 +186,13 @@ namespace ExsurgentEngineering
 //            return rotationVector;
 //        }
 
-        public void ApplyThrust()
-        {
-            var netThrust = translationVector + thrustVector;
-            foreach (var part in FlightGlobals.ActiveVessel.parts.Where(part => part.rigidbody != null))
-                part.rigidbody.AddForce(netThrust, ForceMode.Acceleration);
+		public void ApplyThrust ()
+		{
+			var netThrust = translationVector + thrustVector;
+			foreach (var vesselPart in FlightGlobals.ActiveVessel.parts.Where(p => p.rigidbody != null))
+				vesselPart.rigidbody.AddForce (netThrust, ForceMode.Acceleration);
                 
-        }
-
+		}
 //        public void ApplyRotation()
 //        {
 ////            foreach (var part in FlightGlobals.ActiveVessel.parts.Where(part => part.rigidbody != null))
@@ -191,26 +203,24 @@ namespace ExsurgentEngineering
 //            vessel.SetRotation(newRotation);
 //        }
 
-        [KSPEvent(guiActive=false, active=true)]
-        public void MechJebVesselStateUpdated()
-        {
+		[KSPEvent(guiActive=false, active=true)]
+        public void MechJebVesselStateUpdated ()
+		{
 //            Debug.Log("MechJebVesselStateUpdated");
-            BaseEventData ed = new BaseEventData(BaseEventData.Sender.USER); 
+			BaseEventData ed = new BaseEventData (BaseEventData.Sender.USER); 
 
 
 //            vessel.torqueRAvailable = vessel.torqueRAvailable + vessel.mass * 20        
 //            vessel.torquePYAvailable = vessel.torquePYAvailable + vessel.mass * 20
 
-            var script = String.Format(@"
+			var script = String.Format (@"
                 vessel.thrustAvailable = vessel.thrustAvailable + {0} * vessel.mass
                 vessel.maxThrustAccel = vessel.maxThrustAccel + {0}", maxThrust);
-            ed.Set("script", script); 
-            part.SendEvent("MechJebLua", ed);
-        }
-    }
+			ed.Set ("script", script); 
+			part.SendEvent ("MechJebLua", ed);
+		}
+	}
 }
-
-
 //rrslashphish: THANK YOU R4M0N!
 //    [9:44pm] careo: and I'd end up recreating part of what you're doing from the sound of it
 //        [9:44pm] r4m0n: gratz 
