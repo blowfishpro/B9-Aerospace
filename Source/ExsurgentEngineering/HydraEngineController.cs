@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-
 using UnityEngine;
 using System.Linq;
 
@@ -27,10 +26,17 @@ public class HydraEngineController : PartModule
 	public ConfigNode
 		secondaryEngine;
 
-	[KSPField(guiActive=true, isPersistant=true)]
+	[KSPField(isPersistant=false)]
 	public string
-		current = "primary";
+		primaryModeName = "Primary";
 
+	[KSPField(isPersistant=false)]
+	public string
+		secondaryModeName = "Secondary";
+
+	[KSPField(guiActive=true, isPersistant=true, guiName="Current Mode")]
+	public string
+		currentMode;
 
 	[KSPAction("Switch Engine Mode")]
 	public void SwitchAction (KSPActionParam param)
@@ -40,22 +46,22 @@ public class HydraEngineController : PartModule
 
 	public override void OnAwake ()
 	{
-		Debug.Log ("OnAwake()");
+//		Debug.Log ("OnAwake()");
 	}
 
 	public override void OnActive ()
 	{
-		Debug.Log ("OnActive()");
+//		Debug.Log ("OnActive()");
 	}
 
 	public override void OnStart (StartState state)
 	{
-		Debug.Log (String.Format ("OnActive({0})", state));
+//		Debug.Log (String.Format ("OnActive({0})", state));
 	}
 
 	public override void OnInactive ()
 	{
-		Debug.Log ("OnInactive()");
+//		Debug.Log ("OnInactive()");
 	}
 
 	void Log (string format, params object[] args)
@@ -64,13 +70,12 @@ public class HydraEngineController : PartModule
 
 	}
 
-
 	public override void OnLoad (ConfigNode node)
 	{
-		Debug.Log ("OnLoad()");
+//		Debug.Log ("OnLoad()");
 
-		Debug.Log ("ActiveEngine: " + ActiveEngine);
-		Debug.Log ("current: " + current);
+//		Debug.Log ("ActiveEngine: " + ActiveEngine);
+//		Debug.Log ("current: " + current);
    
 		if (node.HasNode ("primaryEngine")) {
 			primaryEngine = node.GetNode ("primaryEngine");
@@ -80,15 +85,18 @@ public class HydraEngineController : PartModule
 			primaryEngine = prefab.primaryEngine;
 			secondaryEngine = prefab.secondaryEngine;
 		}
+		if (currentMode == null) {
+			currentMode = primaryModeName;
+		}
 		if (ActiveEngine == null) {
-			if (current == "primary")
+			if (currentMode == primaryModeName)
 				part.AddModule (primaryEngine);
 			else
 				part.AddModule (secondaryEngine);
 
 		}
 	}
-    
+
 	public ModuleEngines ActiveEngine {
 		get { return (ModuleEngines)part.Modules ["ModuleEngines"]; }
 
@@ -98,11 +106,11 @@ public class HydraEngineController : PartModule
 	public void SwitchEngine ()
 	{
 		ConfigNode nextEngine;
-		if (current == "primary") {
-			current = "secondary";
+		if (currentMode == primaryModeName) {
+			currentMode = secondaryModeName;
 			nextEngine = secondaryEngine;
 		} else {
-			current = "primary";
+			currentMode = primaryModeName;
 			nextEngine = primaryEngine;
 		}
 
@@ -231,20 +239,19 @@ public class HydraEngineController : PartModule
 		Debug.Log (msg);
 
 	}
-
-	void CheckPropellantUse ()
-	{
-
-		var msg = "";
-		foreach (var propellant in ActiveEngine.propellants) {
-
-			//                    propellant.name, propellant.currentRequirement, propellant.currentAmount, propellant.isDeprived);
-			var missing = propellant.currentRequirement - propellant.currentAmount;
-			msg += String.Format ("propellant: {0} missing:{1}", propellant.name, missing);
-            
-		}
-		Debug.Log (msg);
-    
-	}
+//	void CheckPropellantUse ()
+//	{
+//
+////		var msg = "";
+//		foreach (var propellant in ActiveEngine.propellants) {
+//
+//			//                    propellant.name, propellant.currentRequirement, propellant.currentAmount, propellant.isDeprived);
+//			var missing = propellant.currentRequirement - propellant.currentAmount;
+////			msg += String.Format ("propellant: {0} missing:{1}", propellant.name, missing);
+//            
+//		}
+////		Debug.Log (msg);
+//    
+//	}
 }
 

@@ -33,7 +33,7 @@ namespace ExsurgentEngineering
 		[KSPEvent (guiName = "Free Gimbal", guiActive = true)]
 		public void FreeGimbal ()
 		{
-			Debug.Log ("FreeGimbal()");
+//			Debug.Log ("FreeGimbal()");
 
 			gimbalLock = false;
 			Events ["FreeGimbal"].active = false;
@@ -44,7 +44,7 @@ namespace ExsurgentEngineering
 		[KSPEvent (guiName = "Lock Gimbal", guiActive = true)]
 		public void LockGimbal ()
 		{
-			Debug.Log ("LockGimbal()");
+//			Debug.Log ("LockGimbal()");
 
 			gimbalLock = true;
 			Events ["FreeGimbal"].active = true;
@@ -63,8 +63,8 @@ namespace ExsurgentEngineering
 		[KSPAction ("Toggle Gimbal")]
 		public void ToggleAction (KSPActionParam param)
 		{
-			Debug.Log ("param: " + param);
-			Debug.Log ("param.type: " + param.type);
+//			Debug.Log ("param: " + param);
+//			Debug.Log ("param.type: " + param.type);
 
 			if (param.type == KSPActionType.Activate)
 				FreeGimbal ();
@@ -75,7 +75,7 @@ namespace ExsurgentEngineering
 
 		public override string GetInfo ()
 		{
-			return "does something awesome!";
+			return "Smarter Thrust Vectoring Enabled.";
 		}
 
 		float RollAxis ()
