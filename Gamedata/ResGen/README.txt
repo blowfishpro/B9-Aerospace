@@ -1,4 +1,4 @@
-Resource Generation Module v 0.24
+Resource Generation Module v 0.28
 
 
 Purpose:
@@ -6,14 +6,62 @@ Purpose:
 
 
 Current Features:
+	Version 0.28
+		Bug Fixes
+		Added in ResGen.Temperature (For what it is worth... which is very little)
+		Added in GlobalVar
+			requires "varName"
+			optional "value"
+			(use in INPUT to subtract, OUTPUT to add)
+		Added in GlobalSet
+			requires "varName"
+			set occurs when "requestResource" is called, and it is set to the value of the demand.
+		Added in GlobalIsGreater
+			requires "value"
+		Added in GlobalIsLess
+			requires "value"
+		Added in LocalVar
+			requires "varName"
+			optional "value"
+			(use in INPUT to subtract, OUTPUT to add)
+		Added in LocalSet
+			requires "varName"
+			set occurs when "requestResource" is called, and it is set to the value of the demand.
+		Added in LocalIsGreater
+			requires "value"
+		Added in LocalIsLess
+			requires "value"
+	Version 0.27
+		Added in "ELSE"
+	Version 0.26
+		Small Bug Fix (Timewarp didn't increase hidden resource "availiability" and did bad stuff)
+	Version 0.25
+		Added in "ResGen.Timer"
+			INPUT: specify "setTime" to change the time thingy... 
+
+		Modified "ResGen.KillKerbalInVessel"
+			Now has a "setTime"
+
+		Modified "ResGen.KillKerbalInPart"
+			Now has a "setTime"
+
+		Fixed misc broken code
+
 	Version 0.24	0.20.2 Compatibility
 		Merged "ResGen_Example" with "ResGen"
 		Added in "BADINPUT" and "BADOUTPUT" they replace the "INPUT / OUTPUT" resources when there is not enough 				"INPUT" resources.
 
-		Added in "KillVesselCrew"
-		Added in "KillPartCrew"
-		Added in "KillKerbalInVessel"
-		Added in "KillKerbalInPart"
+		Added in "ResGen.KillVesselCrew"
+			Kills all crew in Vessel
+
+		Added in "ResGen.KillPartCrew"
+			Kills all Crew in Part
+
+		Added in "ResGen.KillKerbalInVessel"
+			Kills a Kerbal in Vessel
+
+		Added in "ResGen.KillKerbalInPart"
+			Kills a Kerbal in Part
 
 
 	Version 0.23	Finished up most of the Hidden Resource system for now;
@@ -29,16 +77,16 @@ Current Features:
 			OUTPUT: returns "VesselCrew Capacity - Count"
 
 		Added in "ResGen.AtmosphereHasOxygen"
-			INPUT: returns "5" if oxygen is in the atmosphere
+			INPUT: returns TimeWarp.CurrentRate (ie. 50x) if oxygen is in the atmosphere
 
 		Added in "ResGen.AtmosphericOxygen"
 			INPUT: returns "Atmospheric Density" if oxygen is in the atmosphere
 
 		Added in "ResGen.Sunlight"
-			INPUT: returns "5" if the part is visible to the sun.
+			INPUT: returns TimeWarp.CurrentRate (ie. 50x) if the part is visible to the sun.
 
 		Added in "ResGen.PlanetWater"
-			INPUT: returns "5" if the vessel is "Spashed"
+			INPUT: returns TimeWarp.CurrentRate (ie. 50x) if the vessel is "Spashed"
 
 		Added in "ResGen.GeeForce"
 			INPUT: returns the geeForce
@@ -48,7 +96,7 @@ Current Features:
 
 		Added in "ResGen.OnPlanet"
 			requires a field "planet = name" in the resource listing.
-			INPUT: Returns 5 if the code works and you are on said planet.
+			INPUT: Returns TimeWarp.CurrentRate (ie. 50x) if the code works and you are on said planet.
 
 		Added in "ResGenMultVesselCrew":
 			Resource Generation Module: the rate is multiplied by the total crew
@@ -95,6 +143,12 @@ Documentation (Part.cfg):
 			Required:		No
 			Default:		false
 			Description:	something
+
+		isActive:
+			Type:			BOOLEAN
+			Required:		No
+			Default:		True
+			Description:	if false, will turn the generator off (normally changed via toggle)
 
 		guiName:
 			Type:			STRING
@@ -181,6 +235,13 @@ Documentation (Part.cfg):
 				Type:			DOUBLE
 				Required:		Yes
 				Description:	The rate/ratio of generation
+
+		ELSE:
+			Type:			ConfigNode
+			Required:		No
+			Description:	Rather confusing, if both INPUT and BADINPUT fail to aquire anything (if they exist)
+						"ELSE" will replace the entire "MODULE {}" node. This CANNOT be undone. This is not
+						recursive... multiple "ELSE" nodes will be ignored.
 
 Example:
 (in a part.cfg)
