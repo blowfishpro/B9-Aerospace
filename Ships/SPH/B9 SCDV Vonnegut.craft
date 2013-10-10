@@ -1,10 +1,10 @@
 ship = B9 SCDV Vonnegut
 version = 0.21.1
-description = Advanced light cargo SSTO.¨¨Payload mass must be precisely centered in the bay to prevent catastrophic degradation of flight characteristics.¨¨1 - Toggle SABRE engine mode & intakes¨5 - Toggle solar panels¨6 - Toggle navigation lights¨7 - Toggle cargo bay doors¨8 - Toggle cargo bay light¨9 - Toggle cockpit light¨0 - Extent/retract ladder & toggle hatch light
+description = Advanced light cargo SSTO.¨¨Payload mass must be precisely centered in the bay to prevent catastrophic degradation of flight characteristics.¨¨Pitches down under thrust in vacuum.¨¨1 - Toggle SABRE engine mode & intakes¨5 - Toggle solar panels¨6 - Toggle navigation lights¨7 - Toggle cargo bay doors¨8 - Toggle cargo bay light¨9 - Toggle cockpit light¨0 - Extent/retract ladder & toggle hatch light
 type = SPH
 PART
 {
-	part = B9.Cockpit.S3_4293517344
+	part = B9.Cockpit.S3_4292117058
 	partName = CommandPod
 	pos = 1.12754,10.54453,17.73816
 	rot = 0.7071068,0,0,0.7071068
@@ -15,11 +15,11 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Structure.L1.Ladder_4293517260
-	link = telescopicLadderBay_4293517198
-	link = B9.Cockpit.S2.Control.SAS_4293516846
-	link = B9.Utility.Light.N2.Red_4293516816
-	attN = bottom,B9.Cockpit.S2.Control.SAS_4293516846
+	link = B9.Structure.L1.Ladder_4292116974
+	link = telescopicLadderBay_4292116912
+	link = B9.Cockpit.S2.Control.SAS_4292116560
+	link = B9.Utility.Light.N2.Red_4292116530
+	attN = bottom,B9.Cockpit.S2.Control.SAS_4292116560
 	EVENTS
 	{
 	}
@@ -168,7 +168,7 @@ PART
 }
 PART
 {
-	part = B9.Structure.L1.Ladder_4293517260
+	part = B9.Structure.L1.Ladder_4292116974
 	partName = Part
 	pos = 1.710458,11.55325,15.6209
 	rot = -0.6426495,0.2734728,0.6382447,0.3238181
@@ -179,7 +179,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,B9.Cockpit.S3_4293517344
+	srfN = srfAttach,B9.Cockpit.S3_4292117058
 	EVENTS
 	{
 	}
@@ -221,10 +221,10 @@ PART
 }
 PART
 {
-	part = telescopicLadderBay_4293517198
+	part = telescopicLadderBay_4292116912
 	partName = Part
 	pos = 2.291887,10.63273,15.63054
-	rot = 5.9269E-08,0.9993613,4.214685E-08,0.03573513
+	rot = 5.926901E-08,0.9993614,4.214685E-08,0.03573513
 	attRot = 0,-4.214685E-08,-0.7071068,0.7071068
 	mir = 1,1,1
 	istg = 0
@@ -232,7 +232,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,B9.Cockpit.S3_4293517344
+	srfN = srfAttach,B9.Cockpit.S3_4292117058
 	EVENTS
 	{
 	}
@@ -288,7 +288,7 @@ PART
 }
 PART
 {
-	part = B9.Cockpit.S2.Control.SAS_4293516846
+	part = B9.Cockpit.S2.Control.SAS_4292116560
 	partName = Part
 	pos = 1.12754,10.54453,14.98816
 	rot = 0.7071068,0,0,0.7071068
@@ -299,10 +299,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Cockpit.S2.Body.6m_4293516778
-	link = B9.Utility.Landing.Gear.HDG2T_4293500164
-	attN = top,B9.Cockpit.S3_4293517344
-	attN = bottom,B9.Cockpit.S2.Body.6m_4293516778
+	link = B9.Cockpit.S2.Body.6m_4292116492
+	link = B9.Utility.Landing.Gear.HDG2T_4292109708
+	attN = top,B9.Cockpit.S3_4292117058
+	attN = bottom,B9.Cockpit.S2.Body.6m_4292116492
 	EVENTS
 	{
 	}
@@ -348,10 +348,10 @@ PART
 }
 PART
 {
-	part = B9.Utility.Light.N2.Red_4293516816
+	part = B9.Utility.Light.N2.Red_4292116530
 	partName = Part
 	pos = 1.12754,10.46463,21.65631
-	rot = 0.9709754,8.197731E-08,-9.104134E-09,0.2391793
+	rot = 0.9709755,8.197732E-08,-9.104135E-09,0.2391793
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -359,7 +359,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,B9.Cockpit.S3_4293517344
+	srfN = srfAttach,B9.Cockpit.S3_4292117058
 	EVENTS
 	{
 	}
@@ -415,7 +415,7 @@ PART
 }
 PART
 {
-	part = B9.Cockpit.S2.Body.6m_4293516778
+	part = B9.Cockpit.S2.Body.6m_4292116492
 	partName = Part
 	pos = 1.12754,10.54453,11.73815
 	rot = 0.7071068,0,0,0.7071068
@@ -426,16 +426,18 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Cockpit.S2.Body.LFO_4293516744
-	link = B9.Utility.DockingPort.CDP_4293515696
-	link = B9.Aero.Wing.SH.A35.4m_4293514604
-	link = B9.Aero.Wing.SH.A35.4m_4293514458
-	link = B9.Control.RCS.Block.R12_4293511936
-	link = B9.Control.RCS.Block.R12_4293511852
-	link = solarPanels2_4293510018
-	link = solarPanels2_4293509908
-	attN = top,B9.Cockpit.S2.Control.SAS_4293516846
-	attN = bottom,B9.Cockpit.S2.Body.LFO_4293516744
+	link = B9.Cockpit.S2.Body.LFO_4292116458
+	link = B9.Utility.DockingPort.CDP_4292115410
+	link = B9.Aero.Wing.SH.A35.4m_4292114318
+	link = B9.Aero.Wing.SH.A35.4m_4292114172
+	link = solarPanels2_4292109980
+	link = solarPanels2_4292109870
+	link = B9.Control.RCS.Block.R12_4292108758
+	link = B9.Control.RCS.Block.R12_4292108674
+	link = B9.Control.RCS.Port.R1_4292108350
+	link = B9.Control.RCS.Port.R1_4292108310
+	attN = top,B9.Cockpit.S2.Control.SAS_4292116560
+	attN = bottom,B9.Cockpit.S2.Body.LFO_4292116458
 	EVENTS
 	{
 	}
@@ -445,9 +447,9 @@ PART
 }
 PART
 {
-	part = B9.Cockpit.S2.Body.LFO_4293516744
+	part = B9.Cockpit.S2.Body.LFO_4292116458
 	partName = Part
-	pos = 1.12754,10.54453,7.738113
+	pos = 1.12754,10.54453,7.738106
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -456,9 +458,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Cockpit.S2.Body.LFO_4293516706
-	attN = top,B9.Cockpit.S2.Body.6m_4293516778
-	attN = bottom,B9.Cockpit.S2.Body.LFO_4293516706
+	link = B9.Cockpit.S2.Body.LFO_4292116420
+	attN = top,B9.Cockpit.S2.Body.6m_4292116492
+	attN = bottom,B9.Cockpit.S2.Body.LFO_4292116420
 	EVENTS
 	{
 	}
@@ -468,9 +470,9 @@ PART
 }
 PART
 {
-	part = B9.Cockpit.S2.Body.LFO_4293516706
+	part = B9.Cockpit.S2.Body.LFO_4292116420
 	partName = Part
-	pos = 1.12754,10.54453,5.738062
+	pos = 1.12754,10.54453,5.738047
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -479,14 +481,14 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Cockpit.S2.Body.Fuel_4293516668
-	link = B9.Aero.Wing.SH.S.4m_4293514312
-	link = B9.Aero.Wing.SH.S.4m_4293513964
-	link = solarPanels2_4293509578
-	link = solarPanels2_4293509468
-	link = rtg_4293509358
-	attN = top,B9.Cockpit.S2.Body.LFO_4293516744
-	attN = bottom,B9.Cockpit.S2.Body.Fuel_4293516668
+	link = B9.Cockpit.S2.Body.Fuel_4292116382
+	link = B9.Aero.Wing.SH.S.4m_4292114026
+	link = B9.Aero.Wing.SH.S.4m_4292113678
+	link = rtg_4292109760
+	link = solarPanels2_4292108978
+	link = solarPanels2_4292108868
+	attN = top,B9.Cockpit.S2.Body.LFO_4292116458
+	attN = bottom,B9.Cockpit.S2.Body.Fuel_4292116382
 	EVENTS
 	{
 	}
@@ -496,9 +498,9 @@ PART
 }
 PART
 {
-	part = B9.Cockpit.S2.Body.Fuel_4293516668
+	part = B9.Cockpit.S2.Body.Fuel_4292116382
 	partName = Part
-	pos = 1.12754,10.54453,3.737901
+	pos = 1.12754,10.54453,3.737885
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -507,15 +509,15 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Utility.Light.N1.Large.White_4293516632
-	link = B9.Cockpit.S2.Body.Cargo.2m_4293516594
-	link = B9.Utility.InfoDrive_4293515722
-	link = B9.Aero.Wing.SH.S.2m_4293512540
-	link = B9.Aero.Wing.SH.S.2m_4293512394
-	link = fuelLine_4293510338
-	link = fuelLine_4293510258
-	attN = top,B9.Cockpit.S2.Body.LFO_4293516706
-	attN = bottom,B9.Cockpit.S2.Body.Cargo.2m_4293516594
+	link = B9.Utility.Light.N1.Large.White_4292116346
+	link = B9.Cockpit.S2.Body.Cargo.2m_4292116308
+	link = B9.Utility.InfoDrive_4292115436
+	link = B9.Aero.Wing.SH.S.2m_4292112254
+	link = B9.Aero.Wing.SH.S.2m_4292112108
+	link = fuelLine_4292110220
+	link = fuelLine_4292110140
+	attN = top,B9.Cockpit.S2.Body.LFO_4292116420
+	attN = bottom,B9.Cockpit.S2.Body.Cargo.2m_4292116308
 	EVENTS
 	{
 	}
@@ -525,9 +527,9 @@ PART
 }
 PART
 {
-	part = B9.Utility.Light.N1.Large.White_4293516632
+	part = B9.Utility.Light.N1.Large.White_4292116346
 	partName = Part
-	pos = 1.12754,11.28014,2.747892
+	pos = 1.12754,11.28014,2.747877
 	rot = 3.090862E-08,-0.7071068,0.7071068,3.090862E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -536,7 +538,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,B9.Cockpit.S2.Body.Fuel_4293516668
+	srfN = srfAttach,B9.Cockpit.S2.Body.Fuel_4292116382
 	EVENTS
 	{
 	}
@@ -592,9 +594,9 @@ PART
 }
 PART
 {
-	part = B9.Cockpit.S2.Body.Cargo.2m_4293516594
+	part = B9.Cockpit.S2.Body.Cargo.2m_4292116308
 	partName = Part
-	pos = 1.12754,10.54453,1.73789
+	pos = 1.12754,10.54453,1.737875
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -603,12 +605,14 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Cockpit.S2.Body.Cargo.2m_4293516428
-	link = B9.Control.RCS.Tank.MT4_4293515782
-	link = B9.Control.RCS.Tank.MT4_4293515752
-	link = dockingPort2_4293511768
-	attN = top,dockingPort2_4293511768
-	attN = bottom,B9.Cockpit.S2.Body.Cargo.2m_4293516428
+	link = B9.Cockpit.S2.Body.Cargo.2m_4292116142
+	link = B9.Control.RCS.Tank.MT4_4292115496
+	link = B9.Control.RCS.Tank.MT4_4292115466
+	link = dockingPort2_4292111650
+	link = B9.Control.RCS.Port.R1_4292108510
+	link = B9.Control.RCS.Port.R1_4292108470
+	attN = top,dockingPort2_4292111650
+	attN = bottom,B9.Cockpit.S2.Body.Cargo.2m_4292116142
 	EVENTS
 	{
 	}
@@ -650,9 +654,9 @@ PART
 }
 PART
 {
-	part = B9.Cockpit.S2.Body.Cargo.2m_4293516428
+	part = B9.Cockpit.S2.Body.Cargo.2m_4292116142
 	partName = Part
-	pos = 1.12754,10.54453,-0.2621486
+	pos = 1.12754,10.54453,-0.2621632
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -661,13 +665,13 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Cockpit.S2.Body.Fuel_4293516262
-	link = B9.Control.RCS.Tank.MT4_4293515842
-	link = B9.Control.RCS.Tank.MT4_4293515812
-	link = B9.Aero.Wing.SH.S.4m_4293513616
-	link = B9.Aero.Wing.SH.S.4m_4293513078
-	attN = top,B9.Cockpit.S2.Body.Cargo.2m_4293516594
-	attN = bottom,B9.Cockpit.S2.Body.Fuel_4293516262
+	link = B9.Cockpit.S2.Body.Fuel_4292115976
+	link = B9.Control.RCS.Tank.MT4_4292115556
+	link = B9.Control.RCS.Tank.MT4_4292115526
+	link = B9.Aero.Wing.SH.S.4m_4292113330
+	link = B9.Aero.Wing.SH.S.4m_4292112792
+	attN = top,B9.Cockpit.S2.Body.Cargo.2m_4292116308
+	attN = bottom,B9.Cockpit.S2.Body.Fuel_4292115976
 	EVENTS
 	{
 	}
@@ -709,9 +713,9 @@ PART
 }
 PART
 {
-	part = B9.Cockpit.S2.Body.Fuel_4293516262
+	part = B9.Cockpit.S2.Body.Fuel_4292115976
 	partName = Part
-	pos = 1.12754,10.54453,-2.262157
+	pos = 1.12754,10.54453,-2.262173
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -720,9 +724,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Cockpit.S2.Body.LFO_4293516226
-	attN = top,B9.Cockpit.S2.Body.Cargo.2m_4293516428
-	attN = bottom,B9.Cockpit.S2.Body.LFO_4293516226
+	link = B9.Cockpit.S2.Body.LFO_4292115940
+	attN = top,B9.Cockpit.S2.Body.Cargo.2m_4292116142
+	attN = bottom,B9.Cockpit.S2.Body.LFO_4292115940
 	EVENTS
 	{
 	}
@@ -732,9 +736,9 @@ PART
 }
 PART
 {
-	part = B9.Cockpit.S2.Body.LFO_4293516226
+	part = B9.Cockpit.S2.Body.LFO_4292115940
 	partName = Part
-	pos = 1.12754,10.54453,-4.262135
+	pos = 1.12754,10.54453,-4.26215
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -743,12 +747,12 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Cockpit.S2.Body.LFO_4293516188
-	link = B9.Engine.SABRE.M_4293515596
-	link = B9.Engine.SABRE.M_4293515100
-	link = rtg_4293509332
-	attN = top,B9.Cockpit.S2.Body.Fuel_4293516262
-	attN = bottom,B9.Cockpit.S2.Body.LFO_4293516188
+	link = B9.Cockpit.S2.Body.LFO_4292115902
+	link = B9.Engine.SABRE.M_4292115310
+	link = B9.Engine.SABRE.M_4292114814
+	link = rtg_4292109734
+	attN = top,B9.Cockpit.S2.Body.Fuel_4292115976
+	attN = bottom,B9.Cockpit.S2.Body.LFO_4292115902
 	EVENTS
 	{
 	}
@@ -758,9 +762,9 @@ PART
 }
 PART
 {
-	part = B9.Cockpit.S2.Body.LFO_4293516188
+	part = B9.Cockpit.S2.Body.LFO_4292115902
 	partName = Part
-	pos = 1.12754,10.54453,-6.262222
+	pos = 1.12754,10.54453,-6.262251
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -769,9 +773,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Cockpit.S2.Body.Tail.2_4293516150
-	attN = top,B9.Cockpit.S2.Body.LFO_4293516226
-	attN = bottom,B9.Cockpit.S2.Body.Tail.2_4293516150
+	link = B9.Cockpit.S2.Body.Tail.2_4292115864
+	attN = top,B9.Cockpit.S2.Body.LFO_4292115940
+	attN = bottom,B9.Cockpit.S2.Body.Tail.2_4292115864
 	EVENTS
 	{
 	}
@@ -781,9 +785,9 @@ PART
 }
 PART
 {
-	part = B9.Cockpit.S2.Body.Tail.2_4293516150
+	part = B9.Cockpit.S2.Body.Tail.2_4292115864
 	partName = Part
-	pos = 1.12754,10.54453,-9.26223
+	pos = 1.12754,10.54453,-9.262259
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -792,11 +796,13 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Aero.Wing.SH.A35.4m_4293516116
-	link = B9.Control.RCS.Block.R12_4293516048
-	link = B9.Control.RCS.Block.R12_4293515964
-	link = B9.Utility.Light.N2.Red_4293515880
-	attN = top,B9.Cockpit.S2.Body.LFO_4293516188
+	link = B9.Aero.Wing.SH.A35.4m_4292115830
+	link = B9.Control.RCS.Block.R12_4292115762
+	link = B9.Control.RCS.Block.R12_4292115678
+	link = B9.Utility.Light.N2.Red_4292115594
+	link = B9.Control.RCS.Port.R1_4292108430
+	link = B9.Control.RCS.Port.R1_4292108390
+	attN = top,B9.Cockpit.S2.Body.LFO_4292115902
 	EVENTS
 	{
 	}
@@ -806,10 +812,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SH.A35.4m_4293516116
+	part = B9.Aero.Wing.SH.A35.4m_4292115830
 	partName = Winglet
-	pos = 1.12754,11.62995,-9.023489
-	rot = 0.5,-0.5,-0.5,0.5
+	pos = 1.12754,11.62995,-9.023518
+	rot = 0.5000001,-0.5000001,-0.5000001,0.5000001
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -817,12 +823,12 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = B9.Aero.Wing.ControlSurface.SE.4m_4293516082
-	link = B9.Aero.Wing.SW.Winglet.6x5m_4293512248
-	link = B9.Aero.Wing.SW.Winglet.6x5m_4293512148
-	link = strutConnector_4293512048
-	link = strutConnector_4293511992
-	srfN = srfAttach,B9.Cockpit.S2.Body.Tail.2_4293516150
+	link = B9.Aero.Wing.ControlSurface.SE.4m_4292115796
+	link = B9.Aero.Wing.SW.Winglet.6x5m_4292111962
+	link = B9.Aero.Wing.SW.Winglet.6x5m_4292111862
+	link = strutConnector_4292111762
+	link = strutConnector_4292111706
+	srfN = srfAttach,B9.Cockpit.S2.Body.Tail.2_4292115864
 	EVENTS
 	{
 	}
@@ -832,10 +838,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.ControlSurface.SE.4m_4293516082
+	part = B9.Aero.Wing.ControlSurface.SE.4m_4292115796
 	partName = ControlSurface
-	pos = 1.12754,13.6409,-12.02354
-	rot = -0.5000001,0.5000001,0.4999999,-0.4999999
+	pos = 1.12754,13.6409,-12.02357
+	rot = -0.5000002,0.5000002,0.4999999,-0.4999999
 	attRot = 0,0.7071068,-4.214685E-08,0.7071068
 	mir = 1,1,1
 	istg = 0
@@ -843,7 +849,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4293516116
+	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4292115830
 	EVENTS
 	{
 	}
@@ -853,9 +859,9 @@ PART
 }
 PART
 {
-	part = B9.Control.RCS.Block.R12_4293516048
+	part = B9.Control.RCS.Block.R12_4292115762
 	partName = Part
-	pos = -0.06570089,10.54453,-7.712172
+	pos = -0.06570089,10.54453,-7.7122
 	rot = -0.7071068,0.7071068,0,0
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -864,8 +870,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Control.RCS.Block.R12_4293515964
-	srfN = srfAttach,B9.Cockpit.S2.Body.Tail.2_4293516150
+	sym = B9.Control.RCS.Block.R12_4292115678
+	srfN = srfAttach,B9.Cockpit.S2.Body.Tail.2_4292115864
 	EVENTS
 	{
 	}
@@ -913,9 +919,9 @@ PART
 }
 PART
 {
-	part = B9.Control.RCS.Block.R12_4293515964
+	part = B9.Control.RCS.Block.R12_4292115678
 	partName = Part
-	pos = 2.320781,10.54453,-7.712172
+	pos = 2.320781,10.54453,-7.7122
 	rot = 0.7071068,0.7071068,0,0
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -924,8 +930,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Control.RCS.Block.R12_4293516048
-	srfN = srfAttach,B9.Cockpit.S2.Body.Tail.2_4293516150
+	sym = B9.Control.RCS.Block.R12_4292115762
+	srfN = srfAttach,B9.Cockpit.S2.Body.Tail.2_4292115864
 	EVENTS
 	{
 	}
@@ -973,10 +979,10 @@ PART
 }
 PART
 {
-	part = B9.Utility.Light.N2.Red_4293515880
+	part = B9.Utility.Light.N2.Red_4292115594
 	partName = Part
-	pos = 1.12754,10.92483,-13.31615
-	rot = 0.9570923,-1.277147E-07,-3.875742E-07,-0.2897834
+	pos = 1.12754,10.92483,-13.31618
+	rot = 0.9570924,-1.277147E-07,-3.875743E-07,-0.2897834
 	attRot = -0.9999999,0,0,0
 	mir = 1,1,1
 	istg = 0
@@ -984,7 +990,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,B9.Cockpit.S2.Body.Tail.2_4293516150
+	srfN = srfAttach,B9.Cockpit.S2.Body.Tail.2_4292115864
 	EVENTS
 	{
 	}
@@ -1040,9 +1046,9 @@ PART
 }
 PART
 {
-	part = B9.Control.RCS.Tank.MT4_4293515842
+	part = B9.Control.RCS.Tank.MT4_4292115556
 	partName = Part
-	pos = -0.06481278,10.54453,-0.8625382
+	pos = -0.06481278,10.54453,-0.8625526
 	rot = -0.7071068,0.7071068,0,0
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1051,8 +1057,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Control.RCS.Tank.MT4_4293515812
-	srfN = srfAttach,B9.Cockpit.S2.Body.Cargo.2m_4293516428
+	sym = B9.Control.RCS.Tank.MT4_4292115526
+	srfN = srfAttach,B9.Cockpit.S2.Body.Cargo.2m_4292116142
 	EVENTS
 	{
 	}
@@ -1062,9 +1068,9 @@ PART
 }
 PART
 {
-	part = B9.Control.RCS.Tank.MT4_4293515812
+	part = B9.Control.RCS.Tank.MT4_4292115526
 	partName = Part
-	pos = 2.319893,10.54453,-0.8625382
+	pos = 2.319893,10.54453,-0.8625526
 	rot = 0.7071068,0.7071068,0,0
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1073,8 +1079,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Control.RCS.Tank.MT4_4293515842
-	srfN = srfAttach,B9.Cockpit.S2.Body.Cargo.2m_4293516428
+	sym = B9.Control.RCS.Tank.MT4_4292115556
+	srfN = srfAttach,B9.Cockpit.S2.Body.Cargo.2m_4292116142
 	EVENTS
 	{
 	}
@@ -1084,9 +1090,9 @@ PART
 }
 PART
 {
-	part = B9.Control.RCS.Tank.MT4_4293515782
+	part = B9.Control.RCS.Tank.MT4_4292115496
 	partName = Part
-	pos = -0.06787252,10.54453,2.342613
+	pos = -0.06787252,10.54453,2.342598
 	rot = -0.7071068,0.7071068,0,0
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1095,8 +1101,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Control.RCS.Tank.MT4_4293515752
-	srfN = srfAttach,B9.Cockpit.S2.Body.Cargo.2m_4293516594
+	sym = B9.Control.RCS.Tank.MT4_4292115466
+	srfN = srfAttach,B9.Cockpit.S2.Body.Cargo.2m_4292116308
 	EVENTS
 	{
 	}
@@ -1106,9 +1112,9 @@ PART
 }
 PART
 {
-	part = B9.Control.RCS.Tank.MT4_4293515752
+	part = B9.Control.RCS.Tank.MT4_4292115466
 	partName = Part
-	pos = 2.322953,10.54453,2.342613
+	pos = 2.322953,10.54453,2.342598
 	rot = 0.7071068,0.7071068,0,0
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1117,8 +1123,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Control.RCS.Tank.MT4_4293515782
-	srfN = srfAttach,B9.Cockpit.S2.Body.Cargo.2m_4293516594
+	sym = B9.Control.RCS.Tank.MT4_4292115496
+	srfN = srfAttach,B9.Cockpit.S2.Body.Cargo.2m_4292116308
 	EVENTS
 	{
 	}
@@ -1128,10 +1134,10 @@ PART
 }
 PART
 {
-	part = B9.Utility.InfoDrive_4293515722
+	part = B9.Utility.InfoDrive_4292115436
 	partName = Part
-	pos = 1.106028,9.834221,2.747894
-	rot = 0.4999999,0.5000001,-0.5000001,-0.4999999
+	pos = 1.106028,9.834221,2.747879
+	rot = 0.4999999,0.5000002,-0.5000002,-0.4999999
 	attRot = 0,-4.214685E-08,-0.7071068,0.7071068
 	mir = 1,1,1
 	istg = 0
@@ -1139,7 +1145,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,B9.Cockpit.S2.Body.Fuel_4293516668
+	srfN = srfAttach,B9.Cockpit.S2.Body.Fuel_4292116382
 	EVENTS
 	{
 	}
@@ -1195,7 +1201,7 @@ PART
 }
 PART
 {
-	part = B9.Utility.DockingPort.CDP_4293515696
+	part = B9.Utility.DockingPort.CDP_4292115410
 	partName = Part
 	pos = 1.12754,11.62708,13.68187
 	rot = 1.192488E-08,-1,0,0
@@ -1206,7 +1212,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,B9.Cockpit.S2.Body.6m_4293516778
+	srfN = srfAttach,B9.Cockpit.S2.Body.6m_4292116492
 	EVENTS
 	{
 	}
@@ -1358,9 +1364,9 @@ PART
 }
 PART
 {
-	part = B9.Engine.SABRE.M_4293515596
+	part = B9.Engine.SABRE.M_4292115310
 	partName = Part
-	pos = -1.315678,10.54453,-4.827953
+	pos = -1.315678,10.54453,-4.827969
 	rot = -0.5000001,-0.4999999,-0.5000002,-0.5000001
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1369,16 +1375,15 @@ PART
 	sidx = 1
 	sqor = 0
 	attm = 1
-	link = strutConnector_4293515456
-	link = strutConnector_4293515400
-	link = B9.Aero.AirBrake.Surface_4293515344
-	link = B9.Aero.AirBrake.Surface_4293515288
-	link = B9.Aero.AirBrake.Surface_4293515232
-	link = B9.Engine.SABRE.Intake.M_4293515176
-	link = solarPanels2_4293509798
-	sym = B9.Engine.SABRE.M_4293515100
-	srfN = srfAttach,B9.Cockpit.S2.Body.LFO_4293516226
-	attN = top,B9.Engine.SABRE.Intake.M_4293515176
+	link = strutConnector_4292115170
+	link = strutConnector_4292115114
+	link = B9.Aero.AirBrake.Surface_4292115058
+	link = B9.Aero.AirBrake.Surface_4292115002
+	link = B9.Aero.AirBrake.Surface_4292114946
+	link = B9.Engine.SABRE.Intake.M_4292114890
+	sym = B9.Engine.SABRE.M_4292114814
+	srfN = srfAttach,B9.Cockpit.S2.Body.LFO_4292115940
+	attN = top,B9.Engine.SABRE.Intake.M_4292114890
 	EVENTS
 	{
 	}
@@ -1525,10 +1530,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293515456
+	part = strutConnector_4292115170
 	partName = StrutConnector
-	pos = -0.2364386,9.85128,-5.093105
-	rot = 0.09036897,0.7013083,0.6825078,0.1848877
+	pos = -0.2364382,9.85128,-5.093121
+	rot = 0.09036899,0.7013083,0.6825078,0.1848877
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1536,9 +1541,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.LFO_12; pos: -0.07135854,0.4456151,0.4243172; dir: -0.1151977,0.7193836,0.6849974
-	sym = strutConnector_4293514960
-	srfN = srfAttach,B9.Engine.SABRE.M_4293515596
+	cData = tgt: B9.Cockpit.S2.Body.LFO_12; pos: -0.07135812,0.4456094,0.4243154; dir: -0.1151977,0.7193836,0.6849974
+	sym = strutConnector_4292114674
+	srfN = srfAttach,B9.Engine.SABRE.M_4292115310
 	EVENTS
 	{
 	}
@@ -1548,9 +1553,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4293515400
+	part = strutConnector_4292115114
 	partName = StrutConnector
-	pos = -0.2090544,10.01246,-4.282656
+	pos = -0.2090539,10.01246,-4.282671
 	rot = 0.1379489,0.6935201,0.6935201,0.1379492
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1559,9 +1564,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.LFO_12; pos: -0.05377594,0.3525142,0.2473265; dir: -0.1239162,0.81231,0.5699172
-	sym = strutConnector_4293514904
-	srfN = srfAttach,B9.Engine.SABRE.M_4293515596
+	cData = tgt: B9.Cockpit.S2.Body.LFO_12; pos: -0.05377582,0.3525085,0.2473255; dir: -0.1239162,0.81231,0.5699172
+	sym = strutConnector_4292114618
+	srfN = srfAttach,B9.Engine.SABRE.M_4292115310
 	EVENTS
 	{
 	}
@@ -1571,10 +1576,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.AirBrake.Surface_4293515344
+	part = B9.Aero.AirBrake.Surface_4292115058
 	partName = Part
-	pos = -2.541662,10.54554,-4.351078
-	rot = 0.7071068,-0.7071068,-1.017515E-07,-2.143499E-07
+	pos = -2.541662,10.54554,-4.351093
+	rot = 0.7071069,-0.7071069,-1.053671E-07,-1.896608E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1582,8 +1587,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Aero.AirBrake.Surface_4293514848
-	srfN = srfAttach,B9.Engine.SABRE.M_4293515596
+	sym = B9.Aero.AirBrake.Surface_4292114562
+	srfN = srfAttach,B9.Engine.SABRE.M_4292115310
 	EVENTS
 	{
 	}
@@ -1628,10 +1633,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.AirBrake.Surface_4293515288
+	part = B9.Aero.AirBrake.Surface_4292115002
 	partName = Part
-	pos = -2.439541,10.05412,-4.339534
-	rot = 0.8314697,-0.5555702,-2.928234E-08,-1.8265E-07
+	pos = -2.439541,10.05412,-4.33955
+	rot = 0.8314698,-0.5555702,-4.214685E-08,-1.685874E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1639,8 +1644,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Aero.AirBrake.Surface_4293514792
-	srfN = srfAttach,B9.Engine.SABRE.M_4293515596
+	sym = B9.Aero.AirBrake.Surface_4292114506
+	srfN = srfAttach,B9.Engine.SABRE.M_4292115310
 	EVENTS
 	{
 	}
@@ -1685,10 +1690,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.AirBrake.Surface_4293515232
+	part = B9.Aero.AirBrake.Surface_4292114946
 	partName = Part
-	pos = -2.44747,11.01579,-4.3409
-	rot = -0.5555713,0.8314689,1.271795E-07,1.304961E-07
+	pos = -2.44747,11.01579,-4.340916
+	rot = -0.5555713,0.8314691,1.264406E-07,6.322028E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1696,8 +1701,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Aero.AirBrake.Surface_4293514736
-	srfN = srfAttach,B9.Engine.SABRE.M_4293515596
+	sym = B9.Aero.AirBrake.Surface_4292114450
+	srfN = srfAttach,B9.Engine.SABRE.M_4292115310
 	EVENTS
 	{
 	}
@@ -1742,10 +1747,10 @@ PART
 }
 PART
 {
-	part = B9.Engine.SABRE.Intake.M_4293515176
+	part = B9.Engine.SABRE.Intake.M_4292114890
 	partName = Part
-	pos = -1.315678,10.54453,-3.577957
-	rot = 0.7071068,-2.107346E-08,-4.214681E-08,0.7071068
+	pos = -1.315678,10.54453,-3.577972
+	rot = 0.7071069,1.807737E-09,-6.141239E-08,0.7071069
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1753,8 +1758,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	sym = B9.Engine.SABRE.Intake.M_4293514680
-	attN = bottom01,B9.Engine.SABRE.M_4293515596
+	sym = B9.Engine.SABRE.Intake.M_4292114394
+	attN = bottom01,B9.Engine.SABRE.M_4292115310
 	EVENTS
 	{
 	}
@@ -1814,10 +1819,10 @@ PART
 }
 PART
 {
-	part = B9.Engine.SABRE.M_4293515100
+	part = B9.Engine.SABRE.M_4292114814
 	partName = Part
-	pos = 3.570757,10.54453,-4.827953
-	rot = 0.5000001,-0.4999999,-0.5000001,0.4999999
+	pos = 3.570757,10.54453,-4.827969
+	rot = 0.5000002,-0.5,-0.5000002,0.5
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1825,16 +1830,15 @@ PART
 	sidx = 1
 	sqor = 0
 	attm = 1
-	link = strutConnector_4293514960
-	link = strutConnector_4293514904
-	link = B9.Aero.AirBrake.Surface_4293514848
-	link = B9.Aero.AirBrake.Surface_4293514792
-	link = B9.Aero.AirBrake.Surface_4293514736
-	link = B9.Engine.SABRE.Intake.M_4293514680
-	link = solarPanels2_4293509688
-	sym = B9.Engine.SABRE.M_4293515596
-	srfN = srfAttach,B9.Cockpit.S2.Body.LFO_4293516226
-	attN = top,B9.Engine.SABRE.Intake.M_4293514680
+	link = strutConnector_4292114674
+	link = strutConnector_4292114618
+	link = B9.Aero.AirBrake.Surface_4292114562
+	link = B9.Aero.AirBrake.Surface_4292114506
+	link = B9.Aero.AirBrake.Surface_4292114450
+	link = B9.Engine.SABRE.Intake.M_4292114394
+	sym = B9.Engine.SABRE.M_4292115310
+	srfN = srfAttach,B9.Cockpit.S2.Body.LFO_4292115940
+	attN = top,B9.Engine.SABRE.Intake.M_4292114394
 	EVENTS
 	{
 	}
@@ -1981,10 +1985,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293514960
+	part = strutConnector_4292114674
 	partName = StrutConnector
-	pos = 2.491521,9.85128,-5.093105
-	rot = -0.682508,-0.1848877,-0.0903689,-0.701308
+	pos = 2.491521,9.85128,-5.093121
+	rot = -0.6825081,-0.1848877,-0.0903689,-0.7013081
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1992,9 +1996,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.LFO_12; pos: -0.0713593,0.4456186,-0.4243228; dir: -0.1151977,0.719383,-0.6849985
-	sym = strutConnector_4293515456
-	srfN = srfAttach,B9.Engine.SABRE.M_4293515100
+	cData = tgt: B9.Cockpit.S2.Body.LFO_12; pos: -0.07135924,0.4456147,-0.424322; dir: -0.1151977,0.719383,-0.6849985
+	sym = strutConnector_4292115170
+	srfN = srfAttach,B9.Engine.SABRE.M_4292114814
 	EVENTS
 	{
 	}
@@ -2004,10 +2008,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293514904
+	part = strutConnector_4292114618
 	partName = StrutConnector
-	pos = 2.464137,10.01246,-4.282656
-	rot = -0.6935204,-0.1379493,-0.1379489,-0.6935198
+	pos = 2.464137,10.01246,-4.282671
+	rot = -0.6935205,-0.1379493,-0.1379489,-0.6935199
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2015,9 +2019,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.LFO_12; pos: -0.0537767,0.3525197,-0.2473314; dir: -0.1239161,0.8123098,-0.5699184
-	sym = strutConnector_4293515400
-	srfN = srfAttach,B9.Engine.SABRE.M_4293515100
+	cData = tgt: B9.Cockpit.S2.Body.LFO_12; pos: -0.05377728,0.3525159,-0.2473306; dir: -0.1239161,0.8123098,-0.5699184
+	sym = strutConnector_4292115114
+	srfN = srfAttach,B9.Engine.SABRE.M_4292114814
 	EVENTS
 	{
 	}
@@ -2027,10 +2031,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.AirBrake.Surface_4293514848
+	part = B9.Aero.AirBrake.Surface_4292114562
 	partName = Part
-	pos = 4.796741,10.54554,-4.351078
-	rot = 0.7071069,0.7071066,-7.194915E-08,1.234445E-08
+	pos = 4.796741,10.54554,-4.351093
+	rot = 0.7071071,0.7071068,-1.264406E-07,8.42937E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2038,65 +2042,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Aero.AirBrake.Surface_4293515344
-	srfN = srfAttach,B9.Engine.SABRE.M_4293515100
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = FSairBrake
-		isEnabled = True
-		targetAngle = 0
-		EVENTS
-		{
-			toggleAltInputMode
-			{
-				active = True
-				guiActive = True
-				guiIcon = toggle Air Brake
-				guiName = toggle Air Brake
-				category = toggle Air Brake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			toggleAirBrakeAction
-			{
-				actionGroup = Brakes
-			}
-			raiseAirBrakeAction
-			{
-				actionGroup = None
-			}
-			lowerAirBrakeAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = B9.Aero.AirBrake.Surface_4293514792
-	partName = Part
-	pos = 4.694624,10.05412,-4.339535
-	rot = 0.8314697,0.5555701,-1.15067E-07,-1.21304E-07
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	sym = B9.Aero.AirBrake.Surface_4293515288
-	srfN = srfAttach,B9.Engine.SABRE.M_4293515100
+	sym = B9.Aero.AirBrake.Surface_4292115058
+	srfN = srfAttach,B9.Engine.SABRE.M_4292114814
 	EVENTS
 	{
 	}
@@ -2141,10 +2088,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.AirBrake.Surface_4293514736
+	part = B9.Aero.AirBrake.Surface_4292114506
 	partName = Part
-	pos = 4.702551,11.01579,-4.3409
-	rot = 0.5555714,0.8314689,-5.005949E-08,-1.308024E-07
+	pos = 4.694624,10.05412,-4.33955
+	rot = 0.8314699,0.5555702,-1.264406E-07,-1.264406E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2152,8 +2099,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Aero.AirBrake.Surface_4293515232
-	srfN = srfAttach,B9.Engine.SABRE.M_4293515100
+	sym = B9.Aero.AirBrake.Surface_4292115002
+	srfN = srfAttach,B9.Engine.SABRE.M_4292114814
 	EVENTS
 	{
 	}
@@ -2198,10 +2145,67 @@ PART
 }
 PART
 {
-	part = B9.Engine.SABRE.Intake.M_4293514680
+	part = B9.Aero.AirBrake.Surface_4292114450
 	partName = Part
-	pos = 3.570758,10.54453,-3.577957
-	rot = 0.7071071,1.053672E-07,-1.053671E-07,0.7071065
+	pos = 4.702551,11.01579,-4.340916
+	rot = 0.5555716,0.831469,-1.264406E-07,-1.264406E-07
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = B9.Aero.AirBrake.Surface_4292114946
+	srfN = srfAttach,B9.Engine.SABRE.M_4292114814
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSairBrake
+		isEnabled = True
+		targetAngle = 0
+		EVENTS
+		{
+			toggleAltInputMode
+			{
+				active = True
+				guiActive = True
+				guiIcon = toggle Air Brake
+				guiName = toggle Air Brake
+				category = toggle Air Brake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleAirBrakeAction
+			{
+				actionGroup = Brakes
+			}
+			raiseAirBrakeAction
+			{
+				actionGroup = None
+			}
+			lowerAirBrakeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = B9.Engine.SABRE.Intake.M_4292114394
+	partName = Part
+	pos = 3.570758,10.54453,-3.577972
+	rot = 0.7071072,1.053672E-07,-1.053671E-07,0.7071066
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2209,8 +2213,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	sym = B9.Engine.SABRE.Intake.M_4293515176
-	attN = bottom01,B9.Engine.SABRE.M_4293515100
+	sym = B9.Engine.SABRE.Intake.M_4292114890
+	attN = bottom01,B9.Engine.SABRE.M_4292114814
 	EVENTS
 	{
 	}
@@ -2270,7 +2274,7 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SH.A35.4m_4293514604
+	part = B9.Aero.Wing.SH.A35.4m_4292114318
 	partName = Winglet
 	pos = 1.12754,9.461841,11.1715
 	rot = -0.7071068,-1.967039E-08,-6.181725E-08,-0.7071069
@@ -2281,12 +2285,12 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = strutConnector_4293514570
-	link = strutConnector_4293514514
-	link = strutConnector_4293511730
-	link = strutConnector_4293511618
-	sym = B9.Aero.Wing.SH.A35.4m_4293514458
-	srfN = srfAttach,B9.Cockpit.S2.Body.6m_4293516778
+	link = strutConnector_4292114284
+	link = strutConnector_4292114228
+	link = strutConnector_4292111612
+	link = strutConnector_4292111500
+	sym = B9.Aero.Wing.SH.A35.4m_4292114172
+	srfN = srfAttach,B9.Cockpit.S2.Body.6m_4292116492
 	EVENTS
 	{
 	}
@@ -2296,10 +2300,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293514570
+	part = strutConnector_4292114284
 	partName = StrutConnector
 	pos = 0.2123977,9.711841,12.22698
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	rot = -0.5000002,0.4999999,0.5000002,-0.4999999
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2307,9 +2311,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.6m_4; pos: -0.1076317,0.02466007,-0.00719837; dir: -0.9726763,0.2228722,-0.06505223
-	sym = strutConnector_4293514424
-	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4293514604
+	cData = tgt: B9.Cockpit.S2.Body.6m_4; pos: -0.1076317,0.02465813,-0.007198379; dir: -0.9726763,0.2228722,-0.06505223
+	sym = strutConnector_4292114138
+	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4292114318
 	EVENTS
 	{
 	}
@@ -2319,10 +2323,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293514514
+	part = strutConnector_4292114228
 	partName = StrutConnector
-	pos = -0.4679419,9.440316,8.171413
-	rot = 0.7071068,-5.018628E-09,0.7071068,-1.287692E-06
+	pos = -0.4679419,9.440316,8.171405
+	rot = 0.7071068,-2.107343E-08,0.7071068,-1.411919E-06
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2330,8 +2334,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = strutConnector_4293514368
-	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4293514604
+	sym = strutConnector_4292114082
+	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4292114318
 	EVENTS
 	{
 	}
@@ -2341,7 +2345,7 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SH.A35.4m_4293514458
+	part = B9.Aero.Wing.SH.A35.4m_4292114172
 	partName = Winglet
 	pos = 1.12754,9.461841,11.1715
 	rot = 3.090863E-08,0.7071069,0.7071068,-1.123823E-08
@@ -2352,12 +2356,12 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = strutConnector_4293514424
-	link = strutConnector_4293514368
-	link = strutConnector_4293511674
-	link = strutConnector_4293511562
-	sym = B9.Aero.Wing.SH.A35.4m_4293514604
-	srfN = srfAttach,B9.Cockpit.S2.Body.6m_4293516778
+	link = strutConnector_4292114138
+	link = strutConnector_4292114082
+	link = strutConnector_4292111556
+	link = strutConnector_4292111444
+	sym = B9.Aero.Wing.SH.A35.4m_4292114318
+	srfN = srfAttach,B9.Cockpit.S2.Body.6m_4292116492
 	EVENTS
 	{
 	}
@@ -2367,7 +2371,7 @@ PART
 }
 PART
 {
-	part = strutConnector_4293514424
+	part = strutConnector_4292114138
 	partName = StrutConnector
 	pos = 2.042683,9.71184,12.22698
 	rot = -0.5000005,0.4999997,0.5000002,-0.4999998
@@ -2378,9 +2382,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.6m_4; pos: -0.1076327,0.02465997,0.007198526; dir: -0.9726767,0.2228717,0.06505209
-	sym = strutConnector_4293514570
-	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4293514458
+	cData = tgt: B9.Cockpit.S2.Body.6m_4; pos: -0.1076327,0.02465806,0.007198514; dir: -0.9726767,0.2228717,0.06505209
+	sym = strutConnector_4292114284
+	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4292114172
 	EVENTS
 	{
 	}
@@ -2390,10 +2394,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293514368
+	part = strutConnector_4292114082
 	partName = StrutConnector
-	pos = 2.723023,9.440318,8.171413
-	rot = 0.7071068,-1.277856E-06,0.7071068,-5.20616E-07
+	pos = 2.723023,9.440318,8.171405
+	rot = 0.7071068,-1.327626E-06,0.7071068,-6.322028E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2401,8 +2405,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = strutConnector_4293514514
-	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4293514458
+	sym = strutConnector_4292114228
+	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4292114172
 	EVENTS
 	{
 	}
@@ -2412,9 +2416,9 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SH.S.4m_4293514312
+	part = B9.Aero.Wing.SH.S.4m_4292114026
 	partName = Winglet
-	pos = 1.12754,9.46171,6.17095
+	pos = 1.12754,9.46171,6.170938
 	rot = -0.7071068,-1.967039E-08,-6.181725E-08,-0.7071069
 	attRot = 0,-4.214685E-08,-0.7071068,0.7071068
 	mir = 1,1,1
@@ -2423,15 +2427,15 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = strutConnector_4293514278
-	link = strutConnector_4293514222
-	link = strutConnector_4293514166
-	link = strutConnector_4293514110
-	link = B9.Aero.Wing.SH.A35.4m_4293514054
-	link = strutConnector_4293511506
-	link = strutConnector_4293511170
-	sym = B9.Aero.Wing.SH.S.4m_4293513964
-	srfN = srfAttach,B9.Cockpit.S2.Body.LFO_4293516706
+	link = strutConnector_4292113992
+	link = strutConnector_4292113936
+	link = strutConnector_4292113880
+	link = strutConnector_4292113824
+	link = B9.Aero.Wing.SH.A35.4m_4292113768
+	link = strutConnector_4292111388
+	link = strutConnector_4292111052
+	sym = B9.Aero.Wing.SH.S.4m_4292113678
+	srfN = srfAttach,B9.Cockpit.S2.Body.LFO_4292116420
 	EVENTS
 	{
 	}
@@ -2441,10 +2445,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293514278
+	part = strutConnector_4292113992
 	partName = StrutConnector
-	pos = 0.2012821,9.711709,7.956281
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 0.2012821,9.711709,7.956273
+	rot = -0.5000002,0.4999999,0.5000002,-0.4999999
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2452,9 +2456,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.LFO_5; pos: -0.1052065,0.01849361,-0.02055112; dir: -0.9671655,0.1700235,-0.1889293
-	sym = strutConnector_4293513930
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293514312
+	cData = tgt: B9.Cockpit.S2.Body.LFO_5; pos: -0.1052065,0.01849072,-0.02055119; dir: -0.9671655,0.1700235,-0.1889293
+	sym = strutConnector_4292113644
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292114026
 	EVENTS
 	{
 	}
@@ -2464,10 +2468,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293514222
+	part = strutConnector_4292113936
 	partName = StrutConnector
-	pos = 0.2008975,9.71171,6.528045
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 0.2008975,9.71171,6.528034
+	rot = -0.5000002,0.4999999,0.5000002,-0.4999999
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2475,9 +2479,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.LFO_6; pos: -0.1046124,0.01716801,-0.02145401; dir: -0.967195,0.158751,-0.1983512
-	sym = strutConnector_4293513874
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293514312
+	cData = tgt: B9.Cockpit.S2.Body.LFO_6; pos: -0.1046133,0.01716607,-0.0214539; dir: -0.967195,0.158751,-0.1983512
+	sym = strutConnector_4292113588
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292114026
 	EVENTS
 	{
 	}
@@ -2487,10 +2491,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293514166
+	part = strutConnector_4292113880
 	partName = StrutConnector
-	pos = -1.020979,9.458841,4.170898
-	rot = 0.7071068,-5.018628E-09,0.7071068,-1.287692E-06
+	pos = -1.020979,9.458841,4.170883
+	rot = 0.7071068,-2.107343E-08,0.7071068,-1.411919E-06
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2498,9 +2502,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Aero.Wing.SH.A35.4m_108; pos: -0.05248198,0.2221543,-1.851527; dir: -0.02813097,0.1190829,-0.9924887
-	sym = strutConnector_4293513818
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293514312
+	cData = tgt: B9.Aero.Wing.SH.A35.4m_110; pos: -0.05248735,0.2221539,-1.851527; dir: -0.02813097,0.1190829,-0.9924887
+	sym = strutConnector_4292113532
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292114026
 	EVENTS
 	{
 	}
@@ -2510,10 +2514,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293514110
+	part = strutConnector_4292113824
 	partName = StrutConnector
-	pos = -2.87246,9.473873,6.576582
-	rot = 0.7071068,8.118458E-15,6.322025E-08,0.7071068
+	pos = -2.87246,9.473873,6.57657
+	rot = 0.7071069,7.536444E-15,6.322024E-08,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2521,9 +2525,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Aero.Wing.SH.A35.4m_108; pos: -4.57784E-05,-0.02288246,-0.0001306507; dir: -0.00200079,-0.9999816,-0.005718919
-	sym = strutConnector_4293513762
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293514312
+	cData = tgt: B9.Aero.Wing.SH.A35.4m_110; pos: -4.577705E-05,-0.02288532,-0.0001306495; dir: -0.00200079,-0.9999816,-0.005718919
+	sym = strutConnector_4292113476
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292114026
 	EVENTS
 	{
 	}
@@ -2533,10 +2537,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SH.A35.4m_4293514054
+	part = B9.Aero.Wing.SH.A35.4m_4292113768
 	partName = Winglet
-	pos = -2.872506,9.46171,5.179138
-	rot = -0.7071068,-4.298376E-14,-2.674406E-14,-0.7071068
+	pos = -2.872506,9.46171,5.179128
+	rot = -0.7071069,-5.042947E-14,-2.848769E-14,-0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2544,9 +2548,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = strutConnector_4293514020
-	sym = B9.Aero.Wing.SH.A35.4m_4293513706
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293514312
+	link = strutConnector_4292113734
+	sym = B9.Aero.Wing.SH.A35.4m_4292113420
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292114026
 	EVENTS
 	{
 	}
@@ -2556,10 +2560,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293514020
+	part = strutConnector_4292113734
 	partName = StrutConnector
-	pos = -4.435438,9.403072,2.179114
-	rot = 0.7071068,1.47514E-07,0.7071068,2.528811E-07
+	pos = -4.435438,9.403072,2.179099
+	rot = 0.7071069,2.528811E-07,0.7071068,3.793216E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2567,8 +2571,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = strutConnector_4293513672
-	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4293514054
+	sym = strutConnector_4292113386
+	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4292113768
 	EVENTS
 	{
 	}
@@ -2578,9 +2582,9 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SH.S.4m_4293513964
+	part = B9.Aero.Wing.SH.S.4m_4292113678
 	partName = Winglet
-	pos = 1.12754,9.46171,6.17095
+	pos = 1.12754,9.46171,6.170938
 	rot = 3.090863E-08,0.7071069,0.7071068,-1.123823E-08
 	attRot = 0,4.214685E-08,0.7071068,0.7071068
 	mir = 1,1,1
@@ -2589,15 +2593,15 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = strutConnector_4293513930
-	link = strutConnector_4293513874
-	link = strutConnector_4293513818
-	link = strutConnector_4293513762
-	link = B9.Aero.Wing.SH.A35.4m_4293513706
-	link = strutConnector_4293511450
-	link = strutConnector_4293511114
-	sym = B9.Aero.Wing.SH.S.4m_4293514312
-	srfN = srfAttach,B9.Cockpit.S2.Body.LFO_4293516706
+	link = strutConnector_4292113644
+	link = strutConnector_4292113588
+	link = strutConnector_4292113532
+	link = strutConnector_4292113476
+	link = B9.Aero.Wing.SH.A35.4m_4292113420
+	link = strutConnector_4292111332
+	link = strutConnector_4292110996
+	sym = B9.Aero.Wing.SH.S.4m_4292114026
+	srfN = srfAttach,B9.Cockpit.S2.Body.LFO_4292116420
 	EVENTS
 	{
 	}
@@ -2607,9 +2611,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4293513930
+	part = strutConnector_4292113644
 	partName = StrutConnector
-	pos = 2.053798,9.711708,7.956281
+	pos = 2.053798,9.711708,7.956273
 	rot = -0.5000005,0.4999997,0.5000002,-0.4999998
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2618,9 +2622,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.LFO_5; pos: -0.1052075,0.01849352,0.0205514; dir: -0.9671659,0.1700229,0.1889292
-	sym = strutConnector_4293514278
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513964
+	cData = tgt: B9.Cockpit.S2.Body.LFO_5; pos: -0.1052075,0.01849066,0.02055139; dir: -0.9671659,0.1700229,0.1889292
+	sym = strutConnector_4292113992
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113678
 	EVENTS
 	{
 	}
@@ -2630,9 +2634,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4293513874
+	part = strutConnector_4292113588
 	partName = StrutConnector
-	pos = 2.054183,9.71171,6.528045
+	pos = 2.054183,9.71171,6.528034
 	rot = -0.5000005,0.4999997,0.5000002,-0.4999998
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2641,9 +2645,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.LFO_6; pos: -0.1046133,0.01716791,0.02145405; dir: -0.9671954,0.1587504,0.1983511
-	sym = strutConnector_4293514222
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513964
+	cData = tgt: B9.Cockpit.S2.Body.LFO_6; pos: -0.1046133,0.01716696,0.0214541; dir: -0.9671954,0.1587504,0.1983511
+	sym = strutConnector_4292113936
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113678
 	EVENTS
 	{
 	}
@@ -2653,10 +2657,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293513818
+	part = strutConnector_4292113532
 	partName = StrutConnector
-	pos = 3.27606,9.458841,4.170898
-	rot = 0.7071068,-1.277856E-06,0.7071068,-5.20616E-07
+	pos = 3.27606,9.458841,4.170883
+	rot = 0.7071068,-1.327626E-06,0.7071068,-6.322028E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2664,9 +2668,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Aero.Wing.SH.A35.4m_117; pos: -0.05248513,0.2221538,1.851529; dir: -0.02813133,0.119083,0.992489
-	sym = strutConnector_4293514166
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513964
+	cData = tgt: B9.Aero.Wing.SH.A35.4m_119; pos: -0.05248803,0.2221539,1.851528; dir: -0.02813133,0.119083,0.992489
+	sym = strutConnector_4292113880
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113678
 	EVENTS
 	{
 	}
@@ -2676,9 +2680,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4293513762
+	part = strutConnector_4292113476
 	partName = StrutConnector
-	pos = 5.127543,9.473873,6.576582
+	pos = 5.127543,9.473873,6.57657
 	rot = 3.231165E-08,0.7071067,0.7071069,-3.090861E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2687,9 +2691,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Aero.Wing.SH.A35.4m_117; pos: -4.530156E-05,-0.02264404,0.000128742; dir: -0.002000791,-0.9999818,0.00571886
-	sym = strutConnector_4293514110
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513964
+	cData = tgt: B9.Aero.Wing.SH.A35.4m_119; pos: -4.530021E-05,-0.0226469,0.0001287383; dir: -0.002000791,-0.9999818,0.00571886
+	sym = strutConnector_4292113824
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113678
 	EVENTS
 	{
 	}
@@ -2699,9 +2703,9 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SH.A35.4m_4293513706
+	part = B9.Aero.Wing.SH.A35.4m_4292113420
 	partName = Winglet
-	pos = 5.127588,9.46171,5.179138
+	pos = 5.127588,9.46171,5.179128
 	rot = -3.090862E-08,0.7071067,0.7071069,-3.090861E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2710,9 +2714,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = strutConnector_4293513672
-	sym = B9.Aero.Wing.SH.A35.4m_4293514054
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513964
+	link = strutConnector_4292113386
+	sym = B9.Aero.Wing.SH.A35.4m_4292113768
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113678
 	EVENTS
 	{
 	}
@@ -2722,10 +2726,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293513672
+	part = strutConnector_4292113386
 	partName = StrutConnector
-	pos = 6.690527,9.403076,2.17912
-	rot = 0.7071064,-2.692327E-07,0.7071072,-5.709527E-08
+	pos = 6.690528,9.403076,2.179107
+	rot = 0.7071065,-3.793216E-07,0.7071073,-2.107343E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2733,8 +2737,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = strutConnector_4293514020
-	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4293513706
+	sym = strutConnector_4292113734
+	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4292113420
 	EVENTS
 	{
 	}
@@ -2744,9 +2748,9 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SH.S.4m_4293513616
+	part = B9.Aero.Wing.SH.S.4m_4292113330
 	partName = Winglet
-	pos = 1.12754,9.461926,0.1561271
+	pos = 1.12754,9.461926,0.1561127
 	rot = -0.7071068,-1.967039E-08,-6.181725E-08,-0.7071069
 	attRot = 0,-4.214685E-08,-0.7071068,0.7071068
 	mir = 1,1,1
@@ -2755,20 +2759,20 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = B9.Aero.Wing.SH.S.4m_4293513582
-	link = strutConnector_4293513302
-	link = strutConnector_4293513246
-	link = strutConnector_4293513190
-	link = strutConnector_4293513134
-	link = strutConnector_4293511058
-	link = strutConnector_4293510946
-	link = strutConnector_4293510834
-	link = strutConnector_4293510722
-	link = fuelLine_4293510498
-	link = B9.Utility.Landing.Gear.HDG2T_4293498632
-	link = B9.Utility.Landing.Gear.HDG2T_4293492570
-	sym = B9.Aero.Wing.SH.S.4m_4293513078
-	srfN = srfAttach,B9.Cockpit.S2.Body.Cargo.2m_4293516428
+	link = B9.Aero.Wing.SH.S.4m_4292113296
+	link = strutConnector_4292113016
+	link = strutConnector_4292112960
+	link = strutConnector_4292112904
+	link = strutConnector_4292112848
+	link = strutConnector_4292110940
+	link = strutConnector_4292110828
+	link = strutConnector_4292110716
+	link = strutConnector_4292110604
+	link = fuelLine_4292110380
+	link = B9.Utility.Landing.Gear.HDG2T_4292109562
+	link = B9.Utility.Landing.Gear.HDG2T_4292109124
+	sym = B9.Aero.Wing.SH.S.4m_4292112792
+	srfN = srfAttach,B9.Cockpit.S2.Body.Cargo.2m_4292116142
 	EVENTS
 	{
 	}
@@ -2778,10 +2782,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SH.S.4m_4293513582
+	part = B9.Aero.Wing.SH.S.4m_4292113296
 	partName = Winglet
-	pos = -2.873135,9.461926,0.1561233
-	rot = -0.7071068,2.107338E-08,2.107348E-08,-0.7071068
+	pos = -2.873135,9.461926,0.1561089
+	rot = -0.7071069,2.107338E-08,2.107349E-08,-0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2789,13 +2793,13 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = B9.Aero.Wing.SW.Winglet.6x5m_4293513548
-	link = strutConnector_4293513414
-	link = strutConnector_4293513358
-	link = B9.Control.RCS.Port.R1_4293510178
-	link = B9.Control.RCS.Port.R1_4293510098
-	sym = B9.Aero.Wing.SH.S.4m_4293513044
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513616
+	link = B9.Aero.Wing.SW.Winglet.6x5m_4292113262
+	link = strutConnector_4292113128
+	link = strutConnector_4292113072
+	link = B9.Control.RCS.Port.R1_4292110060
+	link = B9.Control.RCS.Port.R1_4292108590
+	sym = B9.Aero.Wing.SH.S.4m_4292112758
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113330
 	EVENTS
 	{
 	}
@@ -2805,10 +2809,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SW.Winglet.6x5m_4293513548
+	part = B9.Aero.Wing.SW.Winglet.6x5m_4292113262
 	partName = ControlSurface
-	pos = -6.874317,9.461926,-0.7993059
-	rot = -0.7010572,0.09229603,0.09229595,-0.7010576
+	pos = -6.874317,9.461926,-0.7993202
+	rot = -0.7010572,0.09229605,0.09229595,-0.7010577
 	attRot = -1.84362E-20,-7.779969E-09,-0.1305262,0.9914449
 	mir = 1,1,1
 	istg = 0
@@ -2816,10 +2820,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = B9.Aero.Wing.SH.A65.2m_4293513486
-	link = B9.Utility.Light.N2.Red_4293513452
-	sym = B9.Aero.Wing.SW.Winglet.6x5m_4293513010
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513582
+	link = B9.Aero.Wing.SH.A65.2m_4292113200
+	link = B9.Utility.Light.N2.Red_4292113166
+	sym = B9.Aero.Wing.SW.Winglet.6x5m_4292112724
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113296
 	EVENTS
 	{
 	}
@@ -2829,10 +2833,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SH.A65.2m_4293513486
+	part = B9.Aero.Wing.SH.A65.2m_4292113200
 	partName = Winglet
-	pos = -6.873688,9.464288,-2.783756
-	rot = 2.072563E-07,0.7071068,-0.7071068,-2.10794E-07
+	pos = -6.873688,9.464288,-2.783772
+	rot = 2.023976E-07,0.7071069,-0.7071069,-2.059352E-07
 	attRot = -0.6087615,-0.7933534,4.728755E-08,-2.530053E-15
 	mir = 1,1,1
 	istg = 0
@@ -2840,8 +2844,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Aero.Wing.SH.A65.2m_4293512948
-	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.6x5m_4293513548
+	sym = B9.Aero.Wing.SH.A65.2m_4292112662
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.6x5m_4292113262
 	EVENTS
 	{
 	}
@@ -2851,10 +2855,10 @@ PART
 }
 PART
 {
-	part = B9.Utility.Light.N2.Red_4293513452
+	part = B9.Utility.Light.N2.Red_4292113166
 	partName = Part
-	pos = -11.55414,10.61235,-2.099112
-	rot = 0.9914449,-0.1305263,3.780231E-08,-2.177512E-07
+	pos = -11.55414,10.61235,-2.099127
+	rot = 0.9914449,-0.1305263,3.161014E-08,-1.264406E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2862,8 +2866,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Utility.Light.N2.Red_4293512914
-	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.6x5m_4293513548
+	sym = B9.Utility.Light.N2.Red_4292112628
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.6x5m_4292113262
 	EVENTS
 	{
 	}
@@ -2919,10 +2923,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293513414
+	part = strutConnector_4292113128
 	partName = StrutConnector
-	pos = -5.468152,9.428594,-1.843884
-	rot = 0.7071068,2.318077E-07,0.7071068,2.739545E-07
+	pos = -5.468152,9.428594,-1.843899
+	rot = 0.7071068,2.528811E-07,0.7071068,4.003951E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2930,9 +2934,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Aero.Wing.SH.S.4m_46; pos: 3.650558E-06,-0.0230532,0.5152217; dir: 1.496133E-05,-0.04469973,0.9990005
-	sym = strutConnector_4293512876
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513582
+	cData = tgt: B9.Aero.Wing.SH.S.4m_46; pos: 2.475591E-08,-0.02307425,0.515686; dir: 1.496133E-05,-0.04469973,0.9990005
+	sym = strutConnector_4292112590
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113296
 	EVENTS
 	{
 	}
@@ -2942,9 +2946,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4293513358
+	part = strutConnector_4292113072
 	partName = StrutConnector
-	pos = -6.87314,9.489783,0.6605351
+	pos = -6.87314,9.489783,0.6605206
 	rot = -0.7071067,2.107343E-08,4.214681E-08,-0.7071069
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -2953,9 +2957,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Aero.Wing.SH.S.4m_46; pos: 4.788049E-06,-0.676569,-0.005431297; dir: 7.07724E-06,-0.9999678,-0.008026965
-	sym = strutConnector_4293512820
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513582
+	cData = tgt: B9.Aero.Wing.SH.S.4m_46; pos: 4.788373E-06,-0.6765728,-0.005431227; dir: 7.07724E-06,-0.9999678,-0.008026965
+	sym = strutConnector_4292112534
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113296
 	EVENTS
 	{
 	}
@@ -2965,10 +2969,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293513302
+	part = strutConnector_4292113016
 	partName = StrutConnector
-	pos = -2.872462,9.473003,0.2271396
-	rot = 0.7071068,-2.107342E-08,4.214646E-08,0.7071068
+	pos = -2.872462,9.473003,0.2271252
+	rot = 0.7071069,-2.107342E-08,4.214646E-08,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2976,9 +2980,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Aero.Wing.SH.S.4m_46; pos: -0.0006733247,-0.3410245,0.003351253; dir: -0.001974344,-0.9999521,0.009825477
-	sym = strutConnector_4293512764
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513616
+	cData = tgt: B9.Aero.Wing.SH.S.4m_46; pos: -0.000673304,-0.3410282,0.00335127; dir: -0.001974344,-0.9999521,0.009825477
+	sym = strutConnector_4292112478
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113330
 	EVENTS
 	{
 	}
@@ -2988,10 +2992,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293513246
+	part = strutConnector_4292112960
 	partName = StrutConnector
-	pos = 0.09116518,9.711926,-1.763395
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 0.09116518,9.711926,-1.763411
+	rot = -0.5000002,0.4999999,0.5000002,-0.4999999
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -2999,9 +3003,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Fuel_11; pos: -0.2084529,-0.7412245,-0.04016965; dir: -0.2703625,-0.961358,-0.05209973
-	sym = strutConnector_4293512708
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513616
+	cData = tgt: B9.Cockpit.S2.Body.Fuel_11; pos: -0.2084527,-0.7412283,-0.04016962; dir: -0.2703625,-0.961358,-0.05209973
+	sym = strutConnector_4292112422
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113330
 	EVENTS
 	{
 	}
@@ -3011,10 +3015,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293513190
+	part = strutConnector_4292112904
 	partName = StrutConnector
-	pos = 0.7558727,9.389878,-1.843876
-	rot = 0.7071068,-5.018648E-09,0.7071068,-6.13342E-07
+	pos = 0.7558727,9.389878,-1.843891
+	rot = 0.7071068,-2.107343E-08,0.7071068,-7.375699E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3022,9 +3026,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.LFO_13; pos: -4.604661,-0.07211377,0.03168483; dir: -0.9998538,-0.01565898,0.006879644
-	sym = strutConnector_4293512652
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513616
+	cData = tgt: B9.Cockpit.S2.Body.LFO_13; pos: -4.60463,-0.0721137,0.03168287; dir: -0.9998538,-0.01565898,0.006879644
+	sym = strutConnector_4292112366
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113330
 	EVENTS
 	{
 	}
@@ -3034,10 +3038,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293513134
+	part = strutConnector_4292112848
 	partName = StrutConnector
-	pos = 0.7633306,9.293242,-1.84388
-	rot = 0.7071068,-5.018648E-09,0.7071068,-6.13342E-07
+	pos = 0.7633306,9.293242,-1.843895
+	rot = 0.7071068,-2.107343E-08,0.7071068,-7.375699E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3045,9 +3049,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.LFO_12; pos: -2.716826,-0.1687511,0.1739803; dir: -0.9960441,-0.06186826,0.06378437
-	sym = strutConnector_4293512596
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513616
+	cData = tgt: B9.Cockpit.S2.Body.LFO_12; pos: -2.716824,-0.1687515,0.1739787; dir: -0.9960441,-0.06186826,0.06378437
+	sym = strutConnector_4292112310
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113330
 	EVENTS
 	{
 	}
@@ -3057,9 +3061,9 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SH.S.4m_4293513078
+	part = B9.Aero.Wing.SH.S.4m_4292112792
 	partName = Winglet
-	pos = 1.12754,9.461926,0.1561271
+	pos = 1.12754,9.461926,0.1561127
 	rot = 3.090863E-08,0.7071069,0.7071068,-1.123823E-08
 	attRot = 0,4.214685E-08,0.7071068,0.7071068
 	mir = 1,1,1
@@ -3068,20 +3072,20 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = B9.Aero.Wing.SH.S.4m_4293513044
-	link = strutConnector_4293512764
-	link = strutConnector_4293512708
-	link = strutConnector_4293512652
-	link = strutConnector_4293512596
-	link = strutConnector_4293511002
-	link = strutConnector_4293510890
-	link = strutConnector_4293510778
-	link = strutConnector_4293510666
-	link = fuelLine_4293510418
-	link = B9.Utility.Landing.Gear.HDG2T_4293497724
-	link = B9.Utility.Landing.Gear.HDG2T_4293496542
-	sym = B9.Aero.Wing.SH.S.4m_4293513616
-	srfN = srfAttach,B9.Cockpit.S2.Body.Cargo.2m_4293516428
+	link = B9.Aero.Wing.SH.S.4m_4292112758
+	link = strutConnector_4292112478
+	link = strutConnector_4292112422
+	link = strutConnector_4292112366
+	link = strutConnector_4292112310
+	link = strutConnector_4292110884
+	link = strutConnector_4292110772
+	link = strutConnector_4292110660
+	link = strutConnector_4292110548
+	link = fuelLine_4292110300
+	link = B9.Utility.Landing.Gear.HDG2T_4292109416
+	link = B9.Utility.Landing.Gear.HDG2T_4292109270
+	sym = B9.Aero.Wing.SH.S.4m_4292113330
+	srfN = srfAttach,B9.Cockpit.S2.Body.Cargo.2m_4292116142
 	EVENTS
 	{
 	}
@@ -3091,10 +3095,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SH.S.4m_4293513044
+	part = B9.Aero.Wing.SH.S.4m_4292112758
 	partName = Winglet
-	pos = 5.128222,9.461926,0.1561233
-	rot = -5.198209E-08,0.7071067,0.7071069,-5.198198E-08
+	pos = 5.128222,9.461926,0.1561089
+	rot = -5.19821E-08,0.7071067,0.7071069,-5.198198E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3102,13 +3106,13 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = B9.Aero.Wing.SW.Winglet.6x5m_4293513010
-	link = strutConnector_4293512876
-	link = strutConnector_4293512820
-	link = B9.Control.RCS.Port.R1_4293510138
-	link = B9.Control.RCS.Port.R1_4293510058
-	sym = B9.Aero.Wing.SH.S.4m_4293513582
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513078
+	link = B9.Aero.Wing.SW.Winglet.6x5m_4292112724
+	link = strutConnector_4292112590
+	link = strutConnector_4292112534
+	link = B9.Control.RCS.Port.R1_4292110020
+	link = B9.Control.RCS.Port.R1_4292108550
+	sym = B9.Aero.Wing.SH.S.4m_4292113296
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292112792
 	EVENTS
 	{
 	}
@@ -3118,10 +3122,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SW.Winglet.6x5m_4293513010
+	part = B9.Aero.Wing.SW.Winglet.6x5m_4292112724
 	partName = ControlSurface
-	pos = 9.129423,9.461926,-0.7993058
-	rot = -0.09229599,0.7010576,0.7010573,-0.09229606
+	pos = 9.129428,9.461926,-0.7993202
+	rot = -0.092296,0.7010576,0.7010573,-0.09229608
 	attRot = -1.84362E-20,-7.779969E-09,-0.1305262,0.9914449
 	mir = 1,1,1
 	istg = 0
@@ -3129,10 +3133,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = B9.Aero.Wing.SH.A65.2m_4293512948
-	link = B9.Utility.Light.N2.Red_4293512914
-	sym = B9.Aero.Wing.SW.Winglet.6x5m_4293513548
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513044
+	link = B9.Aero.Wing.SH.A65.2m_4292112662
+	link = B9.Utility.Light.N2.Red_4292112628
+	sym = B9.Aero.Wing.SW.Winglet.6x5m_4292113262
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292112758
 	EVENTS
 	{
 	}
@@ -3142,10 +3146,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SH.A65.2m_4293512948
+	part = B9.Aero.Wing.SH.A65.2m_4292112662
 	partName = Winglet
-	pos = 9.128795,9.46429,-2.783756
-	rot = 0.7071069,1.252326E-07,-1.216949E-07,-0.7071067
+	pos = 9.128798,9.46429,-2.783772
+	rot = 0.707107,1.213756E-07,-1.178379E-07,-0.7071068
 	attRot = -0.6087615,-0.7933534,4.728755E-08,-2.530053E-15
 	mir = 1,1,1
 	istg = 0
@@ -3153,8 +3157,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Aero.Wing.SH.A65.2m_4293513486
-	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.6x5m_4293513010
+	sym = B9.Aero.Wing.SH.A65.2m_4292113200
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.6x5m_4292112724
 	EVENTS
 	{
 	}
@@ -3164,10 +3168,10 @@ PART
 }
 PART
 {
-	part = B9.Utility.Light.N2.Red_4293512914
+	part = B9.Utility.Light.N2.Red_4292112628
 	partName = Part
-	pos = 13.80925,10.61236,-2.099112
-	rot = 0.9914448,0.1305263,-5.395431E-08,-8.947358E-07
+	pos = 13.80925,10.61236,-2.099127
+	rot = 0.9914451,0.1305263,-5.795192E-08,-9.693775E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3175,8 +3179,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Utility.Light.N2.Red_4293513452
-	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.6x5m_4293513010
+	sym = B9.Utility.Light.N2.Red_4292113166
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.6x5m_4292112724
 	EVENTS
 	{
 	}
@@ -3232,10 +3236,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293512876
+	part = strutConnector_4292112590
 	partName = StrutConnector
-	pos = 7.723241,9.428595,-1.843883
-	rot = 0.7071067,1.522359E-07,0.7071069,-1.624624E-07
+	pos = 7.723242,9.428595,-1.843899
+	rot = 0.7071067,1.685874E-07,0.7071069,-1.896608E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3243,9 +3247,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Aero.Wing.SH.S.4m_66; pos: 4.366629E-06,-0.02435613,-0.5442977; dir: 1.507864E-05,-0.04469983,-0.9990008
-	sym = strutConnector_4293513414
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513044
+	cData = tgt: B9.Aero.Wing.SH.S.4m_66; pos: 4.101295E-07,-0.02436471,-0.5444922; dir: 1.507864E-05,-0.04469983,-0.9990008
+	sym = strutConnector_4292113128
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292112758
 	EVENTS
 	{
 	}
@@ -3255,10 +3259,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293512820
+	part = strutConnector_4292112534
 	partName = StrutConnector
-	pos = 9.128242,9.489782,0.660535
-	rot = -7.305538E-08,0.7071068,0.7071068,-5.1982E-08
+	pos = 9.128245,9.489782,0.6605206
+	rot = -7.305535E-08,0.7071068,0.7071068,-5.1982E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3266,9 +3270,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Aero.Wing.SH.A65.2m_68; pos: 1.628184E-05,-2.444295,0.01962023; dir: 7.07654E-06,-0.9999681,0.008026907
-	sym = strutConnector_4293513358
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513044
+	cData = tgt: B9.Aero.Wing.SH.A65.2m_68; pos: 1.533105E-05,-2.444299,0.01962054; dir: 7.07654E-06,-0.9999681,0.008026907
+	sym = strutConnector_4292113072
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292112758
 	EVENTS
 	{
 	}
@@ -3278,9 +3282,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4293512764
+	part = strutConnector_4292112478
 	partName = StrutConnector
-	pos = 5.127545,9.473003,0.2271396
+	pos = 5.127545,9.473003,0.2271252
 	rot = 1.123784E-08,0.7071067,0.7071069,-5.198202E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3289,9 +3293,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Aero.Wing.SH.S.4m_66; pos: -0.0006766625,-0.3427143,-0.003367485; dir: -0.001974344,-0.9999523,-0.0098253
-	sym = strutConnector_4293513302
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513078
+	cData = tgt: B9.Aero.Wing.SH.S.4m_66; pos: -0.0006775956,-0.3432026,-0.003372308; dir: -0.001974344,-0.9999523,-0.0098253
+	sym = strutConnector_4292113016
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292112792
 	EVENTS
 	{
 	}
@@ -3301,9 +3305,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4293512708
+	part = strutConnector_4292112422
 	partName = StrutConnector
-	pos = 2.163915,9.711926,-1.763395
+	pos = 2.163915,9.711926,-1.763411
 	rot = -0.5000005,0.4999997,0.5000002,-0.4999998
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3312,9 +3316,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Fuel_11; pos: -0.2084533,-0.7412248,0.04016967; dir: -0.2703624,-0.9613585,0.05209995
-	sym = strutConnector_4293513246
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513078
+	cData = tgt: B9.Cockpit.S2.Body.Fuel_11; pos: -0.2084532,-0.7412285,0.04016958; dir: -0.2703624,-0.9613585,0.05209995
+	sym = strutConnector_4292112960
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292112792
 	EVENTS
 	{
 	}
@@ -3324,10 +3328,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293512652
+	part = strutConnector_4292112366
 	partName = StrutConnector
-	pos = 1.499207,9.389879,-1.843876
-	rot = 0.7071068,-5.192131E-07,0.7071068,-4.363224E-07
+	pos = 1.499207,9.389879,-1.843891
+	rot = 0.7071068,-5.689825E-07,0.7071068,-5.479091E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3335,9 +3339,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.LFO_13; pos: -4.604478,-0.07211065,-0.03168064; dir: -0.9998541,-0.01565887,-0.006879826
-	sym = strutConnector_4293513190
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513078
+	cData = tgt: B9.Cockpit.S2.Body.LFO_13; pos: -4.604458,-0.07211057,-0.03168168; dir: -0.9998541,-0.01565887,-0.006879826
+	sym = strutConnector_4292112904
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292112792
 	EVENTS
 	{
 	}
@@ -3347,10 +3351,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293512596
+	part = strutConnector_4292112310
 	partName = StrutConnector
-	pos = 1.49175,9.293243,-1.84388
-	rot = 0.7071068,-6.035067E-07,0.7071068,-5.206161E-07
+	pos = 1.49175,9.293243,-1.843895
+	rot = 0.7071068,-6.532762E-07,0.7071068,-6.322028E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3358,9 +3362,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.LFO_12; pos: -2.716783,-0.1687484,-0.1739755; dir: -0.9960446,-0.06186823,-0.06378457
-	sym = strutConnector_4293513134
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513078
+	cData = tgt: B9.Cockpit.S2.Body.LFO_12; pos: -2.716782,-0.1687487,-0.173976; dir: -0.9960446,-0.06186823,-0.06378457
+	sym = strutConnector_4292112848
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292112792
 	EVENTS
 	{
 	}
@@ -3370,9 +3374,9 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SH.S.2m_4293512540
+	part = B9.Aero.Wing.SH.S.2m_4292112254
 	partName = Winglet
-	pos = 1.12754,9.461157,3.182998
+	pos = 1.12754,9.461157,3.182981
 	rot = -0.7071068,-1.967039E-08,-6.181725E-08,-0.7071069
 	attRot = 0,-4.214685E-08,-0.7071068,0.7071068
 	mir = 1,1,1
@@ -3381,13 +3385,13 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = strutConnector_4293512506
-	link = strutConnector_4293512450
-	link = strutConnector_4293511394
-	link = strutConnector_4293511282
-	link = strutConnector_4293510610
-	sym = B9.Aero.Wing.SH.S.2m_4293512394
-	srfN = srfAttach,B9.Cockpit.S2.Body.Fuel_4293516668
+	link = strutConnector_4292112220
+	link = strutConnector_4292112164
+	link = strutConnector_4292111276
+	link = strutConnector_4292111164
+	link = strutConnector_4292110492
+	sym = B9.Aero.Wing.SH.S.2m_4292112108
+	srfN = srfAttach,B9.Cockpit.S2.Body.Fuel_4292116382
 	EVENTS
 	{
 	}
@@ -3397,10 +3401,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293512506
+	part = strutConnector_4292112220
 	partName = StrutConnector
-	pos = -2.872463,9.476324,3.04792
-	rot = 0.7071068,8.118458E-15,6.322025E-08,0.7071068
+	pos = -2.872463,9.476324,3.047905
+	rot = 0.7071069,7.536444E-15,6.322024E-08,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3408,9 +3412,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Aero.Wing.SH.A35.4m_108; pos: -4.291346E-05,0.02150536,0.0003843282; dir: -0.001994783,0.9998387,0.01785
-	sym = strutConnector_4293512360
-	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4293512540
+	cData = tgt: B9.Aero.Wing.SH.A35.4m_110; pos: -4.291469E-05,0.02150154,0.0003843272; dir: -0.001994783,0.9998387,0.01785
+	sym = strutConnector_4292112074
+	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4292112254
 	EVENTS
 	{
 	}
@@ -3420,10 +3424,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293512450
+	part = strutConnector_4292112164
 	partName = StrutConnector
-	pos = -1.514934,9.521648,2.182992
-	rot = 0.7071068,-5.018648E-09,0.7071068,-6.13342E-07
+	pos = -1.514934,9.521648,2.182976
+	rot = 0.7071068,-2.107343E-08,0.7071068,-7.375699E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3431,9 +3435,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Aero.Wing.SH.S.4m_45; pos: -0.02686783,0.02140317,-0.1948405; dir: -0.1357848,0.1081782,-0.9848146
-	sym = strutConnector_4293512304
-	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4293512540
+	cData = tgt: B9.Aero.Wing.SH.S.4m_45; pos: -0.02687075,0.02140219,-0.1948335; dir: -0.1357848,0.1081782,-0.9848146
+	sym = strutConnector_4292112018
+	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4292112254
 	EVENTS
 	{
 	}
@@ -3443,9 +3447,9 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SH.S.2m_4293512394
+	part = B9.Aero.Wing.SH.S.2m_4292112108
 	partName = Winglet
-	pos = 1.12754,9.461157,3.182998
+	pos = 1.12754,9.461157,3.182981
 	rot = 3.090863E-08,0.7071069,0.7071068,-1.123823E-08
 	attRot = 0,4.214685E-08,0.7071068,0.7071068
 	mir = 1,1,1
@@ -3454,13 +3458,13 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = strutConnector_4293512360
-	link = strutConnector_4293512304
-	link = strutConnector_4293511338
-	link = strutConnector_4293511226
-	link = strutConnector_4293510554
-	sym = B9.Aero.Wing.SH.S.2m_4293512540
-	srfN = srfAttach,B9.Cockpit.S2.Body.Fuel_4293516668
+	link = strutConnector_4292112074
+	link = strutConnector_4292112018
+	link = strutConnector_4292111220
+	link = strutConnector_4292111108
+	link = strutConnector_4292110436
+	sym = B9.Aero.Wing.SH.S.2m_4292112254
+	srfN = srfAttach,B9.Cockpit.S2.Body.Fuel_4292116382
 	EVENTS
 	{
 	}
@@ -3470,9 +3474,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4293512360
+	part = strutConnector_4292112074
 	partName = StrutConnector
-	pos = 5.127545,9.476324,3.04792
+	pos = 5.127545,9.476324,3.047905
 	rot = 3.231165E-08,0.7071067,0.7071069,-3.090861E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -3481,9 +3485,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Aero.Wing.SH.A35.4m_117; pos: -4.339025E-05,0.02174377,-0.0003871879; dir: -0.001994782,0.9998389,-0.01784994
-	sym = strutConnector_4293512506
-	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4293512394
+	cData = tgt: B9.Aero.Wing.SH.A35.4m_119; pos: -4.339152E-05,0.02173996,-0.0003871845; dir: -0.001994782,0.9998389,-0.01784994
+	sym = strutConnector_4292112220
+	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4292112108
 	EVENTS
 	{
 	}
@@ -3493,10 +3497,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293512304
+	part = strutConnector_4292112018
 	partName = StrutConnector
-	pos = 3.770016,9.521648,2.182992
-	rot = 0.7071068,-5.192131E-07,0.7071068,-4.363224E-07
+	pos = 3.770016,9.521648,2.182976
+	rot = 0.7071068,-5.689825E-07,0.7071068,-5.479091E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3504,9 +3508,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Aero.Wing.SH.S.4m_65; pos: -0.02686786,0.02140333,0.1948438; dir: -0.1357852,0.1081783,0.9848149
-	sym = strutConnector_4293512450
-	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4293512394
+	cData = tgt: B9.Aero.Wing.SH.S.4m_65; pos: -0.02687073,0.02140239,0.1948371; dir: -0.1357852,0.1081783,0.9848149
+	sym = strutConnector_4292112164
+	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4292112108
 	EVENTS
 	{
 	}
@@ -3516,10 +3520,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SW.Winglet.6x5m_4293512248
+	part = B9.Aero.Wing.SW.Winglet.6x5m_4292111962
 	partName = ControlSurface
-	pos = 0.8775399,11.64267,-9.398417
-	rot = 0.706434,-0.03084362,-0.0308435,0.7064337
+	pos = 0.8775399,11.64267,-9.398447
+	rot = 0.7064341,-0.03084362,-0.0308435,0.7064337
 	attRot = -3.067337E-11,-0.0436194,1.805799E-09,0.9990483
 	mir = 1,1,1
 	istg = 0
@@ -3527,9 +3531,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = B9.Utility.Light.N2.Red_4293512186
-	sym = B9.Aero.Wing.SW.Winglet.6x5m_4293512148
-	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4293516116
+	link = B9.Utility.Light.N2.Red_4292111900
+	sym = B9.Aero.Wing.SW.Winglet.6x5m_4292111862
+	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4292115830
 	EVENTS
 	{
 	}
@@ -3539,10 +3543,10 @@ PART
 }
 PART
 {
-	part = B9.Utility.Light.N2.Red_4293512186
+	part = B9.Utility.Light.N2.Red_4292111900
 	partName = Part
-	pos = -3.930973,11.96298,-10.69827
-	rot = -0.9990483,0.04361942,-3.041855E-08,8.036643E-07
+	pos = -3.930976,11.96298,-10.6983
+	rot = -0.9990485,0.04361942,-1.580507E-08,8.850839E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3550,8 +3554,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Utility.Light.N2.Red_4293512086
-	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.6x5m_4293512248
+	sym = B9.Utility.Light.N2.Red_4292111800
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.6x5m_4292111962
 	EVENTS
 	{
 	}
@@ -3607,10 +3611,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SW.Winglet.6x5m_4293512148
+	part = B9.Aero.Wing.SW.Winglet.6x5m_4292111862
 	partName = ControlSurface
-	pos = 1.37754,11.64267,-9.398417
-	rot = -0.03084356,0.7064337,0.706434,-0.03084368
+	pos = 1.37754,11.64267,-9.398447
+	rot = -0.03084356,0.7064337,0.7064341,-0.03084368
 	attRot = 3.067337E-11,0.0436194,-1.805799E-09,0.9990483
 	mir = 1,1,1
 	istg = 0
@@ -3618,9 +3622,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = B9.Utility.Light.N2.Red_4293512086
-	sym = B9.Aero.Wing.SW.Winglet.6x5m_4293512248
-	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4293516116
+	link = B9.Utility.Light.N2.Red_4292111800
+	sym = B9.Aero.Wing.SW.Winglet.6x5m_4292111962
+	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4292115830
 	EVENTS
 	{
 	}
@@ -3630,10 +3634,10 @@ PART
 }
 PART
 {
-	part = B9.Utility.Light.N2.Red_4293512086
+	part = B9.Utility.Light.N2.Red_4292111800
 	partName = Part
-	pos = 6.186062,11.96298,-10.69827
-	rot = 0.9990483,0.04361943,-2.778939E-08,-8.037791E-07
+	pos = 6.18607,11.96298,-10.6983
+	rot = 0.9990485,0.04361943,-5.926901E-08,-9.693775E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3641,8 +3645,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Utility.Light.N2.Red_4293512186
-	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.6x5m_4293512148
+	sym = B9.Utility.Light.N2.Red_4292111900
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.6x5m_4292111862
 	EVENTS
 	{
 	}
@@ -3698,10 +3702,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293512048
+	part = strutConnector_4292111762
 	partName = StrutConnector
-	pos = 0.9730926,11.94193,-6.487556
-	rot = -0.6240823,0.3324475,0.6240823,-0.3324474
+	pos = 0.9730926,11.94193,-6.487579
+	rot = -0.6240824,0.3324475,0.6240824,-0.3324474
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3709,9 +3713,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Fuel_11; pos: -2.098027,3.685179,0.1193127; dir: -0.4945581,0.8686895,0.02812537
-	sym = strutConnector_4293511992
-	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4293516116
+	cData = tgt: B9.Cockpit.S2.Body.Fuel_11; pos: -2.098028,3.68518,0.1193138; dir: -0.4945581,0.8686895,0.02812537
+	sym = strutConnector_4292111706
+	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4292115830
 	EVENTS
 	{
 	}
@@ -3721,10 +3725,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293511992
+	part = strutConnector_4292111706
 	partName = StrutConnector
-	pos = 1.281987,11.94193,-6.487556
-	rot = -0.6240826,0.3324472,0.6240823,-0.3324472
+	pos = 1.281987,11.94193,-6.487579
+	rot = -0.6240827,0.3324472,0.6240824,-0.3324473
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -3732,9 +3736,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Fuel_11; pos: -2.098013,3.685153,-0.1193179; dir: -0.4945586,0.8686902,-0.02812591
-	sym = strutConnector_4293512048
-	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4293516116
+	cData = tgt: B9.Cockpit.S2.Body.Fuel_11; pos: -2.098007,3.685144,-0.1193164; dir: -0.4945586,0.8686902,-0.02812591
+	sym = strutConnector_4292111762
+	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4292115830
 	EVENTS
 	{
 	}
@@ -3744,129 +3748,9 @@ PART
 }
 PART
 {
-	part = B9.Control.RCS.Block.R12_4293511936
+	part = dockingPort2_4292111650
 	partName = Part
-	pos = -0.06520331,10.54453,9.186186
-	rot = -0.7071068,0.7071068,0,0
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	sym = B9.Control.RCS.Block.R12_4293511852
-	srfN = srfAttach,B9.Cockpit.S2.Body.6m_4293516778
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		isEnabled = True
-		EVENTS
-		{
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = B9.Control.RCS.Block.R12_4293511852
-	partName = Part
-	pos = 2.320283,10.54453,9.186186
-	rot = 0.7071068,0.7071068,0,0
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	sym = B9.Control.RCS.Block.R12_4293511936
-	srfN = srfAttach,B9.Cockpit.S2.Body.6m_4293516778
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		isEnabled = True
-		EVENTS
-		{
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = dockingPort2_4293511768
-	partName = Part
-	pos = 1.12754,10.54453,2.737886
+	pos = 1.12754,10.54453,2.737871
 	rot = 0.7071068,0,0,-0.7071068
 	attRot = 0.9999999,0,0,0
 	mir = 1,1,1
@@ -3875,7 +3759,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	attN = bottom,B9.Cockpit.S2.Body.Cargo.2m_4293516594
+	attN = bottom,B9.Cockpit.S2.Body.Cargo.2m_4292116308
 	EVENTS
 	{
 	}
@@ -3995,7 +3879,7 @@ PART
 }
 PART
 {
-	part = strutConnector_4293511730
+	part = strutConnector_4292111612
 	partName = StrutConnector
 	pos = 0.1494613,9.661702,12.7166
 	rot = 0.6763687,0.2062171,-0.2062169,0.6763687
@@ -4006,9 +3890,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Control.SAS_3; pos: -1.087746,1.753629,-0.1514584; dir: -0.5256994,0.8475153,-0.07319886
-	sym = strutConnector_4293511674
-	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4293514604
+	cData = tgt: B9.Cockpit.S2.Control.SAS_3; pos: -1.087745,1.753628,-0.1514584; dir: -0.5256994,0.8475153,-0.07319886
+	sym = strutConnector_4292111556
+	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4292114318
 	EVENTS
 	{
 	}
@@ -4018,7 +3902,7 @@ PART
 }
 PART
 {
-	part = strutConnector_4293511674
+	part = strutConnector_4292111556
 	partName = StrutConnector
 	pos = 2.105619,9.661702,12.7166
 	rot = -0.2062168,0.6763687,0.6763687,0.2062171
@@ -4029,9 +3913,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Control.SAS_3; pos: -1.087752,1.753637,0.1514577; dir: -0.5256995,0.8475156,0.07319862
-	sym = strutConnector_4293511730
-	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4293514458
+	cData = tgt: B9.Cockpit.S2.Control.SAS_3; pos: -1.087751,1.753636,0.1514585; dir: -0.5256995,0.8475156,0.07319862
+	sym = strutConnector_4292111612
+	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4292114172
 	EVENTS
 	{
 	}
@@ -4041,10 +3925,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293511618
+	part = strutConnector_4292111500
 	partName = StrutConnector
-	pos = 0.1471602,9.711842,8.57452
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 0.1471602,9.711842,8.574512
+	rot = -0.5000002,0.4999999,0.5000002,-0.4999999
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4052,9 +3936,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.LFO_5; pos: -0.2418318,0.005407249,0.04494683; dir: -0.9829252,0.02198636,0.182687
-	sym = strutConnector_4293511562
-	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4293514604
+	cData = tgt: B9.Cockpit.S2.Body.LFO_5; pos: -0.2418318,0.005405253,0.04494694; dir: -0.9829252,0.02198636,0.182687
+	sym = strutConnector_4292111444
+	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4292114318
 	EVENTS
 	{
 	}
@@ -4064,10 +3948,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293511562
+	part = strutConnector_4292111444
 	partName = StrutConnector
-	pos = 2.10792,9.711842,8.57452
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 2.10792,9.711842,8.574512
+	rot = -0.5000002,0.4999999,0.5000002,-0.5
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4075,9 +3959,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.LFO_5; pos: -0.2418327,0.005407244,-0.04494692; dir: -0.9829257,0.02198574,-0.182687
-	sym = strutConnector_4293511618
-	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4293514458
+	cData = tgt: B9.Cockpit.S2.Body.LFO_5; pos: -0.2418328,0.005405278,-0.044947; dir: -0.9829257,0.02198574,-0.182687
+	sym = strutConnector_4292111500
+	srfN = srfAttach,B9.Aero.Wing.SH.A35.4m_4292114172
 	EVENTS
 	{
 	}
@@ -4087,10 +3971,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293511506
+	part = strutConnector_4292111388
 	partName = StrutConnector
-	pos = 0.1836579,9.711709,8.101671
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 0.1836579,9.711709,8.101663
+	rot = -0.5000002,0.4999999,0.5000002,-0.4999999
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4098,9 +3982,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.6m_4; pos: -0.2461684,0.7427214,0.0851208; dir: -0.3127645,0.9436536,0.1081489
-	sym = strutConnector_4293511450
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293514312
+	cData = tgt: B9.Cockpit.S2.Body.6m_4; pos: -0.2461687,0.7427194,0.08512111; dir: -0.3127645,0.9436536,0.1081489
+	sym = strutConnector_4292111332
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292114026
 	EVENTS
 	{
 	}
@@ -4110,10 +3994,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293511450
+	part = strutConnector_4292111332
 	partName = StrutConnector
-	pos = 2.071422,9.711709,8.101671
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 2.071422,9.711709,8.101663
+	rot = -0.5000002,0.4999999,0.5000002,-0.5
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4121,9 +4005,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.6m_4; pos: -0.2461694,0.7427233,-0.08512164; dir: -0.3127647,0.9436538,-0.1081494
-	sym = strutConnector_4293511506
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513964
+	cData = tgt: B9.Cockpit.S2.Body.6m_4; pos: -0.2461696,0.7427223,-0.08512171; dir: -0.3127647,0.9436538,-0.1081494
+	sym = strutConnector_4292111388
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113678
 	EVENTS
 	{
 	}
@@ -4133,10 +4017,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293511394
+	part = strutConnector_4292111276
 	partName = StrutConnector
-	pos = 0.1582734,9.711157,3.870025
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 0.1582734,9.711157,3.870008
+	rot = -0.5000002,0.4999999,0.5000002,-0.4999999
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4144,9 +4028,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Fuel_7; pos: -0.1502504,-0.05059915,-0.02464286; dir: -0.9364652,-0.3153454,-0.1535913
-	sym = strutConnector_4293511338
-	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4293512540
+	cData = tgt: B9.Cockpit.S2.Body.Fuel_7; pos: -0.1502504,-0.05060296,-0.02464281; dir: -0.9364652,-0.3153454,-0.1535913
+	sym = strutConnector_4292111220
+	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4292112254
 	EVENTS
 	{
 	}
@@ -4156,10 +4040,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293511338
+	part = strutConnector_4292111220
 	partName = StrutConnector
-	pos = 2.096807,9.711157,3.870025
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 2.096807,9.711157,3.870008
+	rot = -0.5000002,0.4999999,0.5000002,-0.5
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4167,9 +4051,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Fuel_7; pos: -0.1502504,-0.05059915,0.02464293; dir: -0.9364656,-0.3153459,0.1535916
-	sym = strutConnector_4293511394
-	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4293512394
+	cData = tgt: B9.Cockpit.S2.Body.Fuel_7; pos: -0.1502514,-0.05060295,0.02464289; dir: -0.9364656,-0.3153459,0.1535916
+	sym = strutConnector_4292111276
+	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4292112108
 	EVENTS
 	{
 	}
@@ -4179,10 +4063,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293511282
+	part = strutConnector_4292111164
 	partName = StrutConnector
-	pos = 0.1635857,9.711157,4.068044
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 0.1635857,9.711157,4.068029
+	rot = -0.5000002,0.4999999,0.5000002,-0.4999999
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4190,9 +4074,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.LFO_6; pos: -0.2369827,0.7991008,0.05653126; dir: -0.2836703,0.9565313,0.0676682
-	sym = strutConnector_4293511226
-	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4293512540
+	cData = tgt: B9.Cockpit.S2.Body.LFO_6; pos: -0.236983,0.7990969,0.05653132; dir: -0.2836703,0.9565313,0.0676682
+	sym = strutConnector_4292111108
+	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4292112254
 	EVENTS
 	{
 	}
@@ -4202,10 +4086,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293511226
+	part = strutConnector_4292111108
 	partName = StrutConnector
-	pos = 2.091494,9.711157,4.068044
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 2.091494,9.711157,4.068029
+	rot = -0.5000002,0.4999999,0.5000002,-0.5
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4213,9 +4097,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.LFO_6; pos: -0.2369827,0.7991017,-0.05653168; dir: -0.2836705,0.9565316,-0.06766865
-	sym = strutConnector_4293511282
-	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4293512394
+	cData = tgt: B9.Cockpit.S2.Body.LFO_6; pos: -0.2369839,0.7990989,-0.05653191; dir: -0.2836705,0.9565316,-0.06766865
+	sym = strutConnector_4292111164
+	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4292112108
 	EVENTS
 	{
 	}
@@ -4225,10 +4109,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293511170
+	part = strutConnector_4292111052
 	partName = StrutConnector
-	pos = 0.143548,9.71171,4.467611
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 0.143548,9.71171,4.467596
+	rot = -0.5000002,0.4999999,0.5000002,-0.4999999
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4236,9 +4120,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Fuel_7; pos: -0.1953897,0.00214379,0.0005979272; dir: -0.9999349,0.01099059,0.003059943
-	sym = strutConnector_4293511114
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293514312
+	cData = tgt: B9.Cockpit.S2.Body.Fuel_7; pos: -0.1953888,0.002139907,0.0005979772; dir: -0.9999349,0.01099059,0.003059943
+	sym = strutConnector_4292110996
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292114026
 	EVENTS
 	{
 	}
@@ -4248,10 +4132,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293511114
+	part = strutConnector_4292110996
 	partName = StrutConnector
-	pos = 2.111532,9.71171,4.467611
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 2.111532,9.71171,4.467596
+	rot = -0.5000002,0.4999999,0.5000002,-0.5
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4259,9 +4143,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Fuel_7; pos: -0.1953897,0.00214379,-0.0005979654; dir: -0.9999354,0.01099023,-0.003060008
-	sym = strutConnector_4293511170
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513964
+	cData = tgt: B9.Cockpit.S2.Body.Fuel_7; pos: -0.1953898,0.002139925,-0.0005979641; dir: -0.9999354,0.01099023,-0.003060008
+	sym = strutConnector_4292111052
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113678
 	EVENTS
 	{
 	}
@@ -4271,10 +4155,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293511058
+	part = strutConnector_4292110940
 	partName = StrutConnector
-	pos = 0.150025,9.711926,1.861449
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 0.150025,9.711926,1.861433
+	rot = -0.5000002,0.4999999,0.5000002,-0.4999999
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4282,9 +4166,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Cargo.2m_9; pos: -0.1971121,0.001559187,0.008770975; dir: -0.9989801,0.007921271,0.044452
-	sym = strutConnector_4293511002
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513616
+	cData = tgt: B9.Cockpit.S2.Body.Cargo.2m_9; pos: -0.1971121,0.001555303,0.008770906; dir: -0.9989801,0.007921271,0.044452
+	sym = strutConnector_4292110884
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113330
 	EVENTS
 	{
 	}
@@ -4294,10 +4178,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293511002
+	part = strutConnector_4292110884
 	partName = StrutConnector
-	pos = 2.105055,9.711926,1.861448
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 2.105055,9.711926,1.861432
+	rot = -0.5000002,0.4999999,0.5000002,-0.5
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4305,9 +4189,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Cargo.2m_9; pos: -0.1971121,0.001559186,-0.008770954; dir: -0.9989806,0.007920713,-0.0444519
-	sym = strutConnector_4293511058
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513078
+	cData = tgt: B9.Cockpit.S2.Body.Cargo.2m_9; pos: -0.1971121,0.001555322,-0.008771014; dir: -0.9989806,0.007920713,-0.0444519
+	sym = strutConnector_4292110940
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292112792
 	EVENTS
 	{
 	}
@@ -4317,10 +4201,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293510946
+	part = strutConnector_4292110828
 	partName = StrutConnector
-	pos = 0.1773607,9.711926,2.041956
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 0.1773607,9.711926,2.041939
+	rot = -0.5000002,0.4999999,0.5000002,-0.4999999
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4328,9 +4212,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Fuel_7; pos: -0.2716611,0.792647,0.1013131; dir: -0.3218679,0.9391444,0.1200372
-	sym = strutConnector_4293510890
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513616
+	cData = tgt: B9.Cockpit.S2.Body.Fuel_7; pos: -0.2716624,0.7926442,0.1013133; dir: -0.3218679,0.9391444,0.1200372
+	sym = strutConnector_4292110772
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113330
 	EVENTS
 	{
 	}
@@ -4340,10 +4224,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293510890
+	part = strutConnector_4292110772
 	partName = StrutConnector
-	pos = 2.077719,9.711926,2.041956
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 2.077719,9.711926,2.041939
+	rot = -0.5000002,0.4999999,0.5000002,-0.5
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4351,9 +4235,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Fuel_7; pos: -0.2716621,0.7926491,-0.1013138; dir: -0.3218681,0.9391446,-0.1200377
-	sym = strutConnector_4293510946
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513078
+	cData = tgt: B9.Cockpit.S2.Body.Fuel_7; pos: -0.2716623,0.7926452,-0.1013139; dir: -0.3218681,0.9391446,-0.1200377
+	sym = strutConnector_4292110828
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292112792
 	EVENTS
 	{
 	}
@@ -4363,10 +4247,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293510834
+	part = strutConnector_4292110716
 	partName = StrutConnector
-	pos = 0.1820452,9.711926,0.5832511
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 0.1820452,9.711926,0.5832367
+	rot = -0.5000002,0.4999999,0.5000002,-0.4999999
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4374,9 +4258,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Cargo.2m_10; pos: -0.2100735,0.001741278,0.05212764; dir: -0.9705343,0.00806275,0.2408283
-	sym = strutConnector_4293510778
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513616
+	cData = tgt: B9.Cockpit.S2.Body.Cargo.2m_10; pos: -0.2100735,0.001737443,0.05212775; dir: -0.9705343,0.00806275,0.2408283
+	sym = strutConnector_4292110660
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113330
 	EVENTS
 	{
 	}
@@ -4386,10 +4270,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293510778
+	part = strutConnector_4292110660
 	partName = StrutConnector
-	pos = 2.073035,9.711926,0.5832511
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 2.073035,9.711926,0.5832367
+	rot = -0.5000002,0.4999999,0.5000002,-0.5
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4397,9 +4281,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Cargo.2m_10; pos: -0.2100744,0.001741271,-0.05212761; dir: -0.9705347,0.008062096,-0.2408283
-	sym = strutConnector_4293510834
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513078
+	cData = tgt: B9.Cockpit.S2.Body.Cargo.2m_10; pos: -0.2100744,0.001737467,-0.05212792; dir: -0.9705347,0.008062096,-0.2408283
+	sym = strutConnector_4292110716
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292112792
 	EVENTS
 	{
 	}
@@ -4409,10 +4293,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293510722
+	part = strutConnector_4292110604
 	partName = StrutConnector
-	pos = 0.2610688,9.711926,-1.489988
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 0.2610688,9.711926,-1.490004
+	rot = -0.5000002,0.4999999,0.5000002,-0.4999999
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4420,9 +4304,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Fuel_11; pos: -0.245389,0.09484664,0.1620406; dir: -0.7941861,0.3069762,0.524437
-	sym = strutConnector_4293510666
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513616
+	cData = tgt: B9.Cockpit.S2.Body.Fuel_11; pos: -0.2453891,0.09484272,0.1620408; dir: -0.7941861,0.3069762,0.524437
+	sym = strutConnector_4292110548
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113330
 	EVENTS
 	{
 	}
@@ -4432,10 +4316,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293510666
+	part = strutConnector_4292110548
 	partName = StrutConnector
-	pos = 1.994011,9.711926,-1.489988
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 1.994011,9.711926,-1.490004
+	rot = -0.5000002,0.4999999,0.5000002,-0.5
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4443,9 +4327,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Fuel_11; pos: -0.245389,0.0948465,-0.1620412; dir: -0.7941865,0.3069756,-0.5244372
-	sym = strutConnector_4293510722
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513078
+	cData = tgt: B9.Cockpit.S2.Body.Fuel_11; pos: -0.2453891,0.09484276,-0.1620412; dir: -0.7941865,0.3069756,-0.5244372
+	sym = strutConnector_4292110604
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292112792
 	EVENTS
 	{
 	}
@@ -4455,10 +4339,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293510610
+	part = strutConnector_4292110492
 	partName = StrutConnector
-	pos = 0.1691536,9.711157,2.55804
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 0.1691536,9.711157,2.558023
+	rot = -0.5000002,0.4999999,0.5000002,-0.4999999
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4466,9 +4350,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Cargo.2m_9; pos: -0.2729025,0.007720855,0.09351866; dir: -0.9456579,0.02676759,0.3240596
-	sym = strutConnector_4293510554
-	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4293512540
+	cData = tgt: B9.Cockpit.S2.Body.Cargo.2m_9; pos: -0.2729016,0.007716994,0.09351864; dir: -0.9456579,0.02676759,0.3240596
+	sym = strutConnector_4292110436
+	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4292112254
 	EVENTS
 	{
 	}
@@ -4478,10 +4362,10 @@ PART
 }
 PART
 {
-	part = strutConnector_4293510554
+	part = strutConnector_4292110436
 	partName = StrutConnector
-	pos = 2.085927,9.711157,2.55804
-	rot = -0.5000001,0.4999999,0.5000001,-0.4999999
+	pos = 2.085927,9.711157,2.558023
+	rot = -0.5000002,0.4999999,0.5000002,-0.5
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4489,9 +4373,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Cockpit.S2.Body.Cargo.2m_9; pos: -0.2729034,0.007720843,-0.09351922; dir: -0.9456583,0.02676691,-0.3240597
-	sym = strutConnector_4293510610
-	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4293512394
+	cData = tgt: B9.Cockpit.S2.Body.Cargo.2m_9; pos: -0.2729035,0.007717027,-0.09351902; dir: -0.9456583,0.02676691,-0.3240597
+	sym = strutConnector_4292110492
+	srfN = srfAttach,B9.Aero.Wing.SH.S.2m_4292112108
 	EVENTS
 	{
 	}
@@ -4501,10 +4385,10 @@ PART
 }
 PART
 {
-	part = fuelLine_4293510498
+	part = fuelLine_4292110380
 	partName = FuelLine
-	pos = -0.02161968,9.530443,-1.84388
-	rot = 0.7071068,-5.018653E-09,0.7071068,-4.447545E-07
+	pos = -0.02161968,9.530443,-1.843895
+	rot = 0.7071068,-2.107343E-08,0.7071068,-5.689825E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4512,9 +4396,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Engine.SABRE.M_26; pos: -1.902901,-0.425004,-0.2110675; dir: -0.9702855,-0.2167098,-0.1076243; rot: -0.3928477,0.3928481,-0.5879374,-0.5879378
-	sym = fuelLine_4293510418
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513616
+	cData = tgt: B9.Engine.SABRE.M_28; pos: -1.902905,-0.4250026,-0.2110679; dir: -0.9702855,-0.2167098,-0.1076243; rot: -0.3928475,0.3928477,-0.5879375,-0.587938
+	sym = fuelLine_4292110300
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113330
 	EVENTS
 	{
 	}
@@ -4524,10 +4408,10 @@ PART
 }
 PART
 {
-	part = fuelLine_4293510418
+	part = fuelLine_4292110300
 	partName = FuelLine
-	pos = 2.2767,9.530443,-1.84388
-	rot = 0.7071068,-3.506256E-07,0.7071068,-3.520286E-07
+	pos = 2.2767,9.530443,-1.843895
+	rot = 0.7071068,-4.003951E-07,0.7071068,-4.636154E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4535,9 +4419,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Engine.SABRE.M_34; pos: -1.902896,-0.4250051,0.2110703; dir: -0.9702859,-0.2167098,0.1076242; rot: -0.3928471,0.3928471,0.587938,0.5879382
-	sym = fuelLine_4293510498
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513078
+	cData = tgt: B9.Engine.SABRE.M_35; pos: -1.902897,-0.4250046,0.2110696; dir: -0.9702859,-0.2167098,0.1076242; rot: -0.3928469,0.392847,0.587938,0.5879384
+	sym = fuelLine_4292110380
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292112792
 	EVENTS
 	{
 	}
@@ -4547,9 +4431,9 @@ PART
 }
 PART
 {
-	part = fuelLine_4293510338
+	part = fuelLine_4292110220
 	partName = FuelLine
-	pos = 0.08115971,9.977743,3.027319
+	pos = 0.08115971,9.977743,3.027304
 	rot = 0.6619471,0.2486486,0.2486487,0.6619471
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4558,9 +4442,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Aero.Wing.SH.S.4m_45; pos: -0.3548567,-1.0558,0.04276665; dir: -0.3183556,-0.9471946,0.03836745; rot: -0.9105957,-4.214685E-08,0.4132985,0
-	sym = fuelLine_4293510258
-	srfN = srfAttach,B9.Cockpit.S2.Body.Fuel_4293516668
+	cData = tgt: B9.Aero.Wing.SH.S.4m_45; pos: -0.3548567,-1.055803,0.04276665; dir: -0.3183556,-0.9471946,0.03836745; rot: -0.9105957,-4.214685E-08,0.4132985,0
+	sym = fuelLine_4292110140
+	srfN = srfAttach,B9.Cockpit.S2.Body.Fuel_4292116382
 	EVENTS
 	{
 	}
@@ -4570,9 +4454,9 @@ PART
 }
 PART
 {
-	part = fuelLine_4293510258
+	part = fuelLine_4292110140
 	partName = FuelLine
-	pos = 2.17392,9.977743,3.027319
+	pos = 2.17392,9.977743,3.027304
 	rot = 0.2486487,0.6619471,0.6619471,0.2486485
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -4581,9 +4465,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	cData = tgt: B9.Aero.Wing.SH.S.4m_65; pos: -0.3548577,-1.055798,-0.04276565; dir: -0.3183557,-0.9471948,-0.03836723; rot: -0.9105957,2.107342E-07,-0.4132984,2.107342E-07
-	sym = fuelLine_4293510338
-	srfN = srfAttach,B9.Cockpit.S2.Body.Fuel_4293516668
+	cData = tgt: B9.Aero.Wing.SH.S.4m_65; pos: -0.3548577,-1.055801,-0.04276583; dir: -0.3183557,-0.9471948,-0.03836723; rot: -0.9105957,2.107342E-07,-0.4132984,2.107342E-07
+	sym = fuelLine_4292110220
+	srfN = srfAttach,B9.Cockpit.S2.Body.Fuel_4292116382
 	EVENTS
 	{
 	}
@@ -4593,10 +4477,10 @@ PART
 }
 PART
 {
-	part = B9.Control.RCS.Port.R1_4293510178
+	part = B9.Control.RCS.Port.R1_4292110060
 	partName = Part
-	pos = -6.337827,9.211926,0.8592885
-	rot = 1,-2.980236E-08,-8.415695E-14,-8.42937E-08
+	pos = -6.337827,9.211926,0.8592739
+	rot = 1,-2.980237E-08,-7.913266E-14,8.42937E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4604,8 +4488,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Control.RCS.Port.R1_4293510138
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513582
+	sym = B9.Control.RCS.Port.R1_4292110020
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113296
 	EVENTS
 	{
 	}
@@ -4653,10 +4537,10 @@ PART
 }
 PART
 {
-	part = B9.Control.RCS.Port.R1_4293510138
+	part = B9.Control.RCS.Port.R1_4292110020
 	partName = Part
-	pos = 8.59291,9.211926,0.8592883
-	rot = 1,2.980231E-08,7.100999E-14,-4.214685E-08
+	pos = 8.592911,9.211926,0.8592739
+	rot = 1,2.98023E-08,6.7828E-14,1.685874E-07
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -4664,8 +4548,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Control.RCS.Port.R1_4293510178
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513044
+	sym = B9.Control.RCS.Port.R1_4292110060
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292112758
 	EVENTS
 	{
 	}
@@ -4713,127 +4597,7 @@ PART
 }
 PART
 {
-	part = B9.Control.RCS.Port.R1_4293510098
-	partName = Part
-	pos = -6.319573,9.711926,0.8986981
-	rot = 2.980236E-08,1,8.42937E-08,-8.415695E-14
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	sym = B9.Control.RCS.Port.R1_4293510058
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513582
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		isEnabled = True
-		EVENTS
-		{
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = B9.Control.RCS.Port.R1_4293510058
-	partName = Part
-	pos = 8.574656,9.711926,0.898698
-	rot = -2.980233E-08,1,4.214685E-08,7.100999E-14
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	sym = B9.Control.RCS.Port.R1_4293510098
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513044
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		isEnabled = True
-		EVENTS
-		{
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = solarPanels2_4293510018
+	part = solarPanels2_4292109980
 	partName = Part
 	pos = -0.06574392,10.54453,14.66842
 	rot = -0.7071068,0,0,-0.7071068
@@ -4844,8 +4608,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = solarPanels2_4293509908
-	srfN = srfAttach,B9.Cockpit.S2.Body.6m_4293516778
+	sym = solarPanels2_4292109870
+	srfN = srfAttach,B9.Cockpit.S2.Body.6m_4292116492
 	EVENTS
 	{
 	}
@@ -4904,7 +4668,7 @@ PART
 }
 PART
 {
-	part = solarPanels2_4293509908
+	part = solarPanels2_4292109870
 	partName = Part
 	pos = 2.320824,10.54453,14.66842
 	rot = -3.090863E-08,0.7071068,0.7071068,-3.090862E-08
@@ -4915,8 +4679,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = solarPanels2_4293510018
-	srfN = srfAttach,B9.Cockpit.S2.Body.6m_4293516778
+	sym = solarPanels2_4292109980
+	srfN = srfAttach,B9.Cockpit.S2.Body.6m_4292116492
 	EVENTS
 	{
 	}
@@ -4975,293 +4739,9 @@ PART
 }
 PART
 {
-	part = solarPanels2_4293509798
+	part = rtg_4292109760
 	partName = Part
-	pos = -2.586154,10.54453,-5.145199
-	rot = -0.7054631,-0.0481851,0.04818514,-0.7054631
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	sym = solarPanels2_4293509688
-	srfN = srfAttach,B9.Engine.SABRE.M_4293515596
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleDeployableSolarPanel
-		isEnabled = True
-		currentRotation = (0, 0, 0, 0)
-		stateString = RETRACTED
-		storedAnimationTime = 0
-		storedAnimationSpeed = 0
-		EVENTS
-		{
-			Extend
-			{
-				active = True
-				guiActive = True
-				guiIcon = Extend Panels
-				guiName = Extend Panels
-				category = Extend Panels
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-			Retract
-			{
-				active = True
-				guiActive = True
-				guiIcon = Retract Panels
-				guiName = Retract Panels
-				category = Retract Panels
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ExtendPanelsAction
-			{
-				actionGroup = Custom05
-			}
-			ExtendAction
-			{
-				actionGroup = None
-			}
-			RetractAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = solarPanels2_4293509688
-	partName = Part
-	pos = 4.841232,10.54453,-5.145199
-	rot = -0.04818515,0.7054632,0.7054631,0.04818505
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	sym = solarPanels2_4293509798
-	srfN = srfAttach,B9.Engine.SABRE.M_4293515100
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleDeployableSolarPanel
-		isEnabled = True
-		currentRotation = (0, 0, 0, 0)
-		stateString = RETRACTED
-		storedAnimationTime = 0
-		storedAnimationSpeed = 0
-		EVENTS
-		{
-			Extend
-			{
-				active = True
-				guiActive = True
-				guiIcon = Extend Panels
-				guiName = Extend Panels
-				category = Extend Panels
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-			Retract
-			{
-				active = True
-				guiActive = True
-				guiIcon = Retract Panels
-				guiName = Retract Panels
-				category = Retract Panels
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ExtendPanelsAction
-			{
-				actionGroup = Custom05
-			}
-			ExtendAction
-			{
-				actionGroup = None
-			}
-			RetractAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = solarPanels2_4293509578
-	partName = Part
-	pos = 0.4458945,11.52769,5.16403
-	rot = -0.6408564,0.2988362,0.2988364,-0.6408564
-	attRot = 0,0.08715575,-5.194888E-09,0.9961947
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	sym = solarPanels2_4293509468
-	srfN = srfAttach,B9.Cockpit.S2.Body.LFO_4293516706
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleDeployableSolarPanel
-		isEnabled = True
-		currentRotation = (0, 0, 0, 0)
-		stateString = RETRACTED
-		storedAnimationTime = 0
-		storedAnimationSpeed = 0
-		EVENTS
-		{
-			Extend
-			{
-				active = True
-				guiActive = True
-				guiIcon = Extend Panels
-				guiName = Extend Panels
-				category = Extend Panels
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-			Retract
-			{
-				active = True
-				guiActive = True
-				guiIcon = Retract Panels
-				guiName = Retract Panels
-				category = Retract Panels
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ExtendPanelsAction
-			{
-				actionGroup = Custom05
-			}
-			ExtendAction
-			{
-				actionGroup = None
-			}
-			RetractAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = solarPanels2_4293509468
-	partName = Part
-	pos = 1.809186,11.52769,5.16403
-	rot = -0.2988364,0.6408563,0.6408564,-0.2988363
-	attRot = 0,-0.08715575,5.194888E-09,0.9961947
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	sym = solarPanels2_4293509578
-	srfN = srfAttach,B9.Cockpit.S2.Body.LFO_4293516706
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleDeployableSolarPanel
-		isEnabled = True
-		currentRotation = (0, 0, 0, 0)
-		stateString = RETRACTED
-		storedAnimationTime = 0
-		storedAnimationSpeed = 0
-		EVENTS
-		{
-			Extend
-			{
-				active = True
-				guiActive = True
-				guiIcon = Extend Panels
-				guiName = Extend Panels
-				category = Extend Panels
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-			Retract
-			{
-				active = True
-				guiActive = True
-				guiIcon = Retract Panels
-				guiName = Retract Panels
-				category = Retract Panels
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ExtendPanelsAction
-			{
-				actionGroup = Custom05
-			}
-			ExtendAction
-			{
-				actionGroup = None
-			}
-			RetractAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = rtg_4293509358
-	partName = Part
-	pos = 1.12754,10.98876,4.421255
+	pos = 1.12754,10.98876,4.42124
 	rot = -8.432164E-09,0.7071068,-0.7071068,8.432164E-09
 	attRot = -0.7071067,0,0,-0.7071067
 	mir = 1,1,1
@@ -5270,7 +4750,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,B9.Cockpit.S2.Body.LFO_4293516706
+	srfN = srfAttach,B9.Cockpit.S2.Body.LFO_4292116420
 	EVENTS
 	{
 	}
@@ -5327,9 +4807,9 @@ PART
 }
 PART
 {
-	part = rtg_4293509332
+	part = rtg_4292109734
 	partName = Part
-	pos = 1.12754,10.98903,-2.945335
+	pos = 1.12754,10.98903,-2.945351
 	rot = -8.432164E-09,0.7071068,0.7071068,-8.432164E-09
 	attRot = 0.7071067,0,0,-0.7071067
 	mir = 1,1,1
@@ -5338,7 +4818,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,B9.Cockpit.S2.Body.LFO_4293516226
+	srfN = srfAttach,B9.Cockpit.S2.Body.LFO_4292115940
 	EVENTS
 	{
 	}
@@ -5395,10 +4875,10 @@ PART
 }
 PART
 {
-	part = B9.Utility.Landing.Gear.HDG2T_4293500164
+	part = B9.Utility.Landing.Gear.HDG2T_4292109708
 	partName = Part
 	pos = 1.12754,9.461479,14.99607
-	rot = 0.04361938,3.81333E-09,-8.733957E-08,-0.9990482
+	rot = 0.04361938,3.813335E-09,-8.733959E-08,-0.9990484
 	attRot = -0.04361939,0,0,0.9990482
 	mir = 1,1,1
 	istg = 0
@@ -5406,7 +4886,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,B9.Cockpit.S2.Control.SAS_4293516846
+	srfN = srfAttach,B9.Cockpit.S2.Control.SAS_4292116560
 	EVENTS
 	{
 	}
@@ -5660,10 +5140,10 @@ PART
 }
 PART
 {
-	part = B9.Utility.Landing.Gear.HDG2T_4293498632
+	part = B9.Utility.Landing.Gear.HDG2T_4292109562
 	partName = Part
-	pos = -1.99856,9.211926,-0.02297865
-	rot = 8.42937E-08,-2.980233E-08,5.762046E-08,1
+	pos = -1.99856,9.211926,-0.02299309
+	rot = 2.107343E-07,-2.980234E-08,5.762049E-08,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -5671,8 +5151,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Utility.Landing.Gear.HDG2T_4293497724
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513616
+	sym = B9.Utility.Landing.Gear.HDG2T_4292109416
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113330
 	EVENTS
 	{
 	}
@@ -5926,10 +5406,10 @@ PART
 }
 PART
 {
-	part = B9.Utility.Landing.Gear.HDG2T_4293497724
+	part = B9.Utility.Landing.Gear.HDG2T_4292109416
 	partName = Part
-	pos = 4.25364,9.211926,-0.02297857
-	rot = 8.42937E-08,2.980233E-08,-5.762047E-08,1
+	pos = 4.25364,9.211926,-0.02299309
+	rot = 2.107343E-07,2.980234E-08,-5.762049E-08,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -5937,8 +5417,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Utility.Landing.Gear.HDG2T_4293498632
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513078
+	sym = B9.Utility.Landing.Gear.HDG2T_4292109562
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292112792
 	EVENTS
 	{
 	}
@@ -6192,10 +5672,10 @@ PART
 }
 PART
 {
-	part = B9.Utility.Landing.Gear.HDG2T_4293496542
+	part = B9.Utility.Landing.Gear.HDG2T_4292109270
 	partName = Part
-	pos = 2.313283,9.211926,-0.00752905
-	rot = -2.528811E-07,2.980233E-08,-1.390907E-08,1
+	pos = 2.313283,9.211926,-0.007543564
+	rot = -2.107343E-07,2.980234E-08,-1.390907E-08,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -6203,8 +5683,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Utility.Landing.Gear.HDG2T_4293492570
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513078
+	sym = B9.Utility.Landing.Gear.HDG2T_4292109124
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292112792
 	EVENTS
 	{
 	}
@@ -6458,10 +5938,10 @@ PART
 }
 PART
 {
-	part = B9.Utility.Landing.Gear.HDG2T_4293492570
+	part = B9.Utility.Landing.Gear.HDG2T_4292109124
 	partName = Part
-	pos = -0.05820346,9.211926,-0.007529125
-	rot = -2.528811E-07,-2.980233E-08,1.390907E-08,1
+	pos = -0.05820346,9.211926,-0.007543564
+	rot = -2.107343E-07,-2.980234E-08,1.390907E-08,1
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -6469,8 +5949,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Utility.Landing.Gear.HDG2T_4293496542
-	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4293513616
+	sym = B9.Utility.Landing.Gear.HDG2T_4292109270
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113330
 	EVENTS
 	{
 	}
@@ -6716,6 +6196,748 @@ PART
 				actionGroup = None
 			}
 			toggleInvertAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = solarPanels2_4292108978
+	partName = Part
+	pos = 0.2684916,11.32549,5.142305
+	rot = -0.6619471,0.2486486,0.2486487,-0.6619471
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = solarPanels2_4292108868
+	srfN = srfAttach,B9.Cockpit.S2.Body.LFO_4292116420
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		currentRotation = (0, 0, 0, 0)
+		stateString = RETRACTED
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		EVENTS
+		{
+			Extend
+			{
+				active = True
+				guiActive = True
+				guiIcon = Extend Panels
+				guiName = Extend Panels
+				category = Extend Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Retract
+			{
+				active = True
+				guiActive = True
+				guiIcon = Retract Panels
+				guiName = Retract Panels
+				category = Retract Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = Custom05
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = solarPanels2_4292108868
+	partName = Part
+	pos = 1.986588,11.32549,5.142305
+	rot = -0.2486488,0.6619471,0.6619471,-0.2486486
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = solarPanels2_4292108978
+	srfN = srfAttach,B9.Cockpit.S2.Body.LFO_4292116420
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		currentRotation = (0, 0, 0, 0)
+		stateString = RETRACTED
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		EVENTS
+		{
+			Extend
+			{
+				active = True
+				guiActive = True
+				guiIcon = Extend Panels
+				guiName = Extend Panels
+				category = Extend Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Retract
+			{
+				active = True
+				guiActive = True
+				guiIcon = Retract Panels
+				guiName = Retract Panels
+				category = Retract Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = Custom05
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = B9.Control.RCS.Block.R12_4292108758
+	partName = Part
+	pos = -0.06788576,10.54453,9.241248
+	rot = -0.7071068,0.7071068,0,0
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = B9.Control.RCS.Block.R12_4292108674
+	srfN = srfAttach,B9.Cockpit.S2.Body.6m_4292116492
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		isEnabled = True
+		EVENTS
+		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = B9.Control.RCS.Block.R12_4292108674
+	partName = Part
+	pos = 2.322966,10.54453,9.241248
+	rot = 0.7071069,0.7071068,0,0
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = B9.Control.RCS.Block.R12_4292108758
+	srfN = srfAttach,B9.Cockpit.S2.Body.6m_4292116492
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		isEnabled = True
+		EVENTS
+		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = B9.Control.RCS.Port.R1_4292108590
+	partName = Part
+	pos = -6.277366,9.711926,0.8612671
+	rot = 2.980235E-08,1,1.685874E-07,-8.541303E-14
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = B9.Control.RCS.Port.R1_4292108550
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292113296
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		isEnabled = True
+		EVENTS
+		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = B9.Control.RCS.Port.R1_4292108550
+	partName = Part
+	pos = 8.532446,9.711926,0.8612671
+	rot = -2.980235E-08,1,1.685874E-07,8.415696E-14
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = B9.Control.RCS.Port.R1_4292108590
+	srfN = srfAttach,B9.Aero.Wing.SH.S.4m_4292112758
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		isEnabled = True
+		EVENTS
+		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = B9.Control.RCS.Port.R1_4292108510
+	partName = Part
+	pos = -0.06472492,10.24213,1.02232
+	rot = 0.7071068,-0.7071069,-4.214685E-08,0
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = B9.Control.RCS.Port.R1_4292108470
+	srfN = srfAttach,B9.Cockpit.S2.Body.Cargo.2m_4292116308
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		isEnabled = True
+		EVENTS
+		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = B9.Control.RCS.Port.R1_4292108470
+	partName = Part
+	pos = 2.319805,10.24213,1.02232
+	rot = 0.7071068,0.7071069,4.214685E-08,0
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = B9.Control.RCS.Port.R1_4292108510
+	srfN = srfAttach,B9.Cockpit.S2.Body.Cargo.2m_4292116308
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		isEnabled = True
+		EVENTS
+		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = B9.Control.RCS.Port.R1_4292108430
+	partName = Part
+	pos = -0.06472492,10.35648,-8.079426
+	rot = 0.7071068,-6.322027E-08,-2.107343E-08,-0.7071069
+	attRot = 0.4999999,0.4999999,-0.5,0.4999999
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = B9.Control.RCS.Port.R1_4292108390
+	srfN = srfAttach,B9.Cockpit.S2.Body.Tail.2_4292115864
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		isEnabled = True
+		EVENTS
+		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = B9.Control.RCS.Port.R1_4292108390
+	partName = Part
+	pos = 2.319805,10.35648,-8.079426
+	rot = -0.7071068,-6.322029E-08,-2.107343E-08,0.7071068
+	attRot = -0.4999999,-0.4999999,0.5,0.4999999
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = B9.Control.RCS.Port.R1_4292108430
+	srfN = srfAttach,B9.Cockpit.S2.Body.Tail.2_4292115864
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		isEnabled = True
+		EVENTS
+		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = B9.Control.RCS.Port.R1_4292108350
+	partName = Part
+	pos = -0.06472492,10.34674,9.526111
+	rot = 6.322028E-08,0.7071068,0.7071068,-2.107343E-08
+	attRot = 0.4999999,0.4999999,0.4999999,-0.4999999
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = B9.Control.RCS.Port.R1_4292108310
+	srfN = srfAttach,B9.Cockpit.S2.Body.6m_4292116492
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		isEnabled = True
+		EVENTS
+		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = B9.Control.RCS.Port.R1_4292108310
+	partName = Part
+	pos = 2.319805,10.34674,9.526111
+	rot = -6.322027E-08,0.7071068,0.7071069,2.107344E-08
+	attRot = -0.4999999,-0.4999999,-0.4999999,-0.4999999
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	sym = B9.Control.RCS.Port.R1_4292108350
+	srfN = srfAttach,B9.Cockpit.S2.Body.6m_4292116492
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		isEnabled = True
+		EVENTS
+		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
 			{
 				actionGroup = None
 			}
