@@ -1,10 +1,10 @@
 ship = B9 UAS-1 Barnard's Star
 version = 0.22.0
-description = High maneuverability espionage drone, designed for low-altitude infiltration.¨¨Intended to be flown by AIs, human pilots are advised to use stability enhancement due to the extreme maneuverability - the UAS-1 can pitch 180 degrees and reverse direction mid-air in a couple of seconds.¨¨1 - Toggle thrust vectoring¨2 - Toggle landing gear motors
+description = High maneuverability espionage drone, designed for low-altitude infiltration.¨¨Intended to be flown by AIs, human pilots are advised to use stability enhancement due to the extreme maneuverability - the UAS-1 can pitch 180 degrees and reverse direction mid-air in a couple of seconds.¨¨1 - Toggle thrust vectoring¨2 - Toggle landing gear motors¨3 - Toggle navigation lights¨4 - Toggle landing light
 type = SPH
 PART
 {
-	part = B9.Cockpit.MK1.Control.ACU_4293268208
+	part = B9.Cockpit.MK1.Control.ACU_4294006562
 	partName = Part
 	pos = 0.0284535,5.792612,-0.1744301
 	rot = 0.7071068,0,0,0.7071068
@@ -15,11 +15,12 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Cockpit.MK1.Body.Fuel.2m_4293268164
-	link = B9.Cockpit.MK1.Junction_4293268102
-	link = rtg_4293267924
-	attN = top,B9.Cockpit.MK1.Junction_4293268102
-	attN = bottom,B9.Cockpit.MK1.Body.Fuel.2m_4293268164
+	link = B9.Cockpit.MK1.Body.Fuel.2m_4294006518
+	link = B9.Cockpit.MK1.Junction_4294006456
+	link = rtg_4294006278
+	link = B9.Utility.Light.A1.Closed.T_4293978126
+	attN = top,B9.Cockpit.MK1.Junction_4294006456
+	attN = bottom,B9.Cockpit.MK1.Body.Fuel.2m_4294006518
 	EVENTS
 	{
 	}
@@ -136,9 +137,9 @@ PART
 }
 PART
 {
-	part = B9.Cockpit.MK1.Body.Fuel.2m_4293268164
+	part = B9.Cockpit.MK1.Body.Fuel.2m_4294006518
 	partName = Part
-	pos = 0.0284535,5.792612,-1.424431
+	pos = 0.0284535,5.792612,-1.424432
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -147,14 +148,14 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Utility.InfoDrive_4293268128
-	link = B9.Engine.Jet.Turbofan.F119_4293268072
-	link = B9.Aero.Wing.SW.Winglet.3x2-75m_4293267760
-	link = B9.Aero.Wing.SW.Winglet.3x2-75m_4293267560
-	link = B9.Aero.Wing.SW.Canard.2-3x1-6m_4293267288
-	link = B9.Aero.Wing.SW.Canard.2-3x1-6m_4293267246
-	attN = top,B9.Cockpit.MK1.Control.ACU_4293268208
-	attN = bottom,B9.Engine.Jet.Turbofan.F119_4293268072
+	link = B9.Engine.Jet.Turbofan.F119_4294006426
+	link = B9.Aero.Wing.SW.Winglet.3x2-75m_4294006114
+	link = B9.Aero.Wing.SW.Winglet.3x2-75m_4294005914
+	link = B9.Aero.Wing.SW.Canard.2-3x1-6m_4294005642
+	link = B9.Aero.Wing.SW.Canard.2-3x1-6m_4294005600
+	link = B9.Utility.InfoDrive_4294006482
+	attN = top,B9.Cockpit.MK1.Control.ACU_4294006562
+	attN = bottom,B9.Engine.Jet.Turbofan.F119_4294006426
 	EVENTS
 	{
 	}
@@ -164,77 +165,10 @@ PART
 }
 PART
 {
-	part = B9.Utility.InfoDrive_4293268128
+	part = B9.Cockpit.MK1.Junction_4294006456
 	partName = Part
-	pos = 0.02845356,5.165009,-0.7387699
-	rot = -1,-1.043081E-07,-1.490116E-08,0
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	srfN = srfAttach,B9.Cockpit.MK1.Body.Fuel.2m_4293268164
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = FSinfoPopup
-		isEnabled = True
-		textHeading = UAS-1 Barnard's Star Espionage Drone
-		textBody1 = 1 - Toggle thrust vectoring
-		textBody2 = 2 - Toggle landing gear motors
-		textBody3 = 
-		textBody4 = 
-		textBody5 = 
-		textBody6 = 
-		textBody7 = 
-		textBody8 = 
-		textBody9 = 
-		textBody10 = 
-		textBody11 = Press [ i ] to toggle this window.
-		showAtFlightStart = True
-		hideAfterCountdown = True
-		showOnEachFlightStart = True
-		hasBeenShown = False
-		countDownDuration = 20
-		hideMeshInFlight = False
-		toggleKey = i
-		useHotkey = True
-		EVENTS
-		{
-			showInfoEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Show Info
-				guiName = Show Info
-				category = Show Info
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			showInfoAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = B9.Cockpit.MK1.Junction_4293268102
-	partName = Part
-	pos = 0.0284535,5.167613,2.075572
-	rot = -1.766354E-15,1,-8.42937E-08,-7.457942E-16
+	pos = 0.0284535,5.167613,2.075573
+	rot = -1.766354E-15,1,-8.42937E-08,-7.457941E-16
 	attRot = -7.21645E-16,0.7071068,0.7071067,-1.776357E-15
 	mir = 1,1,1
 	istg = 0
@@ -242,10 +176,11 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Utility.Landing.Gear.HDG1T_4293267898
-	link = B9.Aero.Intake.DSI_4293267360
-	link = B9.Aero.Intake.DSI_4293267324
-	attN = bottom01,B9.Cockpit.MK1.Control.ACU_4293268208
+	link = B9.Utility.Landing.Gear.HDG1T_4294006252
+	link = B9.Aero.Intake.DSI_4294005714
+	link = B9.Aero.Intake.DSI_4294005678
+	link = B9.Control.ASAS_4293997910
+	attN = bottom01,B9.Cockpit.MK1.Control.ACU_4294006562
 	EVENTS
 	{
 	}
@@ -255,9 +190,9 @@ PART
 }
 PART
 {
-	part = B9.Engine.Jet.Turbofan.F119_4293268072
+	part = B9.Engine.Jet.Turbofan.F119_4294006426
 	partName = Part
-	pos = 0.0284535,5.792612,-2.924433
+	pos = 0.0284535,5.792612,-2.924435
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -266,7 +201,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	attN = top,B9.Cockpit.MK1.Body.Fuel.2m_4293268164
+	attN = top,B9.Cockpit.MK1.Body.Fuel.2m_4294006518
 	EVENTS
 	{
 	}
@@ -397,9 +332,9 @@ PART
 }
 PART
 {
-	part = rtg_4293267924
+	part = rtg_4294006278
 	partName = Part
-	pos = 0.02845343,6.184711,-0.7474918
+	pos = 0.02845343,6.184711,-0.7474922
 	rot = 8.056332E-09,-0.6755902,0.7372774,-8.791945E-09
 	attRot = 0.7372773,0,0,0.6755902
 	mir = 1,1,1
@@ -408,7 +343,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,B9.Cockpit.MK1.Control.ACU_4293268208
+	srfN = srfAttach,B9.Cockpit.MK1.Control.ACU_4294006562
 	EVENTS
 	{
 	}
@@ -465,10 +400,10 @@ PART
 }
 PART
 {
-	part = B9.Utility.Landing.Gear.HDG1T_4293267898
+	part = B9.Utility.Landing.Gear.HDG1T_4294006252
 	partName = Part
-	pos = 0.02845351,5.066863,2.978526
-	rot = 8.742306E-08,-1,8.42937E-08,-5.024296E-15
+	pos = 0.02845351,5.066863,2.978529
+	rot = 8.742306E-08,-1,8.42937E-08,-5.024294E-15
 	attRot = 0,0.9999999,-5.960464E-08,-1.776357E-15
 	mir = 1,1,1
 	istg = 0
@@ -476,7 +411,7 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,B9.Cockpit.MK1.Junction_4293268102
+	srfN = srfAttach,B9.Cockpit.MK1.Junction_4294006456
 	EVENTS
 	{
 	}
@@ -730,9 +665,9 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SW.Winglet.3x2-75m_4293267760
+	part = B9.Aero.Wing.SW.Winglet.3x2-75m_4294006114
 	partName = ControlSurface
-	pos = -0.5763718,5.630549,-1.539846
+	pos = -0.5763718,5.630549,-1.539847
 	rot = -0.7010574,-0.09229597,-0.09229597,-0.7010574
 	attRot = 1.116523E-08,0,0,1
 	mir = 1,1,1
@@ -741,9 +676,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = B9.Utility.Landing.Gear.HDG1A_4293267698
-	sym = B9.Aero.Wing.SW.Winglet.3x2-75m_4293267560
-	srfN = srfAttach,B9.Cockpit.MK1.Body.Fuel.2m_4293268164
+	link = B9.Utility.Landing.Gear.HDG1A_4294006052
+	link = B9.Utility.Light.N2.Red_4293984704
+	sym = B9.Aero.Wing.SW.Winglet.3x2-75m_4294005914
+	srfN = srfAttach,B9.Cockpit.MK1.Body.Fuel.2m_4294006518
 	EVENTS
 	{
 	}
@@ -753,10 +689,10 @@ PART
 }
 PART
 {
-	part = B9.Utility.Landing.Gear.HDG1A_4293267698
+	part = B9.Utility.Landing.Gear.HDG1A_4294006052
 	partName = Part
-	pos = -0.7220783,5.395309,-2.253018
-	rot = 2.107343E-07,1.317089E-09,-0.01482804,0.9998901
+	pos = -0.7220783,5.395309,-2.253019
+	rot = 2.123697E-07,1.389919E-09,-0.01482804,0.99989
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -764,8 +700,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Utility.Landing.Gear.HDG1A_4293267498
-	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4293267760
+	sym = B9.Utility.Landing.Gear.HDG1A_4294005852
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4294006114
 	EVENTS
 	{
 	}
@@ -1019,10 +955,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SW.Winglet.3x2-75m_4293267560
+	part = B9.Aero.Wing.SW.Winglet.3x2-75m_4294005914
 	partName = ControlSurface
-	pos = 0.6332787,5.630549,-1.539846
-	rot = 0.09229598,0.7010574,0.7010574,0.09229597
+	pos = 0.6332787,5.630549,-1.539847
+	rot = 0.092296,0.7010574,0.7010574,0.09229598
 	attRot = -1.116523E-08,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1030,9 +966,10 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = B9.Utility.Landing.Gear.HDG1A_4293267498
-	sym = B9.Aero.Wing.SW.Winglet.3x2-75m_4293267760
-	srfN = srfAttach,B9.Cockpit.MK1.Body.Fuel.2m_4293268164
+	link = B9.Utility.Landing.Gear.HDG1A_4294005852
+	link = B9.Utility.Light.N2.Green_4293980824
+	sym = B9.Aero.Wing.SW.Winglet.3x2-75m_4294006114
+	srfN = srfAttach,B9.Cockpit.MK1.Body.Fuel.2m_4294006518
 	EVENTS
 	{
 	}
@@ -1042,10 +979,10 @@ PART
 }
 PART
 {
-	part = B9.Utility.Landing.Gear.HDG1A_4293267498
+	part = B9.Utility.Landing.Gear.HDG1A_4294005852
 	partName = Part
-	pos = 0.7789856,5.395309,-2.253018
-	rot = 2.107343E-07,-6.585446E-09,0.01482802,0.9998901
+	pos = 0.7789856,5.395309,-2.253019
+	rot = 2.118367E-07,-6.63475E-09,0.01482801,0.99989
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1053,8 +990,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Utility.Landing.Gear.HDG1A_4293267698
-	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4293267560
+	sym = B9.Utility.Landing.Gear.HDG1A_4294006052
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4294005914
 	EVENTS
 	{
 	}
@@ -1308,10 +1245,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.Intake.DSI_4293267360
+	part = B9.Aero.Intake.DSI_4294005714
 	partName = Part
-	pos = -0.596548,5.705868,1.012589
-	rot = 0.7071068,-0.7071071,8.42937E-08,6.322028E-08
+	pos = -0.5965484,5.705868,1.012589
+	rot = 0.7071066,-0.7071069,8.429368E-08,6.322026E-08
 	attRot = 0,-4.214685E-08,-0.7071068,0.7071068
 	mir = 1,1,1
 	istg = 0
@@ -1319,8 +1256,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Aero.Intake.DSI_4293267324
-	srfN = srfAttach,B9.Cockpit.MK1.Junction_4293268102
+	sym = B9.Aero.Intake.DSI_4294005678
+	srfN = srfAttach,B9.Cockpit.MK1.Junction_4294006456
 	EVENTS
 	{
 	}
@@ -1368,10 +1305,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.Intake.DSI_4293267324
+	part = B9.Aero.Intake.DSI_4294005678
 	partName = Part
-	pos = 0.6534553,5.705868,1.012589
-	rot = 0.7071071,0.7071068,-8.42937E-08,8.42937E-08
+	pos = 0.653456,5.705868,1.012589
+	rot = 0.7071069,0.7071066,-8.429368E-08,8.429368E-08
 	attRot = 0,4.214685E-08,0.7071068,0.7071068
 	mir = 1,1,1
 	istg = 0
@@ -1379,8 +1316,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Aero.Intake.DSI_4293267360
-	srfN = srfAttach,B9.Cockpit.MK1.Junction_4293268102
+	sym = B9.Aero.Intake.DSI_4294005714
+	srfN = srfAttach,B9.Cockpit.MK1.Junction_4294006456
 	EVENTS
 	{
 	}
@@ -1428,9 +1365,9 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SW.Canard.2-3x1-6m_4293267288
+	part = B9.Aero.Wing.SW.Canard.2-3x1-6m_4294005642
 	partName = ControlSurface
-	pos = -0.4695086,6.178534,-2.228446
+	pos = -0.4695086,6.178534,-2.228447
 	rot = -0.6811556,0.2821437,0.2585371,-0.624164
 	attRot = 0,-2.599919E-09,-0.04361939,0.9990482
 	mir = 1,1,1
@@ -1439,8 +1376,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Aero.Wing.SW.Canard.2-3x1-6m_4293267246
-	srfN = srfAttach,B9.Cockpit.MK1.Body.Fuel.2m_4293268164
+	sym = B9.Aero.Wing.SW.Canard.2-3x1-6m_4294005600
+	srfN = srfAttach,B9.Cockpit.MK1.Body.Fuel.2m_4294006518
 	EVENTS
 	{
 	}
@@ -1450,9 +1387,9 @@ PART
 }
 PART
 {
-	part = B9.Aero.Wing.SW.Canard.2-3x1-6m_4293267246
+	part = B9.Aero.Wing.SW.Canard.2-3x1-6m_4294005600
 	partName = ControlSurface
-	pos = 0.5264156,6.178534,-2.228446
+	pos = 0.5264156,6.178534,-2.228447
 	rot = -0.2585372,0.6241639,0.6811556,-0.2821437
 	attRot = 0,2.599919E-09,0.04361939,0.9990482
 	mir = 1,1,1
@@ -1461,12 +1398,365 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Aero.Wing.SW.Canard.2-3x1-6m_4293267288
-	srfN = srfAttach,B9.Cockpit.MK1.Body.Fuel.2m_4293268164
+	sym = B9.Aero.Wing.SW.Canard.2-3x1-6m_4294005642
+	srfN = srfAttach,B9.Cockpit.MK1.Body.Fuel.2m_4294006518
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
+	}
+}
+PART
+{
+	part = B9.Control.ASAS_4293997910
+	partName = Part
+	pos = 0.02845351,5.067404,4.214269
+	rot = -1,-8.742278E-08,1.465488E-22,6.617445E-23
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	srfN = srfAttach,B9.Cockpit.MK1.Junction_4294006456
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		EVENTS
+		{
+			DeployExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deploy
+				guiName = Deploy
+				category = Deploy
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Data
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperimentExternal
+			{
+				active = True
+				guiActive = False
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = B9.Utility.Light.N2.Red_4293984704
+	partName = Part
+	pos = -3.257072,5.009884,-3.31804
+	rot = 0.3826835,-0.9238796,-4.591222E-08,-2.583844E-08
+	attRot = 1.611179E-17,-0.5000001,2.980233E-08,0.8660255
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4294006114
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = False
+		EVENTS
+		{
+			LightsOff
+			{
+				active = False
+				guiActive = True
+				guiIcon = Lights Off
+				guiName = Lights Off
+				category = Lights Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LightsOn
+			{
+				active = True
+				guiActive = True
+				guiIcon = Lights On
+				guiName = Lights On
+				category = Lights On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light, Custom03
+			}
+			LightOnAction
+			{
+				actionGroup = None
+			}
+			LightOffAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = B9.Utility.Light.N2.Green_4293980824
+	partName = Part
+	pos = 3.315427,5.01527,-3.322086
+	rot = 0.3826834,0.9238795,8.634672E-08,-4.096142E-08
+	attRot = 1.611179E-17,0.5000001,-2.980233E-08,0.8660255
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4294005914
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = False
+		EVENTS
+		{
+			LightsOff
+			{
+				active = False
+				guiActive = True
+				guiIcon = Lights Off
+				guiName = Lights Off
+				category = Lights Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LightsOn
+			{
+				active = True
+				guiActive = True
+				guiIcon = Lights On
+				guiName = Lights On
+				category = Lights On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light, Custom03
+			}
+			LightOnAction
+			{
+				actionGroup = None
+			}
+			LightOffAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = B9.Utility.Light.A1.Closed.T_4293978126
+	partName = Part
+	pos = 0.02845355,5.167007,-0.3996105
+	rot = -0.9914449,-8.667487E-08,1.141097E-08,0.1305262
+	attRot = 0.1305262,0,0,0.9914449
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	srfN = srfAttach,B9.Cockpit.MK1.Control.ACU_4294006562
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = False
+		EVENTS
+		{
+			LightsOff
+			{
+				active = False
+				guiActive = True
+				guiIcon = Lights Off
+				guiName = Lights Off
+				category = Lights Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LightsOn
+			{
+				active = True
+				guiActive = True
+				guiIcon = Lights On
+				guiName = Lights On
+				category = Lights On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light, Custom04
+			}
+			LightOnAction
+			{
+				actionGroup = None
+			}
+			LightOffAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = B9.Utility.InfoDrive_4294006482
+	partName = Part
+	pos = 0.02845355,5.167606,-2.310568
+	rot = -0.7071068,-4.214685E-08,0.7071068,-8.42937E-08
+	attRot = 0,0.7071068,-4.214685E-08,0.7071068
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	srfN = srfAttach,B9.Cockpit.MK1.Body.Fuel.2m_4294006518
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSinfoPopup
+		isEnabled = True
+		textHeading = UAS-1 Barnard's Star Espionage Drone
+		textBody1 = 1 - Toggle thrust vectoring
+		textBody2 = 2 - Toggle landing gear motors
+		textBody3 = 3 - Toggle navigation lights
+		textBody4 = 4 - Toggle landing light
+		textBody5 = 
+		textBody6 = 
+		textBody7 = 
+		textBody8 = 
+		textBody9 = 
+		textBody10 = 
+		textBody11 = Press [ i ] to toggle this window.
+		showAtFlightStart = True
+		hideAfterCountdown = True
+		showOnEachFlightStart = True
+		hasBeenShown = False
+		countDownDuration = 20
+		hideMeshInFlight = False
+		toggleKey = i
+		useHotkey = True
+		EVENTS
+		{
+			showInfoEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Show Info
+				guiName = Show Info
+				category = Show Info
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			showInfoAction
+			{
+				actionGroup = None
+			}
+		}
 	}
 }
