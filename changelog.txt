@@ -1,44 +1,166 @@
-R3.0
+﻿_______________________________
+
+▼ R3.5
+
+	* 0.22 compatibility update.
+	* Updated ExsurgentEngineering.dll, Firespitter.dll, KineTechAnimation.dll, ResGen.dll
+
+	* All textures converted to the uncompressed TGA format and will remain in it from this version onwards (previously, the PNG was used). Memory footprint in the game is unchanged. The benefits include sliced by approximately half, the compressed archive size being slightly smaller, and mip maps being generated properly by the engine.
+
+	* All parts are hooked into the tech tree. Parts aren't dumped to a single node, unlock gradually and, as possible, are arranged in a way that provides enough parts for you to build usable crafts at all stages of the tech tree progression. No SABREs at tier 3, no bizjets at tier 8, no shuttle control surfaces without shuttle wings and fuselages. All parts should also be compatible with the modded tech trees, as they usually preserve the original node names our configs are linked to.
+
+	* Added new landing gear parts that blend into the parent parts and fit a huge variety of aircraft. Choose between twin-wheeled and single-wheeled configuration, two different clearances and two different colors (allowing them to blend perfectly with all-purpose gray or plated black pieces). All landing gears are equipped with togglable electric motors and can be steered.
+
+	* Added new solid rocket separation boosters to replace the awkward stock one.
+
+	* Added the shielded variety of A1 light. It is mostly intended for use as the landing light, as new gear models, in contrast with stock ones, have no light sources to avoid breaking through per-pixel light limits and improve performance. Comes in two colors, same as the landing gear set.
+
+	* Added the 1.25m (MK1) aerodynamic junction part. Useful for nice transitions to radial engines, fancy boosters on rockets, and stylish UAV glider noses.
+
+	* Added new struts to finally retire the stock ones from every single craft. First variety is functionally identical to the stock one, just a bit more sturdy 	* and quite better looking. Second variety is where it gets interesting: it's a strut part with an invisible middle piece. Exceptionally useful when you 	* want a clean design without all the messy cables: basically, you just place two very suble blocks and imagine how structural integrity was improved somewhere inside the craft. Clean and performance-friendly. Oh, those new parts have no shadow casting, - that might help with FPS on heavy crafts which typically use hundreds of struts.
+
+	* Added MK2 cargoholds. Not very roomy, but they can still hold some useful payloads like 0.625m satellites or science modules, finally making the MK2 fuselage system useful for useful SSTO designs (!).
+
+	* Added the smaller 5-port omnidirectional RCS blocks in line with already existing linear and 12-port varieties. Added dark-colored versions of RCS parts to allow them to blend with the shielded areas of the fuselages.
+
+	* Added three new winglet sizes (2.3x1.6m, 3x2.2m, 3.2mx2.75m) and two new stabilator sizes (2.3x1.6m, 3x2.2m) to completely phase out any use of stock control surfaces from the crafts (2.3x1.6m is equivalent to the stock winglet in size). By the way, all 12 non-modular wing parts (stabilators, wingtips and winglets) in the mod are still using one single texture and maintain perfectly even texel density. No stretching, no duplicates, no distorted proportions.
+
+	* Added new SH wing module (1x4m) to close the last remaining gap in the system. Added the static trailing edge parts that can be added to the backside of SH modular wings, for the first time in history making control surfaces look passable without forcing you to cover all trailing edges with them. Seriously, those a very nice looking. Oh, and control surfaces no longer have a weird orange cross sections on the side.
+
+	* As separate ASAS/avionics parts became unnecessary since 0.21, all parts related to them (inline/radial/nosecones) are moved to the role of probe cores or sensor packages for the science system. Only exception is the plain MK2 nosecone, which is now decorative.
+
+	*  Added few small parts, in particular: a green omnidirectional light (crafts can finally have proper colored pair of navlights on their wings), large radial DSI intake that's close in performance to the RBM intake, large air brake with roughly 3 times the surface area of the old one, 
+
+	* All sample crafts completely updated to make use of new struts, lights, landing gears, wing pieces and other parts. Some were significantly redesigned. New crafts added, including a lightweight MK2 SSTO, three maneuverable UAVs and a subsonic glider. Full list:
+
+		* D-175 Strugatsky: Long-range, short-takeoff subsonic cargo transport.
+		* BRV-4 Heinlein: High-performance heavy SSTO, trading off cargo transport capability for the generous fuel reserves.
+		* I8-L Bradbury: High speed atmospheric crew transport.
+		* SCDV Vonnegut: Advanced SSTO with the cargo transport capability.
+		* TR7 van Vogt:  Light and fast MK2 SSTO with the cargo transport capability.
+		* UAS-1 Barnard's Star: Extremely maneuverable lightweight UAV with thrust vectoring.
+		* UAS-2 Polaris: Stable lightweight UAV.
+		* UAS-3 Centauri: Extremely maneuverable MK2 UAV employing RCS and thrust vectoring instead of traditional control surfaces.
+		* UL-1 Kornbluth: Subsonic personal transport with generous lift and convenient landing gear configuration.
+		* VX-1 Vance: VTOL and RCS technology demonstrator, highly maneuverable and incredibly stable for it's class.
+		* YF-28 Haldeman: Four-engine thrust vectoring fighter jet with extreme pitch and roll authority.
+
+	* Increased connection forces of the laggers and railings, fixed the crash tolerances.
+	* Added the specular maps to a few parts that lacked them.
+	* Revised the descriptions of multiple parts to be more informative and less so kerbal (RCS, radial control parts, etc.)
+	* Hypersonic mode on S3 cockpit returns and works as intended again.
+	* Balance changes to the SABRE Engines: Slightly less efficient air-breathing mode performance with greater thrust, slightly more efficient LFO mode with decreased thrust. Makes the engines less viable for prolonged gliding in the atmoshpere and more useful for space stuff different from barely circularizing in the LKO.
+	* Air consumption of the turbojet engine is increased.
+	* Action names on S2 crew part revised to fit into the fields.
+	* R1A air-powered RCS linear port ISP tweaked.
+	* VTOL engines rotation and steering inverted, enabled the velocity curve on VA1 and disabled the gimbal on it.
+	* Air brakes connection strength values added.
+
+_______________________________
+
+▼ R3.3
+
+	* Compatibility patch for KSP 0.21.
+	* Added appropriate modules introduced by the patch to the pods
+	* ASAS/avionics module discontinued, all twin control parts are now using 0.21 SAS, differing only visually.
+	* SAS parts changed to work with 0.21 reaction wheel system, appropriate tweaks made, including changed names.
+	* Firespitter.dll updated to 5.3.1
+	* Turbofan engines updated to use new thrust-based spin mechanics.
+	* Example crafts updated to have electricity sources to account for 0.21 SAS and reaction wheels using it.
+	* Added an inline stack decoupler.
+
+_______________________________
+
+▼ R3.2 
+
+	* Replaced ExsurgentEngineering.dll with a new version, now compatible with ModuleManager. Thanks to careo for the fix.
+
+_______________________________
+
+▼ R3.1c
+
+	* Hotfix for P4 & P8 structural panel configs.
+
+_______________________________
+
+▼ R3.1
+
+	* Fixed raised MK1 tail model to show up properly instead of straight one.
+	* Cargo bays should now be detected properly by FAR, shielding the contents and preventing cargo crafts with payloads from flying like bricks.
+	* Intake stats recalculated using a different formula (factoring the root of mass / 0.01 for unitScalar, and factoring (unitScalar*sqrt(coeff))/(unitscalar+1) into the speed). Nothing changed gameplay-wise, but that will fix improper flow reporting in KSP context windows. Nope, RBM intakes never were 10 times more powerful than others, KSP lied to you. It will continue to lie about air speed though.
+	* Fixed S2 Body 2m model.
+	* P4 and P8 reinforced structural panel nodes changed. While stock bug that forbids parenting with nodes on more than one axis is still present and unsolved, axis that works should be vertical now, which contains most useful nodes suitable for adapters and other stuff.
+	* SCDV Vonnegut example craft updated to use new wing models.
+	* S2W 3.75m adapter no longer contains LFO in structural version.
+	* SABRE M Precooler node sizes fixed.
+	* Included source files folder that was missing from R3.0c (uh-oh).
+
+_______________________________
+
+▼ R3.0c
+
+	* Fixed MK2 monopropellant tank fuel type.
+	* Fixed SABRE body parts attachment nodes and naming.
+	* Changed folder name to GameData to avoid issues on Linux.
+
+_______________________________
+
+▼ R3.0 
 
 	* Total part count now at 175.
 	* Everything converted to be compliant with 0.20+ data system.
 	* Memory usage and disk space usage reduced more than x2.5 thanks to file referencing available in 0.20+.
-		* The mod now occupies only 73mb (!!!), less than R2.5 and less than stock parts. Loading is faster than all stock parts combined.
+	* The mod now occupies only 73mb (!!!), less than R2.5 and less than stock parts. Loading is faster than for all stock parts combined.
+
 	* Mass, capacity and connection strength values on parts were updated using a better algorithm.
 	* Lift, drag, mass and connection strength values wings updated using a better algorithm. Stuff falls apart quite more hesitantly now.
 	* Vastly updated, improved and expanded selection of example crafts.
+
 	* Added TFE731 small subsonic high-bypass turbofan engine with surface-attached pylons in straight and raked variants.
 	* Added CF34 large subsonic high-bypass turbofan engine with surface-attached pylons in straight and raked variants. Perfect for heavy lifting, now used on D-175.
 	* Added D-30F7 turbojet engine. Perfect when brute force is required, now used on I8-L.
 	* Added F119 low-bypass turbofan featuring 2D thrust vectoring. Extreme control authority, used on new YF-28 example craft.
 	* Added SABRE Engines in 1.25m and 2.5m sizes, featuring plugin powered, separate twin modes of operation, and complementary structural and intake parts. Perfect engine for SSTO designs, used on several updated & new example crafts.
+
 	* Added VA1 VTOL jet engine, used on new VX-1 example craft.
 	* Added a matching nosecone part for VS1 VTOL engine and intake part for VA1 VTOL engine.
 	* VTOL Engines are now powered by Firespitter plugin allowing extensive and easy control over engine rotation.
 	* Where suitable (SABRE, ramp), intakes are using animated variable geometry dependent on air speed (powered by KineTechAnimation plugin).
 	* Vastly improved thrust vectoring module that takes into account all engines present on aircraft at once and controls each independently, allowing thrust vectoring to be used to assist in roll maneuvers (!!!) and overall improving stability and efficiency of thrust vectoring engines. Everything also returns to the neutral state upon thrust vectoring switch off, instead of getting stuck in the last position.
+
 	* MK2 cockpit IVA performance improved.
 	* S2 cockpit RCS ports now functional.
 	* Center of mass on all wings set to attachment node to improve stability.
 	* All animated parts are now using vastly improved generic animation module by Firespitter that allows in-editor toggling of state (e.g. for cargo bay doors), toggling in EVA where applicable (e.g. ladders), action names being displayed in action group editor, ability to reverse animation mid-playback, and much more.
+
 	* HL fuselage system :
+
 		* Added 0.5m SAS.
 		* Added 8m cargo hold.
+
 	* 7 new wing parts: large wingtips, winglets and stabilators.
+
 	* MK1 fuselage system:
+
 		* Added structural & LF tank varieties in 2m and 5m (more convenient than stock pieces of quite weird length).
 		* Added normal and raised tail sections.
 		* Added inline ACU.
 		* Added inline SAS.
+
 	* MK2 fuselage system:
+
 		* Added MK2 to 2x1.25m bicoupler structural adapter.
 		* Added inline RCS monopropellant tank.
 		* Added inline SAS.
 		* Added normal and raised tail sections.
+
 	* S2 fuselage system:
+
 		* Added 2m & 6m Cargo bays.
 		* Added inline SAS.
+
 	* S2W wide body fuselage system:
+
 		* Added S2 to 4x1.25m adapter in structural and LFO versions.
 		* Added S2 to 2x2.5m adapter in structural and LFO versions.
 		* Added intake-less S2 to S2W adapter in structural and LFO versions.
@@ -46,6 +168,7 @@ R3.0
 		* S2W Intake Adapter drag fixed.
 		* Added S2 to 3.75m adapter in structural version.
 		* Added enormous S2W cargo bays in 2m and 6m versions.
+
 	* Rotated Radial ACU/ASAS so they can be told apart in Editor parts list.
 	* Added long-requested shielded docking port.
 	* Added aerodynamically shielded R12 RCS Thruster Block and R1 Linear RCS Port ports.
@@ -59,3 +182,92 @@ R3.0
 	* Added triangular structural panels allowing for much more freedom in builds.
 	* Added A1 floodlight coming in as solo piece and in 4x & 8x arrays.
 	* Added configurable info drive part that allows you to write information about your crafts (action group descriptions, optimal ascent profiles, background stories) that can be displayed to anyone during flight. Used on every example craft.
+
+_______________________________
+
+▼ R2.5
+
+The notorious FAR bug with spontaneously exploding delta wings is solved completely (it turns out mesh colliders with triangular surfaces aren't supported).
+FAR configs merged with stock configs, no need to install them separately anymore.
+MK5 cockpit hatch obstruction issue completely fixed. Unfortunately, the solution involved offsetting the part, so you will have to reattach that cockpit on all your crafts. Fortunately, in contrast with wings, that would be easy to do.
+Further rebalancing of some parts.
+Updated existing example crafts: 
+
+- D-175 Strugatsky heavy transport plane (docking clamp in the cargo hold, action group to close cargo doors, MK5 repositioned after, ACU unit)
+- BRV-4 Heinlein SSTO spaceplane (balance updates, additional control surfaces, ASAS unit)
+
+Added new example craft: I8-L Bradbury, supersonic crew transport capable of taking 12 passengers on board.
+
+Added new parts:
+
+- Radial ASAS
+- Radial avionics (ACU)
+- MK2 ASAS nose cone
+- SH/SE 1m control surfaces
+
+Fixed the shading issues on S2 cockpit model.
+
+_______________________________
+
+▼ R2.4
+
+Complete rebalancing of part mass, crash tolerances, capacities and other parameters. Should result in much more sturdy and nice flying crafts.
+Warning! Wings structure had to be changed to solve the main source of issues with FAR. Point of origin was moved to attachment point for all wings (with the move compensated through CoMOffset parameter). Unfortunately, this can break existing modular wing setups you are using. Won't happen again.
+Added two example crafts: 
+
+	- D-175 Strugatsky heavy transport plane
+	- BRV-4 Heinlein SSTO spaceplane
+
+Added new parts:
+
+	- S2 widebody 1.25m engine mount (S2W->S2+4x1.25m adapter)
+	- S2 large crew tank (6m, 6 seats)
+	- S2 monopropellant tank
+	- A65 2m semi-span delta wing (additional piece for the modular wing system)
+
+Restored C125 adapter that was mistakenly removed onwards from R2.
+Fixed large structural S2 fuselage section model, should no longer exhibit z-figthing issues.
+Fixed interior display emissive animation to be less noticeable.
+Texture improvements on some parts.
+
+_______________________________
+
+▼ R2.3
+
+Lots of config fixes to improve balance.
+Two raised part versions by Taverius (MK2 to 1.25m adapter and S2 tail section) which can be very useful to prevent tailstrikes
+New parts
+
+	- New structural panels (2m & 1m)
+	- Ladders and railings in 1m size
+
+Added a separate texture for the S2 LFO tank
+Fixed railing and S2 fuselage radial attachment orientation
+Fixed FAR HW21 config, and some other changes I have probably forgot
+
+_______________________________
+
+▼ R2.2
+
+Config fixes.
+Mesh collider fixes.
+
+_______________________________
+
+▼ R2.1
+
+Fixed some config errors (mismatched MK4 adapter node, wing naming, S2 LFO tank naming, HW21 lift values).
+First iteration of FAR-compliant configs by Taverius added to the package.
+New part: 1.25m to MK2 adapter.
+
+_______________________________
+
+▼ R2
+
+Second milestone release, 85 parts (6 pods, 3 IVAs).
+
+_______________________________
+
+▼ R1
+
+First release, 12 parts (2 pods, 1 IVA).
