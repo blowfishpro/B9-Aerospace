@@ -57,13 +57,13 @@ Nazari - HotRockets Engine FX: [forums](http://forum.kerbalspaceprogram.com/thre
 
 Snjo - Firespitter.dll plugin v6.3: [forums](http://forum.kerbalspaceprogram.com/threads/24551)
 
-careo - ExsurgentEngineering.dll plugin: [github](http://github.com/careo/ExsurgentEngineering)
-
 Kine - KineTechAnimation.dll plugin: [github](http://github.com/KineMorto/KineTechAnimationLibrary)
 
 Fel - ResGen.dll plugin: [forums](http://forum.kerbalspaceprogram.com/threads/28895)
 
 Sarbian - SmokeScreen.dll plugin v2.0.1.0: [forums](http://forum.kerbalspaceprogram.com/threads/71630)
+
+dtobi - KM_Gimbal.dll plugin v2.0: [github](https://github.com/dtobi/km_Gimbal)
 
 Special thanks to DYJ, C7, r4mon and Mu for their help.
 
@@ -238,3 +238,12 @@ Not just for RCS! Extra markers in the VAB/SPH.
 Centre of Mass for empty fuel as well as full. See torque effects of off-centre engine and RCS thrust when designing crafts.
 
 A great help for avoiding nasty surprises with changing center of mass and off-balance RCS. [forum](http://forum.kerbalspaceprogram.com/threads/35996)
+
+
+## Space Shuttle Engines
+
+Engines for your SLS/Buran-alikes.
+
+We use the Gimbal plugin from this mod, and its *awesome*. It really does let you build stuff with off-center thrust like the Shuttle Launch System.
+
+Also has some very nice replica main tanks, and utility parts that can trigger staging/action groups based on conditions, there's timers, fuel crossfeed controllers and more. [forum](http://forum.kerbalspaceprogram.com/threads/55985)
