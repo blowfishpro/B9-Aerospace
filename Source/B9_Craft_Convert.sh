@@ -26,6 +26,7 @@ deprecate () {
         -e "s/B9\.Aero\.HL\.Extension\.B2\.LF/B9.Aero.HL.Extension.B1/g" \
         -e "s/B9\.Aero\.HL\.Extension\.B3\.LFO/B9.Aero.HL.Extension.B1/g" \
         -e "s/B9\.Aero\.HL\.Extension\.B4\.RCS/B9.Aero.HL.Extension.B1/g" \
+        -e "s/B9\.Cargo\.M2\.Body/B9.Cargo.M2.Body.B/g" \
         -i$BAKDATE "$1"
     echo ". done"
 }
