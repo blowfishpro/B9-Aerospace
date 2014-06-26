@@ -34,6 +34,13 @@ deprecate () {
         -e "s/B9\.Aero\.HL\.Body\.LF\.05m/B9.Aero.HL.Body.Structure.05m/g" \
         -e "s/B9\.Aero\.HL\.Body\.LFO\.05m/B9.Aero.HL.Body.Structure.05m/g" \
         -e "s/B9\.Aero\.HL\.Body\.RCS\.05m/B9.Aero.HL.Body.Structure.05m/g" \
+        -e "s/B9\.Aero\.HL\.Body\.Cargo\.Tail\.Narrow/B9.Aero.HL.Body.Cargo.Tail.Wide/g" \
+        -e "s/B9\.Structure\.P2\.Surface\.Clear/B9.Structure.P2.Surface/g" \
+        -e "s/B9\.Structure\.P4\.Surface\.Clear/B9.Structure.P4.Surface/g" \
+        -e "s/B9\.Structure\.P8\.Surface\.Clear/B9.Structure.P8.Surface/g" \
+        -e "s/B9\.Structure\.P4\.Frame/B9.Structure.P4.Surface/g" \
+        -e "s/B9\.Structure\.P8\.Frame/B9.Structure.P8.Surface/g" \
+        -e "s/B9\.Structure\.P8\.Frame2/B9.Structure.P8.Surface/g" \
         -i$BAKDATE "$1"
     echo ". done"
 }
@@ -43,3 +50,4 @@ for f in *.craft
 do
     deprecate "$f"
 done
+
