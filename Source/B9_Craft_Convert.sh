@@ -41,6 +41,12 @@ deprecate () {
         -e "s/B9\.Structure\.P4\.Frame/B9.Structure.P4.Surface/g" \
         -e "s/B9\.Structure\.P8\.Frame/B9.Structure.P8.Surface/g" \
         -e "s/B9\.Structure\.P8\.Frame2/B9.Structure.P8.Surface/g" \
+        -e "s/B9\.Cockpit\.S2\.BodyLarge\.Fuel/B9.Cockpit.S2.BodyLarge/g" \
+        -e "s/B9\.Cockpit\.S2\.BodyLarge\.LFO/B9.Cockpit.S2.BodyLarge/g" \
+        -e "s/B9\.Cockpit\.S2\.BodyLarge\.Back\.LFO/B9.Cockpit.S2.BodyLarge.Back/g" \
+        -e "s/B9\.Cockpit\.S2\.BodyLarge\.Back\.EngineMount1\.LFO/B9.Cockpit.S2.BodyLarge.Back.EngineMount1/g" \
+        -e "s/B9\.Cockpit\.S2\.BodyLarge\.Back\.EngineMount2\.LFO/B9.Cockpit.S2.BodyLarge.Back.EngineMount2/g" \
+        -e "s/B9\.Cockpit\.S2\.BodyLarge\.Front2\.LFO/B9.Cockpit.S2.BodyLarge.Front2/g" \
         -i$BAKDATE "$1"
     echo ". done"
 }
