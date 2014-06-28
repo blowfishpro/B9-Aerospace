@@ -51,6 +51,7 @@ deprecate () {
         -e "s/B9\.Cockpit\.MK1\.Body\.Fuel\.5m/B9.Cockpit.MK1.Body.5m/g" \
         -e "s/B9\.Cockpit\.MK1\.Tail\.2/B9.Cockpit.MK1.Tail/g" \
         -e "s/B9\.Cockpit\.MK2\.Tail\.2/B9.Cockpit.MK2.Tail/g" \
+        -e "s/B9\.Cockpit\.S2\.Body\.Tail\.2/B9.Cockpit.S2.Body.Tail/g" \
         -i$BAKDATE "$1"
     echo ". done"
 }
