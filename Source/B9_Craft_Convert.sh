@@ -47,6 +47,8 @@ deprecate () {
         -e "s/B9\.Cockpit\.S2\.BodyLarge\.Back\.EngineMount1\.LFO/B9.Cockpit.S2.BodyLarge.Back.EngineMount1/g" \
         -e "s/B9\.Cockpit\.S2\.BodyLarge\.Back\.EngineMount2\.LFO/B9.Cockpit.S2.BodyLarge.Back.EngineMount2/g" \
         -e "s/B9\.Cockpit\.S2\.BodyLarge\.Front2\.LFO/B9.Cockpit.S2.BodyLarge.Front2/g" \
+        -e "s/B9\.Cockpit\.MK1\.Body\.Fuel\.2m/B9.Cockpit.MK1.Body.2m/g" \
+        -e "s/B9\.Cockpit\.MK1\.Body\.Fuel\.5m/B9.Cockpit.MK1.Body.5m/g" \
         -i$BAKDATE "$1"
     echo ". done"
 }
