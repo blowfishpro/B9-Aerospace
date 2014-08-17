@@ -204,7 +204,7 @@ public abstract class Module : PartModule {
 			if (delta <= 0) break;
 			double needed = delta;
 			List<PartResource> RES_GRAB = new List<PartResource>();
-			part.GetConnectedResources(resi.id, RES_GRAB);
+			part.GetConnectedResources(resi.id, PartResourceLibrary.Instance.GetDefinition(resi.id).resourceFlowMode, RES_GRAB);
 
 			getFRate(ref needed, resi);
 			foreach (PartResource res in RES_GRAB) {
@@ -242,7 +242,7 @@ public abstract class Module : PartModule {
 			if (delta <= 0) break;
 			double needed = delta;
 			List<PartResource> RES_GRAB = new List<PartResource>();
-			part.GetConnectedResources(resi.id, RES_GRAB);
+			part.GetConnectedResources(resi.id, PartResourceLibrary.Instance.GetDefinition(resi.id).resourceFlowMode, RES_GRAB);
 
 			stoFRate(ref needed, resi);
 			foreach (PartResource res in RES_GRAB) {
