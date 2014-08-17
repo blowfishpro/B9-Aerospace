@@ -1,0 +1,18 @@
+[#FFFFFFFF](2/3)------------>ORBIT / RENDEZVOUS DATA<--------------------------
+ {2:"TARGET:";"";""}[#00FF00FF]{1}{2:;"NO TARGET";} $&$NAME TARGETNAME TARGETEXISTS VESSELTYPE 
+ {4:"STATUS:";"";""}[#00FF00FF]{2} {4:"@";"";""}{3}   $&$ SITUATION ORBITBODY TARGETSITUATION TARGETORBITBODY TARGETEXISTS
+[#FFFFFFFF]------------------------+-------------------------------
+[#FFFF00FF] ALT:         {0:SIP_6.1}m   [#FFFFFFFF]|[#00FF00FF]{2:;"                                                      ";}  ALT:  {1:SIP_6.1}m                 $&$ALTITUDE TARGETALTITUDE TARGETEXISTS
+[#FFFF00FF] VEL:         {0:SIP_6.1}m/s [#FFFFFFFF]|[#00FF00FF]{2:;"                                                      ";}  VEL:  {1:SIP_6.1}m/s                 $&$ORBTSPEED TARGETORBITALVEL TARGETEXISTS
+[#FFFF00FF] ApA:         {0:SIP_6.1}m   [#FFFFFFFF]|[#00FF00FF]{2:;"                                                      ";}  ApA:  {1:SIP_6.1}m        $&$APOAPSIS TARGETAPOAPSIS TARGETEXISTS
+[#FFFF00FF] PeA:         {0:SIP_6.1}m   [#FFFFFFFF]|[#00FF00FF]{2:;"                                                      ";}  PeA:  {1:SIP_6.1}m          $&$PERIAPSIS TARGETPERIAPSIS TARGETEXISTS
+[#FFFF00FF] INC:       {0,7:0.000}°    [#FFFFFFFF]|[#00FF00FF] {2:;"                                                      ";} INC:{1,7:0.000}°                   $&$INCLINATION TARGETINCLINATION TARGETEXISTS
+[#FFFF00FF] ECC:       {0,7:0.000}     [#FFFFFFFF]|[#00FF00FF] {2:;"                                                      ";} ECC:{1,7:0.000}                  $&$ECCENTRICITY TARGETECCENTRICITY TARGETEXISTS
+[#FFFFFFFF]{2:"";"                        |                                ";""}[#FFFF00FF] ApT:{0:KDT-dd:hh:mm:ss.f} s [#FFFFFFFF]  | {3:;"                                                      ";}[#00FF00FF] ApT: {1:KDT-dd:hh:mm:ss.f} s    $&$TIMETOAPSECS   TARGETTIMETOAPSECS ORBITMAKESSENSE TARGETEXISTS
+[#FFFFFFFF]{2:"";"                        |                                ";""}[#FFFF00FF] PeT:{0:KDT-dd:hh:mm:ss.f} s [#FFFFFFFF]  | {3:;"                                                      ";}[#00FF00FF] PeT: {1:KDT-dd:hh:mm:ss.f} s   $&$TIMETOPESECS  TARGETTIMETOPESECS ORBITMAKESSENSE TARGETEXISTS
+[#FFFFFFFF]{2:"";"                        |                                ";""}[#FFFF00FF]  OP:{0:KDT-dd:hh:mm:ss.f} s [#FFFFFFFF]  | {3:;"                                                      ";}[#00FF00FF]  OP: {1:KDT-dd:hh:mm:ss.f} s   $&$ORBPERIODSECS TARGETORBPERIODSECS ORBITMAKESSENSE TARGETEXISTS
+[#FFFFFFFF]{0:"";"                   [#FFFFFFFF]     |[#00FF00FF]                                  ";""}------------------------+-------------------------------  $&$ TARGETEXISTS
+{3:;"                        [#FFFFFFFF]|                                 ";}[#{2:11FF11FF;FF1111FF;00FF00FF}]{2:"APPROACH";"DEPART";} {2:SIP_6.1}m/s [#FFFFFFFF]DIST: [#FFFF00FF]{0:SIP_6.1}m [#FFFFFFFF]   R.VEL:[#FFFF00FF]{1:SIP_6.1;;"NaN"}m/s    $&$ TARGETDISTANCE TRGTSPEED APPROACHSPEED TARGETEXISTS
+{2:;"                        [#FFFFFFFF]|                                 ";}[#FFFFFFFF]T.AN:[#FFFF00FF]{0:KDT-h:mm:ss.f}s [#FFFFFFFF]T.DN: [#FFFF00FF]{1:KDT-h:mm:ss.f}s [#FFFFFFFF]R.INC: [#FFFF00FF]{3:0.000}° $&$ TIMETOANWITHTARGETSECS TIMETODNWITHTARGETSECS TARGETEXISTS RELATIVEINCLINATION
+{2:;"                        [#FFFFFFFF]|                                 ";}[#FFFFFFFF]  CLOSEST APPROACH AT:[#FFFF00FF] {0:KDT-h:mm:ss.f}s [#FFFFFFFF]$&$TARGETCLOSESTAPPROACHTIME TARGETCLOSESTAPPROACHDISTANCE TARGETEXISTS
+{2:;"                        [#FFFFFFFF]|                                 ";}[#FFFFFFFF]   CLOSEST SEPARATION:[#FFFF00FF] {1:SIP_6.1}m  $&$TARGETCLOSESTAPPROACHTIME TARGETCLOSESTAPPROACHDISTANCE TARGETEXISTS

@@ -1,0 +1,26 @@
+
+----------------->ORBIT / RENDEZVOUS DATA<--------------------------
+ SHIP: {0,-22}| {2:"TARGET:";"";""}{1}{2:;"NO TARGET";} $&$NAME TARGETNAME TARGETEXISTS
+ {0,-15} @ {1,-10}| {2} {4:"@";"";"wq"}{3}   $&$ SITUATION ORBITBODY TARGETSITUATION TARGETORBITBODY TARGETEXISTS
+-----------------------------+-------------------------------
+ ALT:   {0,12:0.0} m       |{2:;"                                                      ";}  ALT:  {1,12:0.0} m                 $&$ALTITUDE TARGETALTITUDE TARGETEXISTS
+ VEL:   {0,12:0.0} m/s     |{2:;"                                                      ";}  VEL:  {1,12:0.0} m/s                 $&$ORBTSPEED TARGETORBITALVEL TARGETEXISTS
+ ApA:   {0,12:0.0} m       |{2:;"                                                      ";}  ApA:  {1,12:0.0} m        $&$APOAPSIS TARGETAPOAPSIS TARGETEXISTS
+ PeA:   {0,12:0.0} m       |{2:;"                                                      ";}  PeA:  {1,12:0.0} m $&$PERIAPSIS TARGETPERIAPSIS TARGETEXISTS
+ INC:   {0,12:0.000}°        | {2:;"                                                      ";} INC:  {1,12:0.000}°                   $&$INCLINATION TARGETINCLINATION TARGETEXISTS
+ ECC:   {0,12:0.000}         | {2:;"                                                      ";} ECC:  {1,12:0.000}                  $&$ECCENTRICITY TARGETECCENTRICITY TARGETEXISTS
+{2:"";"                             |                                ";""} ApT: {0}      | {3:;"                                                      ";}  ApT: {1}    $&$TIMETOAP  TARGETTIMETOAP ORBITMAKESSENSE TARGETEXISTS
+{2:"";"                             |                                ";""} PeT:{0}      | {3:;"                                                      ";}  PeT:{1}   $&$TIMETOPE TARGETTIMETOPE ORBITMAKESSENSE TARGETEXISTS
+{2:"";"                             |                                ";""}  OP: {0}      | {3:;"                                                      ";}   OP: {1}   $&$ORBPERIOD TARGETORBPERIOD ORBITMAKESSENSE TARGETEXISTS
+{0:"";"                             |                                  ";""}-----------------------------+-------------------------------  $&$ TARGETEXISTS
+{3:;"                             |                                 ";}DIST: {0,-13:0.00"m"}  R.VEL: {1,-12:#########.##"m/s";;"NaN"}    R.INC: {2:0.000}°$&$ TARGETDISTANCE TRGTSPEED RELATIVEINCLINATION TARGETEXISTS
+            LAT:{0}   LON:{1}$&$LATITUDE_DMS LONGITUDE_DMS
+{2:;"                                                              ";}     TARGET LAT:{0}   LON:{1}$&$LATITUDETGT_DMS LONGITUDETGT_DMS TARGETEXISTS
+{0:;"                       NO MANEUVER                                 ";""} ------Node in T---------¶V:------THROTTLE----LIQUID FUEL------------------- $&$ MNODEEXISTS
+{4:;"                                                              ";} {0}  |{1,9:0.00} |   {2,5:P0} |    {3:#########.##;;"!Empty!"} $&$ MNODETIME MNODEDV THROTTLE FUEL MNODEEXISTS
+
+
+
+
+
+TARGETORBITBODY, TARGETEXISTS, TARGETSITUATION.
