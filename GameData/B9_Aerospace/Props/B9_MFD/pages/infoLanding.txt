@@ -1,0 +1,20 @@
+﻿   
+   
+LANDING ASSISTANT                       
+{0,-30} {1:SIP_6.3}m $&$ ORBITBODY TERRAINHEIGHT
+   ({0}) $&$ BIOMENAME
+   
+VERTICAL     SURFACE      HORIZONZAL    
+ {0:SIP_5.3}m/s     {1:SIP_5.3}m/s     {2:SIP_5.3}m/s     $&$ VERTSPEED SURFSPEED HORZVELOCITY
+   
+{1:"ASCENDING                                ";"[#ff9999ff]DESCENDING AT [#ffffffff] ";"                                        "}  {0:;                                      }{0:SIP_6.3}m $&$RADARALT VERTSPEEDROUNDED
+   
+TEMP {1:"[#ff5050ff]";"[#ffffffff]";"[#fff700ff]"}{0,4:####}°C {1,11:"[#ff5050ff][POD TEMP]";"";""} {2,11:"[#ff5050ff][ENG OVRHT]";"";""}$&$ PODTEMPERATURE PODTEMPERATUREALARM ENGINEOVERHEATALARM 
+   
+   THRST{0:;;"[[#ff5050ff]CUTOFF[#ffffffff]    ]                    "}[{0:BAR| ,10}] {0,3:0%}({1,3:0%}) $&$ THROTTLE EFFECTIVETHROTTLE 
+   TWR  {0,5:0.00}/{1,5:0.00} $&$ TWR TWRMAX
+=[#ff5050ff]ALARMS[#ffffffff]=================================
+  {0:"[#ff5050ff]";0;"[#00ff00ff]"}[GEAR ]    {1:"[#00ff00ff]";0;"[#ff5050ff]"}[FUEL ]    {2:"[#ff5050ff]";0;"[#00ff00ff]"}[BRAKE] $&$ GEARALARM FUELSTAGEPERCENT BRAKES
+   
+  {0:"[#ff5050ff]";0;"[#00ff00ff]"}[SLOPE]    {1:"[#ff5050ff]";0;"[#00ff00ff]"}[SPEED]    {2:"[#ff5050ff]";0;"[#00ff00ff]"}[TUMBL] $&$ SLOPEALARM GROUNDPROXIMITYALARM TUMBLEALARM 
+   

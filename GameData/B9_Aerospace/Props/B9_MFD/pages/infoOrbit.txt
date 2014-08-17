@@ -1,0 +1,20 @@
+﻿   
+   
+ORBITING [{0, -15}] $&$ORBITBODY
+   
+VEL {0:SIP_10.1}m/s    ALT {1:SIP_8.3}m  $&$ORBTSPEED ALTITUDE
+   
+AP  {0:SIP_6.1}m    {1:KDTy:ddd:hh:mm:ss.f} $&$APOAPSIS TIMETOAPSECS
+PE  {0:SIP_6.1}m   {1:KDT-y:ddd:hh:mm:ss.f} $&$PERIAPSIS TIMETOPESECS
+   
+INC {0,7:0.000}°         ECC {1,7:0.000} $&$ INCLINATION ECCENTRICITY 
+IAN {0:KDTy:ddd:hh:mm:ss} $&$ TIMETOANEQUATORIAL 
+IDN {0:KDTy:ddd:hh:mm:ss} $&$ TIMETODNEQUATORIAL 
+   
+PER {0:KDTy:ddd:hh:mm:ss} $&$ORBPERIODSECS
+   
+   {0:"TRANSFER ";"ESCAPE ";"                                        "} {1} IN {2:KDTy:ddd:hh:mm:ss} $&$ ENCOUNTEREXISTS ENCOUNTERBODY ENCOUNTERTIME 
+   
+------NODE in T-----------ΔV-------BURN-
+{0,17:KDT+y:ddd:hh:mm:ss} |{1,9:0.00} |{2,9:KDTmm:ss.f} $&$ MNODETIMESECS MNODEDV MNODEBURNTIMESECS 
+----------------------------------------
