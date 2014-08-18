@@ -29,6 +29,11 @@ For example, create a MM node and add it to some cfg.
 =================
 Changelog:
 =================
+v3.0 \/
+*Allow toggling in editor and in flight
+*Allow hiding of the toggle button
+*Better logic internally
+
 v2.2 \/
 *Update to .24.2
 
