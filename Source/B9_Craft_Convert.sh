@@ -27,7 +27,7 @@ deprecate () {
         -e "s/B9\.Aero\.HL\.Extension\.B3\.LFO/B9.Aero.HL.Extension.B1/g" \
         -e "s/B9\.Aero\.HL\.Extension\.B4\.RCS/B9.Aero.HL.Extension.B1/g" \
         -e "s/B9\.Cargo\.M2\.Body/B9.Cargo.M2.Body.B/g" \
-        -e "s/B9\.Utility\.Light\.A1\.Closed/B9.Utility.Light.A1.Closed.T/g" \
+        -e "s/B9\.Utility\.Light\.A1\.Closed\.T/B9.Utility.Light.A1.Closed/g" \
         -e "s/B9\.Aero\.HL\.Body\.LF\.2m/B9.Aero.HL.Body.Structure.2m/g" \
         -e "s/B9\.Aero\.HL\.Body\.LFO\.2m/B9.Aero.HL.Body.Structure.2m/g" \
         -e "s/B9\.Aero\.HL\.Body\.RCS\.2m/B9.Aero.HL.Body.Structure.2m/g" \
