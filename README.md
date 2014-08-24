@@ -64,7 +64,7 @@ Sarbian - SmokeScreen.dll plugin v2.4.3.0: [forums](http://forum.kerbalspaceprog
 
 dtobi - KM_Gimbal.dll plugin v2.1: [github](http://github.com/dtobi/km_Gimbal)
 
-NathanKell - CrossFeedEnabler plugin v3.0: [forums](http://forum.kerbalspaceprogram.com/threads/76499)
+NathanKell - CrossFeedEnabler v3.0: [forums](http://forum.kerbalspaceprogram.com/threads/76499)
 
 Mihara - RasterPropMonitor v0.18.2: [forums](http://forum.kerbalspaceprogram.com/threads/57603)
 
@@ -114,112 +114,90 @@ ___________________________________
 
 # Suggestions
 
-These are some of the mods we like to use when we play KSP, in no particular order:
+These are some of the mods we like to use when we play KSP, in alphabetical order:
+
+
+
+## Aligned Currency
+
+Should have been in stock. Simple mod that makes the amount of kerbucks you have line up properly ... [forum](http://forum.kerbalspaceprogram.com/threads/88027)
+
+
+
+## Alternate Resource Panel
+
+One that's actually useful and informative. [forum](http://forum.kerbalspaceprogram.com/threads/60227)
+
 
 
 ## Active Texture Management
 
-Automatically compress textures and reduce them in size. 
-
-No need for reduced texture packs any longer.
+Automatically compress textures and reduce them in size. No need for reduced texture packs any longer.
 
 Highly configurable. [forum](http://forum.kerbalspaceprogram.com/threads/59005)
 
 
-## HotRockets!
 
-We use its particle FX to make our engines look nice.
+## Chatterer
 
-Get the main mod to make other engines look awesome too.
-
-Supports lots of major mods as well as the Squad engines. Both HR and B9 use Sarbian's SmokeScreen, use whichever version of the plugin is the most recent.
-[forum](http://forum.kerbalspaceprogram.com/threads/65754)
+Cute little plugin that plays garbled sounds and radio beeps like you're in a *real* space program. [forum](http://forum.kerbalspaceprogram.com/threads/25367)
 
 
-## Firespitter
 
-WW2-era aircraft and helicopter parts, seaplane floats.
+## Coherent Contracts
 
-The FS plugin enables lots of advanced functionality in B9, so even if you don't use the parts, updating to the most recent plugin is a good idea. [forum](http://forum.kerbalspaceprogram.com/threads/24551)
-
-
-## Improved Chase Camera
-
-An improved chase camera for planes.
-
-Can be toggled at any time to return to the default functionality. [forum](http://forum.kerbalspaceprogram.com/threads/80112)
+Squad are from Mexico so we won't hold it against them, but the contracts text sometimes doesn't make grammatical sense. This fixes that problem. [forum](http://forum.kerbalspaceprogram.com/threads/88149)
 
 
-## Renaissance Compilation
 
-A compilation of visual mods.
+## Contracts Window +
 
-Make KSP looks stupidly good. [forum](http://forum.kerbalspaceprogram.com/threads/76972)
-
-
-## Kerbal Aircraft Expansion
-
-Modern style propeller engines and Helicopter parts.
-
-Powered by firespitter. [forum](http://forum.kerbalspaceprogram.com/threads/76668)
+Simply put, a (much) better contracts window. [forum](http://forum.kerbalspaceprogram.com/threads/91034)
 
 
-## Kethane
 
-Scan for Kethane on planets and moons.
+## CrossFeed Enabler
 
-Then mine it, either use it as is in Kethane engines or refine it into fuel to refuel your missions or power self-sufficient remote bases. [forum](http://forum.kerbalspaceprogram.com/threads/23979)
-
-
-## Extraplanetary Launchpads
-
-Mine for metal on planets and moons and build rockets with them.
-
-Use together with Kethane to create your Kerbal Space Empire. [forum](http://forum.kerbalspaceprogram.com/threads/59545)
+Lets radially-mounted fuel tanks feed *into* their root part. The full mod is included in B9, because its a little pearl of genius. [forum](http://forum.kerbalspaceprogram.com/threads/76499)
 
 
-## Kerbal Attachment System
 
-Winches, magnets, tubes, EVA functionality.
+## Custom Biomes
 
-Do a Curiosity-like flying crane rover landing, airlift splashed-down capsules with your helicopter, connect refueling pipes in EVA.
-
-Use it with Kethane and EPL to connect your remote, self-built KSC together. [forum](http://forum.kerbalspaceprogram.com/threads/53134)
+More places to do science at! [forum](http://forum.kerbalspaceprogram.com/threads/66256)
 
 
-## SCANsat
 
-Satellite scanner parts to create detailed in-game maps of planets and moons.
+## DebRefund
 
-Altitude, slope, biome and anomaly maps with zoom to help you plan your landings or look for that missing monolith. [forum](http://forum.kerbalspaceprogram.com/threads/80369)
+Get money back for those boosters that you manage to parachute safely back to kerbin. Another one of those 'should have been in stock' features. [forum](http://forum.kerbalspaceprogram.com/threads/86691)
 
 
-## Procedural Fairings
 
-Payload fairings that automatically resize.
+## DMagic Orbital Science
 
-You can reshape and tweak them in the VAB, and use it to make custom inter-stage fairings as well. [forum](http://forum.kerbalspaceprogram.com/threads/39512)
+More instruments to do science *with*. Also new science-gathering contracts. Compatible with (and recommends) Custom Biomes. [forums](http://forum.kerbalspaceprogram.com/threads/64972)
+
+
+
+## Docking Port Alignment Indicator
+
+A proper interface for accurately docking. [forums](http://forum.kerbalspaceprogram.com/threads/43901)
+
 
 
 ## Editor Extensions
 
 Much needed extra functionality for the VAB/SPH.
 
-After you've used it you won't be able to do without. [forum](http://forum.kerbalspaceprogram.com/threads/38768)
+After you've used it you won't be able to do without. [forums](http://forum.kerbalspaceprogram.com/threads/38768)
 
 
-## Raster Prop Monitor
 
-Impressive Multi-function displays for IVA cockpit views.
+## Editor Part Highlighter
 
-Makes IVA-only piloting possible. Supports many major mods as well as Squad and B9 cockpits. [forum](http://forum.kerbalspaceprogram.com/threads/57603)
+Make the editor highlight of parts from the staging list more obvious. [forums](http://forum.kerbalspaceprogram.com/threads/50143)
 
-
-## TAC Fuel Balancer
-
-Automatically balance fuel between tanks, dump fuel, transfer a resource from/to all other tanks, or lock it so resources can't move in or out of it. Highly configurable.
-
-While we design the B9 example crafts so its not necessary, it will make keeping your planes balanced as engines draw fuel much easier. [forum](http://forum.kerbalspaceprogram.com/threads/25823)
 
 
 ## Enhanced Navball
@@ -229,21 +207,195 @@ Extra markers on the navball for Radial, Normal and anti-maneuver. Ghosting for 
 Navball functionality that Squad wants to include but hasn't got round to doing yet. [forum](http://forum.kerbalspaceprogram.com/threads/50524)
 
 
-## Docking Port Alignment Indicator
 
-Gives you the same information real astronauts have when docking. [forum](http://forum.kerbalspaceprogram.com/threads/43901)
+## Extraplanetary Launchpads
+
+Mine for metal on planets and moons and build rockets with them.
+
+Use together with Kethane or (with patch) Karbonite to create your Kerbal Space Empire. [forum](http://forum.kerbalspaceprogram.com/threads/59545)
+
+
+
+## EVA Parachutes
+
+Chutes for your kerbals so they can bail from damaged spaceplanes and such. [forums](http://forum.kerbalspaceprogram.com/threads/25305)
+
+
+
+## Fine Print
+
+More types of contracts for you to fail at! A must-have for a campaign game. [forums](http://forum.kerbalspaceprogram.com/threads/88445)
+
+
+
+## Firespitter
+
+WW2-era aircraft and helicopter parts, seaplane floats.
+
+The FS plugin enables lots of advanced functionality in B9 (and other mods) and he's done a lot of work just because we asked, so go check it out, and give snjo some encouragement. [forum](http://forum.kerbalspaceprogram.com/threads/24551)
+
+
+
+## Floor It
+
+You know how 'x' kills the throttle? Well this little gem adds 'z' for full throttle. [curseforge](http://kerbal.curseforge.com/ksp-mods/221031)
+
+
+
+## HotRockets!
+
+We use its particle FX to make our engines look nice.
+
+Get the main mod to make other engines look awesome too.
+
+Supports lots of major mods as well as the Squad engines. Both HR and B9 use Sarbian's SmokeScreen, use whichever version of the plugin is the most recent.
+
+HotRockets effects are included in B9, so make sure to remove any B9-specific HotRockets configs.
+[forum](http://forum.kerbalspaceprogram.com/threads/65754)
+
+
+
+## Improved Chase Camera
+
+An improved chase camera for planes.
+
+Can be toggled at any time to return to the default functionality. [forum](http://forum.kerbalspaceprogram.com/threads/80112)
+
+
+
+## Infernal Robotics
+
+The continuation of the venerable Damned Robotics.
+
+Servo motors, hydraulic rams and other mechanical wizardry for building folding planes, bipedal robots, cargo gantries, and anything else you can think of that needs to rotate or fold or extend or contract. [forums](http://forum.kerbalspaceprogram.com/threads/37707)
+
+
+
+## Karbonite
+
+A resource system alternative to Kethane, using the Open Resource System from KSP Interstellar. [forums](http://forum.kerbalspaceprogram.com/threads/89401)
+
+Compatibility patch for Extraplanetary Launchpads: [forums](http://forum.kerbalspaceprogram.com/threads/89774)
+
+
+
+## Kethane
+
+The Grand-daddy of mineable resource systems. [forum](http://forum.kerbalspaceprogram.com/threads/23979)
+
+
+
+## Kerbal Aircraft Expansion
+
+Modern propeller/turboprop/helicopter engines and landing gear, powered by FireSpitter. [forums](http://forum.kerbalspaceprogram.com/threads/76668) 
+
+
+
+## Kerbal Joint Reinforcement
+
+Improvement to the underlying physics of KSP.
+
+While many parts of this have been made redundant by improvements in KSP itself (made as a result of this mod) the parts that remain are still extremely useful. [forums](http://forum.kerbalspaceprogram.com/threads/55657)
+
+
+
+## Kerbal Alarm Clock
+
+Create in-game reminders so you don't miss important events, like SOI changes, periapsis/apoapsis, custom orbit points, and much more.
+
+A fundamental mod. [forums](http://forum.kerbalspaceprogram.com/threads/24786)
+
+
+
+## Kerbal Attachment System
+
+Winches, magnets, tubes, EVA functionality.
+
+Do a Curiosity-like flying crane rover landing, airlift splashed-down capsules with your helicopter, connect refueling pipes in EVA.
+
+Use it with Kethane/Karbonite and EPL to connect your remote, self-built KSC together. [forums](http://forum.kerbalspaceprogram.com/threads/53134)
+
+Patch for 0.24.2: [forums](http://forum.kerbalspaceprogram.com/threads/53134!?p=1319122&viewfull=1#post1319122)
+
+
+
+## Kerbal Engineer Redux
+
+If you're not a fan of mechjeb-style automation, but you still want all that information that stock KSP should give you but does not, this is what you want - more information than you can shake a rocket at. [forums](http://forum.kerbalspaceprogram.com/threads/18230)
+
+
+
+## KSP Interstellar
+
+Advanced propulsion systems, generators and resource gathering.
+
+Nuclear reactors, plasma thrusters, all the way up to antimatter harvesting and warp drives.
+
+Uses the same Open Resource System as Karbonite. [github](http://github.com/WaveFunctionP/KSPInterstellar)
+
+
+
+## KSP Stock Tweaks
+
+4 plugins to set some defaults:
+
+* Set free cam as default
+* Set precision control as default
+* Map shows navball by default
+* Precision mode applies to joysticks
+
+All can be used independently of each other. [forums](http://forum.kerbalspaceprogram.com/threads/80951)
+
 
 
 ## KW Rocketry
 
-Our favourite rocket parts expansion mod.
-
-Fuel tanks of all sizes, more SRBs, more LF engines, payload fairings and many other associated parts. [forum](http://forum.kerbalspaceprogram.com/threads/51037)
+Our favourite rocket parts expansion mod - rocket parts done *right*. 'nuff said. [forums](http://forum.kerbalspaceprogram.com/threads/51037)
 
 
-## Alternate Resource Panel
 
-One that's actually useful and informative. [forum](http://forum.kerbalspaceprogram.com/threads/60227)
+## MechJeb2
+
+Some purists like to fly everything manually like real astronauts never did.
+
+If you're not one of these people, or like us you've flown so many moon landings manually its just plain gotten old, this is the grand-daddy of autopilots, with more features than we could possibly list here. [forums](http://forum.kerbalspaceprogram.com/threads/12384)
+
+FAR compatibility extension: [forums](http://forum.kerbalspaceprogram.com/threads/60933)
+
+
+
+## NavHud
+
+A navball-inspired Head Up Display for when you're not IVA (or maybe you just don't like flying IVA). [forums](http://forum.kerbalspaceprogram.com/threads/81543)
+
+
+
+## NavUtilities
+
+Better instruments for flight. RPM-compatible. [forums](http://forum.kerbalspaceprogram.com/threads/85353)
+
+
+
+## Part Angle display
+
+See and set the rotations of parts in the editor, and change the fine angle changes from the stock value down all the way down to 0.01 degrees at a time if you need to.
+
+Widely used to create the stock B9 crafts, because 5 degrees is a bit too coarse for planes. [forums](http://forum.kerbalspaceprogram.com/threads/81390)
+
+
+
+## Precise Node
+
+For when the adjustments you're trying to do to a maneuver node are just too small for the default interface. [forums](http://forum.kerbalspaceprogram.com/threads/47863)
+
+
+
+## Procedural Fairings
+
+Payload fairings that automatically resize.
+
+You can reshape and tweak them in the VAB, and use it to make custom inter-stage fairings as well. [forum](http://forum.kerbalspaceprogram.com/threads/39512)
+
 
 
 ## Procedural Wings
@@ -251,6 +403,21 @@ One that's actually useful and informative. [forum](http://forum.kerbalspaceprog
 Wings and control surfaces you can scale and reshape in the VAB/SPH.
 
 Give your plane the wings you imaged, or make the winglets on your rocket just right. [forum](http://forum.kerbalspaceprogram.com/threads/29862)
+
+
+
+## Protractor Continued
+
+A classic mod that does one thing and does it right - calculates the optimum departure angles for your interplanetary transfers. [forums](http://forum.kerbalspaceprogram.com/threads/83173)
+
+
+
+## Raster Prop Monitor
+
+Impressive Multi-function displays for IVA cockpit views.
+
+Makes IVA-only piloting possible. Supports many major mods as well as Squad and B9 cockpits. [forum](http://forum.kerbalspaceprogram.com/threads/57603)
+
 
 
 ## RCS Build Aid
@@ -262,6 +429,29 @@ Centre of Mass for empty fuel as well as full. See torque effects of off-centre 
 A great help for avoiding nasty surprises with changing center of mass and off-balance RCS. [forum](http://forum.kerbalspaceprogram.com/threads/35996)
 
 
+
+## RealChute Parachute Systems
+
+Improved parachute mechanics.
+
+Gradual deployment, more deployment conditions, editable in vab, and more. [forums](http://forum.kerbalspaceprogram.com/threads/57988)
+
+
+
+## SCANsat
+
+Satellite scanner parts to create detailed in-game maps of planets and moons.
+
+Altitude, slope, biome and anomaly maps with zoom to help you plan your landings or look for that missing monolith. Supports or is supported by Kethane, Karbonite, KSPi, RPM so you can map all your resources with one system and see it in the cockpit. [forum](http://forum.kerbalspaceprogram.com/threads/80369)
+
+
+
+## Science Alert
+
+Lets you know when you've crossed biome borders so you know to run all those experiments. [forums](http://forum.kerbalspaceprogram.com/threads/76793)
+
+
+
 ## Space Shuttle Engines
 
 Engines for your SLS/Buran-alikes.
@@ -269,3 +459,39 @@ Engines for your SLS/Buran-alikes.
 We use the Gimbal plugin from this mod, and its *awesome*. It really does let you build stuff with off-center thrust like the Shuttle Launch System.
 
 Also has some very nice replica main tanks, and utility parts that can trigger staging/action groups based on conditions, there's timers, fuel crossfeed controllers and more. [forum](http://forum.kerbalspaceprogram.com/threads/55985)
+
+
+
+## TAC Fuel Balancer
+
+Automatically balance fuel between tanks, dump fuel, transfer a resource from/to all other tanks, or lock it so resources can't move in or out of it. Highly configurable.
+
+Recommended for any SSTO or plane pilot, it will make keeping your planes balanced as engines draw fuel much easier. [forum](http://forum.kerbalspaceprogram.com/threads/25823)
+
+
+
+## TAC Life Support
+
+Resource needs for your kerbals, for those that want a more realistic space program.
+
+Compatible with USI Kolonization System [forums](http://forum.kerbalspaceprogram.com/threads/40667)
+
+
+
+## Toolbar
+
+The original plugin toolbar, and still superior to the one added to stock in 0.24.
+
+While most plugins that can use it include it, its nice to know where to check for the latest version. [forums](http://forum.kerbalspaceprogram.com/threads/60863)
+
+
+
+## USI Kolonization System
+
+Parts and plugins targeted specifically at setting up remote bases for your kerbals to live and work in. Uses the Open Resource System like KSPi and Karbonite. Compatible (and recommends) TAC Life Support. [forums](http://forum.kerbalspaceprogram.com/threads/79588)
+
+
+
+## Vessel Viewer
+
+Awesome plugin that lets you examine and interact with your craft's parts while IVA. Compatible with RPM. [forums](http://forum.kerbalspaceprogram.com/threads/80581)
