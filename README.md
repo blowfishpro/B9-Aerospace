@@ -4,13 +4,7 @@ Unpack everything to the root folder of the game, overwriting already existing G
 
 Source folder contains the source code for the included plugins and is not necessary for the mod to work.
 
-Make sure you have KSP 0.22 or higher.
-
-Support for KSP 0.21 is discontinued, use R3.4 if a compatible version is needed.
-
-Support for KSP 0.20.2 is discontinued, use R3.2 if a compatible version is needed.
-
-Versions below 0.20.2 are incompatible completely, even with older releases.
+Make sure you have KSP 0.24.2 or higher.
 
 Do *not*, under any circumstances, extract just GameData/B9_Aerospace/Parts folder alone, the mod won't work this way.
 
@@ -20,6 +14,9 @@ Do not try to move the part folders anywhere or sort them by category subfolders
 
 If you are experiencing out of memory crashes in the game with this mod, we recommend you install the Active Texture Management mod. You can find it here: [forums](http://forum.kerbalspaceprogram.com/threads/59005)
 
+B9 Aerospace includes an up-to-date ATM config for B9, the one included in ATM should be removed.
+
+While we take pains to ensure the parts are balanced in the stock drag model, we all use either NEAR or FAR. The stock drag model is unsupported. See below for links.
 
 ___________________________________
 
@@ -87,6 +84,34 @@ Components and included code & content may come under their own license. Please 
 
 ___________________________________
 
+# Aerodynamics
+
+While we take pains to ensure the parts are balanced in the stock drag model, we all use either NEAR or FAR. The stock drag model is unsupported.
+
+For the best possible experience with spaceplanes in Kerbal Space Program, you will need to install one of these two mods:
+
+
+
+## Ferram Aerospace Research (FAR)
+
+The true accurate and realistic aerodynamics for KSP.
+
+Can be somewhat daunting for beginners. [forum](http://forum.kerbalspaceprogram.com/threads/20451)
+
+
+## Neophyte's Elementary Aerodynamics Replacement (NEAR)
+
+FAR with the complicated bits removed. [forum](http://forum.kerbalspaceprogram.com/threads/86419)
+
+Features from FAR missing in NEAR:
+* Changes in physics with Mach number
+* Complicated changes in wing lift and drag due to other parts around them
+* Aerodynamic dis-assembly (though they can still be broken off if they overload the stock joints)
+* Complicated aerodynamic analysis tools in the editor
+
+
+___________________________________
+
 # Suggestions
 
 These are some of the mods we like to use when we play KSP, in no particular order:
@@ -116,15 +141,6 @@ Supports lots of major mods as well as the Squad engines. Both HR and B9 use Sar
 WW2-era aircraft and helicopter parts, seaplane floats.
 
 The FS plugin enables lots of advanced functionality in B9, so even if you don't use the parts, updating to the most recent plugin is a good idea. [forum](http://forum.kerbalspaceprogram.com/threads/24551)
-
-
-## Ferram Aerospace Research
-
-Accurate and realistic aerodynamics for KSP.
-
-Wings stall, nosecones and payload fairings actually work, you can steer when aerobraking by turning your rocket. 
-
-It'll change the way you design both planes and rockets. [forum](http://forum.kerbalspaceprogram.com/threads/20451)
 
 
 ## Improved Chase Camera
