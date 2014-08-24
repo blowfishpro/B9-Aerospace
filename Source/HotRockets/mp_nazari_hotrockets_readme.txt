@@ -18,6 +18,20 @@ author: Nazari
 contact: Nazari1382 on Official KerbalSpaceProgram.com forum 
 also on reddit: Nazari1382
 
+=======================================
+INSTALLATION INSTRUCTIONS:
+Place the MP_Nazari folder, Smokescreen folder, and ModuleManager dll into your GameData Folder.
+
+=======================================
+Updated 8/1/2014
+Removed KW config
+Added dedicated config for launch smoke. Remove launch_hotrockets.cfg if you do not want the effect on Rocket engines.
+
+Updated 7/19/2014
+New version of ModuleManager and Smokescreen for KSP 0.24
+additional effect models from cancelled mod patches
+test version of emissive changes to turbofan engine. delete MP_Nazari/FX/emissives to remove it.
+
 Updated 5/12/2014
 Visual fixes for some SXT,RLA,and KSP trails
 
@@ -68,6 +82,6 @@ additional visual changes
 
 
 Additional credits:
-HotRockets includes ModuleManager 1.5.6, credit to ialdabaoth and sarbian
+HotRockets includes ModuleManager 2.2.0, credit to ialdabaoth and sarbian
 Thread: http://forum.kerbalspaceprogram.com/threads/55219
 Andon - initial ModuleManager setup

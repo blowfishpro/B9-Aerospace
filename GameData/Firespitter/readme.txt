@@ -3,7 +3,11 @@ agogstad@gmail.com
 
 Installation:
 Check out Scott Manleys video on installing mods http://www.youtube.com/watch?v=1_0PNkIyHrU
+Unzip the contents of the zip file directly to the KSP GameData folder, so the Firespitter folder ends up in the GameData catalog. For example: c:\games\KSP_win\GameData\Firespitter.
+If you are on a mac, take care when overwriting a folder, as it might default to wiping the target folder of other content.
 Make sure you put the Firespitter files in the GameData folder the way it is presented in the zip file. This mod relies on many assets that have to be in the right folder, like sounds and textures. If you get creative with the file and folder names, stuff will break!
+
+Plugin source code avialable at https://github.com/snjo/Firespitter
 
 Troubleshooting:
 Q: I have no engine sounds, but the propellers spin
@@ -32,6 +36,16 @@ and helicopter sound from http://free-loops.com/7162-helicopter-sounds.html. Ele
 Mustang sound from this video: http://www.youtube.com/watch?v=-yTHDQZL1dE
 Tire screech and bump: http://soundbible.com/1178-Tires-Squealing.html http://soundbible.com/1120-Bounce.html
 Some landing gear sound effects from freesound.org. Other effects recorded by me.
+
+v6.3.3
+-KSP 0.24 Compatibility.
+-Lots of plugin features for upcoming version 7, and features used in other mods like B9
+
+v6.3.2
+-Fixed bug: Propellers don't spin initially
+
+v6.3.1
+-Wheel alignment guides end the scourge of crooked gear placement. Press F2 to toggle guide lines.
 
 v6.3
 -Oblong round noses, short and long
