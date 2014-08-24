@@ -53,19 +53,23 @@ bac9-flcl - 3D modeling, texturing
 
 Taverius - Configs, craft design, testing, 3D modeling
 
+K3|Chris - 3D modeling, texturing, IVA
+
 Nazari - HotRockets Engine FX: [forums](http://forum.kerbalspaceprogram.com/threads/55219)
 
 Snjo - Firespitter.dll plugin v6.3.4: [forums](http://forum.kerbalspaceprogram.com/threads/24551)
 
 Kine - KineTechAnimation.dll plugin: [github](http://github.com/KineMorto/KineTechAnimationLibrary)
 
-Fel - ResGen.dll plugin: [forums](http://forum.kerbalspaceprogram.com/threads/28895)
+Fel - ResGen.dll plugin v0.28.1: [forums](http://forum.kerbalspaceprogram.com/threads/28895)
 
 Sarbian - SmokeScreen.dll plugin v2.4.3.0: [forums](http://forum.kerbalspaceprogram.com/threads/71630)
 
-dtobi - KM_Gimbal.dll plugin v2.1: [github](https://github.com/dtobi/km_Gimbal)
+dtobi - KM_Gimbal.dll plugin v2.1: [github](http://github.com/dtobi/km_Gimbal)
 
-NathanKell - CrossFeedEnabler plugin v2.2: [forums](http://forum.kerbalspaceprogram.com/threads/76499)
+NathanKell - CrossFeedEnabler plugin v3.0: [forums](http://forum.kerbalspaceprogram.com/threads/76499)
+
+Mihara - RasterPropMonitor v0.18.2: [forums](http://forum.kerbalspaceprogram.com/threads/57603)
 
 Special thanks to DYJ, C7, r4mon and Mu for their help.
 
