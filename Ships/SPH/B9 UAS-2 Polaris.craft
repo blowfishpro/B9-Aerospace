@@ -1,12 +1,12 @@
 ship = B9 UAS-2 Polaris
-version = 0.22.0
-description = High speed, medium-range overflight drone.¨¨Based on the UAS-1, the power plant has been replaced for one without thrust vectoring, and the fuselage stretched. The result is just as averse to unaided human pilots as the original¨¨1 - Toggle landing gear motors¨2 - Toggle navigation lights
+version = 0.24.2
+description = High speed, medium-range overflight drone.¨¨Based on the UAS-1, the power plant has been replaced for one without thrust vectoring, and the fuselage stretched. The result is just as averse to unaided human pilots as the original¨¨1 - Toggle navigation lights¨9 - Toggle landing gear motors
 type = SPH
 PART
 {
-	part = B9.Cockpit.MK1.Control.ACU_4294458934
+	part = B9.Cockpit.MK1.Control.ACU_4292683886
 	partName = Part
-	pos = 0.0284535,5.792612,-0.1744301
+	pos = 0.03517989,10.42783,0.07521185
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -15,14 +15,14 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Cockpit.MK1.Body.Fuel.2m_4294458890
-	link = B9.Engine.Jet.Turbojet_4294458826
-	link = B9.Aero.Wing.SW.Winglet.2-3x1-6m_4294458094
-	link = B9.Aero.AirBrake.Surface_4294457776
-	link = B9.Aero.AirBrake.Surface_4294457720
-	link = B9.Aero.AirBrake.Surface_4294457664
-	attN = top,B9.Cockpit.MK1.Body.Fuel.2m_4294458890
-	attN = bottom,B9.Engine.Jet.Turbojet_4294458826
+	modCost = 0
+	link = B9.Engine.Jet.Turbojet_4292683838
+	link = B9.Cockpit.MK1.Body.2m_4292683788
+	link = B9.Aero.Wing.SW.Canard.2-3x1-6m_4292683266
+	link = B9.Aero.Wing.SW.Canard.2-3x1-6m_4292683222
+	link = B9.Aero.Wing.SW.Winglet.2-3x1-6m_4292683178
+	attN = top,B9.Cockpit.MK1.Body.2m_4292683788
+	attN = bottom,B9.Engine.Jet.Turbojet_4292683838
 	EVENTS
 	{
 	}
@@ -112,8 +112,348 @@ PART
 	}
 	MODULE
 	{
+		name = MechJebCore
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		MechJebLocalSettings
+		{
+			MechJebModuleJoke
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleMenu
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSpaceplaneAutopilot
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSpaceplaneGuidance
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleTargetController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleStageStats
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSmartASS
+			{
+				mode = ORBITAL
+				target = OFF
+				advReference = INERTIAL
+				advDirection = FORWARD
+				forceRol = False
+				unlockParts = 
+				unlockTechs = 
+				srfHdg
+				{
+					val = 90
+					_text = 90
+				}
+				srfPit
+				{
+					val = 90
+					_text = 90
+				}
+				srfRol
+				{
+					val = 0
+					_text = 0
+				}
+				rol
+				{
+					val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleRendezvousGuidance
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRendezvousAutopilotWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRoverController
+			{
+				ControlHeading = False
+				ControlSpeed = False
+				BrakeOnEject = False
+				BrakeOnEnergyDepletion = False
+				WarpToDaylight = True
+				StabilityControl = False
+				LimitAcceleration = False
+				unlockParts = 
+				unlockTechs = 
+				heading
+				{
+					val = 0
+					_text = 0
+				}
+				speed
+				{
+					val = 10
+					_text = 10
+				}
+			}
+			MechJebModuleSettings
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRoverWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleThrustWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			ModExtensionDemo
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleTranslatron
+			{
+				trans_spd = 0
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleWarpHelper
+			{
+				unlockParts = 
+				unlockTechs = 
+				phaseAngle
+				{
+					val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleWaypointHelpWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleWaypointWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleDockingAutopilot
+			{
+				forceRol = False
+				overrideSafeDistance = False
+				unlockParts = 
+				unlockTechs = 
+				rol
+				{
+					val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleCustomWindowEditor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleDockingGuidance
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleJokeObscurePanel
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleInfoItems
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentAutopilot
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebFARExt
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentGuidance
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAttitudeAdjustment
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentPathEditor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleLandingAutopilot
+			{
+				deployGears = True
+				deployChutes = True
+				unlockParts = 
+				unlockTechs = 
+				touchdownSpeed
+				{
+					val = 0.5
+					_text = 0.5
+				}
+				limitGearsStage
+				{
+					val = 0
+					_text = 0
+				}
+				limitChutesStage
+				{
+					val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleNodeEditor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleManeuverPlanner
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleNodeExecutor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRendezvousAutopilot
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRCSBalancerWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleLandingPredictions
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleLandingGuidance
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleWarpController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleThrustController
+			{
+				limitThrottle = False
+				unlockParts = 
+				unlockTechs = 
+				maxThrottle
+				{
+					val = 1
+					_text = 100
+				}
+			}
+			MechJebModuleRCSController
+			{
+				unlockParts = 
+				unlockTechs = 
+				Tf
+				{
+					val = 1
+					_text = 1
+				}
+			}
+			MechJebModuleRCSBalancer
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAttitudeController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleStagingController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleFlightRecorder
+			{
+				markUT = 0
+				deltaVExpended = 0
+				dragLosses = 0
+				gravityLosses = 0
+				steeringLosses = 0
+				markLatitude = 0
+				markLongitude = 0
+				markAltitude = 0
+				markBodyIndex = 1
+				maxDragGees = 0
+				unlockParts = 
+				unlockTechs = 
+			}
+		}
+	}
+	MODULE
+	{
 		name = ModuleTripLogger
-		isEnabled = False
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -136,12 +476,33 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 60
+		maxAmount = 60
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
 }
 PART
 {
-	part = B9.Cockpit.MK1.Body.Fuel.2m_4294458890
+	part = B9.Engine.Jet.Turbojet_4292683838
 	partName = Part
-	pos = 0.0284535,5.792612,1.07557
+	pos = 0.03517989,10.42783,-0.6747911
 	rot = 0.7071068,0,0,0.7071068
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -150,59 +511,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Aero.Intake.Mount_4294458854
-	link = B9.Aero.Wing.SW.Winglet.3x2-75m_4294458632
-	link = B9.Aero.Wing.SW.Winglet.3x2-75m_4294458570
-	link = B9.Utility.InfoDrive_4294457974
-	attN = top,B9.Aero.Intake.Mount_4294458854
-	attN = bottom,B9.Cockpit.MK1.Control.ACU_4294458934
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-}
-PART
-{
-	part = B9.Aero.Intake.Mount_4294458854
-	partName = Part
-	pos = 0.0284535,5.167612,2.575607
-	rot = 0,0,0,1
-	attRot = -0.7071068,0,0,0.7071068
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 0
-	link = B9.Aero.Intake.Mount_4294458762
-	link = B9.Aero.Wing.SW.Winglet.2-3x1-6m_4294458054
-	link = B9.Aero.Wing.SW.Winglet.2-3x1-6m_4294458014
-	link = B9.Utility.Light.A1.Closed.T_4294457948
-	attN = top01,B9.Cockpit.MK1.Body.Fuel.2m_4294458890
-	attN = bottom01,B9.Aero.Intake.Mount_4294458762
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-}
-PART
-{
-	part = B9.Engine.Jet.Turbojet_4294458826
-	partName = Part
-	pos = 0.0284535,5.792612,-0.9244409
-	rot = 0.7071068,0,0,0.7071068
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 0
-	attN = top,B9.Cockpit.MK1.Control.ACU_4294458934
+	modCost = 0
+	attN = top,B9.Cockpit.MK1.Control.ACU_4292683886
 	EVENTS
 	{
 	}
@@ -211,13 +521,22 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEngines
+		name = ModuleEnginesFX
 		isEnabled = True
+		staged = False
+		flameout = False
 		EngineIgnited = False
 		engineShutdown = False
 		currentThrottle = 0
-		flameout = False
-		staged = False
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
 		EVENTS
 		{
 			Activate
@@ -281,1026 +600,144 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		flowMode = Both
+	}
 }
 PART
 {
-	part = B9.Aero.Intake.Mount_4294458762
+	part = B9.Cockpit.MK1.Body.2m_4292683788
 	partName = Part
-	pos = 0.0284535,5.167612,3.575611
-	rot = 0,0,0,1
-	attRot = -0.7071068,0,0,0.7071068
+	pos = 0.03517989,10.42783,1.325212
+	rot = 0.7071068,0,0,0.7071068
+	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
 	attm = 0
-	link = B9.Cockpit.MK1.Junction_4294458734
-	attN = top01,B9.Aero.Intake.Mount_4294458854
-	attN = bottom01,B9.Cockpit.MK1.Junction_4294458734
+	modCost = 245
+	link = B9.Utility.InfoDrive_4292683712
+	link = B9.Aero.Intake.Mount_4292683686
+	link = B9.Aero.Wing.SW.Winglet.3x2-75m_4292683110
+	link = B9.Aero.Wing.SW.Winglet.3x2-75m_4292683008
+	attN = top,B9.Aero.Intake.Mount_4292683686
+	attN = bottom,B9.Cockpit.MK1.Control.ACU_4292683886
 	EVENTS
 	{
 	}
 	ACTIONS
 	{
 	}
+	MODULE
+	{
+		name = FSmeshSwitch
+		isEnabled = True
+		selectedObject = 1
+		EVENTS
+		{
+			nextObjectEvent
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Next part variant
+				guiName = Next part variant
+				category = Next part variant
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			previousObjectEvent
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Prev part variant
+				guiName = Prev part variant
+				category = Prev part variant
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSfuelSwitch
+		isEnabled = True
+		currentAmounts = (420, 0, 0, 0)
+		selectedTankSetup = 1
+		hasLaunched = False
+		brandNewPart = False
+		EVENTS
+		{
+			nextTankSetupEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Next tank setup
+				guiName = Next tank setup
+				category = Next tank setup
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 420
+		maxAmount = 420
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
 }
 PART
 {
-	part = B9.Cockpit.MK1.Junction_4294458734
+	part = B9.Utility.InfoDrive_4292683712
 	partName = Part
-	pos = 0.0284535,5.167612,6.075615
-	rot = -1.766354E-15,1,-8.42937E-08,-7.457942E-16
-	attRot = -7.21645E-16,0.7071068,0.7071067,-1.776357E-15
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 0
-	link = B9.Aero.Intake.DSI_4294458704
-	link = B9.Aero.Intake.DSI_4294458668
-	link = B9.Utility.Landing.Gear.HDG1T_4294458232
-	link = rtg_4294457608
-	attN = bottom01,B9.Aero.Intake.Mount_4294458762
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-}
-PART
-{
-	part = B9.Aero.Intake.DSI_4294458704
-	partName = Part
-	pos = -0.5965471,5.676646,4.095623
-	rot = 0.7071068,-0.7071068,8.429371E-08,4.214686E-08
-	attRot = 0,-4.214685E-08,-0.7071068,0.7071068
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	sym = B9.Aero.Intake.DSI_4294458668
-	srfN = srfAttach,B9.Cockpit.MK1.Junction_4294458734
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleResourceIntake
-		isEnabled = True
-		intakeEnabled = True
-		EVENTS
-		{
-			Deactivate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Close Intake
-				guiName = Close Intake
-				category = Close Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Activate
-			{
-				active = False
-				guiActive = True
-				guiIcon = Open Intake
-				guiName = Open Intake
-				category = Open Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = B9.Aero.Intake.DSI_4294458668
-	partName = Part
-	pos = 0.6534541,5.676646,4.095623
-	rot = 0.7071069,0.7071066,-4.214686E-08,4.214686E-08
-	attRot = 0,4.214685E-08,0.7071068,0.7071068
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	sym = B9.Aero.Intake.DSI_4294458704
-	srfN = srfAttach,B9.Cockpit.MK1.Junction_4294458734
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleResourceIntake
-		isEnabled = True
-		intakeEnabled = True
-		EVENTS
-		{
-			Deactivate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Close Intake
-				guiName = Close Intake
-				category = Close Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Activate
-			{
-				active = False
-				guiActive = True
-				guiIcon = Open Intake
-				guiName = Open Intake
-				category = Open Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = B9.Aero.Wing.SW.Winglet.3x2-75m_4294458632
-	partName = ControlSurface
-	pos = -0.5772532,5.630313,0.4621983
-	rot = -0.7010574,-0.09229597,-0.09229597,-0.7010574
-	attRot = 1.116523E-08,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	link = B9.Utility.Landing.Gear.HDG1A_4294458508
-	link = B9.Utility.Light.N2.Red_4294457852
-	sym = B9.Aero.Wing.SW.Winglet.3x2-75m_4294458570
-	srfN = srfAttach,B9.Cockpit.MK1.Body.Fuel.2m_4294458890
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-}
-PART
-{
-	part = B9.Aero.Wing.SW.Winglet.3x2-75m_4294458570
-	partName = ControlSurface
-	pos = 0.6341602,5.630313,0.4621983
-	rot = 0.09229629,0.7010574,0.7010574,0.09229629
-	attRot = -1.116523E-08,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	link = B9.Utility.Landing.Gear.HDG1A_4294458370
-	link = B9.Utility.Light.N2.Green_4294457814
-	sym = B9.Aero.Wing.SW.Winglet.3x2-75m_4294458632
-	srfN = srfAttach,B9.Cockpit.MK1.Body.Fuel.2m_4294458890
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-}
-PART
-{
-	part = B9.Utility.Landing.Gear.HDG1A_4294458508
-	partName = Part
-	pos = -0.8021833,5.397423,0.666044
-	rot = 0.01482813,0.9998901,1.698957E-07,-1.111935E-09
-	attRot = 0,-5.960464E-08,-0.9999999,-1.776357E-15
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	sym = B9.Utility.Landing.Gear.HDG1A_4294458370
-	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4294458632
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = FSwheel
-		isEnabled = True
-		deploymentState = Deployed
-		brakesEngaged = False
-		motorEnabled = False
-		reverseMotor = False
-		reverseMotorSet = False
-		motorStartsReversed = False
-		EVENTS
-		{
-			RaiseGear
-			{
-				active = True
-				guiActive = True
-				guiIcon = Raise Gear
-				guiName = Raise Gear
-				category = Raise Gear
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-			LowerGear
-			{
-				active = True
-				guiActive = True
-				guiIcon = Lower Gear
-				guiName = Lower Gear
-				category = Lower Gear
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-			ReverseMotorEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Enable Reverse Motor
-				guiName = Enable Reverse Motor
-				category = Enable Reverse Motor
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			EnableMotorEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Enable Motor
-				guiName = Enable Motor
-				category = Enable Motor
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DisableMotorEvent
-			{
-				active = True
-				guiActive = False
-				guiIcon = Disable Motor
-				guiName = Disable Motor
-				category = Disable Motor
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			brakesOnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Brakes On
-				guiName = Brakes On
-				category = Brakes On
-				guiActiveUnfocused = True
-				unfocusedRange = 6
-				externalToEVAOnly = True
-			}
-			brakesOffEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Brakes Off
-				guiName = Brakes Off
-				category = Brakes Off
-				guiActiveUnfocused = True
-				unfocusedRange = 6
-				externalToEVAOnly = True
-			}
-			increaseFrictionEvent
-			{
-				active = True
-				guiActive = False
-				guiIcon = increase friction (d)
-				guiName = increase friction (d)
-				category = increase friction (d)
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			decreaseFrictionEvent
-			{
-				active = True
-				guiActive = False
-				guiIcon = decrease friction (d)
-				guiName = decrease friction (d)
-				category = decrease friction (d)
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			suspensionGUIEvent
-			{
-				active = True
-				guiActive = False
-				guiIcon = adjust suspension (d)
-				guiName = adjust suspension (d)
-				category = adjust suspension (d)
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleGearAction
-			{
-				actionGroup = Gear
-			}
-			ReverseMotorAction
-			{
-				actionGroup = None
-			}
-			ToggleMotorAction
-			{
-				actionGroup = Custom01
-			}
-			BrakesAction
-			{
-				actionGroup = Brakes
-			}
-		}
-	}
-	MODULE
-	{
-		name = FSpartTurner
-		isEnabled = True
-		steerMultiplier = 45
-		steeringEnabled = False
-		altInputModeEnabled = False
-		reversedInput = False
-		ignoreTrim = True
-		EVENTS
-		{
-			toggleSteering
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle Steering
-				guiName = Toggle Steering
-				category = Toggle Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleAltInputMode
-			{
-				active = True
-				guiActive = True
-				guiIcon = QE or AD to steer
-				guiName = QE or AD to steer
-				category = QE or AD to steer
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleIgnoreTrim
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle Ignore trim
-				guiName = Toggle Ignore trim
-				category = Toggle Ignore trim
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleReverseInput
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle Reverse Steering
-				guiName = Toggle Reverse Steering
-				category = Toggle Reverse Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			increaseSteering
-			{
-				active = True
-				guiActive = True
-				guiIcon = Increase Steering
-				guiName = Increase Steering
-				category = Increase Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			decreaseSteering
-			{
-				active = True
-				guiActive = True
-				guiIcon = Decrease Steering
-				guiName = Decrease Steering
-				category = Decrease Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleSpeedAdjustedSteeringEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Dynamic Steering
-				guiName = Dynamic Steering
-				category = Dynamic Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			toggleSteeringAction
-			{
-				actionGroup = None
-			}
-			toggleInvertAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = B9.Utility.Landing.Gear.HDG1A_4294458370
-	partName = Part
-	pos = 0.8590921,5.397423,0.6660441
-	rot = -0.01482797,0.9998901,2.123697E-07,1.390017E-09
-	attRot = 0,5.960464E-08,0.9999999,-1.776357E-15
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	sym = B9.Utility.Landing.Gear.HDG1A_4294458508
-	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4294458570
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = FSwheel
-		isEnabled = True
-		deploymentState = Deployed
-		brakesEngaged = False
-		motorEnabled = False
-		reverseMotor = False
-		reverseMotorSet = False
-		motorStartsReversed = False
-		EVENTS
-		{
-			RaiseGear
-			{
-				active = True
-				guiActive = True
-				guiIcon = Raise Gear
-				guiName = Raise Gear
-				category = Raise Gear
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-			LowerGear
-			{
-				active = True
-				guiActive = True
-				guiIcon = Lower Gear
-				guiName = Lower Gear
-				category = Lower Gear
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-			ReverseMotorEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Enable Reverse Motor
-				guiName = Enable Reverse Motor
-				category = Enable Reverse Motor
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			EnableMotorEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Enable Motor
-				guiName = Enable Motor
-				category = Enable Motor
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DisableMotorEvent
-			{
-				active = True
-				guiActive = False
-				guiIcon = Disable Motor
-				guiName = Disable Motor
-				category = Disable Motor
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			brakesOnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Brakes On
-				guiName = Brakes On
-				category = Brakes On
-				guiActiveUnfocused = True
-				unfocusedRange = 6
-				externalToEVAOnly = True
-			}
-			brakesOffEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Brakes Off
-				guiName = Brakes Off
-				category = Brakes Off
-				guiActiveUnfocused = True
-				unfocusedRange = 6
-				externalToEVAOnly = True
-			}
-			increaseFrictionEvent
-			{
-				active = True
-				guiActive = False
-				guiIcon = increase friction (d)
-				guiName = increase friction (d)
-				category = increase friction (d)
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			decreaseFrictionEvent
-			{
-				active = True
-				guiActive = False
-				guiIcon = decrease friction (d)
-				guiName = decrease friction (d)
-				category = decrease friction (d)
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			suspensionGUIEvent
-			{
-				active = True
-				guiActive = False
-				guiIcon = adjust suspension (d)
-				guiName = adjust suspension (d)
-				category = adjust suspension (d)
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleGearAction
-			{
-				actionGroup = Gear
-			}
-			ReverseMotorAction
-			{
-				actionGroup = None
-			}
-			ToggleMotorAction
-			{
-				actionGroup = Custom01
-			}
-			BrakesAction
-			{
-				actionGroup = Brakes
-			}
-		}
-	}
-	MODULE
-	{
-		name = FSpartTurner
-		isEnabled = True
-		steerMultiplier = 45
-		steeringEnabled = False
-		altInputModeEnabled = False
-		reversedInput = False
-		ignoreTrim = True
-		EVENTS
-		{
-			toggleSteering
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle Steering
-				guiName = Toggle Steering
-				category = Toggle Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleAltInputMode
-			{
-				active = True
-				guiActive = True
-				guiIcon = QE or AD to steer
-				guiName = QE or AD to steer
-				category = QE or AD to steer
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleIgnoreTrim
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle Ignore trim
-				guiName = Toggle Ignore trim
-				category = Toggle Ignore trim
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleReverseInput
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle Reverse Steering
-				guiName = Toggle Reverse Steering
-				category = Toggle Reverse Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			increaseSteering
-			{
-				active = True
-				guiActive = True
-				guiIcon = Increase Steering
-				guiName = Increase Steering
-				category = Increase Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			decreaseSteering
-			{
-				active = True
-				guiActive = True
-				guiIcon = Decrease Steering
-				guiName = Decrease Steering
-				category = Decrease Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleSpeedAdjustedSteeringEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Dynamic Steering
-				guiName = Dynamic Steering
-				category = Dynamic Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			toggleSteeringAction
-			{
-				actionGroup = None
-			}
-			toggleInvertAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = B9.Utility.Landing.Gear.HDG1T_4294458232
-	partName = Part
-	pos = 0.02845351,5.067436,7.440681
-	rot = 8.742305E-08,-1,8.429372E-08,-5.024294E-15
-	attRot = 0,0.9999999,-5.960464E-08,-1.776357E-15
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	srfN = srfAttach,B9.Cockpit.MK1.Junction_4294458734
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = FSwheel
-		isEnabled = True
-		deploymentState = Deployed
-		brakesEngaged = False
-		motorEnabled = False
-		reverseMotor = False
-		reverseMotorSet = False
-		motorStartsReversed = False
-		EVENTS
-		{
-			RaiseGear
-			{
-				active = True
-				guiActive = True
-				guiIcon = Raise Gear
-				guiName = Raise Gear
-				category = Raise Gear
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-			LowerGear
-			{
-				active = True
-				guiActive = True
-				guiIcon = Lower Gear
-				guiName = Lower Gear
-				category = Lower Gear
-				guiActiveUnfocused = True
-				unfocusedRange = 5
-				externalToEVAOnly = True
-			}
-			ReverseMotorEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Enable Reverse Motor
-				guiName = Enable Reverse Motor
-				category = Enable Reverse Motor
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			EnableMotorEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Enable Motor
-				guiName = Enable Motor
-				category = Enable Motor
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DisableMotorEvent
-			{
-				active = True
-				guiActive = False
-				guiIcon = Disable Motor
-				guiName = Disable Motor
-				category = Disable Motor
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			brakesOnEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Brakes On
-				guiName = Brakes On
-				category = Brakes On
-				guiActiveUnfocused = True
-				unfocusedRange = 6
-				externalToEVAOnly = True
-			}
-			brakesOffEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Brakes Off
-				guiName = Brakes Off
-				category = Brakes Off
-				guiActiveUnfocused = True
-				unfocusedRange = 6
-				externalToEVAOnly = True
-			}
-			increaseFrictionEvent
-			{
-				active = True
-				guiActive = False
-				guiIcon = increase friction (d)
-				guiName = increase friction (d)
-				category = increase friction (d)
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			decreaseFrictionEvent
-			{
-				active = True
-				guiActive = False
-				guiIcon = decrease friction (d)
-				guiName = decrease friction (d)
-				category = decrease friction (d)
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			suspensionGUIEvent
-			{
-				active = True
-				guiActive = False
-				guiIcon = adjust suspension (d)
-				guiName = adjust suspension (d)
-				category = adjust suspension (d)
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleGearAction
-			{
-				actionGroup = Gear
-			}
-			ReverseMotorAction
-			{
-				actionGroup = None
-			}
-			ToggleMotorAction
-			{
-				actionGroup = Custom01
-			}
-			BrakesAction
-			{
-				actionGroup = Brakes
-			}
-		}
-	}
-	MODULE
-	{
-		name = FSpartTurner
-		isEnabled = True
-		steerMultiplier = 45
-		steeringEnabled = True
-		altInputModeEnabled = False
-		reversedInput = False
-		ignoreTrim = True
-		EVENTS
-		{
-			toggleSteering
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle Steering
-				guiName = Toggle Steering
-				category = Toggle Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleAltInputMode
-			{
-				active = True
-				guiActive = True
-				guiIcon = QE or AD to steer
-				guiName = QE or AD to steer
-				category = QE or AD to steer
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleIgnoreTrim
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle Ignore trim
-				guiName = Toggle Ignore trim
-				category = Toggle Ignore trim
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleReverseInput
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle Reverse Steering
-				guiName = Toggle Reverse Steering
-				category = Toggle Reverse Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			increaseSteering
-			{
-				active = True
-				guiActive = True
-				guiIcon = Increase Steering
-				guiName = Increase Steering
-				category = Increase Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			decreaseSteering
-			{
-				active = True
-				guiActive = True
-				guiIcon = Decrease Steering
-				guiName = Decrease Steering
-				category = Decrease Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			toggleSpeedAdjustedSteeringEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Dynamic Steering
-				guiName = Dynamic Steering
-				category = Dynamic Steering
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			toggleSteeringAction
-			{
-				actionGroup = None
-			}
-			toggleInvertAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = B9.Aero.Wing.SW.Winglet.2-3x1-6m_4294458094
-	partName = ControlSurface
-	pos = 0.0284535,6.420416,-0.4031741
-	rot = -0.5000001,0.4999999,0.4999999,-0.5000001
+	pos = 0.03517995,9.800998,0.7291178
+	rot = -1,-8.742278E-08,0,0
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1308,73 +745,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	link = B9.Utility.Light.N1.White_4294457890
-	srfN = srfAttach,B9.Cockpit.MK1.Control.ACU_4294458934
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-}
-PART
-{
-	part = B9.Aero.Wing.SW.Winglet.2-3x1-6m_4294458054
-	partName = ControlSurface
-	pos = -0.4869994,6.060403,2.517026
-	rot = -0.7044161,0.06162834,0.06162834,-0.7044161
-	attRot = -3.412613E-17,2.519002E-08,0.4226184,0.9063079
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	sym = B9.Aero.Wing.SW.Winglet.2-3x1-6m_4294458014
-	srfN = srfAttach,B9.Aero.Intake.Mount_4294458854
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-}
-PART
-{
-	part = B9.Aero.Wing.SW.Winglet.2-3x1-6m_4294458014
-	partName = ControlSurface
-	pos = 0.5439062,6.060403,2.517026
-	rot = -0.0616284,0.7044159,0.7044162,-0.06162837
-	attRot = 3.412613E-17,-2.519002E-08,-0.4226184,0.9063079
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	sym = B9.Aero.Wing.SW.Winglet.2-3x1-6m_4294458054
-	srfN = srfAttach,B9.Aero.Intake.Mount_4294458854
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-}
-PART
-{
-	part = B9.Utility.InfoDrive_4294457974
-	partName = Part
-	pos = 0.02845355,5.167585,1.956837
-	rot = -0.7071068,0,0.7071068,-8.42937E-08
-	attRot = 0,0.7071068,-4.214685E-08,0.7071068
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	srfN = srfAttach,B9.Cockpit.MK1.Body.Fuel.2m_4294458890
+	modCost = 0
+	srfN = srfAttach,B9.Cockpit.MK1.Body.2m_4292683788
 	EVENTS
 	{
 	}
@@ -1386,8 +758,8 @@ PART
 		name = FSinfoPopup
 		isEnabled = True
 		textHeading = UAS-2 Polaris Overflight Drone
-		textBody1 = 1 - Toggle landing gear motors
-		textBody2 = 2 - Toggle navigation lights
+		textBody1 = 1 - Toggle navigation lights
+		textBody2 = 9 - Toggle landing gear motors
 		textBody3 = 
 		textBody4 = 
 		textBody5 = 
@@ -1401,7 +773,7 @@ PART
 		hideAfterCountdown = True
 		showOnEachFlightStart = True
 		hasBeenShown = False
-		countDownDuration = 20
+		countDownDuration = 30
 		hideMeshInFlight = False
 		toggleKey = i
 		useHotkey = True
@@ -1411,6 +783,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Show Info
 				guiName = Show Info
 				category = Show Info
@@ -1427,13 +800,111 @@ PART
 			}
 		}
 	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
 }
 PART
 {
-	part = B9.Utility.Light.A1.Closed.T_4294457948
+	part = B9.Aero.Intake.Mount_4292683686
 	partName = Part
-	pos = 0.02845351,5.017607,2.585417
-	rot = -1,-8.742278E-08,0,0
+	pos = 0.03517989,9.80283,2.825225
+	rot = -2.528811E-07,0,0,-1
+	attRot = 0.7071066,0,0,-0.7071069
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	link = B9.Utility.Light.A1.Closed_4292683654
+	link = B9.Cockpit.MK1.Junction_4292683552
+	attN = top01,B9.Cockpit.MK1.Body.2m_4292683788
+	attN = bottom01,B9.Cockpit.MK1.Junction_4292683552
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleCrossFeed
+		isEnabled = True
+		crossFeedOverride = True
+		EVENTS
+		{
+			ToggleCrossFeed
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Crossfeed is On
+				guiName = Crossfeed is On
+				category = Crossfeed is On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSfuelSwitch
+		isEnabled = True
+		currentAmounts = (0, 0, 0, 0)
+		selectedTankSetup = 0
+		hasLaunched = False
+		brandNewPart = False
+		EVENTS
+		{
+			nextTankSetupEvent
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Next tank setup
+				guiName = Next tank setup
+				category = Next tank setup
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = B9.Utility.Light.A1.Closed_4292683654
+	partName = Part
+	pos = 0.03517991,9.6527,2.876376
+	rot = -1,-8.742278E-08,0,-4.214685E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1441,7 +912,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,B9.Aero.Intake.Mount_4294458854
+	modCost = 0
+	srfN = srfAttach,B9.Aero.Intake.Mount_4292683686
 	EVENTS
 	{
 	}
@@ -1453,12 +925,37 @@ PART
 		name = ModuleLight
 		isEnabled = True
 		isOn = False
+		lightR = 1
+		lightG = 1
+		lightB = 1
+		lightR_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightG_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightB_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
 		EVENTS
 		{
 			LightsOff
 			{
 				active = False
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Lights Off
 				guiName = Lights Off
 				category = Lights Off
@@ -1470,6 +967,7 @@ PART
 			{
 				active = True
 				guiActive = True
+				guiActiveEditor = True
 				guiIcon = Lights On
 				guiName = Lights On
 				category = Lights On
@@ -1494,21 +992,72 @@ PART
 			}
 		}
 	}
+	MODULE
+	{
+		name = FSmeshSwitch
+		isEnabled = True
+		selectedObject = 1
+		EVENTS
+		{
+			nextObjectEvent
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Next part variant
+				guiName = Toggle Heat Shielding
+				category = Next part variant
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			previousObjectEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Prev part variant
+				guiName = Prev part variant
+				category = Prev part variant
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
 }
 PART
 {
-	part = B9.Utility.Light.N1.White_4294457890
+	part = B9.Cockpit.MK1.Junction_4292683552
 	partName = Part
-	pos = 0.02845343,6.527748,-1.592685
-	rot = 0.00606115,-0.6761965,0.7366955,-0.00116476
-	attRot = -0.5566016,0.1064157,-0.1942681,-0.8007064
+	pos = 0.03517997,9.802831,5.325214
+	rot = 1.490116E-08,-1,2.95028E-07,1.490118E-08
+	attRot = -6.800653E-15,-0.7071069,-0.7071065,2.107343E-08
 	mir = 1,1,1
 	istg = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	attm = 1
-	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.2-3x1-6m_4294458094
+	attm = 0
+	modCost = 0
+	link = B9.Control.ASAS_4292683518
+	link = B9.Utility.Landing.Gear.HDG1A_4292683488
+	link = B9.Aero.Intake.DSI_4292683338
+	link = B9.Aero.Intake.DSI_4292683302
+	attN = bottom,B9.Aero.Intake.Mount_4292683686
 	EVENTS
 	{
 	}
@@ -1517,29 +1066,19 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleLight
+		name = ModuleCrossFeed
 		isEnabled = True
-		isOn = False
+		crossFeedOverride = True
 		EVENTS
 		{
-			LightsOff
-			{
-				active = False
-				guiActive = True
-				guiIcon = Lights Off
-				guiName = Lights Off
-				category = Lights Off
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			LightsOn
+			ToggleCrossFeed
 			{
 				active = True
 				guiActive = True
-				guiIcon = Lights On
-				guiName = Lights On
-				category = Lights On
+				guiActiveEditor = True
+				guiIcon = Crossfeed is On
+				guiName = Crossfeed is On
+				category = Crossfeed is On
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -1547,66 +1086,26 @@ PART
 		}
 		ACTIONS
 		{
-			ToggleLightAction
-			{
-				actionGroup = Custom02
-			}
-			LightOnAction
-			{
-				actionGroup = None
-			}
-			LightOffAction
-			{
-				actionGroup = None
-			}
 		}
-	}
-}
-PART
-{
-	part = B9.Utility.Light.N2.Red_4294457852
-	partName = Part
-	pos = -3.227944,4.920095,-0.2129598
-	rot = 0.7913575,-0.6072298,-0.0431545,0.05624004
-	attRot = 0.3826835,0,0,0.9238796
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4294458632
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
 	}
 	MODULE
 	{
-		name = ModuleLight
+		name = FSfuelSwitch
 		isEnabled = True
-		isOn = False
+		currentAmounts = (0, 0, 0, 0)
+		selectedTankSetup = 0
+		hasLaunched = False
+		brandNewPart = False
 		EVENTS
 		{
-			LightsOff
-			{
-				active = False
-				guiActive = True
-				guiIcon = Lights Off
-				guiName = Lights Off
-				category = Lights Off
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			LightsOn
+			nextTankSetupEvent
 			{
 				active = True
-				guiActive = True
-				guiIcon = Lights On
-				guiName = Lights On
-				category = Lights On
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Next tank setup
+				guiName = Next tank setup
+				category = Next tank setup
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -1614,66 +1113,21 @@ PART
 		}
 		ACTIONS
 		{
-			ToggleLightAction
-			{
-				actionGroup = Custom02
-			}
-			LightOnAction
-			{
-				actionGroup = None
-			}
-			LightOffAction
-			{
-				actionGroup = None
-			}
 		}
-	}
-}
-PART
-{
-	part = B9.Utility.Light.N2.Green_4294457814
-	partName = Part
-	pos = 3.284353,4.919592,-0.2126874
-	rot = 0.7913576,0.6072297,0.04315448,0.0562399
-	attRot = 0.3826835,0,0,0.9238796
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4294458570
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
 	}
 	MODULE
 	{
-		name = ModuleLight
+		name = FARPayloadFairingModule
 		isEnabled = True
-		isOn = False
 		EVENTS
 		{
-			LightsOff
-			{
-				active = False
-				guiActive = True
-				guiIcon = Lights Off
-				guiName = Lights Off
-				category = Lights Off
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			LightsOn
+			FairingShapeChanged
 			{
 				active = True
-				guiActive = True
-				guiIcon = Lights On
-				guiName = Lights On
-				category = Lights On
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -1681,27 +1135,26 @@ PART
 		}
 		ACTIONS
 		{
-			ToggleLightAction
-			{
-				actionGroup = Custom02
-			}
-			LightOnAction
-			{
-				actionGroup = None
-			}
-			LightOffAction
-			{
-				actionGroup = None
-			}
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 	}
 }
 PART
 {
-	part = B9.Aero.AirBrake.Surface_4294457776
+	part = B9.Control.ASAS_4292683518
 	partName = Part
-	pos = 0.02845355,5.166192,-0.4150597
-	rot = -1,-8.742278E-08,0,0
+	pos = 0.03517998,9.702724,7.43057
+	rot = -1,-8.742285E-08,1.004859E-14,-8.42937E-08
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1709,7 +1162,8 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,B9.Cockpit.MK1.Control.ACU_4294458934
+	modCost = 0
+	srfN = srfAttach,B9.Cockpit.MK1.Junction_4292683552
 	EVENTS
 	{
 	}
@@ -1718,18 +1172,248 @@ PART
 	}
 	MODULE
 	{
-		name = FSairBrake
+		name = ModuleScienceExperiment
 		isEnabled = True
-		targetAngle = 0
+		Deployed = False
+		Inoperable = False
 		EVENTS
 		{
-			toggleAltInputMode
+			DeployExperiment
 			{
 				active = True
 				guiActive = True
-				guiIcon = toggle Air Brake
-				guiName = toggle Air Brake
-				category = toggle Air Brake
+				guiIcon = Deploy
+				guiName = Deploy
+				category = Deploy
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 1.5
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Data
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperimentExternal
+			{
+				active = True
+				guiActive = False
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = B9.Utility.Landing.Gear.HDG1A_4292683488
+	partName = Part
+	pos = 0.03517998,9.702787,5.532647
+	rot = 8.74229E-08,-1,1.685874E-07,0
+	attRot = 0,0.9999999,-5.960464E-08,-1.776357E-15
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	link = rtg_4292683136
+	srfN = srfAttach,B9.Cockpit.MK1.Junction_4292683552
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSwheel
+		isEnabled = True
+		deploymentState = Deployed
+		brakesEngaged = False
+		motorEnabled = False
+		reverseMotor = True
+		reverseMotorSet = False
+		motorStartsReversed = False
+		EVENTS
+		{
+			RaiseGear
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Raise Gear
+				guiName = Raise Gear
+				category = Raise Gear
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			LowerGear
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lower Gear
+				guiName = Lower Gear
+				category = Lower Gear
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			EnableReverseMotorEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Enable Reverse Motor
+				guiName = Enable Reverse Motor
+				category = Enable Reverse Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableReverseMotorEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Disable Reverse Motor
+				guiName = Disable Reverse Motor
+				category = Disable Reverse Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			EnableMotorEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Enable Motor
+				guiName = Enable Motor
+				category = Enable Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableMotorEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Disable Motor
+				guiName = Disable Motor
+				category = Disable Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			brakesOnEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Brakes On
+				guiName = Brakes On
+				category = Brakes On
+				guiActiveUnfocused = True
+				unfocusedRange = 6
+				externalToEVAOnly = True
+			}
+			brakesOffEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Brakes Off
+				guiName = Brakes Off
+				category = Brakes Off
+				guiActiveUnfocused = True
+				unfocusedRange = 6
+				externalToEVAOnly = True
+			}
+			increaseFrictionEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = increase friction (d)
+				guiName = increase friction (d)
+				category = increase friction (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseFrictionEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = decrease friction (d)
+				guiName = decrease friction (d)
+				category = decrease friction (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			suspensionGUIEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = adjust suspension (d)
+				guiName = adjust suspension (d)
+				category = adjust suspension (d)
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -1737,27 +1421,354 @@ PART
 		}
 		ACTIONS
 		{
-			toggleAirBrakeAction
+			ToggleGearAction
 			{
-				actionGroup = Brakes
+				actionGroup = Gear
 			}
-			raiseAirBrakeAction
+			ReverseMotorAction
 			{
 				actionGroup = None
 			}
-			lowerAirBrakeAction
+			ToggleMotorAction
+			{
+				actionGroup = Custom09
+			}
+			BrakesAction
+			{
+				actionGroup = Brakes
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSpartTurner
+		isEnabled = True
+		steerMultiplier = 45
+		steeringEnabled = True
+		altInputModeEnabled = False
+		reversedInput = False
+		ignoreTrim = True
+		steerMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 50
+			stepIncrement = 0.02
+		}
+		EVENTS
+		{
+			toggleSteering
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Steering
+				guiName = Lock Steering
+				category = Toggle Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleReverseInput
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Reverse Steering
+				guiName = Reverse Steering
+				category = Toggle Reverse Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleSpeedAdjustedSteeringEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Dynamic Steering
+				guiName = Disable Dynamic Steering
+				category = Dynamic Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleAltInputMode
+			{
+				active = True
+				guiActive = False
+				guiIcon = QE or AD to steer
+				guiName = QE or AD to steer
+				category = QE or AD to steer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleIgnoreTrim
+			{
+				active = True
+				guiActive = False
+				guiIcon = Toggle Ignore trim
+				guiName = Toggle Ignore trim
+				category = Toggle Ignore trim
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			increaseSteering
+			{
+				active = True
+				guiActive = False
+				guiIcon = Increase Steering
+				guiName = Increase Steering
+				category = Increase Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseSteering
+			{
+				active = True
+				guiActive = False
+				guiIcon = Decrease Steering
+				guiName = Decrease Steering
+				category = Decrease Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleSteeringAction
+			{
+				actionGroup = None
+			}
+			toggleInvertAction
 			{
 				actionGroup = None
 			}
 		}
 	}
+	MODULE
+	{
+		name = FStextureSwitch2
+		isEnabled = True
+		selectedTexture = 1
+		selectedTextureURL = B9_Aerospace/Parts/Utility_Landing_Gear_HDG/model_landing_gear_hdg2t
+		selectedMapURL = 
+		EVENTS
+		{
+			listAllObjects
+			{
+				active = True
+				guiActive = False
+				guiIcon = Debug: Log Objects
+				guiName = Debug: Log Objects
+				category = Debug: Log Objects
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			nextTextureEvent
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Next Texture
+				guiName = Toggle Heat Shielding
+				category = Next Texture
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			previousTextureEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Previous Texture
+				guiName = Previous Texture
+				category = Previous Texture
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			nextTextureEVAEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Repaint
+				guiName = Repaint
+				category = Repaint
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
 }
 PART
 {
-	part = B9.Aero.AirBrake.Surface_4294457720
+	part = B9.Aero.Intake.DSI_4292683338
 	partName = Part
-	pos = -0.5157546,6.106811,-0.4174166
-	rot = -0.5000002,0.8660254,0,0
+	pos = -0.5898216,10.00526,5.25481
+	rot = 0.7071066,-0.7071072,2.528811E-07,2.107343E-07
+	attRot = 0,-4.214685E-08,-0.7071068,0.7071068
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = B9.Aero.Intake.DSI_4292683302
+	srfN = srfAttach,B9.Cockpit.MK1.Junction_4292683552
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleResourceIntake
+		isEnabled = True
+		intakeEnabled = True
+		EVENTS
+		{
+			Deactivate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Close Intake
+				guiName = Close Intake
+				category = Close Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Open Intake
+				guiName = Open Intake
+				category = Open Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	RESOURCE
+	{
+		name = IntakeAir
+		amount = 0.1
+		maxAmount = 0.1
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = B9.Aero.Intake.DSI_4292683302
+	partName = Part
+	pos = 0.6601816,10.00526,5.25481
+	rot = 0.7071074,0.7071065,-2.107343E-07,2.107343E-07
+	attRot = 0,4.214685E-08,0.7071068,0.7071068
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = B9.Aero.Intake.DSI_4292683338
+	srfN = srfAttach,B9.Cockpit.MK1.Junction_4292683552
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleResourceIntake
+		isEnabled = True
+		intakeEnabled = True
+		EVENTS
+		{
+			Deactivate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Close Intake
+				guiName = Close Intake
+				category = Close Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = False
+				guiActive = True
+				guiIcon = Open Intake
+				guiName = Open Intake
+				category = Open Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	RESOURCE
+	{
+		name = IntakeAir
+		amount = 0.1
+		maxAmount = 0.1
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = B9.Aero.Wing.SW.Canard.2-3x1-6m_4292683266
+	partName = Part
+	pos = -0.5433821,10.67573,-0.1426104
+	rot = -0.6830128,0.1830127,0.1830127,-0.6830127
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1765,8 +1776,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Aero.AirBrake.Surface_4294457664
-	srfN = srfAttach,B9.Cockpit.MK1.Control.ACU_4294458934
+	modCost = 0
+	sym = B9.Aero.Wing.SW.Canard.2-3x1-6m_4292683222
+	srfN = srfAttach,B9.Cockpit.MK1.Control.ACU_4292683886
 	EVENTS
 	{
 	}
@@ -1775,18 +1787,70 @@ PART
 	}
 	MODULE
 	{
-		name = FSairBrake
+		name = FARControllableSurface
 		isEnabled = True
-		targetAngle = 0
+		pitchaxis = True
+		yawaxis = False
+		rollaxis = False
+		isFlap = False
+		isSpoiler = False
+		flapDeflectionLevel = 2
+		maxdeflect = 15
+		maxdeflectFlap = 15
+		pitchaxis_UIEditor
+		{
+			controlEnabled = True
+		}
+		yawaxis_UIEditor
+		{
+			controlEnabled = True
+		}
+		rollaxis_UIEditor
+		{
+			controlEnabled = True
+		}
+		isFlap_UIEditor
+		{
+			controlEnabled = True
+		}
+		isSpoiler_UIEditor
+		{
+			controlEnabled = True
+		}
+		maxdeflect_UIEditor
+		{
+			controlEnabled = True
+			minValue = -15
+			maxValue = 30
+			stepIncrement = 0.5
+		}
+		maxdeflectFlap_UIEditor
+		{
+			controlEnabled = True
+			minValue = -30
+			maxValue = 85
+			stepIncrement = 0.5
+		}
 		EVENTS
 		{
-			toggleAltInputMode
+			DeflectMore
 			{
-				active = True
+				active = False
 				guiActive = True
-				guiIcon = toggle Air Brake
-				guiName = toggle Air Brake
-				category = toggle Air Brake
+				guiIcon = Deflect more
+				guiName = Deflect more
+				category = Deflect more
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeflectLess
+			{
+				active = False
+				guiActive = True
+				guiIcon = Deflect less
+				guiName = Deflect less
+				category = Deflect less
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -1794,15 +1858,15 @@ PART
 		}
 		ACTIONS
 		{
-			toggleAirBrakeAction
+			ActivateSpoiler
 			{
 				actionGroup = Brakes
 			}
-			raiseAirBrakeAction
+			IncreaseDeflect
 			{
 				actionGroup = None
 			}
-			lowerAirBrakeAction
+			DecreaseDeflect
 			{
 				actionGroup = None
 			}
@@ -1811,10 +1875,10 @@ PART
 }
 PART
 {
-	part = B9.Aero.AirBrake.Surface_4294457664
+	part = B9.Aero.Wing.SW.Canard.2-3x1-6m_4292683222
 	partName = Part
-	pos = 0.5726615,6.106811,-0.4174166
-	rot = 0.5000002,0.8660254,0,0
+	pos = 0.6137419,10.67573,-0.1426104
+	rot = -0.1830128,0.6830127,0.6830127,-0.1830127
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
@@ -1822,8 +1886,9 @@ PART
 	sidx = -1
 	sqor = -1
 	attm = 1
-	sym = B9.Aero.AirBrake.Surface_4294457720
-	srfN = srfAttach,B9.Cockpit.MK1.Control.ACU_4294458934
+	modCost = 0
+	sym = B9.Aero.Wing.SW.Canard.2-3x1-6m_4292683266
+	srfN = srfAttach,B9.Cockpit.MK1.Control.ACU_4292683886
 	EVENTS
 	{
 	}
@@ -1832,18 +1897,70 @@ PART
 	}
 	MODULE
 	{
-		name = FSairBrake
+		name = FARControllableSurface
 		isEnabled = True
-		targetAngle = 0
+		pitchaxis = True
+		yawaxis = False
+		rollaxis = False
+		isFlap = False
+		isSpoiler = False
+		flapDeflectionLevel = 2
+		maxdeflect = 15
+		maxdeflectFlap = 15
+		pitchaxis_UIEditor
+		{
+			controlEnabled = True
+		}
+		yawaxis_UIEditor
+		{
+			controlEnabled = True
+		}
+		rollaxis_UIEditor
+		{
+			controlEnabled = True
+		}
+		isFlap_UIEditor
+		{
+			controlEnabled = True
+		}
+		isSpoiler_UIEditor
+		{
+			controlEnabled = True
+		}
+		maxdeflect_UIEditor
+		{
+			controlEnabled = True
+			minValue = -15
+			maxValue = 30
+			stepIncrement = 0.5
+		}
+		maxdeflectFlap_UIEditor
+		{
+			controlEnabled = True
+			minValue = -30
+			maxValue = 85
+			stepIncrement = 0.5
+		}
 		EVENTS
 		{
-			toggleAltInputMode
+			DeflectMore
 			{
-				active = True
+				active = False
 				guiActive = True
-				guiIcon = toggle Air Brake
-				guiName = toggle Air Brake
-				category = toggle Air Brake
+				guiIcon = Deflect more
+				guiName = Deflect more
+				category = Deflect more
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeflectLess
+			{
+				active = False
+				guiActive = True
+				guiIcon = Deflect less
+				guiName = Deflect less
+				category = Deflect less
 				guiActiveUnfocused = False
 				unfocusedRange = 2
 				externalToEVAOnly = True
@@ -1851,15 +1968,15 @@ PART
 		}
 		ACTIONS
 		{
-			toggleAirBrakeAction
+			ActivateSpoiler
 			{
 				actionGroup = Brakes
 			}
-			raiseAirBrakeAction
+			IncreaseDeflect
 			{
 				actionGroup = None
 			}
-			lowerAirBrakeAction
+			DecreaseDeflect
 			{
 				actionGroup = None
 			}
@@ -1868,18 +1985,128 @@ PART
 }
 PART
 {
-	part = rtg_4294457608
+	part = B9.Aero.Wing.SW.Winglet.2-3x1-6m_4292683178
 	partName = Part
-	pos = 0.02845332,6.176748,3.758812
-	rot = -8.432165E-09,0.7071068,-0.7071068,8.432165E-09
-	attRot = -0.7071067,0,0,-0.7071067
+	pos = 0.03517978,11.0539,-0.1613666
+	rot = 0.5000001,-0.5000001,-0.5000001,0.5000001
+	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
 	attm = 1
-	srfN = srfAttach,B9.Cockpit.MK1.Junction_4294458734
+	modCost = 0
+	srfN = srfAttach,B9.Cockpit.MK1.Control.ACU_4292683886
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FARControllableSurface
+		isEnabled = True
+		pitchaxis = False
+		yawaxis = True
+		rollaxis = False
+		isFlap = False
+		isSpoiler = False
+		flapDeflectionLevel = 2
+		maxdeflect = 15
+		maxdeflectFlap = 15
+		pitchaxis_UIEditor
+		{
+			controlEnabled = True
+		}
+		yawaxis_UIEditor
+		{
+			controlEnabled = True
+		}
+		rollaxis_UIEditor
+		{
+			controlEnabled = True
+		}
+		isFlap_UIEditor
+		{
+			controlEnabled = True
+		}
+		isSpoiler_UIEditor
+		{
+			controlEnabled = True
+		}
+		maxdeflect_UIEditor
+		{
+			controlEnabled = True
+			minValue = -15
+			maxValue = 30
+			stepIncrement = 0.5
+		}
+		maxdeflectFlap_UIEditor
+		{
+			controlEnabled = True
+			minValue = -30
+			maxValue = 85
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			DeflectMore
+			{
+				active = False
+				guiActive = True
+				guiIcon = Deflect more
+				guiName = Deflect more
+				category = Deflect more
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeflectLess
+			{
+				active = False
+				guiActive = True
+				guiIcon = Deflect less
+				guiName = Deflect less
+				category = Deflect less
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActivateSpoiler
+			{
+				actionGroup = Brakes
+			}
+			IncreaseDeflect
+			{
+				actionGroup = None
+			}
+			DecreaseDeflect
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = rtg_4292683136
+	partName = Part
+	pos = 0.03517995,10.20637,5.848403
+	rot = -4.264532E-08,0.9828256,0.1845378,6.386914E-09
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	srfN = srfAttach,B9.Utility.Landing.Gear.HDG1A_4292683488
 	EVENTS
 	{
 	}
@@ -1931,6 +2158,1531 @@ PART
 			{
 				actionGroup = None
 			}
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = B9.Aero.Wing.SW.Winglet.3x2-75m_4292683110
+	partName = Part
+	pos = -0.5727009,10.26495,0.9314595
+	rot = -0.7044162,-0.06162838,-0.06162838,-0.7044162
+	attRot = 0,-2.599919E-09,-0.04361939,0.9990482
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	link = B9.Utility.Light.N1.White_4292683046
+	link = B9.Aero.AirBrake.Surface_4292682906
+	link = B9.Utility.Landing.Gear.HDG1A_4292682794
+	link = B9.Utility.Light.N1.White_4292682494
+	sym = B9.Aero.Wing.SW.Winglet.3x2-75m_4292683008
+	srfN = srfAttach,B9.Cockpit.MK1.Body.2m_4292683788
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FARControllableSurface
+		isEnabled = True
+		pitchaxis = False
+		yawaxis = False
+		rollaxis = True
+		isFlap = False
+		isSpoiler = False
+		flapDeflectionLevel = 2
+		maxdeflect = 15
+		maxdeflectFlap = 15
+		pitchaxis_UIEditor
+		{
+			controlEnabled = True
+		}
+		yawaxis_UIEditor
+		{
+			controlEnabled = True
+		}
+		rollaxis_UIEditor
+		{
+			controlEnabled = True
+		}
+		isFlap_UIEditor
+		{
+			controlEnabled = True
+		}
+		isSpoiler_UIEditor
+		{
+			controlEnabled = True
+		}
+		maxdeflect_UIEditor
+		{
+			controlEnabled = True
+			minValue = -15
+			maxValue = 30
+			stepIncrement = 0.5
+		}
+		maxdeflectFlap_UIEditor
+		{
+			controlEnabled = True
+			minValue = -30
+			maxValue = 85
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			DeflectMore
+			{
+				active = False
+				guiActive = True
+				guiIcon = Deflect more
+				guiName = Deflect more
+				category = Deflect more
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeflectLess
+			{
+				active = False
+				guiActive = True
+				guiIcon = Deflect less
+				guiName = Deflect less
+				category = Deflect less
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActivateSpoiler
+			{
+				actionGroup = Brakes
+			}
+			IncreaseDeflect
+			{
+				actionGroup = None
+			}
+			DecreaseDeflect
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = B9.Utility.Light.N1.White_4292683046
+	partName = Part
+	pos = -0.6484827,10.25901,-1.460559
+	rot = 0.4449967,0.5495254,-0.5495254,-0.4449967
+	attRot = 1.85126E-08,-6.304211E-08,-0.7771462,0.6293206
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = B9.Utility.Light.N1.White_4292682944
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4292683110
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = False
+		lightR = 1
+		lightG = 1
+		lightB = 1
+		lightR_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightG_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightB_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			LightsOff
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lights Off
+				guiName = Lights Off
+				category = Lights Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LightsOn
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lights On
+				guiName = Lights On
+				category = Lights On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Custom01
+			}
+			LightOnAction
+			{
+				actionGroup = None
+			}
+			LightOffAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = B9.Aero.Wing.SW.Winglet.3x2-75m_4292683008
+	partName = Part
+	pos = 0.6430606,10.26495,0.9314595
+	rot = 0.06162838,0.7044159,0.7044162,0.06162836
+	attRot = 0,2.599919E-09,0.04361939,0.9990482
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	link = B9.Utility.Light.N1.White_4292682944
+	link = B9.Aero.AirBrake.Surface_4292682850
+	link = B9.Utility.Landing.Gear.HDG1A_4292682644
+	link = B9.Utility.Light.N1.White_4292682456
+	sym = B9.Aero.Wing.SW.Winglet.3x2-75m_4292683110
+	srfN = srfAttach,B9.Cockpit.MK1.Body.2m_4292683788
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FARControllableSurface
+		isEnabled = True
+		pitchaxis = False
+		yawaxis = False
+		rollaxis = True
+		isFlap = False
+		isSpoiler = False
+		flapDeflectionLevel = 2
+		maxdeflect = 15
+		maxdeflectFlap = 15
+		pitchaxis_UIEditor
+		{
+			controlEnabled = True
+		}
+		yawaxis_UIEditor
+		{
+			controlEnabled = True
+		}
+		rollaxis_UIEditor
+		{
+			controlEnabled = True
+		}
+		isFlap_UIEditor
+		{
+			controlEnabled = True
+		}
+		isSpoiler_UIEditor
+		{
+			controlEnabled = True
+		}
+		maxdeflect_UIEditor
+		{
+			controlEnabled = True
+			minValue = -15
+			maxValue = 30
+			stepIncrement = 0.5
+		}
+		maxdeflectFlap_UIEditor
+		{
+			controlEnabled = True
+			minValue = -30
+			maxValue = 85
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			DeflectMore
+			{
+				active = False
+				guiActive = True
+				guiIcon = Deflect more
+				guiName = Deflect more
+				category = Deflect more
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeflectLess
+			{
+				active = False
+				guiActive = True
+				guiIcon = Deflect less
+				guiName = Deflect less
+				category = Deflect less
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActivateSpoiler
+			{
+				actionGroup = Brakes
+			}
+			IncreaseDeflect
+			{
+				actionGroup = None
+			}
+			DecreaseDeflect
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = B9.Utility.Light.N1.White_4292682944
+	partName = Part
+	pos = 0.7188425,10.25901,-1.46056
+	rot = -0.444997,0.5495253,-0.5495253,0.4449964
+	attRot = 1.85126E-08,-6.304211E-08,-0.7771462,0.6293206
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = B9.Utility.Light.N1.White_4292683046
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4292683008
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = False
+		lightR = 1
+		lightG = 1
+		lightB = 1
+		lightR_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightG_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightB_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			LightsOff
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lights Off
+				guiName = Lights Off
+				category = Lights Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LightsOn
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lights On
+				guiName = Lights On
+				category = Lights On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Custom01
+			}
+			LightOnAction
+			{
+				actionGroup = None
+			}
+			LightOffAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = B9.Aero.AirBrake.Surface_4292682906
+	partName = Part
+	pos = -3.023709,9.934313,-0.5588318
+	rot = -0.08715576,0.9961949,1.264406E-07,-2.634178E-09
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = B9.Aero.AirBrake.Surface_4292682850
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4292683110
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSairBrake
+		isEnabled = True
+		targetAngle = 0
+		EVENTS
+		{
+			toggleAltInputMode
+			{
+				active = True
+				guiActive = True
+				guiIcon = toggle Air Brake
+				guiName = toggle Air Brake
+				category = toggle Air Brake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleAirBrakeAction
+			{
+				actionGroup = Brakes
+			}
+			raiseAirBrakeAction
+			{
+				actionGroup = None
+			}
+			lowerAirBrakeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = B9.Aero.AirBrake.Surface_4292682850
+	partName = Part
+	pos = 3.094075,9.934313,-0.5588319
+	rot = 0.08715577,0.9961948,1.264406E-07,2.634178E-09
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = B9.Aero.AirBrake.Surface_4292682906
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4292683008
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSairBrake
+		isEnabled = True
+		targetAngle = 0
+		EVENTS
+		{
+			toggleAltInputMode
+			{
+				active = True
+				guiActive = True
+				guiIcon = toggle Air Brake
+				guiName = toggle Air Brake
+				category = toggle Air Brake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleAirBrakeAction
+			{
+				actionGroup = Brakes
+			}
+			raiseAirBrakeAction
+			{
+				actionGroup = None
+			}
+			lowerAirBrakeAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = B9.Utility.Landing.Gear.HDG1A_4292682794
+	partName = Part
+	pos = -0.8058366,10.05123,0.8215355
+	rot = 0.006101949,0.9999816,6.322028E-07,1.712216E-08
+	attRot = -0.05233599,-5.879767E-08,-0.9986297,-1.24747E-08
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = B9.Utility.Landing.Gear.HDG1A_4292682644
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4292683110
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSwheel
+		isEnabled = True
+		deploymentState = Deployed
+		brakesEngaged = False
+		motorEnabled = False
+		reverseMotor = False
+		reverseMotorSet = False
+		motorStartsReversed = False
+		EVENTS
+		{
+			RaiseGear
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Raise Gear
+				guiName = Raise Gear
+				category = Raise Gear
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			LowerGear
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lower Gear
+				guiName = Lower Gear
+				category = Lower Gear
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			EnableReverseMotorEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Enable Reverse Motor
+				guiName = Enable Reverse Motor
+				category = Enable Reverse Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableReverseMotorEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Disable Reverse Motor
+				guiName = Disable Reverse Motor
+				category = Disable Reverse Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			EnableMotorEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Enable Motor
+				guiName = Enable Motor
+				category = Enable Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableMotorEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Disable Motor
+				guiName = Disable Motor
+				category = Disable Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			brakesOnEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Brakes On
+				guiName = Brakes On
+				category = Brakes On
+				guiActiveUnfocused = True
+				unfocusedRange = 6
+				externalToEVAOnly = True
+			}
+			brakesOffEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Brakes Off
+				guiName = Brakes Off
+				category = Brakes Off
+				guiActiveUnfocused = True
+				unfocusedRange = 6
+				externalToEVAOnly = True
+			}
+			increaseFrictionEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = increase friction (d)
+				guiName = increase friction (d)
+				category = increase friction (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseFrictionEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = decrease friction (d)
+				guiName = decrease friction (d)
+				category = decrease friction (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			suspensionGUIEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = adjust suspension (d)
+				guiName = adjust suspension (d)
+				category = adjust suspension (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleGearAction
+			{
+				actionGroup = Gear
+			}
+			ReverseMotorAction
+			{
+				actionGroup = None
+			}
+			ToggleMotorAction
+			{
+				actionGroup = Custom09
+			}
+			BrakesAction
+			{
+				actionGroup = Brakes
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSpartTurner
+		isEnabled = True
+		steerMultiplier = 45
+		steeringEnabled = False
+		altInputModeEnabled = False
+		reversedInput = False
+		ignoreTrim = True
+		steerMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 50
+			stepIncrement = 0.02
+		}
+		EVENTS
+		{
+			toggleSteering
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Steering
+				guiName = Enable Steering
+				category = Toggle Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleReverseInput
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Reverse Steering
+				guiName = Reverse Steering
+				category = Toggle Reverse Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleSpeedAdjustedSteeringEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Dynamic Steering
+				guiName = Disable Dynamic Steering
+				category = Dynamic Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleAltInputMode
+			{
+				active = True
+				guiActive = False
+				guiIcon = QE or AD to steer
+				guiName = QE or AD to steer
+				category = QE or AD to steer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleIgnoreTrim
+			{
+				active = True
+				guiActive = False
+				guiIcon = Toggle Ignore trim
+				guiName = Toggle Ignore trim
+				category = Toggle Ignore trim
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			increaseSteering
+			{
+				active = True
+				guiActive = False
+				guiIcon = Increase Steering
+				guiName = Increase Steering
+				category = Increase Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseSteering
+			{
+				active = True
+				guiActive = False
+				guiIcon = Decrease Steering
+				guiName = Decrease Steering
+				category = Decrease Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleSteeringAction
+			{
+				actionGroup = None
+			}
+			toggleInvertAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FStextureSwitch2
+		isEnabled = True
+		selectedTexture = 0
+		selectedTextureURL = B9_Aerospace/Parts/Utility_Landing_Gear_HDG/model_landing_gear_hdg2
+		selectedMapURL = 
+		EVENTS
+		{
+			listAllObjects
+			{
+				active = True
+				guiActive = False
+				guiIcon = Debug: Log Objects
+				guiName = Debug: Log Objects
+				category = Debug: Log Objects
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			nextTextureEvent
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Next Texture
+				guiName = Toggle Heat Shielding
+				category = Next Texture
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			previousTextureEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Previous Texture
+				guiName = Previous Texture
+				category = Previous Texture
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			nextTextureEVAEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Repaint
+				guiName = Repaint
+				category = Repaint
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = B9.Utility.Landing.Gear.HDG1A_4292682644
+	partName = Part
+	pos = 0.876197,10.05123,0.8215359
+	rot = -0.006101968,0.9999815,4.214685E-07,-2.239051E-08
+	attRot = 0.05233599,5.879767E-08,0.9986297,-1.24747E-08
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	sym = B9.Utility.Landing.Gear.HDG1A_4292682794
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4292683008
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = FSwheel
+		isEnabled = True
+		deploymentState = Deployed
+		brakesEngaged = False
+		motorEnabled = False
+		reverseMotor = False
+		reverseMotorSet = False
+		motorStartsReversed = False
+		EVENTS
+		{
+			RaiseGear
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Raise Gear
+				guiName = Raise Gear
+				category = Raise Gear
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			LowerGear
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lower Gear
+				guiName = Lower Gear
+				category = Lower Gear
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			EnableReverseMotorEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Enable Reverse Motor
+				guiName = Enable Reverse Motor
+				category = Enable Reverse Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableReverseMotorEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Disable Reverse Motor
+				guiName = Disable Reverse Motor
+				category = Disable Reverse Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			EnableMotorEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Enable Motor
+				guiName = Enable Motor
+				category = Enable Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableMotorEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Disable Motor
+				guiName = Disable Motor
+				category = Disable Motor
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			brakesOnEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Brakes On
+				guiName = Brakes On
+				category = Brakes On
+				guiActiveUnfocused = True
+				unfocusedRange = 6
+				externalToEVAOnly = True
+			}
+			brakesOffEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Brakes Off
+				guiName = Brakes Off
+				category = Brakes Off
+				guiActiveUnfocused = True
+				unfocusedRange = 6
+				externalToEVAOnly = True
+			}
+			increaseFrictionEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = increase friction (d)
+				guiName = increase friction (d)
+				category = increase friction (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseFrictionEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = decrease friction (d)
+				guiName = decrease friction (d)
+				category = decrease friction (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			suspensionGUIEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = adjust suspension (d)
+				guiName = adjust suspension (d)
+				category = adjust suspension (d)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleGearAction
+			{
+				actionGroup = Gear
+			}
+			ReverseMotorAction
+			{
+				actionGroup = None
+			}
+			ToggleMotorAction
+			{
+				actionGroup = Custom09
+			}
+			BrakesAction
+			{
+				actionGroup = Brakes
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSpartTurner
+		isEnabled = True
+		steerMultiplier = 45
+		steeringEnabled = False
+		altInputModeEnabled = False
+		reversedInput = False
+		ignoreTrim = True
+		steerMultiplier_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 50
+			stepIncrement = 0.02
+		}
+		EVENTS
+		{
+			toggleSteering
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Steering
+				guiName = Enable Steering
+				category = Toggle Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleReverseInput
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Reverse Steering
+				guiName = Reverse Steering
+				category = Toggle Reverse Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleSpeedAdjustedSteeringEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Dynamic Steering
+				guiName = Disable Dynamic Steering
+				category = Dynamic Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleAltInputMode
+			{
+				active = True
+				guiActive = False
+				guiIcon = QE or AD to steer
+				guiName = QE or AD to steer
+				category = QE or AD to steer
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleIgnoreTrim
+			{
+				active = True
+				guiActive = False
+				guiIcon = Toggle Ignore trim
+				guiName = Toggle Ignore trim
+				category = Toggle Ignore trim
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			increaseSteering
+			{
+				active = True
+				guiActive = False
+				guiIcon = Increase Steering
+				guiName = Increase Steering
+				category = Increase Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			decreaseSteering
+			{
+				active = True
+				guiActive = False
+				guiIcon = Decrease Steering
+				guiName = Decrease Steering
+				category = Decrease Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleSteeringAction
+			{
+				actionGroup = None
+			}
+			toggleInvertAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FStextureSwitch2
+		isEnabled = True
+		selectedTexture = 0
+		selectedTextureURL = B9_Aerospace/Parts/Utility_Landing_Gear_HDG/model_landing_gear_hdg2
+		selectedMapURL = 
+		EVENTS
+		{
+			listAllObjects
+			{
+				active = True
+				guiActive = False
+				guiIcon = Debug: Log Objects
+				guiName = Debug: Log Objects
+				category = Debug: Log Objects
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			nextTextureEvent
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Next Texture
+				guiName = Toggle Heat Shielding
+				category = Next Texture
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			previousTextureEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Previous Texture
+				guiName = Previous Texture
+				category = Previous Texture
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			nextTextureEVAEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Repaint
+				guiName = Repaint
+				category = Repaint
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = B9.Utility.Light.N1.White_4292682494
+	partName = Part
+	pos = -3.281079,9.788309,0.2387307
+	rot = 0.763683,-0.6408063,-0.05043273,0.06010306
+	attRot = -0.07845916,0,0,0.9969176
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4292683110
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = False
+		lightR = 1
+		lightG = 0
+		lightB = 0
+		lightR_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightG_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightB_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			LightsOff
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lights Off
+				guiName = Lights Off
+				category = Lights Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LightsOn
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lights On
+				guiName = Lights On
+				category = Lights On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Custom01
+			}
+			LightOnAction
+			{
+				actionGroup = None
+			}
+			LightOffAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = B9.Utility.Light.N1.White_4292682456
+	partName = Part
+	pos = 3.351015,9.785883,0.2507844
+	rot = 0.7636829,0.6408064,0.0504328,0.06010303
+	attRot = -0.07845916,0,0,0.9969176
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	srfN = srfAttach,B9.Aero.Wing.SW.Winglet.3x2-75m_4292683008
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = False
+		lightR = 0
+		lightG = 1
+		lightB = 0
+		lightR_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightG_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightB_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			LightsOff
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lights Off
+				guiName = Lights Off
+				category = Lights Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LightsOn
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lights On
+				guiName = Lights On
+				category = Lights On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Custom01
+			}
+			LightOnAction
+			{
+				actionGroup = None
+			}
+			LightOffAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FARBasicDragModel
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 	}
 }
