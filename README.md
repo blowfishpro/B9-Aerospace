@@ -62,7 +62,7 @@ Fel - ResGen.dll plugin v0.28.1: [forums](http://forum.kerbalspaceprogram.com/th
 
 Sarbian - SmokeScreen.dll plugin v2.4.3.0: [forums](http://forum.kerbalspaceprogram.com/threads/71630)
 
-dtobi - KM_Gimbal.dll plugin v2.1: [github](http://github.com/dtobi/km_Gimbal)
+dtobi - KM_Gimbal.dll plugin v2.1.2: [github](http://github.com/dtobi/km_Gimbal)
 
 NathanKell - CrossFeedEnabler v3.0: [forums](http://forum.kerbalspaceprogram.com/threads/76499)
 
