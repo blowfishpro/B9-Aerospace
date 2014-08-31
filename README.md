@@ -62,7 +62,7 @@ Fel - ResGen.dll plugin v0.28.1: [forums](http://forum.kerbalspaceprogram.com/th
 
 Sarbian - SmokeScreen.dll plugin v2.4.3.0: [forums](http://forum.kerbalspaceprogram.com/threads/71630)
 
-Ialdabaoth, Sarbian: ModuleManager v2.3.1: [forums](http://forum.kerbalspaceprogram.com/threads/55219)
+Ialdabaoth, Sarbian: ModuleManager v2.3.3: [forums](http://forum.kerbalspaceprogram.com/threads/55219)
 
 dtobi - KM_Gimbal.dll plugin v2.1.2: [github](http://github.com/dtobi/km_Gimbal)
 
