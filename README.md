@@ -16,7 +16,9 @@ If you are experiencing out of memory crashes in the game with this mod, we reco
 
 B9 Aerospace includes an up-to-date ATM config for B9, the one included in ATM should be removed.
 
-While we take pains to ensure the parts are balanced in the stock drag model, we all use either NEAR or FAR. The stock drag model is unsupported. See below for links.
+B9 Aerospace requires Ferram Aerospace Research or NEAR. While the parts are balanced and will function in the stock model, it is unsupported, and the example craft provided will likely not even be able to take off.
+
+See the `Aerodynamics` section for links.
 
 ___________________________________
 
@@ -46,33 +48,26 @@ ___________________________________
 
 # Credits
 
-bac9-flcl - 3D modeling, texturing
+## Core Team
 
-Taverius - Configs, craft design, testing, 3D modeling
+* bac9 - 3D modeling, texturing, project lead
+* Taverius - balance, 3D modeling, craft design, maintenance
+* K3|Chris - 3D modeling, texturing, IVA
 
-K3|Chris - 3D modeling, texturing, IVA
 
-Nazari - HotRockets Engine FX: [forums](http://forum.kerbalspaceprogram.com/threads/55219)
+## Contributors and bundled mods
+* Nazari - HotRockets Engine FX: [forums](http://forum.kerbalspaceprogram.com/threads/55219)
+* Snjo - Firespitter.dll plugin v6.3.4: [forums](http://forum.kerbalspaceprogram.com/threads/24551)
+* Kine - KineTechAnimation.dll plugin: [github](http://github.com/KineMorto/KineTechAnimationLibrary)
+* Fel - ResGen.dll plugin v0.28.1: [forums](http://forum.kerbalspaceprogram.com/threads/28895)
+* Sarbian - SmokeScreen.dll plugin v2.4.3.0: [forums](http://forum.kerbalspaceprogram.com/threads/71630)
+* Ialdabaoth, Sarbian: ModuleManager v2.3.3: [forums](http://forum.kerbalspaceprogram.com/threads/55219)
+* dtobi - KM_Gimbal.dll plugin v2.1.2: [github](http://github.com/dtobi/km_Gimbal)
+* NathanKell - CrossFeedEnabler v3.0: [forums](http://forum.kerbalspaceprogram.com/threads/76499)
+* Mihara - RasterPropMonitor v0.18.2: [forums](http://forum.kerbalspaceprogram.com/threads/57603)
+* Greys - VirginGeneric.dll v1.6.1: [github](http://github.com/Greys0/Virgin-Kalactic)
 
-Snjo - Firespitter.dll plugin v6.3.4: [forums](http://forum.kerbalspaceprogram.com/threads/24551)
-
-Kine - KineTechAnimation.dll plugin: [github](http://github.com/KineMorto/KineTechAnimationLibrary)
-
-Fel - ResGen.dll plugin v0.28.1: [forums](http://forum.kerbalspaceprogram.com/threads/28895)
-
-Sarbian - SmokeScreen.dll plugin v2.4.3.0: [forums](http://forum.kerbalspaceprogram.com/threads/71630)
-
-Ialdabaoth, Sarbian: ModuleManager v2.3.3: [forums](http://forum.kerbalspaceprogram.com/threads/55219)
-
-dtobi - KM_Gimbal.dll plugin v2.1.2: [github](http://github.com/dtobi/km_Gimbal)
-
-NathanKell - CrossFeedEnabler v3.0: [forums](http://forum.kerbalspaceprogram.com/threads/76499)
-
-Mihara - RasterPropMonitor v0.18.2: [forums](http://forum.kerbalspaceprogram.com/threads/57603)
-
-Greys - VirginGeneric.dll v1.6.1: [github](http://github.com/Greys0/Virgin-Kalactic)
-
-Special thanks to DYJ, C7, r4mon and Mu for their help.
+Special thanks to DYJ, C7, r4m0n and Mu for their help.
 
 
 
@@ -108,10 +103,13 @@ Can be somewhat daunting for beginners. [forum](http://forum.kerbalspaceprogram.
 FAR with the complicated bits removed. [forum](http://forum.kerbalspaceprogram.com/threads/86419)
 
 Features from FAR missing in NEAR:
+
 * Changes in physics with Mach number
 * Complicated changes in wing lift and drag due to other parts around them
 * Aerodynamic dis-assembly (though they can still be broken off if they overload the stock joints)
 * Complicated aerodynamic analysis tools in the editor
+
+Please note that most of the features missing in NEAR can be disabled in FAR.
 
 
 ___________________________________
