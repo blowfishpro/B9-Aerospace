@@ -1,9 +1,198 @@
 ﻿_______________________________
 
-▼ R4.1
+▼ R5.0
 
-	* Added a new family of the structural parts: HX. Mostly designed for large-scale orbital installations, but with enough dedication you can probably build a flying fortress or something too. Parts are purely structural, any fuel or payloads should be placed in the hollowed insides of those parts separately: and they provide lots of space for that. Goes best with KW Rocketry, which is very much recommended for the fitting englnes and 3.75m parts in general.
+	* 0.24.2 compatiblity update.
+
+	* NOTE: Will likely break crafts (and thus saves) using 4.0c or the
+	  community patches thereof.
+	  An optional download which recreates the removed parts is available,
+	  but will not help in all cases.
+
+	* NOTE: All fuselage/tank/adapter parts been rebalanced.
+	  On the whole, parts are now somewhat heavier and hold considerably
+	  more fuel than before.
+
+	* NOTE: The stock drag module is now not supported.
+	  FAR or NEAR are now required.
+
+	  While the parts will function in the stock drag model and are
+	  balanced, we won't accept bug reports relating to performance under
+	  simulated soup conditions.
+
+	* Implemented fuel-tank, model, tank switching powered by FireSpitter:
+	  Most parts have a switchable fuel tank, similar to Modular Fuel
+	  Tanks or Real Fuels.
+	  Some parts can change shape. Some have alternate textures. Where
+	  applicable, the look of the part changes to denote the type of tank
+	  it contains.
+
+	* Added a new family of the structural parts: HX. Mostly designed for
+	  large-scale orbital installations, but with enough dedication you
+	  can probably build a flying fortress or something too.
+
+	* Tetragon Projects is now an in-game agency, and may offer you
+	  contracts.
+	  As a major contractor of the military-industrial complex, it takes
+	  failure very seriously, and is utterly amoral.
+	* Added ModuleTestSubject to applicable parts, able to be the target
+	  of a test flight contract.
+
+	* Corrected part costs for career.
+
+	* Parts rendered redundant by the above deleted, moved to deprecated.
+
+	* Implemented engine FX from HotRockets!, powered by SmokeScreen.
+	  These have been customized somewhat.
+
+	* Some radially-attachable parts can now feed fuel into the root part
+	  thanks to CrossFeedEnabler.
+
+	* More variants of common fuselages have been added.
+
+	* All engines now use KM_Gimbal from the Space Shuttle Engines mod.
+
+	* RasterPropMonitor implemented, customized, built-into all cockpit
+	  IVAs.
+
+	* Larger HX parts use NodeToggle from Virgin Kalactic so that
+	  attaching stack nodes is reasonable.
+
+	* SABRE engines now use stock multi-mode engine module.
+
+	* ResGen and KineTechAnimation recompiled for 0.24.2.
+
+	* Added ModuleManager.
+
+	* All crafts updated for FAR/NEAR, new parts and rebalance.
+	* Added several new crafts.
+
+	* Added new HL cockpit.
+
+	* Added new MK2 crewtank.
+
+	* Added IVAs for S2 crewtanks.
+	* Modified external mesh of S2 crewtanks.
+
+	* Tweaked other IVAs.
+
+	* Fixed reversed MK2 cargo bay animation.
+
+	* Numerous changes to attach nodes.
+
+		* Some nodes have been removed. HL Extensions are now surface
+		  attached, or use the specialized stackable adapter.
+		* Many other stack nodes had incorrect directions.
+		* MK2 nodes adjusted to better line up with stock and
+		  SpacePlanePlus.
+		* Many incorrect node sizes fixed.
+		* Many incorrect node names fixed.
+
+	* Added a short (2m) MK2 bicoupler.
+
+	* Fixed missing colliders on MK2 cargo bay doors.
+
+	* H50 landing legs converted to use generic animations, will be
+	  converted to new landing leg module in the future.
+
+	* Modified SABRE meshes.
+
+	* Converted aerodynamic control surfaces to ModuleControlSurface.
+
+	* Adjusted rate for alternator modules to bring into line with new
+	  Squad values.
+
+	* Fix tweakable/flow flags for in-engine eCharge storage.
+
+	* Moved SABREs to the same research node as the RAPIER.
+
+	* Adjusted soundFX for most engines.
+
+	* Gimbal range increased on many engines.
+
+	* Refined thrust curves for jet engines, SABREs.
+
+	* Added sound FX to cargo bays and a few other animated parts.
+
+	* Redone landing gear suspension and traction values.
+	* Added landing gear sound and skid FX, thanks to FireSpitter.
+
+	* Fixed numerous minor issues causing warnings in log.
+
+	* All placeable lights can now change colour via tweakables.
+
+	* Many changes and clarifications to the documentation.
+
+	* Cleaned up FAR PartModule blocks, use new FAR ctrlSurfFrac
+	  parameter on control surfaces.
+
+	* Added monopropellant tanks to all cockpits, like stock.
+
+	* Ensured all cockpits and crew tanks have the appropriate science
+	  module parameters.
+
+	* Updated sensor packages for new functionality.
+
+	* Redone values for intake area black magic.
+
+	* Added autofairing to the L2 Atlas.
+
+	* Fixed drag on large airbrake.
+
+	* Fixed tweakablity of R1A AirCS resource.
+	* Fixed tweakablity of B9CompressedAir resource.
+	* Added unitCost for B9CompressedAid resource.
+
+	* Fixed spotlights lighting up planets.
+
+	* Fixed attach nodes on structural panels.
+
 	* Fixed a few errors with TGA textures.
+
+	* Normalized torque, mass, energy usage of reaction wheels in both
+	  dedicated SAS parts and cockpits/probes.
+
+	* Fixed stock drag of Vx1 nosecone.
+
+	* Added a new RCS block, the R6, a variant of the R5.
+
+	* Added flags to all cockpits and crew tanks.
+
+	* Added .version file for core mod, and embedded mods that provide
+	  one.
+
+	* Added Active Texture Management config.
+
+	* Added missing licenses.
+
+	* Added throttle animation to F119 turbofan.
+
+	* Added resourceFlowMode parameter to RCS blocks.
+
+	* Cleaned a lot of bogus stackSymmetry values from parts.
+
+	* Moved ladders and railings to Utility category.
+
+	* Added FSwheelAlignement PartModule to landing gears.
+
+	* Added effective intake area to intake descriptions.
+
+	* Fixed issues with CDP docking port collider interfering with root
+	  part.
+
+	* Added missing fuel gauges to SABREs.
+
+	* Added blur discs to commercial turbofans.
+
+	* Fixed D25 Tech pointing to a non-existent R&D node.
+
+	* R1A AirCS can now work in non-oxiganted atmospheres when used with
+	  Karbonite/KSPi intakes.
+
+	* Changed the key of the Info Drive to 'o' to prevent interference with
+	  RCS.
+
+
 _______________________________
 
 ▼ R4.0c
@@ -33,7 +222,7 @@ _______________________________
 
 	* Added the 1.25m (MK1) aerodynamic junction part. Useful for nice transitions to radial engines, fancy boosters on rockets, and stylish UAV glider noses.
 
-	* Added new struts to finally retire the stock ones from every single craft. First variety is functionally identical to the stock one, just a bit more sturdy 	* and quite better looking. Second variety is where it gets interesting: it's a strut part with an invisible middle piece. Exceptionally useful when you 	* want a clean design without all the messy cables: basically, you just place two very suble blocks and imagine how structural integrity was improved somewhere inside the craft. Clean and performance-friendly. Oh, those new parts have no shadow casting, - that might help with FPS on heavy crafts which typically use hundreds of struts.
+	* Added new struts to finally retire the stock ones from every single craft. First variety is functionally identical to the stock one, just a bit more sturdy	* and quite better looking. Second variety is where it gets interesting: it's a strut part with an invisible middle piece. Exceptionally useful when you	* want a clean design without all the messy cables: basically, you just place two very suble blocks and imagine how structural integrity was improved somewhere inside the craft. Clean and performance-friendly. Oh, those new parts have no shadow casting, - that might help with FPS on heavy crafts which typically use hundreds of struts.
 
 	* Added MK2 cargoholds. Not very roomy, but they can still hold some useful payloads like 0.625m satellites or science modules, finally making the MK2 fuselage system useful for useful SSTO designs (!).
 
@@ -288,3 +477,5 @@ _______________________________
 ▼ R1
 
 First release, 12 parts (2 pods, 1 IVA).
+
+/* vim tw=78 ts=8 sw=8 sts=0 noet */
