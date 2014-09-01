@@ -66,6 +66,7 @@ ___________________________________
 * NathanKell - CrossFeedEnabler v3.0: [forums](http://forum.kerbalspaceprogram.com/threads/76499)
 * Mihara - RasterPropMonitor v0.18.2: [forums](http://forum.kerbalspaceprogram.com/threads/57603)
 * Greys - VirginGeneric.dll v1.6.1: [github](http://github.com/Greys0/Virgin-Kalactic)
+* jadebenn - RPM MFC consultant.
 
 Special thanks to DYJ, C7, r4m0n and Mu for their help.
 
