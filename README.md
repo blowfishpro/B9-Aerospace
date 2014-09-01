@@ -67,6 +67,7 @@ ___________________________________
 * Mihara - RasterPropMonitor v0.18.2: [forums](http://forum.kerbalspaceprogram.com/threads/57603)
 * Greys - VirginGeneric.dll v1.6.1: [github](http://github.com/Greys0/Virgin-Kalactic)
 * jadebenn, Hyomoto, Helldiver - RPM MFD configuration.
+* alexustas - RPM MFD model, configuration.
 * FPSlacker - HotRockets exhaust flame atmospheric compensation.
 
 ## Special thanks
