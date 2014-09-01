@@ -70,6 +70,7 @@ ___________________________________
 * FPSlacker - HotRockets exhaust flame atmospheric compensation.
 
 ## Special thanks
+For answering tons of silly questions.
 
 * DYJ
 * C7
