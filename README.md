@@ -78,6 +78,8 @@ For answering tons of silly questions.
 * Sarbian
 * NathanKell
 * egg
+* snjo
+* ferram4
 * Mu
 
 
