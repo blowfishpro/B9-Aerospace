@@ -56,8 +56,9 @@ ___________________________________
 
 
 ## Contributors and bundled mods
+
 * Nazari - HotRockets Engine FX: [forums](http://forum.kerbalspaceprogram.com/threads/55219)
-* Snjo - Firespitter.dll plugin v6.3.4: [forums](http://forum.kerbalspaceprogram.com/threads/24551)
+* Snjo - Firespitter.dll plugin v6.3.5: [forums](http://forum.kerbalspaceprogram.com/threads/24551)
 * Kine - KineTechAnimation.dll plugin: [github](http://github.com/KineMorto/KineTechAnimationLibrary)
 * Fel - ResGen.dll plugin v0.28.1: [forums](http://forum.kerbalspaceprogram.com/threads/28895)
 * Sarbian - SmokeScreen.dll plugin v2.4.3.0: [forums](http://forum.kerbalspaceprogram.com/threads/71630)
