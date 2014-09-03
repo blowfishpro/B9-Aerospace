@@ -7,7 +7,7 @@ License CC-BY-SA
 
 Source on GitHub at https://github.com/NathanKell/CrossFeedEnabler/
 
-Installation: Extract to GameData. By default includes cfg to apply to radial RCS tanks, the mini radial RCS from Realism Overhaul, and all procedural wings. (NOTE: Requires ModuleManager, which by now you really should have.)
+Installation: Extract folder in zip to GameData. By default includes cfg to apply to radial RCS tanks, the mini radial RCS from Realism Overhaul, and all procedural wings and tanks. (NOTE: Requires ModuleManager, which by now you really should have.)
 
 To add to other parts:
 Add:
