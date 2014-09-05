@@ -64,7 +64,7 @@ ___________________________________
 * Sarbian - SmokeScreen.dll plugin v2.4.3.0: [forums](http://forum.kerbalspaceprogram.com/threads/71630)
 * Ialdabaoth, Sarbian: ModuleManager v2.3.3: [forums](http://forum.kerbalspaceprogram.com/threads/55219)
 * dtobi - KM_Gimbal.dll plugin v2.1.2: [github](http://github.com/dtobi/km_Gimbal)
-* NathanKell - CrossFeedEnabler v3.0: [forums](http://forum.kerbalspaceprogram.com/threads/76499)
+* NathanKell - CrossFeedEnabler v3.0.1: [forums](http://forum.kerbalspaceprogram.com/threads/76499)
 * Mihara - RasterPropMonitor v0.18.2: [forums](http://forum.kerbalspaceprogram.com/threads/57603)
 * Greys - VirginGeneric.dll v1.6.1: [github](http://github.com/Greys0/Virgin-Kalactic)
 * jadebenn, Hyomoto, Helldiver - RPM MFD configuration.
@@ -258,6 +258,12 @@ The FS plugin enables lots of advanced functionality in B9 (and other mods) and 
 You know how 'x' kills the throttle? Well this little gem adds 'z' for full throttle. [curseforge](http://kerbal.curseforge.com/ksp-mods/221031)
 
 
+## Gimbal Auto Trim
+
+Extends the default Gimbal Module.
+
+When activated, engines will orient so that the Direction of Thrust is aligned with the Centre of Mass.[forums](http://forum.kerbalspaceprogram.com/threads/77710)
+
 
 ## HotRockets!
 
@@ -368,6 +374,14 @@ All can be used independently of each other. [forums](http://forum.kerbalspacepr
 ## KW Rocketry
 
 Our favourite rocket parts expansion mod - rocket parts done *right*. 'nuff said. [forums](http://forum.kerbalspaceprogram.com/threads/51037)
+
+
+
+## Lack Luster Labs Pack
+
+Large spacecraft/station parts, with habitations modules.
+
+Goes well with the HX parts, so much we made an adapter from one to the other. [forums](http://forum.kerbalspaceprogram.com/threads/79542)
 
 
 
