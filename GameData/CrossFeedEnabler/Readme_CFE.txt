@@ -29,6 +29,10 @@ For example, create a MM node and add it to some cfg.
 =================
 Changelog:
 =================
+v3.0.1
+*Bugfix: no longer slow in VAB/SPH
+*Fixed more internal logic issues.
+
 v3.0 \/
 *Allow toggling in editor and in flight
 *Allow hiding of the toggle button
