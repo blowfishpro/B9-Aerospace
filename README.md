@@ -62,7 +62,7 @@ ___________________________________
 * Kine - KineTechAnimation.dll plugin: [github](http://github.com/KineMorto/KineTechAnimationLibrary)
 * Fel - ResGen.dll plugin v0.28.1: [forums](http://forum.kerbalspaceprogram.com/threads/28895)
 * Sarbian - SmokeScreen.dll plugin v2.4.3.0: [forums](http://forum.kerbalspaceprogram.com/threads/71630)
-* Ialdabaoth, Sarbian: ModuleManager v2.3.3: [forums](http://forum.kerbalspaceprogram.com/threads/55219)
+* Ialdabaoth, Sarbian: ModuleManager v2.3.5: [forums](http://forum.kerbalspaceprogram.com/threads/55219)
 * dtobi - KM_Gimbal.dll plugin v2.1.2: [github](http://github.com/dtobi/km_Gimbal)
 * NathanKell - CrossFeedEnabler v3.0.1: [forums](http://forum.kerbalspaceprogram.com/threads/76499)
 * Mihara - RasterPropMonitor v0.18.2: [forums](http://forum.kerbalspaceprogram.com/threads/57603)
