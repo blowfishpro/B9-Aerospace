@@ -391,7 +391,7 @@ Some purists like to fly everything manually like real astronauts never did.
 
 If you're not one of these people, or like us you've flown so many moon landings manually its just plain gotten old, this is the grand-daddy of autopilots, with more features than we could possibly list here. [forums](http://forum.kerbalspaceprogram.com/threads/12384)
 
-FAR/NEAR compatibility extensions: [forums](http://forum.kerbalspaceprogram.com/threads/60933)
+FAR/NEAR/KM_Gimbal compatibility extensions: [forums](http://forum.kerbalspaceprogram.com/threads/60933)
 
 
 
