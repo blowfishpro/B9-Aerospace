@@ -64,7 +64,7 @@ ___________________________________
 * Sarbian - SmokeScreen.dll plugin v2.4.3.0: [forums](http://forum.kerbalspaceprogram.com/threads/71630)
 * Ialdabaoth, Sarbian: ModuleManager v2.3.5: [forums](http://forum.kerbalspaceprogram.com/threads/55219)
 * dtobi - KM_Gimbal.dll plugin v2.1.2: [github](http://github.com/dtobi/km_Gimbal)
-* NathanKell - CrossFeedEnabler v3.0.1: [forums](http://forum.kerbalspaceprogram.com/threads/76499)
+* NathanKell - CrossFeedEnabler v3.0.2: [forums](http://forum.kerbalspaceprogram.com/threads/76499)
 * Mihara - RasterPropMonitor v0.18.2: [forums](http://forum.kerbalspaceprogram.com/threads/57603)
 * Greys - VirginGeneric.dll v1.6.1: [github](http://github.com/Greys0/Virgin-Kalactic)
 * jadebenn, Hyomoto, Helldiver - RPM MFD configuration.
