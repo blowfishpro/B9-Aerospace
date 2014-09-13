@@ -29,6 +29,10 @@ For example, create a MM node and add it to some cfg.
 =================
 Changelog:
 =================
+v3.0.2
+*Bugfix: No more NREs in editor
+*Removed unneeded update code
+
 v3.0.1
 *Bugfix: no longer slow in VAB/SPH
 *Fixed more internal logic issues.
