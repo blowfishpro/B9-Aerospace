@@ -6,7 +6,7 @@ Source folder contains the source code for the included plugins and is not neces
 
 Make sure you have KSP 0.24.2 or higher.
 
-Do *not*, under any circumstances, extract just GameData/B9_Aerospace/Parts folder alone, the mod won't work this way.
+Do *not*, under any circumstances, extract just `GameData/B9_Aerospace/Parts` folder alone, the mod won't work this way.
 
 With a proper installation, you should have multiple new folders in GameData alongside with Squad folder that was there originally.
 
