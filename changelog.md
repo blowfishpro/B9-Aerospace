@@ -6,6 +6,8 @@ _______________________________
 
 * Tweaked the emissive of the HL Cockpit.
 
+* Updated SmokeScreen to v2.4.5.0
+
 _______________________________
 
 ▼ R5.2.3
