@@ -1,6 +1,6 @@
 _______________________________
 
-▼ R5.x
+▼ R5.2.4
 
 * Corrected CoL position of SH/SE/T aerodynamic surfaces in FAR 0.14.2+
 
