@@ -5,6 +5,8 @@ A partmodule: adds a fuel crossfeed between the part it's added to, and the part
 
 License CC-BY-SA
 
+Includes Module Manager (by sarbian, swamp_ig, and ialdabaoth). See thread for details, license, and source: http://forum.kerbalspaceprogram.com/threads/55219
+
 Source on GitHub at https://github.com/NathanKell/CrossFeedEnabler/
 
 Installation: Extract folder in zip to GameData. By default includes cfg to apply to radial RCS tanks, the mini radial RCS from Realism Overhaul, and all procedural wings and tanks. (NOTE: Requires ModuleManager, which by now you really should have.)
@@ -29,6 +31,18 @@ For example, create a MM node and add it to some cfg.
 =================
 Changelog:
 =================
+v3.3
+* Recompiled for KSP 1.0 (thanks to Padishar and Angel-125)
+* Toggling crossfeed applies to symmetry counterparts (thanks Angel-125)
+
+v3.2
+*Recompiled for KSP 0.90 (thanks to Padishar for fixes)
+
+v3.1
+*Recompiled for KSP 0.25
+*Turns off crossfeed on Squad radial decouplers to prevent weird things from happening. The pylon, however, still has it, so you can still make droptanks (or just use a fuel line).
+*Bundle Module Manager
+
 v3.0.2
 *Bugfix: No more NREs in editor
 *Removed unneeded update code
