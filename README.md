@@ -40,7 +40,7 @@ The goal of the project is to fill every empty niche in KSP part selection and t
 
 This is the fourth milestone release of the project, now featuring 210 new parts and fully compatible with KSP 0.22.
 
-Full changelog, support and development updates can be found in the [forum thread](http://forum.kerbalspaceprogram.com/showthread.php/25241).
+Full changelog, support and development updates can be found in the [forum thread](http://forum.kerbalspaceprogram.com/threads/92630).
 
 
 
@@ -83,6 +83,15 @@ For answering tons of silly questions.
 * snjo
 * ferram4
 * Mu
+
+## 1.0.4 Compatibility patch
+
+* blowfish - Project coordinator
+* flashblade - Many contributions
+* V8jester and M4ck - Stack node adjustments
+* danfarnsy and JaredTheDragon - RPM fixes
+* Everyone else who I may have forgotten
+
 
 
 

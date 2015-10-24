@@ -1,5 +1,35 @@
 _______________________________
 
+▼ R5.3.0
+
+	* Stack node adjustments by V8jester and M4ck
+	* All textures converted to DDS
+	* CrossFeedEnabler, Firespitter, JSI, KM_Gimbal, SmokeScreen updates
+	* Recompile KineTechAnimation and Virgin Kalactic which have not been updated by their authors
+	* Re-entry thermals should be good now
+	* Cargo bays given new stock module and outer drag cubes applied
+	* Wings should work in stock aero now
+	* Intakes rebalanced against new stock intakes
+	* bulkheadProfiles done, HX icon requires FilterExtensions
+	* Compressed air thrusters work without RESGEN
+	* Reconfigure tech nodes for new tech tree
+	* Jet engine configs redone
+	* ModuleSurfaceFX added to all engines
+	* Cargo bays have inner stack nodes
+	* Fix breaking changes in RPM
+		* Camera can no longer be rendered in PFD background.  This was disabled in RPM.
+	* Rebalanced rocket engines' Isp to new stock levels
+	* Cockpits, engines, and intakes have mass, cost adjusted to match stock parts
+	* 1.0.3+ heating changes, thanks Nansuchao
+	* Give HX hangars custom drag cubes
+	* HL-Mk4 adapter moved to legacy
+	* Wings moved to legacy (now recommend B9 Procedural wings)
+	* Landing gear moved to legacy (now recommend Adjustable Landing Gear)
+	* HL parts moved to separate folder (still requires main folder though)
+	* Added RT patch by joshwoo69
+
+_______________________________
+
 ▼ R5.2.4
 
 * Corrected CoL position of SH/SE/T aerodynamic surfaces in FAR 0.14.2+
