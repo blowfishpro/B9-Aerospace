@@ -109,9 +109,9 @@ ___________________________________
 
 # Aerodynamics
 
-While we take pains to ensure the parts are balanced in the stock drag model, we all use either NEAR or FAR. The stock drag model is unsupported.
+While we take pains to ensure the parts are balanced in the stock drag model, most of the testing has been done using FAR.  Parts may not behave ideally under the stock drag issue.
 
-For the best possible experience with spaceplanes in Kerbal Space Program, you will need to install one of these two mods:
+For the best possible experience with spaceplanes in Kerbal Space Program, you will need to install FAR:
 
 
 
@@ -122,18 +122,23 @@ The true accurate and realistic aerodynamics for KSP.
 Can be somewhat daunting for beginners. [forum](http://forum.kerbalspaceprogram.com/threads/20451)
 
 
-## Neophyte's Elementary Aerodynamics Replacement (NEAR)
+___________________________________
 
-FAR with the complicated bits removed. [forum](http://forum.kerbalspaceprogram.com/threads/86419)
+# Recommendations
 
-Features from FAR missing in NEAR:
+These mods are recommended to get the best possible experience with B9 Aerospace:
 
-* Changes in physics with Mach number
-* Complicated changes in wing lift and drag due to other parts around them
-* Aerodynamic dis-assembly (though they can still be broken off if they overload the stock joints)
-* Complicated aerodynamic analysis tools in the editor
 
-Please note that most of the features missing in NEAR can be disabled in FAR.
+
+## Adjustable Landing Gear
+
+Adds landing gear with adjustable size, angles, and height ... [forum](http://forum.kerbalspaceprogram.com/threads/99660)
+
+
+
+## B9 Aerospace - Procedural Parts
+
+Adds good looking, adjustable-sized wings ... [forum](http://forum.kerbalspaceprogram.com/threads/104966)
 
 
 ___________________________________
