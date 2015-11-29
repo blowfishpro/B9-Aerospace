@@ -65,6 +65,7 @@ ___________________________________
 * dtobi, Sarbian - KM_Gimbal.dll plugin v3.0.3: [github](http://github.com/dtobi/km_Gimbal)
 * Mihara - RasterPropMonitor v0.24.0: [forums](http://forum.kerbalspaceprogram.com/threads/57603)
 * Greys - VirginGeneric.dll v1.6.1: [github](http://github.com/Greys0/Virgin-Kalactic)
+* blowfish - B9AnimationModules.dll v1.0.0 [github](https://github.com/blowfishpro/B9AnimationModules)
 * jadebenn, Hyomoto, Helldiver - RPM MFD configuration.
 * alexustas - RPM MFD model, configuration.
 * FPSlacker - HotRockets exhaust flame atmospheric compensation.
