@@ -58,18 +58,23 @@ ___________________________________
 ## Contributors and bundled mods
 
 * Nazari - HotRockets Engine FX: [forums](http://forum.kerbalspaceprogram.com/threads/55219)
-* Snjo - Firespitter.dll plugin v6.3.5: [forums](http://forum.kerbalspaceprogram.com/threads/24551)
+* Snjo - Firespitter.dll plugin v7.1.5: [forums](http://forum.kerbalspaceprogram.com/threads/24551)
 * Kine - KineTechAnimation.dll plugin: [github](http://github.com/KineMorto/KineTechAnimationLibrary)
-* Fel - ResGen.dll plugin v0.28.1: [forums](http://forum.kerbalspaceprogram.com/threads/28895)
-* Sarbian - SmokeScreen.dll plugin v2.4.5.0: [forums](http://forum.kerbalspaceprogram.com/threads/71630)
-* Ialdabaoth, Sarbian: ModuleManager v2.4.4: [forums](http://forum.kerbalspaceprogram.com/threads/55219)
-* dtobi - KM_Gimbal.dll plugin v2.1.2: [github](http://github.com/dtobi/km_Gimbal)
-* NathanKell - CrossFeedEnabler v3.0.2: [forums](http://forum.kerbalspaceprogram.com/threads/76499)
-* Mihara - RasterPropMonitor v0.18.2: [forums](http://forum.kerbalspaceprogram.com/threads/57603)
+* Sarbian - SmokeScreen.dll plugin v2.6.9: [forums](http://forum.kerbalspaceprogram.com/threads/71630)
+* Ialdabaoth, Sarbian: ModuleManager v2.6.13: [forums](http://forum.kerbalspaceprogram.com/threads/55219)
+* dtobi, Sarbian - KM_Gimbal.dll plugin v3.0.3: [github](http://github.com/dtobi/km_Gimbal)
+* Mihara - RasterPropMonitor v0.24.0: [forums](http://forum.kerbalspaceprogram.com/threads/57603)
 * Greys - VirginGeneric.dll v1.6.1: [github](http://github.com/Greys0/Virgin-Kalactic)
 * jadebenn, Hyomoto, Helldiver - RPM MFD configuration.
 * alexustas - RPM MFD model, configuration.
 * FPSlacker - HotRockets exhaust flame atmospheric compensation.
+
+
+## Contributors to previously bundled mods
+
+* Fel - ResGen.dll plugin: [forums](http://forum.kerbalspaceprogram.com/threads/28895)
+* NathanKell - CrossFeedEnabler: [forums](http://forum.kerbalspaceprogram.com/threads/76499)
+
 
 ## Special thanks
 For answering tons of silly questions.
