@@ -84,7 +84,7 @@ For answering tons of silly questions.
 * ferram4
 * Mu
 
-## 1.0.4 Compatibility patch
+## 1.0+ Compatiblility and ongoing mainteance
 
 * blowfish - Project coordinator
 * flashblade - Many contributions
@@ -109,9 +109,9 @@ ___________________________________
 
 # Aerodynamics
 
-While we take pains to ensure the parts are balanced in the stock drag model, most of the testing has been done using FAR.  Parts may not behave ideally under the stock drag issue.
+While we take pains to ensure the parts are balanced in the stock drag model, most of the testing has been done using FAR.  Parts may not behave ideally under the stock drag system.
 
-For the best possible experience with spaceplanes in Kerbal Space Program, you will need to install FAR:
+For the best possible experience with spaceplanes in Kerbal Space Program, you should install FAR:
 
 
 
@@ -184,12 +184,6 @@ Squad are from Mexico so we won't hold it against them, but the contracts text s
 ## Contracts Window +
 
 Simply put, a (much) better contracts window. [forum](http://forum.kerbalspaceprogram.com/threads/91034)
-
-
-
-## CrossFeed Enabler
-
-Lets radially-mounted fuel tanks feed *into* their root part. The full mod is included in B9, because its a little pearl of genius. [forum](http://forum.kerbalspaceprogram.com/threads/76499)
 
 
 
