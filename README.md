@@ -59,7 +59,6 @@ ___________________________________
 
 * Nazari - HotRockets Engine FX: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=59710)
 * Snjo - Firespitter.dll plugin v7.1.5: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=22583)
-* Kine - KineTechAnimation.dll plugin: [github](http://github.com/KineMorto/KineTechAnimationLibrary)
 * Sarbian - SmokeScreen.dll plugin v2.6.9: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=64987)
 * Ialdabaoth, Sarbian: ModuleManager v2.6.13: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=50533)
 * dtobi, Sarbian - KM_Gimbal.dll plugin v3.0.5: [github](http://github.com/sarbian/km_Gimbal)
@@ -75,6 +74,7 @@ ___________________________________
 
 * Fel - ResGen.dll plugin: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=26710)
 * NathanKell - CrossFeedEnabler: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=69286)
+* Kine - KineTechAnimation.dll plugin: [github](http://github.com/KineMorto/KineTechAnimationLibrary)
 
 
 ## Special thanks
