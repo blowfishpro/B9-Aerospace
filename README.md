@@ -62,7 +62,7 @@ ___________________________________
 * Kine - KineTechAnimation.dll plugin: [github](http://github.com/KineMorto/KineTechAnimationLibrary)
 * Sarbian - SmokeScreen.dll plugin v2.6.9: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=64987)
 * Ialdabaoth, Sarbian: ModuleManager v2.6.13: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=50533)
-* dtobi, Sarbian - KM_Gimbal.dll plugin v3.0.3: [github](http://github.com/sarbian/km_Gimbal)
+* dtobi, Sarbian - KM_Gimbal.dll plugin v3.0.5: [github](http://github.com/sarbian/km_Gimbal)
 * Mihara - RasterPropMonitor v0.24.0: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=105821)
 * Greys - VirginGeneric.dll v1.6.1: [github](http://github.com/Greys0/Virgin-Kalactic)
 * blowfish - B9AnimationModules.dll v1.0.0 [github](https://github.com/blowfishpro/B9AnimationModules)
