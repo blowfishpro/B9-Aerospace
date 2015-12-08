@@ -4,7 +4,7 @@ Unpack everything to the root folder of the game, overwriting already existing G
 
 Source folder contains the source code for the included plugins and is not necessary for the mod to work.
 
-Make sure you have KSP 0.24.2 or higher.
+Make sure you have KSP 1.0.5 or higher.
 
 Do *not*, under any circumstances, extract just `GameData/B9_Aerospace/Parts` folder alone, the mod won't work this way.
 
@@ -37,8 +37,6 @@ Everything looks just a little bit cartoony, like a concept art, which, in my op
 Although I’m going for higher fidelity and texture resolution, so don’t expect a 100% match – but I’m fairly satisfied with results and have already built some neat ships using them.
 
 The goal of the project is to fill every empty niche in KSP part selection and to replace every sub-par component with a new part better suited for the role.
-
-This is the fourth milestone release of the project, now featuring 210 new parts and fully compatible with KSP 0.22.
 
 Full changelog, support and development updates can be found in the [forum thread](http://forum.kerbalspaceprogram.com/index.php?showtopic=83570).
 
@@ -96,6 +94,7 @@ For answering tons of silly questions.
 * flashblade - Many contributions
 * V8jester and M4ck - Stack node adjustments
 * danfarnsy and JaredTheDragon - RPM fixes
+* joshwoo69 - RT compatibility
 * Everyone else who I may have forgotten
 
 
