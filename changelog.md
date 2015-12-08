@@ -1,3 +1,28 @@
+
+_______________________________
+
+▼ R5.4.0
+
+	* 1.0.5 compatiblity
+	* RT compatibility by joshwoo69
+	* Add recommendations to readme - mods that are more than suggested
+	* Dependency updates
+	* Remove Crossfeed Enabler
+	* Remove KineTechAnimation
+	* Add B9AnimationModules
+	* F119 and turbojet now have afterburning modes
+	* Medium jet pod increased in size and renamed to CFM56
+	* All engines given stockalike thrust curves and thrust tweaks
+	* Thermal anims moved to FXModuleAnimateThrottle or B9ModuleAnimateThrottle (except HX HPD)
+	* Give intakes performance curves from stock and adjust area/speed
+	* Add scenario constraints to ModuleTestSubject using stock modules mostly
+	* Rename all part.cfg to part names (excluding 'B9_')
+	* Delete squad jet balance config
+	* Fix cargo bay nodes
+	* Fix separation motors overheating
+	* Update links in readme per new forum
+	* Add ModuleSurfaceFX to HPD, tweak heat
+
 _______________________________
 
 ▼ R5.3.0
