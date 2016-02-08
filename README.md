@@ -61,8 +61,8 @@ ___________________________________
 * Ialdabaoth, Sarbian: ModuleManager v2.6.13: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=50533)
 * dtobi, Sarbian - KM_Gimbal.dll plugin v3.0.5: [github](http://github.com/sarbian/km_Gimbal)
 * Mihara - RasterPropMonitor v0.24.1: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=105821)
-* Greys - VirginGeneric.dll v1.6.1: [github](http://github.com/Greys0/Virgin-Kalactic)
 * blowfish - B9AnimationModules.dll v1.0.0 [github](https://github.com/blowfishpro/B9AnimationModules)
+* blowfish - B9PartSwitch.dll v1.0.0 [github](https://github.com/blowfishpro/B9PartSwitch)
 * jadebenn, Hyomoto, Helldiver - RPM MFD configuration.
 * alexustas - RPM MFD model, configuration.
 * FPSlacker - HotRockets exhaust flame atmospheric compensation.
@@ -73,6 +73,7 @@ ___________________________________
 * Fel - ResGen.dll plugin: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=26710)
 * NathanKell - CrossFeedEnabler: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=69286)
 * Kine - KineTechAnimation.dll plugin: [github](http://github.com/KineMorto/KineTechAnimationLibrary)
+* Greys - VirginGeneric.dll v1.6.1: [github](http://github.com/Greys0/Virgin-Kalactic)
 
 
 ## Special thanks
