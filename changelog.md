@@ -1,6 +1,21 @@
 
 _______________________________
 
+▼ R6.0.0
+
+	* Integrate bac9's beautiful new Mk1 and Mk2 parts
+	* Move nearly all fuel/mesh switching to new plugin, B9PartSwitch
+	* Move old Mk1/2 parts to legacy
+	* Update all compatibility patches (some untested)
+	* Remove fuel switching in cargo bays - there's really not that much space
+	* Remove Virgin Kalactic as a dependency
+	* Make HX pack independend of core
+	* Pylons are now integrated into podded engines
+	* Dependency updates
+	* Many minor tweaks
+
+_______________________________
+
 ▼ R5.4.0
 
 	* 1.0.5 compatiblity
