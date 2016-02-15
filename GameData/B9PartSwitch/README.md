@@ -30,6 +30,10 @@ This plugin is distributed under [LGPL v3.0](http://www.gnu.org/licenses/lgpl-3.
 
 ## Changelog
 
+### 1.0.1
+
+* Fix NRE in flight scene
+
 ### 1.0.0
 
 * Initial release
