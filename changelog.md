@@ -11,6 +11,11 @@ _______________________________
 	* Remove Virgin Kalactic as a dependency
 	* Make HX pack independend of core
 	* Pylons are now integrated into podded engines
+	* Bring back the airbrakes (now functional for no apparent reason)
+	* Combine textures on HL Extension B and RCS blocks
+	* Remove MP_Nazari folder - it just messes with things
+	* Improve thermal anims on HX HPD
+	* Fix patches applying to procedural wings
 	* Dependency updates
 	* Many minor tweaks
 
