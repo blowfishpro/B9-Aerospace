@@ -173,14 +173,6 @@ One that's actually useful and informative. [forum](http://forum.kerbalspaceprog
 
 
 
-## Active Texture Management
-
-Automatically compress textures and reduce them in size. No need for reduced texture packs any longer.
-
-Highly configurable. [forum](http://forum.kerbalspaceprogram.com/index.php?showtopic=53809)
-
-
-
 ## Chatterer
 
 Cute little plugin that plays garbled sounds and radio beeps like you're in a *real* space program. [forum](http://forum.kerbalspaceprogram.com/index.php?showtopic=83290)
@@ -274,7 +266,7 @@ Extends the default Gimbal Module.
 When activated, engines will orient so that the Direction of Thrust is aligned with the Centre of Mass.[forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=70392)
 
 
-## HotRockets!
+## HotRockets! [OUTDATED]
 
 We use its particle FX to make our engines look nice.
 
