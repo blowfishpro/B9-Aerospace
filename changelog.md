@@ -1,6 +1,14 @@
 
 _______________________________
 
+▼ R6.0.1
+
+	* Fix L2 Atlas effects persisting after flameout
+	* Fix smoke effects not showing up on all engines
+	* Fix legacy Mk2 crew cabin not working for contracts
+
+_______________________________
+
 ▼ R6.0.0
 
 	* Integrate bac9's beautiful new Mk1 and Mk2 parts
