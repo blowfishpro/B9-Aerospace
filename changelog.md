@@ -1,7 +1,19 @@
 
 _______________________________
 
-▼ R6.0.1
+▼ v6.1.0
+
+	* Updated for KSP 1.1
+	* Get rid of KM_Gimbal, as most important functionality is now stock and it will not be maintained
+	* Fix smoke effects
+	* Increase response speed on some thermal anims
+	* Move landing gear to broken, since they are broken (no way to fix them without the source files, plus they were already legacy)
+	* Adjust cockpit thermals to be more in-line with stock (thanks flashblade)
+	* Add tags, thanks sparkybear for the hard work
+
+_______________________________
+
+▼ v6.0.1
 
 	* Fix L2 Atlas effects persisting after flameout
 	* Fix smoke effects not showing up on all engines
@@ -9,7 +21,7 @@ _______________________________
 
 _______________________________
 
-▼ R6.0.0
+▼ v6.0.0
 
 	* Integrate bac9's beautiful new Mk1 and Mk2 parts
 	* Move nearly all fuel/mesh switching to new plugin, B9PartSwitch
