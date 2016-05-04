@@ -1,6 +1,7 @@
 import os
 import json
 import zipfile
+import re
 
 def decode_version(file_name):
 	f = open(file_name, 'r')
@@ -19,7 +20,7 @@ def zipdir(path, ziph):
         for file in files:
             ziph.write(os.path.join(root, file))
 
-module_manager_list = [file_name for file_name in os.listdir('GameData') if 'ModuleManager' in file_name]
+module_manager_list = [file_name for file_name in os.listdir('GameData') if re.match("ModuleManager[.\d]*dll", file_name)]
 
 if len(module_manager_list) == 0:
 	print("No ModuleManager found!")
@@ -31,6 +32,7 @@ elif len(module_manager_list) > 1:
 	exit(1)
 
 module_manager_file = 'GameData/' + module_manager_list[0]
+module_manager_readme = "GameData/ModuleManager_README.md"
 
 b9_version = decode_version('GameData/B9_Aerospace/B9_Aerospace.version')
 b9_legacy_version = decode_version('GameData/B9_Aerospace_Legacy/B9_Aerospace_Legacy.version')
@@ -42,6 +44,7 @@ z = zipfile.ZipFile('B9_Aerospace_{}.zip'.format(b9_version), 'w', zipfile.ZIP_D
 z.write('README.md')
 z.write('CHANGELOG.md')
 z.write(module_manager_file)
+z.write(module_manager_readme)
 zipdir('GameData/B9_Aerospace', z)
 zipdir('GameData/B9AnimationModules', z)
 zipdir('GameData/B9PartSwitch', z)
@@ -65,6 +68,7 @@ z = zipfile.ZipFile('B9_Aerospace_HX_{}.zip'.format(b9_version), 'w', zipfile.ZI
 z.write('README.md')
 z.write('CHANGELOG.md')
 z.write(module_manager_file)
+z.write(module_manager_readme)
 zipdir('GameData/B9_Aerospace_HX', z)
 zipdir('GameData/B9AnimationModules', z)
 zipdir('GameData/B9PartSwitch', z)
