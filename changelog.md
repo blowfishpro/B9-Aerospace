@@ -1,6 +1,14 @@
 
 _______________________________
 
+▼ v6.1.1
+
+	* For KSP 1.1.2 (didn't really require any changes)
+	* Fix RPM resource displays (credit to danfarnsy)
+	* Update DRE patch (also danfarnsy)
+	* Fix FAR voxelization on S2W parts
+_______________________________
+
 ▼ v6.1.0
 
 	* Updated for KSP 1.1
