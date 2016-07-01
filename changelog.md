@@ -1,6 +1,14 @@
 
 _______________________________
 
+▼ v6.1.2
+
+	* For KSP 1.1.3 (didn't really require any changes)
+	* Fix mesh switching issue on R1 RCS Port
+	* Fix flipped node on T2 tail
+	* Fix lights illuminating planets from orbit (thanks taniwha)
+_______________________________
+
 ▼ 6.1.1
 
 	* For KSP 1.1.2 (didn't really require any changes)
