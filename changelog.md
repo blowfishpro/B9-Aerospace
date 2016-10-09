@@ -1,7 +1,23 @@
 
 _______________________________
 
-▼ v6.1.0
+▼ v6.1.2
+
+	* For KSP 1.1.3 (didn't really require any changes)
+	* Fix mesh switching issue on R1 RCS Port
+	* Fix flipped node on T2 tail
+	* Fix lights illuminating planets from orbit (thanks taniwha)
+_______________________________
+
+▼ 6.1.1
+
+	* For KSP 1.1.2 (didn't really require any changes)
+	* Fix RPM resource displays (credit to danfarnsy)
+	* Update DRE patch (also danfarnsy)
+	* Fix FAR voxelization on S2W parts
+_______________________________
+
+▼ 6.1.0
 
 	* Updated for KSP 1.1
 	* Get rid of KM_Gimbal, as most important functionality is now stock and it will not be maintained
@@ -13,7 +29,7 @@ _______________________________
 
 _______________________________
 
-▼ v6.0.1
+▼ 6.0.1
 
 	* Fix L2 Atlas effects persisting after flameout
 	* Fix smoke effects not showing up on all engines
@@ -21,7 +37,7 @@ _______________________________
 
 _______________________________
 
-▼ v6.0.0
+▼ 6.0.0
 
 	* Integrate bac9's beautiful new Mk1 and Mk2 parts
 	* Move nearly all fuel/mesh switching to new plugin, B9PartSwitch

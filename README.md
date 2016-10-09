@@ -4,7 +4,7 @@ Unpack everything to the root folder of the game, overwriting already existing G
 
 Source folder contains the source code for the included plugins and is not necessary for the mod to work.
 
-Make sure you have KSP 1.1 or higher.
+Make sure you have KSP 1.1.3 or higher.
 
 Do *not*, under any circumstances, extract just `GameData/B9_Aerospace/Parts` folder alone, the mod won't work this way.
 
@@ -48,12 +48,12 @@ ___________________________________
 ## Contributors and bundled mods
 
 * Nazari - HotRockets Engine FX: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=59710)
-* Snjo - Firespitter.dll plugin v7.2.1: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=22583)
+* Snjo - Firespitter.dll plugin v7.3.0: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=22583)
 * Sarbian - SmokeScreen.dll plugin v2.6.15: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=64987)
-* Ialdabaoth, Sarbian: ModuleManager v2.6.23: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=50533)
-* Mihara - RasterPropMonitor v0.25.1: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=105821)
-* blowfish - B9AnimationModules.dll v1.0.1 [github](https://github.com/blowfishpro/B9AnimationModules)
-* blowfish - B9PartSwitch.dll v1.1.1 [github](https://github.com/blowfishpro/B9PartSwitch)
+* Ialdabaoth, Sarbian: ModuleManager v2.6.25: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=50533)
+* Mihara - RasterPropMonitor v0.27.0: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=105821)
+* blowfish - B9AnimationModules.dll v1.0.3 [github](https://github.com/blowfishpro/B9AnimationModules)
+* blowfish - B9PartSwitch.dll v1.4.3 [github](https://github.com/blowfishpro/B9PartSwitch)
 * jadebenn, Hyomoto, Helldiver - RPM MFD configuration.
 * alexustas - RPM MFD model, configuration.
 * FPSlacker - HotRockets exhaust flame atmospheric compensation.
@@ -85,10 +85,13 @@ For answering tons of silly questions.
 
 * blowfish - Project coordinator
 * flashblade - Many contributions
-* V8jester and M4ck - Stack node adjustments
-* danfarnsy and JaredTheDragon - RPM fixes
+* V8jester - Stack node adjustments
+* M4ck - Stack node adjustments
+* danfarnsy - RPM fixes, DRE fixes
+* JaredTheDragon - RPM fixes
 * joshwoo69 - RT compatibility
 * sparkybear - Part tags
+* taniwha - Fix for light layers
 * Everyone else who I may have forgotten
 
 
