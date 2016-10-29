@@ -1,6 +1,17 @@
 
 _______________________________
 
+▼ v6.2.0-pre
+
+	* Fixes for KSP 1.2
+	* Use new part categories (thanks flashblade)
+	* Fix some previously inconsistent part categories (thanks flashblade)
+	* All data transmitters to all command pods and Kerbnet access to all drone cores (thanks flashblade)
+	* Adjust subtype names to that they display better in the editor
+	* Fix FAR patch on Mk2 Intake Cockpit
+	* Use custom tank types in B9 rather than default B9PartSwitch ones - for now they are identical
+_______________________________
+
 ▼ v6.1.2
 
 	* For KSP 1.1.3 (didn't really require any changes)
