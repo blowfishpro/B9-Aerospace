@@ -1,6 +1,17 @@
 
 _______________________________
 
+▼ v6.2.1
+
+	* For KSP 1.2.2
+	* Replace remaining firespitter animation modules with ModuleAnimateGeneric
+	* Add EVA range to some animations
+	* Fix RPM color tags
+	* Remove hover function from VTOLs as it was causing them to overheating
+	* Add editor-attachable node to shielded docking port
+	* Use new SmokeScreen feature to reduce memory consuption of exhaust effects
+_______________________________
+
 ▼ v6.2.0-pre
 
 	* Fixes for KSP 1.2
@@ -510,7 +521,7 @@ _______________________________
 
 * As separate ASAS/avionics parts became unnecessary since 0.21, all parts related to them (inline/radial/nosecones) are moved to the role of probe cores or sensor packages for the science system. Only exception is the plain MK2 nosecone, which is now decorative.
 
-*  Added few small parts, in particular: a green omnidirectional light (crafts can finally have proper colored pair of navlights on their wings), large radial DSI intake that's close in performance to the RBM intake, large air brake with roughly 3 times the surface area of the old one, 
+*  Added few small parts, in particular: a green omnidirectional light (crafts can finally have proper colored pair of navlights on their wings), large radial DSI intake that's close in performance to the RBM intake, large air brake with roughly 3 times the surface area of the old one,
 
 * All sample crafts completely updated to make use of new struts, lights, landing gears, wing pieces and other parts. Some were significantly redesigned. New crafts added, including a lightweight MK2 SSTO, three maneuverable UAVs and a subsonic glider. Full list:
 
@@ -553,7 +564,7 @@ _______________________________
 
 _______________________________
 
-▼ R3.2 
+▼ R3.2
 
 * Replaced ExsurgentEngineering.dll with a new version, now compatible with ModuleManager. Thanks to careo for the fix.
 
@@ -587,7 +598,7 @@ _______________________________
 
 _______________________________
 
-▼ R3.0 
+▼ R3.0
 
 * Total part count now at 175.
 * Everything converted to be compliant with 0.20+ data system.
@@ -674,7 +685,7 @@ _______________________________
 * MK5 cockpit hatch obstruction issue completely fixed. Unfortunately, the solution involved offsetting the part, so you will have to reattach that cockpit on all your crafts. Fortunately, in contrast with wings, that would be easy to do.
 * Further rebalancing of some parts.
 
-* Updated existing example crafts: 
+* Updated existing example crafts:
 
     * D-175 Strugatsky heavy transport plane (docking clamp in the cargo hold, action group to close cargo doors, MK5 repositioned after, ACU unit)
     * BRV-4 Heinlein SSTO spaceplane (balance updates, additional control surfaces, ASAS unit)
@@ -698,7 +709,7 @@ _______________________________
 * Complete rebalancing of part mass, crash tolerances, capacities and other parameters. Should result in much more sturdy and nice flying crafts.
 * Warning! Wings structure had to be changed to solve the main source of issues with FAR. Point of origin was moved to attachment point for all wings (with the move compensated through CoMOffset parameter). Unfortunately, this can break existing modular wing setups you are using. Won't happen again.
 
-* Added two example crafts: 
+* Added two example crafts:
     * D-175 Strugatsky heavy transport plane
     * BRV-4 Heinlein SSTO spaceplane
 
@@ -754,4 +765,3 @@ _______________________________
 ▼ R1
 
 * First release, 12 parts (2 pods, 1 IVA).
-

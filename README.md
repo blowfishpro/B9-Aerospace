@@ -4,7 +4,7 @@ Unpack everything to the root folder of the game, overwriting already existing G
 
 Source folder contains the source code for the included plugins and is not necessary for the mod to work.
 
-Make sure you have KSP 1.2 or higher.
+Make sure you have KSP 1.2.2 or higher.
 
 Do *not*, under any circumstances, extract just `GameData/B9_Aerospace/Parts` folder alone, the mod won't work this way.
 
