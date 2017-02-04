@@ -1,6 +1,20 @@
 
 _______________________________
 
+▼ v6.3.0
+
+	* Convert all switchers on legacy tanks to B9PartSwitch.  This may be slightly craft breaking in some scenarios (contact for help)
+	* Combine legacy Mk2 adapters into one part.  This may prevent some craft from loading (contact for help)
+	* Split up switchers on all HL parts to simplify using them.  This may be slightly craft breaking in some scenarios (contact for help)
+	* Fix fuel flow issues on certain engines
+	* Fix MFT/RF patches for RCS tanks (they were broken previously)
+	* Bring back landing gear using KSPWheel.  They will only show if you install KSPWheel separately.
+		* Parameters are still WIP and many effects do not work
+	* Fix Mk2b probe core not having control
+	* Allow B9 tanks to hold LH2 if you have CryoTanks installed
+	* Allow SABRE to use LH2 if you have CryoTanks installed and create B9_SABRE_Cryo folder in GameData (opt in)
+_______________________________
+
 ▼ v6.2.1
 
 	* For KSP 1.2.2
