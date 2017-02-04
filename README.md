@@ -30,7 +30,7 @@ Although I’m going for higher fidelity and texture resolution, so don’t expe
 
 The goal of the project is to fill every empty niche in KSP part selection and to replace every sub-par component with a new part better suited for the role.
 
-Full changelog, support and development updates can be found in the [forum thread](http://forum.kerbalspaceprogram.com/index.php?showtopic=83570).
+Full changelog, support and development updates can be found in the [forum thread](http://forum.kerbalspaceprogram.com/index.php?showtopic=155491).
 
 
 
