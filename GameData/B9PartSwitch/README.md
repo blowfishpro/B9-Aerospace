@@ -35,6 +35,10 @@ This plugin is distributed under [LGPL v3.0](http://www.gnu.org/licenses/lgpl-3.
 ## Changelog
 
 
+### v1.7.1
+
+* Fix an occasional NRE when building part info
+
 ### v1.7.0
 
 * Allow "child" part switch modules to modify volume of "parent" module
