@@ -1,6 +1,15 @@
 
 _______________________________
 
+▼ v6.3.1
+
+	* Fix CryoTanks patch not working
+	* Fix wheels breaking over 10 m/s
+	* Remove wheel sounds effects that weren't working
+	* Increase load rating and brake torque of larger wheels
+	* Increase heat tolerance of Mk2b cockpits
+_______________________________
+
 ▼ v6.3.0
 
 	* Convert all switchers on legacy tanks to B9PartSwitch.  This may be slightly craft breaking in some scenarios (contact for help)
