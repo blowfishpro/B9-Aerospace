@@ -105,7 +105,7 @@ _______________________________
 ▼ R5.4.0
 
 	* 1.0.5 compatiblity
-	* RT compatibility by joshwoo69
+	* RT compatibility by joshwoo70
 	* Add recommendations to readme - mods that are more than suggested
 	* Dependency updates
 	* Remove Crossfeed Enabler
@@ -152,7 +152,7 @@ _______________________________
 	* Wings moved to legacy (now recommend B9 Procedural wings)
 	* Landing gear moved to legacy (now recommend Adjustable Landing Gear)
 	* HL parts moved to separate folder (still requires main folder though)
-	* Added RT patch by joshwoo69
+	* Added RT patch by joshwoo70
 
 _______________________________
 

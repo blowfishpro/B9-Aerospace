@@ -89,7 +89,7 @@ For answering tons of silly questions.
 * M4ck - Stack node adjustments
 * danfarnsy - RPM fixes, DRE fixes
 * JaredTheDragon - RPM fixes
-* joshwoo69 - RT compatibility
+* joshwoo70 - RT compatibility
 * sparkybear - Part tags
 * taniwha - Fix for light layers
 * Everyone else who I may have forgotten
