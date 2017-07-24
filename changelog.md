@@ -1,6 +1,12 @@
 
 _______________________________
 
+▼ v6.3.2
+
+	* Release for KSP 1.3
+	* Fix some mismatched brackets
+_______________________________
+
 ▼ v6.3.1
 
 	* Fix CryoTanks patch not working
