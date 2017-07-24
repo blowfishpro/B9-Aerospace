@@ -16,6 +16,8 @@ def decode_version(file_name):
 
 def zipdir(path, ziph):
     # ziph is zipfile handle
+    if not (os.path.isdir(path) or os.path.isfile(path)):
+        raise IOError("'{}' is not a vlid path".format(path))
     for root, dirs, files in os.walk(path):
         for file in files:
             ziph.write(os.path.join(root, file))
@@ -50,7 +52,6 @@ zipdir('GameData/B9AnimationModules', z)
 zipdir('GameData/B9PartSwitch', z)
 zipdir('GameData/Firespitter', z)
 zipdir('GameData/JSI', z)
-zipdir('GameData/Klockheed_Martian_Gimbal', z)
 zipdir('GameData/SmokeScreen', z)
 z.close()
 
@@ -72,7 +73,6 @@ z.write(module_manager_readme)
 zipdir('GameData/B9_Aerospace_HX', z)
 zipdir('GameData/B9AnimationModules', z)
 zipdir('GameData/B9PartSwitch', z)
-zipdir('GameData/Klockheed_Martian_Gimbal', z)
 zipdir('GameData/SmokeScreen', z)
 z.close()
 
