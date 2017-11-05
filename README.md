@@ -48,12 +48,12 @@ ___________________________________
 ## Contributors and bundled mods
 
 * Nazari - HotRockets Engine FX: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=59710)
-* Snjo, Roverdude - Firespitter.dll plugin v7.5.1: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=22583)
-* Sarbian - SmokeScreen.dll plugin v2.7.1: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=64987)
-* Ialdabaoth, Sarbian: ModuleManager v2.7.5: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=50533)
-* Mihara - RasterPropMonitor v0.28.0: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=105821)
-* blowfish - B9AnimationModules.dll v1.0.5 [github](https://github.com/blowfishpro/B9AnimationModules)
-* blowfish - B9PartSwitch.dll v1.7.1 [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=140541)
+* Snjo, Roverdude - Firespitter.dll plugin: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=22583)
+* Sarbian - SmokeScreen.dll plugin: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=64987)
+* Ialdabaoth, Sarbian: ModuleManager: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=50533)
+* Mihara - RasterPropMonitor: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=105821)
+* blowfish - B9AnimationModules.dll: [github](https://github.com/blowfishpro/B9AnimationModules)
+* blowfish - B9PartSwitch.dll: [forums](http://forum.kerbalspaceprogram.com/index.php?showtopic=140541)
 * jadebenn, Hyomoto, Helldiver - RPM MFD configuration.
 * alexustas - RPM MFD model, configuration.
 * FPSlacker - HotRockets exhaust flame atmospheric compensation.
