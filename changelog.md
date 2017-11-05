@@ -1,6 +1,20 @@
 
 _______________________________
 
+▼ v6.4.0
+
+	* Release for KSP 1.3.1
+	* Bring back engine pylons for use on things other than engines
+	* Unify all tank masses with the same formula
+	* Reduce mass of structural tank variants a bit
+	* Remove unbalanced battery option on Y1 end cap
+	* CryoTanks: Bring LH2 and LH2O tank stats more in line with CryoTanks
+	* CryoTanks: Add cooling to all tanks as in CryoTanks
+	* CryoTanks: Fix definition of boiloff module
+	* Fix a couple of legacy wings having nonexistent tech nodes
+	* Fix FAR patches on S2 fuselages not properly removing ModuleLiftingSurface
+_______________________________
+
 ▼ v6.3.2
 
 	* Release for KSP 1.3
