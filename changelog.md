@@ -1,6 +1,22 @@
 
 _______________________________
 
+▼ v6.5.0
+
+	* Release for KSP 1.4.2
+	* Fix Tetragon Projects agency not having a title
+	* Fix incorrect bulkhead profiles
+	* Switch landing gear from FStextureSwitch2 to ModuleB9PartSwitch
+		* Shielding now costs and masses a bit more but gives better heat tolerance
+	* Fix HL Cockpit RCS transforms facing the wrong way
+	* Fix Mk5 cockpit having an invalid collider
+	* Fix not being able to exit Mk2b cockpit
+	* Fix face normal issues on Mk2b intake cockpit
+	* Smoothing adjustments on HL, Mk5, Mk2b, Mk2b intake cockpits
+	* Fix 6m HL Fuselage giving warnings about transforms that don't exist
+	* Disable props that no longer exist so they don't spam the log
+_______________________________
+
 ▼ v6.4.0
 
 	* Release for KSP 1.3.1
