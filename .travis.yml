@@ -1,0 +1,64 @@
+language: csharp
+env:
+  global:
+    - KSP_VERSION="$(cat KSP_VERSION | xargs)"
+    - PATH="${PATH}:/opt/ksp-ci/bin"
+    - VERSION="$(git describe --tags)"
+    - BUILD_DIR="/var/tmp/b9/build"
+notifications:
+  email: false
+install:
+  - mkdir -pv '/var/tmp/ksp-ci' '/var/tmp/ksp-ci/extract'
+  - curl 'https://github.com/blowfishpro/ksp-ci/archive/v1.0.0.zip' --location -o '/var/tmp/ksp-ci/ksp-ci.zip'
+  - unzip '/var/tmp/ksp-ci/ksp-ci.zip' -d '/var/tmp/ksp-ci/extract'
+  - mkdir -pv '/opt/ksp-ci'
+  - cp -rv /var/tmp/ksp-ci/extract/*/bin '/opt/ksp-ci'
+  - sudo $(which install-ckan)
+script:
+  - mkdir -pv "${BUILD_DIR}"
+  - mkdir -pv "${BUILD_DIR}/ckan_ksp"
+  - mkdir -pv "${BUILD_DIR}/assemble"
+  - mkdir -pv "${BUILD_DIR}/package"
+
+  - make-ksp-install "${BUILD_DIR}/ckan_ksp/b9_deps" 'b9_deps' "${KSP_VERSION}"
+  - install-netkan-deps 'b9_deps' "${TRAVIS_BUILD_DIR}/NetKAN/B9.netkan" --exclude 'B9-props'
+  - mkdir -pv "${BUILD_DIR}/assemble/B9_Aerospace"
+  - cp -r "${BUILD_DIR}/ckan_ksp/b9_deps/GameData" "${BUILD_DIR}/assemble/B9_Aerospace"
+  - cp -r "${TRAVIS_BUILD_DIR}/GameData/B9_Aerospace" "${BUILD_DIR}/assemble/B9_Aerospace/GameData"
+  - cp -v "${TRAVIS_BUILD_DIR}/README.md" "${TRAVIS_BUILD_DIR}/changelog.md" "${BUILD_DIR}/assemble/B9_Aerospace/"
+  - cp -v "${TRAVIS_BUILD_DIR}/README.md" "${TRAVIS_BUILD_DIR}/changelog.md" "${BUILD_DIR}/assemble/B9_Aerospace/GameData/B9_Aerospace/"
+  - unzip -p "${BUILD_DIR}/ckan_ksp/b9_deps/CKAN/downloads/*-ModuleManager-*" README.md > "${BUILD_DIR}/assemble/B9_Aerospace/ModuleManager_README.md"
+  - unzip -p "${BUILD_DIR}/ckan_ksp/b9_deps/CKAN/downloads/*-RasterPropMonitor-Core-*" README.md > "${BUILD_DIR}/assemble/B9_Aerospace/RasterPropMonitor_README.md"
+  - unzip -p "${BUILD_DIR}/ckan_ksp/b9_deps/CKAN/downloads/*-RasterPropMonitor-Core-*" LICENSE.md > "${BUILD_DIR}/assemble/B9_Aerospace/RasterPropMonitor_LICENSE.md"
+  - (cd "${BUILD_DIR}/assemble/B9_Aerospace" && zip -rv "${BUILD_DIR}/package/B9_Aerospace.zip" .)
+
+  - make-ksp-install "${BUILD_DIR}/ckan_ksp/b9_hx_deps" 'b9_hx_deps' "${KSP_VERSION}"
+  - install-netkan-deps 'b9_hx_deps' "${TRAVIS_BUILD_DIR}/NetKAN/B9AerospaceHX.netkan"
+  - mkdir -pv "${BUILD_DIR}/assemble/B9_Aerospace_HX"
+  - cp -r "${BUILD_DIR}/ckan_ksp/b9_hx_deps/GameData/" "${BUILD_DIR}/assemble/B9_Aerospace_HX"
+  - cp -r "${TRAVIS_BUILD_DIR}/GameData/B9_Aerospace_HX" "${BUILD_DIR}/assemble/B9_Aerospace_HX/GameData"
+  - cp -v "${TRAVIS_BUILD_DIR}/README.md" "${TRAVIS_BUILD_DIR}/changelog.md" "${BUILD_DIR}/assemble/B9_Aerospace_HX/"
+  - cp -v "${TRAVIS_BUILD_DIR}/README.md" "${TRAVIS_BUILD_DIR}/changelog.md" "${BUILD_DIR}/assemble/B9_Aerospace_HX/GameData/B9_Aerospace_HX/"
+  - unzip -p "${BUILD_DIR}/ckan_ksp/b9_hx_deps/CKAN/downloads/*-ModuleManager-*" README.md > "${BUILD_DIR}/assemble/B9_Aerospace_HX/ModuleManager_README.md"
+  - (cd "${BUILD_DIR}/assemble/B9_Aerospace_HX" && zip -rv "${BUILD_DIR}/package/B9_Aerospace_HX.zip" .)
+
+  - mkdir -pv "${BUILD_DIR}/assemble/B9_Aerospace_Legacy"
+  - mkdir -pv "${BUILD_DIR}/assemble/B9_Aerospace_Legacy/GameData"
+  - cp -r "${TRAVIS_BUILD_DIR}/GameData/B9_Aerospace_Legacy" "${BUILD_DIR}/assemble/B9_Aerospace_Legacy/GameData"
+  - cp -v "${TRAVIS_BUILD_DIR}/README.md" "${TRAVIS_BUILD_DIR}/changelog.md" "${BUILD_DIR}/assemble/B9_Aerospace_Legacy/"
+  - cp -v "${TRAVIS_BUILD_DIR}/README.md" "${TRAVIS_BUILD_DIR}/changelog.md" "${BUILD_DIR}/assemble/B9_Aerospace_Legacy/GameData/B9_Aerospace_Legacy/"
+  - (cd "${BUILD_DIR}/assemble/B9_Aerospace_Legacy" && zip -r "${BUILD_DIR}/package/B9_Aerospace_Legacy.zip" .)
+after_success:
+  - mkdir -pv "${BUILD_DIR}/release"
+  - cp -v "${BUILD_DIR}/package/B9_Aerospace.zip" "${BUILD_DIR}/release/B9_Aerospace_${VERSION}.zip"
+  - cp -v "${BUILD_DIR}/package/B9_Aerospace_HX.zip" "${BUILD_DIR}/release/B9_Aerospace_HX_${VERSION}.zip"
+  - cp -v "${BUILD_DIR}/package/B9_Aerospace_Legacy.zip" "${BUILD_DIR}/release/B9_Aerospace_Legacy_${VERSION}.zip"
+deploy:
+  - provider: releases
+    skip_cleanup: true
+    api_key: ${GITHUB_DEPLOY_TOKEN}
+    file: ${BUILD_DIR}/package/*.zip
+    file_glob: true
+    name: "B9 Aerospace ${TRAVIS_TAG} for KSP ${KSP_VERSION}"
+    on:
+      tags: true
