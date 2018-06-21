@@ -57,7 +57,7 @@ deploy:
   - provider: releases
     skip_cleanup: true
     api_key: ${GITHUB_DEPLOY_TOKEN}
-    file: ${BUILD_DIR}/package/*.zip
+    file: ${BUILD_DIR}/release/*.zip
     file_glob: true
     name: "B9 Aerospace ${TRAVIS_TAG} for KSP ${KSP_VERSION}"
     on:
