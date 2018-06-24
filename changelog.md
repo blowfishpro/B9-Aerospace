@@ -1,6 +1,13 @@
 
 _______________________________
 
+▼ v6.5.1
+
+	* Release for KSP 1.4.2+
+	* Fix RCS effects being backward and too big
+	* Update CryoTanks patch to be consistent with current CryoTanks
+_______________________________
+
 ▼ v6.5.0
 
 	* Release for KSP 1.4.2
