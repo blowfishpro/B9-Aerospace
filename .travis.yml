@@ -69,6 +69,6 @@ deploy:
     bucket: blowfish-ksp-b9aerospace-release-builds
     storage_class: ONEZONE_IA
     local_dir: ${BUILD_DIR}/release/*.zip
-    upload-dir: releases/${TRAVIS_BRANCH}
+    upload-dir: releases/${TRAVIS_TAG}
     on:
       tags: true
