@@ -1,0 +1,153 @@
+@PART[B9_Structure_HX1_G]:NEEDS[!DSEV]
+{
+	MODULE
+	{
+		name = ModuleOverheatDisplay
+	}
+
+	MODULE
+	{
+		name = ModuleResourceConverter
+		ConverterName = Nuclear Reactor
+		StartActionName = Start Nuclear Reactor
+		StopActionName = Stop Nuclear Reactor
+		AutoShutdown = true
+		TemperatureModifier
+		{
+			key = 0 100000
+			key = 750 50000
+			key = 1000 10000
+			key = 1250 500	
+			key = 2000 50	
+			key = 4000 0
+		}				
+		GeneratesHeat = true
+		DefaultShutoffTemp = .8
+		ThermalEfficiency 
+		{
+			key = 0 0 0 0
+			key = 500 0.1 0 0
+			key = 1000 1.0 0 0
+			key = 1250 0.1 0 0
+			key = 3000 0 0 0 
+		}
+
+		INPUT_RESOURCE
+		{
+			ResourceName = NuclearFuel
+			Ratio = 0.000016736
+			FlowMode = NO_FLOW
+		}
+		OUTPUT_RESOURCE
+		{
+			ResourceName = NuclearWaste
+			Ratio = 0.000015062
+			DumpExcess = false
+			FlowMode = NO_FLOW
+		}
+		OUTPUT_RESOURCE
+		{
+			ResourceName = ElectricCharge
+			Ratio = 6000
+			DumpExcess = false
+		}
+	}
+	
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 3000
+		maxAmount = 3000
+	}
+	RESOURCE
+	{
+		name = NuclearFuel
+		amount = 1500
+		maxAmount = 1500
+	}
+	RESOURCE
+	{
+		name = NuclearWaste
+		amount = 0
+		maxAmount = 1500
+	}
+	MODULE
+	{
+		name = ModuleCoreHeat
+		CoreTempGoal = 1000					//Internal temp goal - we don't transfer till we hit this point
+		CoreToPartRatio = 0.1				//Scale back cooling if the part is this % of core temp
+		CoreTempGoalAdjustment = 0			//Dynamic goal adjustment
+		CoreEnergyMultiplier = 0.1			//What percentage of our core energy do we transfer to the part
+		HeatRadiantMultiplier = 0.05		//If the core is hotter, how much heat radiates?
+		CoolingRadiantMultiplier = 0		//If the core is colder, how much radiates?
+		HeatTransferMultiplier = 0			//If the part is hotter, how much heat transfers in?
+		CoolantTransferMultiplier = 0.01	//If the part is colder, how much of our energy can we transfer?
+		radiatorCoolingFactor = 1			//How much energy we pull from core with an active radiator?  >= 1
+		radiatorHeatingFactor = 0.05		//How much energy we push to the active radiator
+		MaxCalculationWarp = 1000			//Based on how dramatic the changes are, this is the max rate of change
+		CoreShutdownTemp = 4000				//At what core temperature do we shut down all generators on this part?
+		MaxCoolant = 200					//Maximum amount of radiator capacity we can consume - 50 = 1 small
+	}
+}
+
+@PART[B9_Structure_HX1_G]:NEEDS[DSEV]
+{
+	MODULE
+	{
+		name = ModuleFusionReactor
+		ConverterName = Fusion Reactor
+		StartActionName = Start Reactor
+		StopActionName = Stop Reactor
+		FillAmount = 1.0
+		ecNeededToStart = 8000
+		
+		AutoShutdown = true
+		GeneratesHeat = true
+		TemperatureModifier = 60
+		UseSpecializationBonus = true
+		SpecialistHeatFactor = 0.2
+		SpecialistEfficiencyFactor = 0.1
+		SpecialistShutoffTemp = 0.5
+		DefaultShutoffTemp = 0.3
+		Specialty = Engineer
+		EfficiencyBonus = 1.0
+		
+		INPUT_RESOURCE
+		{
+			ResourceName = FusionPellets
+			Ratio = 0.0126
+			FlowMode = ALL_VESSEL
+		}
+		OUTPUT_RESOURCE
+		{
+			ResourceName = ElectroPlasma
+			Ratio = 12000
+			DumpExcess = true
+		}
+		OUTPUT_RESOURCE
+		{
+			ResourceName = ElectricCharge
+			Ratio = 12000
+			DumpExcess = true
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 3000
+		maxAmount = 3000
+	}
+	RESOURCE
+	{
+		name = FusionPellets
+		amount = 1500
+		maxAmount = 1500
+	}
+	RESOURCE
+	{
+		name = ElectroPlasma
+		amount = 0
+		maxAmount = 3000
+		isTweakable = false
+	}
+}
