@@ -70,13 +70,28 @@ B9HX_TEMPLATE
 	author = JadeOfMaar
 	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/LiquidHydrogen
 	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/LiquidHydrogenGlow
-	description = This kit stores MonoPropellant.
+	description = This kit stores Propellium.
 	templateTags = stowage
 	RESOURCE
 	{
 		name = Propellium
 		amount = 295000
 		maxAmount = 295000
+	}
+}
+B9HX_TEMPLATE
+{
+	name = Explodium
+	author = JadeOfMaar
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/Explodium
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/Explodium
+	description = This kit stores Explodium.
+	templateTags = stowage
+	RESOURCE
+	{
+		name = Explodium
+		amount = 59000
+		maxAmount = 59000
 	}
 }
 B9HX_TEMPLATE
@@ -196,12 +211,18 @@ B9HX_TEMPLATE
 	
 	@MODULE[ModuleB9PartSwitch]:HAS[#baseVolume[>0]]
 	{
-		@baseVolume = 0
 		!SUBTYPE[*]:HAS[~transform[*],~node[*]] {}
+		!SUBTYPE[L??],* {}
+		!SUBTYPE[KAR] {}
+		!SUBTYPE[a_l??],* {}
+		!SUBTYPE[a_kar] {}
+		!SUBTYPE[b_l??],* {}
+		!SUBTYPE[b_kar] {}
 		@SUBTYPE[*],*
 		{
 			!tankType = DEL
 		}
+		@baseVolume = 0
 	}
 	
 	!MODULE[ModuleB9PartSwitch]:HAS[!SUBTYPE[*]] {}

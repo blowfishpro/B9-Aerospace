@@ -6,11 +6,13 @@ _______________________________
 	* Rebalanced original HPD engine to be more viable for use in very large HX ships or HX ships that simply want to go very, very far.
 	* Added B9 HX tank types for LiquidFuel and for new engine modes.
 	* Added/changed plumes for all engine modes.
+	* Instancing of RCS thrusters (LFO versions).
 	* Nerfed RTG in HX URC reactor.
 	* HX URC reactor becomes full-featured reactor compatible with Near Future Electrical and Wild Blue Industries (WBI) DSEV.
 	* Added support for WBI Play Mode to HX. Switch between Community Resource Pack requirements and B9 fuel options; and Classic Stock resource requirements and use Wild Blue OmniStorage.
 	* Moved most existing patch files in accordance with Play Mode.	
 	* Raised heat tolerances of HX parts from 2000K to 2700K.
+	* Adjusted CTT locations. Most parts will now appear in Orbital Megastructures. RCS and engines will appear in Very Heavy Rocketry and Gigantic Rocketry.
 _______________________________
 
 ▼ v6.5.1
