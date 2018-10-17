@@ -5,11 +5,12 @@ env:
     - PATH="${PATH}:/opt/ksp-ci/bin"
     - VERSION="$(git describe --tags)"
     - BUILD_DIR="/var/tmp/b9/build"
+    - CKAN_CACHE="/var/tmp/ckan/downloads"
 notifications:
   email: false
 install:
   - mkdir -pv '/var/tmp/ksp-ci' '/var/tmp/ksp-ci/extract'
-  - curl 'https://github.com/blowfishpro/ksp-ci/archive/v1.0.0.zip' --location -o '/var/tmp/ksp-ci/ksp-ci.zip'
+  - curl 'https://github.com/blowfishpro/ksp-ci/archive/v1.1.1.zip' --location -o '/var/tmp/ksp-ci/ksp-ci.zip'
   - unzip '/var/tmp/ksp-ci/ksp-ci.zip' -d '/var/tmp/ksp-ci/extract'
   - mkdir -pv '/opt/ksp-ci'
   - cp -rv /var/tmp/ksp-ci/extract/*/bin '/opt/ksp-ci'
@@ -19,6 +20,8 @@ script:
   - mkdir -pv "${BUILD_DIR}/ckan_ksp"
   - mkdir -pv "${BUILD_DIR}/assemble"
   - mkdir -pv "${BUILD_DIR}/package"
+  - mkdir -pv "${CKAN_CACHE}"
+  - ckan cache set "${CKAN_CACHE}"
 
   - make-ksp-install "${BUILD_DIR}/ckan_ksp/b9_deps" 'b9_deps' "${KSP_VERSION}"
   - install-netkan-deps 'b9_deps' "${TRAVIS_BUILD_DIR}/NetKAN/B9.netkan" --exclude 'B9-props'
@@ -27,9 +30,9 @@ script:
   - cp -r "${TRAVIS_BUILD_DIR}/GameData/B9_Aerospace" "${BUILD_DIR}/assemble/B9_Aerospace/GameData"
   - cp -v "${TRAVIS_BUILD_DIR}/README.md" "${TRAVIS_BUILD_DIR}/changelog.md" "${BUILD_DIR}/assemble/B9_Aerospace/"
   - cp -v "${TRAVIS_BUILD_DIR}/README.md" "${TRAVIS_BUILD_DIR}/changelog.md" "${BUILD_DIR}/assemble/B9_Aerospace/GameData/B9_Aerospace/"
-  - unzip -p "${BUILD_DIR}/ckan_ksp/b9_deps/CKAN/downloads/*-ModuleManager-*" README.md > "${BUILD_DIR}/assemble/B9_Aerospace/ModuleManager_README.md"
-  - unzip -p "${BUILD_DIR}/ckan_ksp/b9_deps/CKAN/downloads/*-RasterPropMonitor-Core-*" README.md > "${BUILD_DIR}/assemble/B9_Aerospace/RasterPropMonitor_README.md"
-  - unzip -p "${BUILD_DIR}/ckan_ksp/b9_deps/CKAN/downloads/*-RasterPropMonitor-Core-*" LICENSE.md > "${BUILD_DIR}/assemble/B9_Aerospace/RasterPropMonitor_LICENSE.md"
+  - unzip -p "${CKAN_CACHE}/*-ModuleManager-*" README.md > "${BUILD_DIR}/assemble/B9_Aerospace/ModuleManager_README.md"
+  - unzip -p "${CKAN_CACHE}/*-RasterPropMonitor-Core-*" README.md > "${BUILD_DIR}/assemble/B9_Aerospace/RasterPropMonitor_README.md"
+  - unzip -p "${CKAN_CACHE}/*-RasterPropMonitor-Core-*" LICENSE.md > "${BUILD_DIR}/assemble/B9_Aerospace/RasterPropMonitor_LICENSE.md"
   - (cd "${BUILD_DIR}/assemble/B9_Aerospace" && zip -rv "${BUILD_DIR}/package/B9_Aerospace.zip" .)
 
   - make-ksp-install "${BUILD_DIR}/ckan_ksp/b9_hx_deps" 'b9_hx_deps' "${KSP_VERSION}"
@@ -39,7 +42,7 @@ script:
   - cp -r "${TRAVIS_BUILD_DIR}/GameData/B9_Aerospace_HX" "${BUILD_DIR}/assemble/B9_Aerospace_HX/GameData"
   - cp -v "${TRAVIS_BUILD_DIR}/README.md" "${TRAVIS_BUILD_DIR}/changelog.md" "${BUILD_DIR}/assemble/B9_Aerospace_HX/"
   - cp -v "${TRAVIS_BUILD_DIR}/README.md" "${TRAVIS_BUILD_DIR}/changelog.md" "${BUILD_DIR}/assemble/B9_Aerospace_HX/GameData/B9_Aerospace_HX/"
-  - unzip -p "${BUILD_DIR}/ckan_ksp/b9_hx_deps/CKAN/downloads/*-ModuleManager-*" README.md > "${BUILD_DIR}/assemble/B9_Aerospace_HX/ModuleManager_README.md"
+  - unzip -p "${CKAN_CACHE}/*-ModuleManager-*" README.md > "${BUILD_DIR}/assemble/B9_Aerospace_HX/ModuleManager_README.md"
   - (cd "${BUILD_DIR}/assemble/B9_Aerospace_HX" && zip -rv "${BUILD_DIR}/package/B9_Aerospace_HX.zip" .)
 
   - mkdir -pv "${BUILD_DIR}/assemble/B9_Aerospace_Legacy"
