@@ -71,7 +71,7 @@ deploy:
     secret_access_key: ${S3_SECRET_ACCESS_KEY}
     bucket: blowfish-ksp-b9aerospace-release-builds
     storage_class: ONEZONE_IA
-    local_dir: ${BUILD_DIR}/release/*.zip
+    local_dir: ${BUILD_DIR}/release
     upload-dir: releases/${TRAVIS_TAG}
     on:
       tags: true
