@@ -1,6 +1,14 @@
 
 _______________________________
 
+▼ v6.5.2
+
+	* Release for KSP 1.5.x
+	* Fix HX hanger bays aerodynamic shielding
+	* Fix HX hangar shields getting stuck upon decoupling
+	* Fix shading issues on HL, S2, Mk5, Mk2b cockpits
+_______________________________
+
 ▼ v6.5.1
 
 	* Release for KSP 1.4.2+
