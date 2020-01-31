@@ -31,8 +31,8 @@ script:
   - cp -v "${TRAVIS_BUILD_DIR}/README.md" "${TRAVIS_BUILD_DIR}/changelog.md" "${BUILD_DIR}/assemble/B9_Aerospace/"
   - cp -v "${TRAVIS_BUILD_DIR}/README.md" "${TRAVIS_BUILD_DIR}/changelog.md" "${BUILD_DIR}/assemble/B9_Aerospace/GameData/B9_Aerospace/"
   - unzip -p "${CKAN_CACHE}/*-ModuleManager-*" README.md > "${BUILD_DIR}/assemble/B9_Aerospace/ModuleManager_README.md"
-  - unzip -p "${CKAN_CACHE}/*-RasterPropMonitor-Core-*" README.md > "${BUILD_DIR}/assemble/B9_Aerospace/RasterPropMonitor_README.md"
-  - unzip -p "${CKAN_CACHE}/*-RasterPropMonitor-Core-*" LICENSE.md > "${BUILD_DIR}/assemble/B9_Aerospace/RasterPropMonitor_LICENSE.md"
+  - unzip -p "${CKAN_CACHE}/*-RasterPropMonitor-Core-*" GameData/JSI/README.md > "${BUILD_DIR}/assemble/B9_Aerospace/GameData/JSI/README.md"
+  - unzip -p "${CKAN_CACHE}/*-RasterPropMonitor-Core-*" GameData/JSI/LICENSE.md > "${BUILD_DIR}/assemble/B9_Aerospace/GameData/JSI/LICENSE.md"
   - (cd "${BUILD_DIR}/assemble/B9_Aerospace" && zip -rv "${BUILD_DIR}/package/B9_Aerospace.zip" .)
 
   - make-ksp-install "${BUILD_DIR}/ckan_ksp/b9_hx_deps" 'b9_hx_deps' "${KSP_VERSION}"
