@@ -1,6 +1,13 @@
 
 _______________________________
 
+▼ v6.6.0
+
+	* Remove references to unused textures
+	* Replace remaining FSanimateGeneric with ModuleAnimateGeneric
+	* Add default action groups for cabin lights
+_______________________________
+
 ▼ v6.5.2
 
 	* Release for KSP 1.5.x
