@@ -1,0 +1,229 @@
+B9HX_TEMPLATE
+{
+	name = LFO
+	author = JadeOfMaar
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/LFO
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/LFOGlow
+	description = This kit stores LiquidFuel and Oxidizer.
+	templateTags = stowage
+	RESOURCE
+	{
+		 name = LiquidFuel
+		 amount = 26550
+		 maxAmount = 26550
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 32450
+		maxAmount = 32450
+	}
+}
+B9HX_TEMPLATE
+{
+	name = LiquidFuel
+	author = JadeOfMaar
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/LiquidFuel
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/LiquidFuelGlow
+	description = This kit stores only LiquidFuel.
+	templateTags = stowage
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 59000
+		maxAmount = 59000
+	}
+}
+B9HX_TEMPLATE
+{
+	name = Oxidizer
+	author = JadeOfMaar
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/LiquidFuel
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/LiquidFuelGlow
+	description = This kit stores Oxidizer.
+	templateTags = stowage
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 59000
+		maxAmount = 59000
+	}
+}
+B9HX_TEMPLATE
+{
+	name = MonoProp
+	author = JadeOfMaar
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/Monopropellant
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/MonopropellantGlow
+	description = This kit stores MonoPropellant.
+	templateTags = stowage
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 59000
+		maxAmount = 59000
+	}
+}
+B9HX_TEMPLATE
+{
+	name = Propellium
+	author = JadeOfMaar
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/LiquidHydrogen
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/LiquidHydrogenGlow
+	description = This kit stores Propellium.
+	templateTags = stowage
+	RESOURCE
+	{
+		name = Propellium
+		amount = 295000
+		maxAmount = 295000
+	}
+}
+B9HX_TEMPLATE
+{
+	name = Explodium
+	author = JadeOfMaar
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/Explodium
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/Explodium
+	description = This kit stores Explodium.
+	templateTags = stowage
+	RESOURCE
+	{
+		name = Explodium
+		amount = 59000
+		maxAmount = 59000
+	}
+}
+B9HX_TEMPLATE
+{
+	name = Battery
+	author = JadeOfMaar
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/Battery
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/Battery
+	description = This kit stores ElectricCharge, and lots of it!
+	templateTags = stowage
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 236000
+		maxAmount = 236000
+	}
+}
+B9HX_TEMPLATE
+{
+	author = JadeOfMaar
+	name = Empty
+	description = Sometimes we just want the hull and nothing else.
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/Void
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/Void
+}
+
+// Globals
+B9HX_TEMPLATE
+{
+	name = OmniStorage
+	author = Angel-125
+	logoPanel = WildBlueIndustries/Pathfinder/Decals/Omni
+	glowPanel = WildBlueIndustries/Pathfinder/Decals/Omni
+	description = This kit can store a wide variety of resources in varying amounts.
+	templateTags = stowage
+
+	MODULE
+	{
+		name = WBIOmniStorage
+
+		//In liters, how much can the part store.
+		//Note: this is a standard size for a switcher capacity of 1.0 and based on
+		//the Titan 59000 fuel tank standard (on which the templates were originally based).
+		//Actual volume depends upon switcher's capacityFactor.
+		storageVolume = 295000
+
+		//Adjust storage volume to account for resource switcher's capacity factor.
+		accountForSwitcherCapacity = true
+
+		//Skill required to reconfigure the container.
+		reconfigureSkill = ConverterSkill
+
+		//Minimum rank to reconfigure the container.
+		reconfigureRank = 1
+
+		//Resource required to reconfigure the container.
+		requiredResource = Equipment
+
+		//Amount of the required resource to reconfigure the container.
+		requiredAmount = 0
+
+		//Blacklisted resources that can't be added to the container.
+		//Separate by semicolon. Below is the default.
+		resourceBlacklist = GeoEnergy;ElectroPlasma;CoreHeat;Atmosphere;CompressedAtmosphere;LabTime;ExposureTime;ScopeTime;SolarReports;SimulatorTime;GravityWaves;IntakeAir;StaticCharge;EVA Propellant;Plants
+	}
+}
+
+@PART[B9_Structure_HX*]:HAS[@MODULE[ModuleB9PartSwitch]:HAS[#baseVolume[>0]]]:FOR[B9_Aerospace_HX]
+{
+    MODULE
+	{
+		name = WBIConvertibleStorage
+		enableLogging = True
+
+		//Determines if the module allows in-field reconfiguring
+		fieldReconfigurable = True
+
+		//Require a confirmation click before changing resources
+		confirmResourceSwitch = True
+
+		//Determines whether or not to show the context menu GUI
+		showGUI = True
+
+		//Short name of the default module template.
+		//This is used when selecting the part in the editor.
+		//User will then right-click on the module to change its type.
+		defaultTemplate = LFO
+
+		//name of the template nodes to use
+		templateNodes = B9HX_TEMPLATE
+
+		//Some containers don't hold as much resources as the template specifies, while others hold more.
+		//Since the resource templates specify base amounts, the capacity factor specifies a multiplier to
+		//factor into the resource amounts.
+		capacityFactor = #$../MODULE[ModuleB9PartSwitch]/baseVolume$
+		@capacityFactor /= 59000
+
+		//Name of the logo panel transforms
+		// logoPanelTransforms = logoPanel001
+		// decalsVisible = true
+
+		//If the part has a KIS container, this is the base and max amount
+		baseStorage = .001
+		maxStorage = 3000
+	}
+
+	MODULE:NEEDS[BARIS]
+	{
+		name = ModuleBreakableFuelTank
+	}
+
+	MODULE:NEEDS[BARIS]
+	{
+		name = ModuleQualityControl
+		mtbf = 7500
+	}
+	
+	@MODULE[ModuleB9PartSwitch]:HAS[#baseVolume[>0]]
+	{
+		!SUBTYPE[*]:HAS[~transform[*],~node[*]] {}
+		!SUBTYPE[L??],* {}
+		!SUBTYPE[KAR] {}
+		!SUBTYPE[a_l??],* {}
+		!SUBTYPE[a_kar] {}
+		!SUBTYPE[b_l??],* {}
+		!SUBTYPE[b_kar] {}
+		@SUBTYPE[*],*
+		{
+			!tankType = DEL
+		}
+		@baseVolume = 0
+	}
+	
+	!MODULE[ModuleB9PartSwitch]:HAS[!SUBTYPE[*]] {}
+}

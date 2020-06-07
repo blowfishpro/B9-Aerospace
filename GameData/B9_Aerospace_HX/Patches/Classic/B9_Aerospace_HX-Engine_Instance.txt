@@ -1,0 +1,351 @@
++PART[B9_Structure_HX_HPD1]
+{
+	@name = B9_Structure_HX_HPD2
+	@title = HX-HPD 2 Heavy Propulsion Device
+	@description = This variant of the HPD is a fission rocket and operates on Explodium. It remains quite powerful under intense atmosphere pressures where most engines may fail. The HPD 2 is a worthy candidate for engines that can bring a ship from the depthes of a gas giant... But who would be silly enough to measure these depths? Oh wait a minute...
+	
+	@EFFECTS
+	{
+		!running_lfo {}
+		!running_lava {}
+		!power_classic {}
+		!power_plasma {}
+		running_nswr
+		{
+			MODEL_MULTI_PARTICLE
+			{
+				name = flare
+				modelName = B9_Aerospace_HX/FX/explSpark
+				transformName = nozzle_transform
+				emission = 0.0 0.0
+				emission = 1.0 1.0
+				speed = 0.0 0.2
+				speed = 1.0 1.0
+			}
+			MODEL_MULTI_PARTICLE
+			{
+				name = stream
+				modelName = B9_Aerospace_HX/FX/explStream
+				transformName = nozzle_transform
+				emission = 0.0 0.0
+				emission = 1.0 1.0
+				speed = 0.0 0.2
+				speed = 1.0 1.0
+			}
+		}
+		power_nswr
+		{
+			AUDIO
+			{
+				name = heavy
+				channel = Ship
+				clip = sound_rocket_hard
+				volume = 0.05 0.0
+				volume = 1.0 3.0
+				pitch = 0.0 0.6
+				pitch = 1.0 0.9
+				loop = true
+			}
+			AUDIO
+			{
+				name = jet
+				channel = Ship
+				clip = sound_jet_low
+				volume = 0.0 0.0
+				volume = 0.5 0.5
+				pitch = 0.0 0.1
+				pitch = 0.5 0.3
+				loop = true
+			}
+		}
+	}
+	
+	!MODULE[MultiModeEngine] {}
+	@MODULE[ModuleEnginesFX],0
+	{
+		@engineID = Explodium
+		@runningEffectName = running_nswr
+		@powerEffectName = power_nswr
+		@heatProduction = 500
+		@maxThrust = 24000
+		!PROPELLANT,* {}
+		PROPELLANT
+		{
+			name = Explodium
+			ratio = 1
+			DrawGauge = True
+		}
+		PROPELLANT
+		{
+			name = ElectricCharge
+            ratio = 15
+            DrawGauge = True
+		}
+		@atmosphereCurve
+		{
+			!key,* = null
+			key = 0 3000
+			key = 1 2820
+			key = 30 0.01
+		}
+	}
+	!MODULE[ModuleEnginesFX],1 {}
+	!MODULE[ModuleSurfaceFX],1 {}
+	
+	@#@TWEAKSCALEBEHAVIOR[Engine]/MODULE[TweakScale] { }
+	%MODULE[TweakScale]
+	{
+		type = stack
+		defaultScale = 7.5
+	}
+}
+
++PART[B9_Structure_HX_HPD1]
+{
+	@name = B9_Structure_HX_HPD3
+	@title = HX-HPD 3 Heavy Propulsion Device
+	@description = This variant of the HPD is a fusion rocket and primarily runs on Propellium. Compared to the other variants, this one trades a lot of its potential for thrust for immense Isp and still provides an afterburner or "wet" mode for that moment when efficiency is negligible.
+	
+	@EFFECTS
+	{
+		!running_lfo {}
+		!running_lava {}
+		!power_classic {}
+		!power_plasma {}
+		running_fusion
+		{
+			MODEL_MULTI_PARTICLE
+			{
+				name = bubbles
+				modelName = B9_Aerospace_HX/FX/KaRoarF2
+				transformName = nozzle_transform
+				emission = 0.0 0.0
+				emission = 1.0 1.0
+				speed = 0.0 0.2
+				speed = 1.0 1.0
+			}
+			MODEL_MULTI_PARTICLE
+			{
+				name = core
+				modelName = B9_Aerospace_HX/FX/KaShockF2
+				transformName = nozzle_transform
+				emission = 0.0 0.0
+				emission = 1.0 1.0
+				speed = 0.0 0.2
+				speed = 1.0 1.0
+			}
+			MODEL_MULTI_PARTICLE
+			{
+				name = stream
+				modelName = B9_Aerospace_HX/FX/KaStreamF2
+				transformName = nozzle_transform
+				emission = 0.0 0.0
+				emission = 1.0 1.0
+				speed = 0.0 0.2
+				speed = 1.0 1.0
+			}
+		}
+		running_bluelava
+		{
+			MODEL_MULTI_PARTICLE
+			{
+				name = core
+				modelName = B9_Aerospace_HX/FX/blueCore
+				transformName = nozzle_transform
+				emission = 0.0 0.0
+				emission = 1.0 1.0
+				speed = 0.0 0.2
+				speed = 1.0 1.0
+			}
+			MODEL_MULTI_PARTICLE
+			{
+				name = glimmer
+				modelName = B9_Aerospace_HX/FX/blueGlimmer
+				transformName = nozzle_transform
+				emission = 0.0 0.0
+				emission = 1.0 1.0
+				speed = 0.0 0.2
+				speed = 1.0 1.0
+			}
+			MODEL_MULTI_PARTICLE
+			{
+				name = stream
+				modelName = B9_Aerospace_HX/FX/blueStream
+				transformName = nozzle_transform
+				emission = 0.0 0.0
+				emission = 1.0 1.0
+				speed = 0.0 0.2
+				speed = 1.0 1.0
+			}
+		}
+		// running_torch
+		// {
+			// MODEL_MULTI_PARTICLE
+			// {
+				// name = blaze
+				// modelName = B9_Aerospace_HX/FX/KaRoarT2
+				// transformName = nozzle_transform
+				// emission = 0.0 0.0
+				// emission = 1.0 1.0
+				// speed = 0.0 0.2
+				// speed = 1.0 1.0
+			// }
+			// MODEL_MULTI_PARTICLE
+			// {
+				// name = core
+				// modelName = B9_Aerospace_HX/FX/KaShockT2
+				// transformName = nozzle_transform
+				// emission = 0.0 0.0
+				// emission = 1.0 1.0
+				// speed = 0.0 0.2
+				// speed = 1.0 1.0
+			// }
+			// MODEL_MULTI_PARTICLE
+			// {
+				// name = stream
+				// modelName = B9_Aerospace_HX/FX/KaStreamT2
+				// transformName = nozzle_transform
+				// emission = 0.0 0.0
+				// emission = 1.0 1.0
+				// speed = 0.0 0.2
+				// speed = 1.0 1.0
+			// }
+		// }
+		power_fusion
+		{
+			AUDIO
+			{
+				name = light
+				channel = Ship
+				clip = sound_rocket_spurts
+				volume = 0.05 0.0
+				volume = 1.0 2.0
+				pitch = 0.0 0.2
+				pitch = 1.0 0.6
+				loop = true
+			}
+			AUDIO
+			{
+				name = jet
+				channel = Ship
+				clip = sound_jet_low
+				volume = 0.0 0.0
+				volume = 0.5 0.5
+				pitch = 0.0 0.8
+				pitch = 0.5 0.4
+				loop = true
+			}
+		}
+		power_plasma
+		{
+			AUDIO
+			{
+				name = medium
+				channel = Ship
+				clip = sound_rocket_hard
+				volume = 0.05 0.0
+				volume = 1.0 1.0
+				pitch = 0.0 1.0
+				pitch = 1.0 1.5
+				loop = true
+			}
+			AUDIO
+			{
+				name = jet
+				channel = Ship
+				clip = sound_jet_deep
+				volume = 0.0 0.0
+				volume = 0.2 0.5
+				volume = 0.5 1.0
+				pitch = 0.0 0.4
+				pitch = 0.5 0.6
+				loop = true
+			}
+		}
+		// power_torch
+		// {
+			// AUDIO
+			// {
+				// name = medium
+				// channel = Ship
+				// clip = sound_rocket_hard
+				// volume = 0.05 0.0
+				// volume = 1.0 2.0
+				// pitch = 0.0 1.0
+				// pitch = 1.0 1.5
+				// loop = true
+			// }
+		// }
+	}
+	
+	@MODULE[MultiModeEngine]
+	{
+		primaryEngineID = Epstein
+		secondaryEngineID = Afterburn
+	}
+	
+	@MODULE[ModuleEnginesFX],0
+	{
+		@engineID = Epstein
+		@runningEffectName = running_bluelava
+		@powerEffectName = power_plasma
+		@heatProduction = 200
+		@maxThrust = 4000
+		!PROPELLANT,* {}
+		PROPELLANT
+		{
+			name = Propellium
+			ratio = 1
+			DrawGauge = True
+		}
+		PROPELLANT
+		{
+			name = ElectricCharge
+			ratio = 810
+			DrawGauge = True
+		}
+		@atmosphereCurve
+		{
+			!key,* = null
+			key = 0 100000
+			key = 1 1000
+			key = 4 0.01
+		}
+		
+	}
+	@MODULE[ModuleEnginesFX],1
+	{
+		@engineID = Afterburn
+		@runningEffectName = running_fusion
+		@powerEffectName = power_fusion
+		@heatProduction = 320
+		@maxThrust = 6200
+		!PROPELLANT,* {}
+		PROPELLANT
+		{
+			name = Propellium
+			ratio = 1
+			DrawGauge = True
+		}
+		PROPELLANT
+		{
+			name = ElectricCharge
+			ratio = 45
+			DrawGauge = True
+		}
+		@atmosphereCurve
+		{
+			!key,* = null
+			key = 0 15000
+			key = 1 3000
+			key = 6 0.01
+		}
+	}
+	
+	@#@TWEAKSCALEBEHAVIOR[Engine]/MODULE[TweakScale] { }
+	%MODULE[TweakScale]
+	{
+		type = stack
+		defaultScale = 7.5
+	}
+}
